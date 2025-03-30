@@ -228,7 +228,7 @@ export default function MenuNavigation({ selectedCategory = null }: MenuNavigati
           {(selectedCategory 
             ? menuCategories.filter(item => item.category === selectedCategory)
             : menuCategories
-          ).map((item, index) => (
+          ).map((item) => (
             <Link 
               key={item.category} 
               href={item.link}
