@@ -3,7 +3,7 @@
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Wine, Coffee, Pizza, Fish, Salad, Cake, Beer, Droplet, Utensils } from 'lucide-react';
+import { ChevronDown, Wine, Pizza, Fish, Salad, Cake, Beer, Droplet, Utensils } from 'lucide-react';
 
 // Define types for menu items
 interface MenuCategory {
