@@ -11,15 +11,15 @@ const menuCategories = [
     link: "/menu/cocktails",
   },
   {
-    category: "Soft Drinks",
+    category: "Boissons Softs",
     link: "/menu/soft-drinks",
   },
   {
     category: "Champagne & Wines",
-    link: "/menu/wines",
+    link: "/menu/champagne-wines",
   },
   {
-    category: "Beers & Drinks",
+    category: "Bières & Alcool",
     link: "/menu/beers",
   },
   {
@@ -27,15 +27,15 @@ const menuCategories = [
     link: "/menu/asian-sushi",
   },
   {
-    category: "Starters",
+    category: "Entrées",
     link: "/menu/starters",
   },
   {
-    category: "Fish & Meat",
+    category: "Poissons & Viandes",
     link: "/menu/fish-and-meat",
   },
   {
-    category: "Pastas & Pizzas",
+    category: "Pâtes & Pizzas",
     link: "/menu/pastas-pizzas",
   },
   {

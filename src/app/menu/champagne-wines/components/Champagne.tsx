@@ -1,12 +1,14 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface MenuItem {
   name: string;
-  price: number;
-  ingredients: string;
+  price?: number;
+  glassPrice?: number;
+  bottlePrice?: number;
+  halfBottlePrice?: number;
   description?: string;
 }
 
@@ -15,49 +17,111 @@ interface MenuSection {
   items: MenuItem[];
 }
 
-const CocktailMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boolean }> = ({ 
+const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boolean }> = ({ 
   name, 
-  price, 
-  ingredients, 
+  price,
+  glassPrice,
+  bottlePrice,
+  halfBottlePrice,
   description,
   onExpand,
   isExpanded 
-}) => (
-  <div 
-    className="border-b pb-4 mb-4 cursor-pointer group"
-    onClick={onExpand}
-  >
-    <div className="flex justify-between items-center mb-2">
-      <h3 
-        className="font-medium text-lg transition-all duration-300 group-hover:text-opacity-70"
-        style={{ color: '#81715E' }}
-      >
-        {name}
-      </h3>
-      <span 
-        className="font-semibold transition-all duration-300 group-hover:text-opacity-70"
-        style={{ color: '#81715E' }}
-      >
-        {price}
-      </span>
-    </div>
-    <p className="text-neutral-600 text-sm">{ingredients}</p>
-    <AnimatePresence>
-      {isExpanded && description && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: 'auto' }}
-          exit={{ opacity: 0, height: 0 }}
-          className="overflow-hidden mt-2"
-        >
-          <p className="text-neutral-500 italic text-sm">{description}</p>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  </div>
-);
+}) => {
+  const itemRef = useRef<HTMLDivElement>(null);
 
-const CocktailMenuSection: React.FC<MenuSection> = ({ title, items }) => {
+  useEffect(() => {
+    if (isExpanded && itemRef.current) {
+      itemRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [isExpanded]);
+
+  return (
+    <motion.div 
+      ref={itemRef}
+      className="border-b border-amber-100 pb-6 mb-6 cursor-pointer group"
+      whileHover={{ x: 4 }}
+      onClick={onExpand}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="flex justify-between items-baseline mb-3">
+        <h3 
+          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          style={{ color: '#81715E' }}
+        >
+          {name}
+        </h3>
+        <div className="text-right">
+          {bottlePrice && (
+            <span 
+              className="font-light text-base transition-all duration-300 group-hover:text-amber-800 ml-4"
+              style={{ color: '#81715E' }}
+            >
+              {bottlePrice}
+            </span>
+          )}
+          {price && (
+            <span 
+              className="font-light text-base transition-all duration-300 group-hover:text-amber-800"
+              style={{ color: '#81715E' }}
+            >
+              {price}
+            </span>
+          )}
+        </div>
+      </div>
+      <div className="flex justify-between text-neutral-600 text-sm font-light tracking-wide">
+        <div>
+          {description && <p>{description}</p>}
+        </div>
+        <div className="text-right">
+          {halfBottlePrice && (
+            <span className="ml-2">37,5cl: {halfBottlePrice}</span>
+          )}
+          {glassPrice && (
+            <span className="ml-2">Verre: {glassPrice}</span>
+          )}
+        </div>
+      </div>
+      <AnimatePresence>
+        {isExpanded && description && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto', marginTop: 12 }}
+            exit={{ opacity: 0, height: 0, marginTop: 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            <p className="text-neutral-500 italic text-sm pl-4 border-l-2 border-amber-200">{description}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      {description && (
+        <div className="mt-2 text-xs text-amber-700 opacity-70 flex items-center">
+          <span className="mr-1">{isExpanded ? 'Less' : 'Details'}</span>
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="12" 
+            height="12" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+            style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+      )}
+    </motion.div>
+  );
+};
+
+const WineMenuSection: React.FC<MenuSection> = ({ title, items }) => {
   const [expandedItem, setExpandedItem] = useState<number | null>(null);
 
   const handleExpand = (index: number) => {
@@ -65,16 +129,28 @@ const CocktailMenuSection: React.FC<MenuSection> = ({ title, items }) => {
   };
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="bg-white bg-opacity-60 backdrop-blur-sm p-8 rounded-lg shadow-sm"
+    >
       <h2 
-        className="text-2xl font-semibold mb-6 pb-2 border-b" 
-        style={{ color: '#81715E', borderColor: 'rgba(129, 113, 94, 0.3)' }}
+        className="text-2xl font-serif tracking-wide mb-8 pb-3 border-b relative" 
+        style={{ color: '#81715E', borderColor: 'rgba(129, 113, 94, 0.2)' }}
       >
-        {title}
+        <span className="relative z-10">{title}</span>
+        <motion.span 
+          className="absolute bottom-0 left-0 h-[1px] bg-amber-700" 
+          initial={{ width: 0 }}
+          whileInView={{ width: '30%' }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        />
       </h2>
-      <div className="space-y-4">
+      <div className="space-y-2">
         {items.map((item, index) => (
-          <CocktailMenuItem
+          <WineMenuItem
             key={index}
             {...item}
             onExpand={() => handleExpand(index)}
@@ -82,215 +158,417 @@ const CocktailMenuSection: React.FC<MenuSection> = ({ title, items }) => {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-const CocktailMenu: React.FC = () => {
+const WineMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'COCKTAILS TIKI',
+      title: 'CHAMPAGNE & PROSECCO',
       items: [
         {
-          name: 'DE TU BIKINI',
-          price: 220,
-          ingredients: 'Bacardi blanc & gold / mango / cinnamon / pastis / pomegranate / orange',
+          name: 'Martini Prosecco',
+          glassPrice: 100,
+          bottlePrice: 1200
         },
         {
-          name: 'MAI TAI CHIRINGUITO',
-          price: 220,
-          ingredients: 'Bacardi Gold / Tangerine liquor / Orgeat / Orange / Bitter angostura',
+          name: 'Laurent Perrier Brut',
+          bottlePrice: 2000
         },
         {
-          name: 'NO TE OLVIDES DEL VERANO',
-          price: 220,
-          ingredients: 'Russian Standard Vodka / Blue curaçao / Orgeat / Coconut liquor / Tonic',
+          name: 'Laurent Perrier Rosé',
+          bottlePrice: 2900
         },
         {
-          name: 'TUKI-TUKI',
-          price: 220,
-          ingredients: 'Sake / passion fruit / peach liquor / falernum / lemon',
+          name: 'Laurent Perrier Brut Magnum',
+          bottlePrice: 3600
+        },
+        {
+          name: 'Ruinart Blanc de Blanc',
+          bottlePrice: 3900
+        },
+        {
+          name: 'Dom Perignon',
+          bottlePrice: 7000
+        },
+        {
+          name: 'Dom Perignon Rosé',
+          bottlePrice: 15000
         }
       ]
     },
     {
-      title: 'COCKTAILS CHIRINGUITO',
+      title: 'VINS BLANCS MAROCAINS',
       items: [
         {
-          name: 'Moscow Mule',
-          price: 160,
-          ingredients: 'Russian standard vodka / Ginger beer',
+          name: 'Beauvallon',
+          bottlePrice: 290,
+          glassPrice: 80
         },
         {
-          name: 'Copresso',
-          price: 160,
-          ingredients: 'Bacardi Gold / Bacardi White / Coffee Liquor / Expresso coffee / Coconut Purée',
+          name: 'Médaillon',
+          bottlePrice: 340,
+          halfBottlePrice: 180,
+          glassPrice: 100
         },
         {
-          name: 'Soprano',
-          price: 160,
-          ingredients: 'Whisky Jack Daniel Honey / Amareto / Bitter Angostura / Twist orange'
+          name: 'S de Siroua',
+          bottlePrice: 390
         },
         {
-          name: 'Caipitanja',
-          price: 160,
-          ingredients: 'Vodka Russian / Watermelon syrup / Lemon'
+          name: 'CB Signature',
+          bottlePrice: 450
         },
         {
-          name: 'Bloody Tanja',
-          price: 160,
-          ingredients: 'Vodka Russe / Homemade tomato juice / Celery / Worcestershire sauce / Tabasco'
-        },
-        {
-          name: 'Alcides',
-          price: 160,
-          ingredients: 'Bombay saphire / maraschino liquor / violet / beet / tonic'
-        },
-        {
-          name: 'Maroc Julep',
-          price: 160,
-          ingredients: 'Whisky bourbon / shiba tea / mint / icing sugar'
-        },
-        {
-          name: 'Paloma ajena',
-          price: 160,
-          ingredients: 'Tequila / yuzu / lemon / grapefruit juice / spicy salt'
-        },
-        {
-          name: 'Coco jamboo',
-          price: 160,
-          ingredients: 'Baileys / banana liquor / coconut puree / cinnamon / nutmeg'
-        },
-        {
-          name: 'El general spritz',
-          price: 160,
-          ingredients: 'Campari / apricot brandy / mango / prosecco'
-        },
-        {
-          name: 'Vilma palma',
-          price: 160,
-          ingredients: 'Grey goose pear / calvados boulard / elderflower / prosecco'
-        },
-        {
-          name: 'Green Mary',
-          price: 160,
-          ingredients: 'Vodka russian / cucumber / celery / black pepper / english sauce'
-        },
-        {
-          name: 'Burbujas de amor',
-          price: 160,
-          ingredients: 'Bombay bramble / roses / tangerine liquor / red fruits / tonic'
+          name: 'Château Roslane AOC',
+          bottlePrice: 600
         }
       ]
     },
     {
-      title: 'MOCKTAILS',
-  items: [
-    {
-      name: 'Detox Chiringuito',
-      price: 60,
-      ingredients: 'Water / lemon / mint / cucumber / celery',
-      description: 'A pure, revitalizing blend that cleanses and refreshes, bringing the essence of wellness to your glass.'
-    },
-    {
-      name: 'Amor Narcótico',
-      price: 120,
-      ingredients: 'Peach / watermelon / herbs'
-    },
-    {
-      name: 'Tangerina Sour',
-      price: 120,
-      ingredients: 'Tangerine / yuzu / honey / egg white in option'
-    },
-    {
-      name: 'Kiwi Mojito',
-      price: 120,
-      ingredients: 'Coconut water / kiwi / lemon / mint / ginger'
-    }
-      ]
-    },
-    {
-      title: 'METER SHOTS',
+      title: 'VINS ROUGES MAROCAINS',
       items: [
         {
-          name: 'Passion Vodka',
-          price: 550,
-          ingredients: 'Russian Vodka / Passion fruits / Lemon',
-          description: 'An intense shot of pure passion, combining the boldness of vodka with the vibrant energy of fresh passion fruit.'
+          name: 'Beauvallon',
+          bottlePrice: 290,
+          glassPrice: 80
         },
         {
-          name: 'B52',
-          price: 550,
-          ingredients: 'Baileys / coffee liquor / triple sec',
-          description: 'A layered classic with creamy Baileys, rich coffee liqueur, and citrusy Triple Sec—ignite it for drama!'
+          name: 'Médaillon',
+          bottlePrice: 340,
+          halfBottlePrice: 180,
+          glassPrice: 100
         },
         {
-          name: 'Rainbow',
-          price: 550,
-          ingredients: 'Vodka / blue curaçao / orange / coconut liquor / grenadine syrup',
-          description: 'A vibrant, colorful shot that takes you through a sweet and tropical flavor spectrum.'
+          name: 'S de Siroua',
+          bottlePrice: 390
         },
         {
-          name: 'Tequila',
-          price: 550,
-          ingredients: 'Tequila Camino',
-          description: 'Straight-up, no fuss—just the bold, earthy kick of premium Tequila Camino.'
+          name: 'CB Signature',
+          bottlePrice: 480
+        },
+        {
+          name: 'Azayi',
+          bottlePrice: 590
+        },
+        {
+          name: 'Château Roslane AOC',
+          bottlePrice: 600
+        },
+        {
+          name: 'Tandem',
+          bottlePrice: 600
         }
       ]
     },
     {
-      title: 'SHOTS',
+      title: 'VINS ROSÉS MAROCAINS',
       items: [
         {
-          name: 'Chaouen (x4)',
-          price: 160,
-          ingredients: 'Sambuca / Blue Curaçao / Russian Vodka / Vanilla syrup'
+          name: 'Médaillon',
+          bottlePrice: 340,
+          glassPrice: 100
         },
         {
-          name: 'Te a la Meister (x4)',
-          price: 160,
-          ingredients: 'Jägermeister / Ginger syrup / Chocolate liquor / Mint / White rum'
+          name: 'S de Siroua',
+          bottlePrice: 390
         },
         {
-          name: 'Passion (x4)',
-          price: 160,
-          ingredients: 'Russian Vodka / Passion fruits / Lemon'
+          name: 'CB Signature',
+          bottlePrice: 420
+        },
+        {
+          name: 'Tandem',
+          bottlePrice: 450
+        }
+      ]
+    },
+    {
+      title: 'VINS GRIS MAROCAINS',
+      items: [
+        {
+          name: 'Boulaouane',
+          bottlePrice: 290,
+          glassPrice: 80
+        },
+        {
+          name: 'Medaillon',
+          bottlePrice: 340,
+          glassPrice: 100
+        },
+        {
+          name: 'Ait Souala',
+          bottlePrice: 420
+        }
+      ]
+    },
+    {
+      title: 'VINS BLANCS ESPAÑA',
+      items: [
+        {
+          name: 'Marques de Caceres',
+          bottlePrice: 320,
+          glassPrice: 110
+        },
+        {
+          name: 'Vina Esmeralda',
+          bottlePrice: 360
+        },
+        {
+          name: 'Albarino Pazo San Mauro',
+          bottlePrice: 540
+        }
+      ]
+    },
+    {
+      title: 'VINS BLANCS FRANCE',
+      items: [
+        {
+          name: 'Domaine Chiroulet',
+          bottlePrice: 360,
+          glassPrice: 110
+        },
+        {
+          name: 'Bourgogne Chardonnay Rodet',
+          bottlePrice: 540
+        },
+        {
+          name: 'Chablis Tremblay',
+          bottlePrice: 560
+        },
+        {
+          name: 'Sancerre J de Villebois',
+          bottlePrice: 590
+        },
+        {
+          name: 'Pouilly fumé J de Villebois',
+          bottlePrice: 640
+        }
+      ]
+    },
+    {
+      title: 'VINS BLANCS PORTUGAL',
+      items: [
+        {
+          name: 'Mateus Blanc 75cl',
+          bottlePrice: 260
+        }
+      ]
+    },
+    {
+      title: 'VINS ROUGES ESPAÑA',
+      items: [
+        {
+          name: 'Marques de Caceres',
+          bottlePrice: 420,
+          glassPrice: 110
+        },
+        {
+          name: 'Marques de vargas reserva',
+          bottlePrice: 690
+        },
+        {
+          name: 'Altos Ibericos',
+          bottlePrice: 360
+        },
+        {
+          name: 'Celeste Crianza Torres',
+          bottlePrice: 560
+        },
+        {
+          name: 'Conde de San Cristobal',
+          bottlePrice: 620
+        },
+        {
+          name: 'Sela Bodega Roda',
+          bottlePrice: 690
+        },
+        {
+          name: 'Roda 1 Bodega Roda',
+          bottlePrice: 1800
+        }
+      ]
+    },
+    {
+      title: 'VINS ROUGES FRANCE',
+      items: [
+        {
+          name: 'La Vieille Ferme Ventoux',
+          bottlePrice: 290
+        },
+        {
+          name: 'Fleur de Bazeau',
+          bottlePrice: 320,
+          glassPrice: 110
+        },
+        {
+          name: 'Brouilly les jarrons Thorin',
+          bottlePrice: 520
+        },
+        {
+          name: 'Château Lafitte',
+          bottlePrice: 640
+        },
+        {
+          name: 'Chamirey Mercurey Bourgogne',
+          bottlePrice: 900
+        },
+        {
+          name: 'Châteauneuf Du-Pape Les Sinards Perrin',
+          bottlePrice: 1200
+        }
+      ]
+    },
+    {
+      title: 'VINS ROUGES ARGENTINA',
+      items: [
+        {
+          name: 'La Celia Reserva Malbec',
+          bottlePrice: 420
+        }
+      ]
+    },
+    {
+      title: 'VINS ROUGES CHILE',
+      items: [
+        {
+          name: 'Tarapaca Reserva Carmenere',
+          bottlePrice: 390
+        }
+      ]
+    },
+    {
+      title: 'VINS ROUGES ITALIA',
+      items: [
+        {
+          name: 'Chianti Superiore Vigneti Trebbio',
+          bottlePrice: 480
+        }
+      ]
+    },
+    {
+      title: 'VINS ROUGES PORTUGAL',
+      items: [
+        {
+          name: 'Silk & Spice rouge',
+          bottlePrice: 320
+        }
+      ]
+    },
+    {
+      title: 'VINS ROSÉS DU MONDE',
+      items: [
+        {
+          name: 'Mateus rosé',
+          bottlePrice: 290
+        },
+        {
+          name: 'Manon Côte de provence',
+          bottlePrice: 320
+        },
+        {
+          name: 'Studio By Miraval',
+          bottlePrice: 440
+        },
+        {
+          name: 'Pétales de rose',
+          bottlePrice: 460
+        },
+        {
+          name: 'Miraval',
+          bottlePrice: 580
+        },
+        {
+          name: 'Minuty Prestige',
+          bottlePrice: 590
         }
       ]
     }
   ];
 
   return (
-    <div className="bg-neutral-50 py-16 px-4">
+    <div 
+      id="menu-section"
+      className="min-h-screen py-16 px-4" 
+      style={{ 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/api/placeholder/1000/1000)', 
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover'
+      }}
+    >
       <div className="container mx-auto max-w-4xl">
-        <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="font-optima text-4xl md:text-5xl font-light text-center mb-8"
-          style={{ color: '#81715E' }}
-        >
-          Cocktail Menu
-        </motion.h1>
-        <p 
-          className="text-center text-xs text-neutral-600 mb-8 -mt-4"
-          style={{ color: 'rgba(129, 113, 94, 0.7)' }}
-        >
-          A 6% service charge will be added to your bill. The establishment only accepts certified checks.
-        </p>
+        <header className="mb-16 text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="inline-block mb-6"
+          >
+            <div className="w-20 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-60" />
+            <div className="w-16 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-40" />
+          </motion.div>
+          
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="font-serif text-5xl md:text-6xl font-light mb-6"
+            style={{ color: '#81715E' }}
+          >
+            Vins & Champagnes
+          </motion.h1>
+          
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-sm tracking-widest uppercase mb-2 font-light"
+            style={{ color: 'rgba(129, 113, 94, 0.8)' }}
+          >
+            Sélection de vins et champagnes
+          </motion.p>
+
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
+            style={{ color: 'rgba(129, 113, 94, 0.7)' }}
+          >
+            A 6% service charge will be added to your bill.
+            <br/>The establishment only accepts certified checks.
+          </motion.p>
+        </header>
 
         <div className="space-y-12">
           {menuSections.map((section, index) => (
-            <CocktailMenuSection 
+            <WineMenuSection 
               key={index} 
               title={section.title} 
               items={section.items} 
             />
           ))}
         </div>
+        
+        <footer className="mt-16 text-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
+            <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
+            <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
+              Santé et bon appétit
+            </p>
+          </motion.div>
+        </footer>
       </div>
     </div>
   );
 };
 
-export default CocktailMenu;
+export default WineMenu;

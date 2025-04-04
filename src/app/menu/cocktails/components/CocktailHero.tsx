@@ -18,7 +18,7 @@ const CocktailHero = () => {
       <div className="absolute inset-0 z-0">
         <Image 
           src="/cocktails.jpg" 
-          alt="Elegant Cocktails" 
+          alt="Cocktails élégants" 
           fill 
           priority 
           className="object-cover object-center"
@@ -58,7 +58,7 @@ const CocktailHero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-serif text-5xl md:text-6xl font-light mb-6 text-stone-100 tracking-wide"
           >
-            The Art of <br/><span className="italic text-amber-200">Libation</span>
+            L'Art de la <br/><span className="italic text-amber-200">Dégustation</span>
           </motion.h1>
           
           <motion.p
@@ -67,7 +67,7 @@ const CocktailHero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-stone-300 text-lg font-light leading-relaxed mb-10 max-w-md"
           >
-            Immerse yourself in a sensory journey where each cocktail tells a story through rare ingredients and time-honored techniques.
+            Plongez dans un voyage sensoriel où chaque cocktail raconte une histoire à travers des ingrédients rares et des techniques ancestrales.
           </motion.p>
           
           <motion.div
@@ -79,7 +79,7 @@ const CocktailHero = () => {
               onClick={scrollToMenu}
               className="px-8 py-3 border border-amber-300 text-amber-200 hover:bg-amber-900 hover:bg-opacity-20 transition-colors duration-300 text-sm tracking-widest uppercase"
             >
-              View Menu
+              Voir la Carte
             </button>
           </motion.div>
         </motion.div>

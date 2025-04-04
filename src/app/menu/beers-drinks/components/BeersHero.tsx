@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const DrinksHero = () => {
   const scrollToMenu = () => {
-    const menuSection = document.getElementById('menu-section');
+    const menuSection = document.getElementById('drinks-menu-section');
     if (menuSection) {
       menuSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -14,14 +14,14 @@ const DrinksHero = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - replace with your drinks image */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/soft-drinks.jpg" 
-          alt="Boissons Rafraîchissantes" 
+          src="/beers.jpg" 
+          alt="Sélection de boissons" 
           fill 
           priority 
-          className="object-cover object-center"
+          className="object-cover object-left"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-800/80 to-stone-950/90"></div>
       </div>
@@ -58,8 +58,8 @@ const DrinksHero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-serif text-5xl md:text-6xl font-light mb-6 text-stone-100 tracking-wide"
           >
-  L'Esprit <br/><span className="italic text-amber-200">Désaltérant</span>
-            </motion.h1>
+            Boissons <br/><span className="italic text-amber-200">& alcools</span>
+          </motion.h1>
           
           <motion.p
             initial={{ opacity: 0 }}
@@ -67,7 +67,7 @@ const DrinksHero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-stone-300 text-lg font-light leading-relaxed mb-10 max-w-md"
           >
-            Découvrez notre sélection de boissons premium, jus frais et rafraîchissements artisanaux conçus pour vous désaltérer.
+            Découvrez notre sélection de bières, vins et spiritueux premium.
           </motion.p>
           
           <motion.div
@@ -79,7 +79,7 @@ const DrinksHero = () => {
               onClick={scrollToMenu}
               className="px-8 py-3 border border-amber-300 text-amber-200 hover:bg-amber-900 hover:bg-opacity-20 transition-colors duration-300 text-sm tracking-widest uppercase"
             >
-              Voir la Carte
+              Voir la carte
             </button>
           </motion.div>
         </motion.div>

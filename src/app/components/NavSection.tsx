@@ -19,55 +19,55 @@ const menuCategories: MenuCategory[] = [
     category: "Cocktails & Shots",
     link: "/menu/cocktails",
     icon: <Wine size={18} />,
-    description: "Artisanal mixed drinks crafted with premium spirits"
+    description: "Boissons artisanales préparées avec des spiritueux premium"
   },
   {
-    category: "Soft Drinks",
+    category: "Boissons softs",
     link: "/menu/soft-drinks",
     icon: <Droplet size={18} />,
-    description: "Refreshing non-alcoholic beverages"
+    description: "Rafraîchissements non alcoolisés"
   },
   {
-    category: "Champagne & Wines",
-    link: "/menu/wines",
+    category: "Champagnes & Vins",
+    link: "/menu/champagne-wines",
     icon: <Wine size={18} />,
-    description: "Exceptional selections from renowned vineyards"
+    description: "Sélections exceptionnelles de vignobles renommés"
   },
   {
-    category: "Beers & Drinks",
+    category: "Bières & Alcool",
     link: "/menu/beers",
     icon: <Beer size={18} />,
-    description: "Craft and imported brews from around the world"
+    description: "Bière artisanale et importées du monde entier"
   },
   {
-    category: "Asian / Sushi",
+    category: "Cuisine Asiatique / Sushi",
     link: "/menu/asian-sushi",
     icon: <Utensils size={18} />,
-    description: "Traditional and contemporary Eastern delicacies"
+    description: "Délices orientaux traditionnels et contemporains"
   },
   {
-    category: "Starters",
+    category: "Entrées",
     link: "/menu/starters",
     icon: <Salad size={18} />,
-    description: "Small plates to begin your culinary journey"
+    description: "Petites assiettes pour commencer votre voyage culinaire"
   },
   {
-    category: "Fish & Meat",
+    category: "Poissons & Viandes",
     link: "/menu/fish-and-meat",
     icon: <Fish size={18} />,
-    description: "Premium seafood and finest cuts prepared to perfection"
+    description: "Fruits de mer premium et meilleurs morceaux préparés à la perfection"
   },
   {
-    category: "Pastas & Pizzas",
+    category: "Pâtes & Pizzas",
     link: "/menu/pastas-pizzas",
     icon: <Pizza size={18} />,
-    description: "Italian classics crafted with authentic techniques"
+    description: "Classiques italiens préparés avec des techniques authentiques"
   },
   {
     category: "Desserts",
     link: "/menu/desserts",
     icon: <Cake size={18} />,
-    description: "Sweet finales to complete your dining experience"
+    description: "Finales sucrées pour compléter votre expérience gastronomique"
   }
 ];
 
@@ -144,8 +144,8 @@ export default function MenuNavigation({ selectedCategory = null }: MenuNavigati
             style={{ color: '#81715E' }}
           >
             {selectedCategory 
-              ? `Discover our exquisite ${selectedCategory ? selectedCategory.toLowerCase() : ''} created with passion and precision` 
-              : 'Embark on a gastronomic journey through our thoughtfully curated offerings'}
+              ? `Une sélection raffinée de ${selectedCategory ? selectedCategory.toLowerCase() : ''} préparés avec maestria` 
+              : 'Parcourez nos créations culinaires minutieusement sélectionnées'}
           </motion.p>
           <motion.div
             initial={{ width: 0 }}

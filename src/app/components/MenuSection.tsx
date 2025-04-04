@@ -45,7 +45,7 @@ const menuCategories = [
     title: "Fish & Meat",
     image: "/fish-meat.jpg",
     description: "Pristine seafood and prime cuts, sourced with meticulous attention to quality and provenance.",
-    href: "/menu/fish-meat"
+    href: "/menu/fish-and-meat"
   },
   {
     title: "Pastas & Pizzas",
@@ -65,22 +65,22 @@ export default function MenuCategories() {
   return (
     <div id="menu" className="py-16 px-4 bg-[#F2EFEC]">
       <div className="container mx-auto">
-        <motion.h2 
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="font-optima text-4xl md:text-5xl font-light text-center mb-4"
-          style={{ color: '#81715E' }}
-        >
-          Culinary Landscape
-        </motion.h2>
+      <motion.h2 
+  initial={{ opacity: 0, y: -50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="font-optima text-4xl md:text-5xl font-light text-center mb-4"
+  style={{ color: '#81715E' }}
+>
+  Paysage Culinaire
+</motion.h2>
         <p 
-          className="text-sm mb-12 tracking-wide max-w-2xl mx-auto text-center"
-          style={{ color: '#81715E' }}
-        >
-          A curated journey through flavors, where each dish tells a story and every bite is an invitation to explore the artistry of our kitchen.
-        </p>
+  className="text-sm mb-12 tracking-wide max-w-2xl mx-auto text-center"
+  style={{ color: '#81715E' }}
+>
+  Un voyage culinaire où chaque plat raconte une histoire et chaque bouchée révèle l'art de notre cuisine.
+</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {menuCategories.map((category, index) => (

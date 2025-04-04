@@ -4,9 +4,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const DrinksHero = () => {
+const SushiHero = () => {
   const scrollToMenu = () => {
-    const menuSection = document.getElementById('menu-section');
+    const menuSection = document.getElementById('sushi-menu-section');
     if (menuSection) {
       menuSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -17,8 +17,8 @@ const DrinksHero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/soft-drinks.jpg" 
-          alt="Boissons Rafraîchissantes" 
+          src="/sushi.jpg"  // Replace with your sushi image path
+          alt="Sushi frais et délicieux" 
           fill 
           priority 
           className="object-cover object-center"
@@ -58,8 +58,8 @@ const DrinksHero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-serif text-5xl md:text-6xl font-light mb-6 text-stone-100 tracking-wide"
           >
-  L'Esprit <br/><span className="italic text-amber-200">Désaltérant</span>
-            </motion.h1>
+            Découvrez <br/><span className="italic text-amber-200">nos sushis</span>
+          </motion.h1>
           
           <motion.p
             initial={{ opacity: 0 }}
@@ -67,7 +67,7 @@ const DrinksHero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-stone-300 text-lg font-light leading-relaxed mb-10 max-w-md"
           >
-            Découvrez notre sélection de boissons premium, jus frais et rafraîchissements artisanaux conçus pour vous désaltérer.
+            Une sélection de sushis frais préparés avec des ingrédients premium et une touche de créativité.
           </motion.p>
           
           <motion.div
@@ -79,7 +79,7 @@ const DrinksHero = () => {
               onClick={scrollToMenu}
               className="px-8 py-3 border border-amber-300 text-amber-200 hover:bg-amber-900 hover:bg-opacity-20 transition-colors duration-300 text-sm tracking-widest uppercase"
             >
-              Voir la Carte
+              Voir le menu
             </button>
           </motion.div>
         </motion.div>
@@ -88,4 +88,4 @@ const DrinksHero = () => {
   );
 };
 
-export default DrinksHero;
+export default SushiHero;
