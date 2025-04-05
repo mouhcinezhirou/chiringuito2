@@ -35,7 +35,7 @@ const menuCategories: MenuCategory[] = [
   },
   {
     category: "Bières & Alcool",
-    link: "/menu/beers",
+    link: "/menu/beers-drinks",
     icon: <Beer size={18} />,
     description: "Bière artisanale et importées du monde entier"
   },
