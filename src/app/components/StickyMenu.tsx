@@ -20,7 +20,7 @@ const menuCategories = [
   },
   {
     category: "Bières & Alcool",
-    link: "/menu/beers",
+    link: "/menu/beers-drinks",
   },
   {
     category: "Asian / Sushi",

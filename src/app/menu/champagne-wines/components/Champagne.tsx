@@ -38,7 +38,7 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
   return (
     <motion.div 
       ref={itemRef}
-      className="border-b border-amber-100 pb-6 mb-6 cursor-pointer group"
+      className="border-b border-amber-100 pb-4 mb-4 cursor-pointer group"
       whileHover={{ x: 4 }}
       onClick={onExpand}
       initial={{ opacity: 0 }}
@@ -46,45 +46,38 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex justify-between items-baseline mb-3">
-        <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
-          style={{ color: '#81715E' }}
-        >
-          {name}
-        </h3>
-        <div className="text-right">
-          {bottlePrice && (
-            <span 
-              className="font-light text-base transition-all duration-300 group-hover:text-amber-800 ml-4"
-              style={{ color: '#81715E' }}
-            >
-              {bottlePrice}
-            </span>
-          )}
-          {price && (
-            <span 
-              className="font-light text-base transition-all duration-300 group-hover:text-amber-800"
-              style={{ color: '#81715E' }}
-            >
-              {price}
-            </span>
-          )}
+      {/* Single line layout for all screen sizes */}
+      <div className="grid grid-cols-12 items-center">
+        <div className="col-span-6 pr-2">
+          {/* Removed truncate class and added custom styling for text overflow */}
+          <h3 
+            className="font-serif italic text-sm sm:text-base md:text-lg transition-all duration-300 group-hover:text-amber-800"
+            style={{ 
+              color: '#81715E',
+              display: 'block',
+              whiteSpace: 'normal',
+              overflow: 'visible',
+              lineHeight: '1.4',
+              minHeight: '2.8em'
+            }}
+          >
+            {name}
+          </h3>
+        </div>
+        
+        <div className="col-span-2 text-right pr-1 sm:pr-2">
+          <span className="text-[#81715E] font-light text-xs">{bottlePrice || '—'}</span>
+        </div>
+        
+        <div className="col-span-2 text-right pr-1 sm:pr-2">
+          <span className="text-[#81715E] font-light text-xs">{halfBottlePrice || '—'}</span>
+        </div>
+        
+        <div className="col-span-2 text-right">
+          <span className="text-[#81715E] font-light text-xs">{glassPrice || '—'}</span>
         </div>
       </div>
-      <div className="flex justify-between text-neutral-600 text-sm font-light tracking-wide">
-        <div>
-          {description && <p>{description}</p>}
-        </div>
-        <div className="text-right">
-          {halfBottlePrice && (
-            <span className="ml-2">37,5cl: {halfBottlePrice}</span>
-          )}
-          {glassPrice && (
-            <span className="ml-2">Verre: {glassPrice}</span>
-          )}
-        </div>
-      </div>
+      
       <AnimatePresence>
         {isExpanded && description && (
           <motion.div
@@ -92,14 +85,15 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
             animate={{ opacity: 1, height: 'auto', marginTop: 12 }}
             exit={{ opacity: 0, height: 0, marginTop: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden"
+            className="overflow-hidden pl-4"
           >
             <p className="text-neutral-500 italic text-sm pl-4 border-l-2 border-amber-200">{description}</p>
           </motion.div>
         )}
       </AnimatePresence>
+      
       {description && (
-        <div className="mt-2 text-xs text-amber-700 opacity-70 flex items-center">
+        <div className="mt-2 text-xs text-amber-700 opacity-70 flex items-center pl-4">
           <span className="mr-1">{isExpanded ? 'Less' : 'Details'}</span>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -134,10 +128,10 @@ const WineMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-white bg-opacity-60 backdrop-blur-sm p-8 rounded-lg shadow-sm"
+      className="bg-white bg-opacity-60 backdrop-blur-sm p-4 md:p-8 rounded-lg shadow-sm"
     >
       <h2 
-        className="text-2xl font-serif tracking-wide mb-8 pb-3 border-b relative" 
+        className="text-xl md:text-2xl font-serif tracking-wide mb-6 pb-3 border-b relative" 
         style={{ color: '#81715E', borderColor: 'rgba(129, 113, 94, 0.2)' }}
       >
         <span className="relative z-10">{title}</span>
@@ -148,7 +142,31 @@ const WineMenuSection: React.FC<MenuSection> = ({ title, items }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
         />
       </h2>
-      <div className="space-y-2">
+      
+      {/* Header labels - same layout for all screen sizes */}
+      <div className="grid grid-cols-12 mb-4 pb-2 border-b border-amber-200 relative">
+        <div className="col-span-6"></div>
+        <div className="col-span-2 text-right pr-1 sm:pr-2">
+          <span className="text-xs font-medium text-amber-800">75cl</span>
+        </div>
+        <div className="col-span-2 text-right sm:pr-2">
+          <span className="text-xs font-medium text-amber-800">37,5cl</span>
+        </div>
+        <div className="col-span-2 text-right">
+          <span className="text-xs font-medium text-amber-800">Verre</span>
+        </div>
+        
+        {/* Yellow line under header columns */}
+        <motion.div 
+          className="absolute bottom-0 left-0 h-0.5 bg-amber-400" 
+          style={{ width: '100%' }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.4 }}
+        />
+      </div>
+      
+      <div>
         {items.map((item, index) => (
           <WineMenuItem
             key={index}
@@ -490,7 +508,7 @@ const WineMenu: React.FC = () => {
   return (
     <div 
       id="menu-section"
-      className="min-h-screen py-16 px-4" 
+      className="min-h-screen py-8 md:py-16 px-2 sm:px-4" 
       style={{ 
         backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/api/placeholder/1000/1000)', 
         backgroundAttachment: 'fixed',
@@ -499,7 +517,7 @@ const WineMenu: React.FC = () => {
       }}
     >
       <div className="container mx-auto max-w-4xl">
-        <header className="mb-16 text-center">
+        <header className="mb-8 md:mb-16 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -514,7 +532,7 @@ const WineMenu: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-serif text-5xl md:text-6xl font-light mb-6"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-light mb-6"
             style={{ color: '#81715E' }}
           >
             Vins & Champagnes
@@ -542,7 +560,7 @@ const WineMenu: React.FC = () => {
           </motion.p>
         </header>
 
-        <div className="space-y-12">
+        <div className="space-y-6 md:space-y-12">
           {menuSections.map((section, index) => (
             <WineMenuSection 
               key={index} 
@@ -552,7 +570,7 @@ const WineMenu: React.FC = () => {
           ))}
         </div>
         
-        <footer className="mt-16 text-center">
+        <footer className="mt-12 md:mt-16 text-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
