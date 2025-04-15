@@ -6,9 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface MenuItem {
   name: string;
   price: number;
-  description: string;
-  preparationTime?: string;
-  detailedDescription?: string;
+  ingredients: string;
+  description?: string;
 }
 
 interface MenuSection {
@@ -16,14 +15,13 @@ interface MenuSection {
   items: MenuItem[];
 }
 
-const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boolean }> = ({ 
+const DrinkMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boolean }> = ({ 
   name, 
   price, 
+  ingredients, 
   description,
-  preparationTime,
-  detailedDescription,
   onExpand,
-  isExpanded
+  isExpanded 
 }) => {
   const itemRef = useRef<HTMLDivElement>(null);
 
@@ -45,17 +43,12 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       transition={{ duration: 0.5 }}
     >
       <div className="flex justify-between items-baseline mb-3">
-        <div>
-          <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
-            style={{ color: '#81715E' }}
-          >
-            {name}
-          </h3>
-          {preparationTime && (
-            <span className="text-xs text-neutral-500 font-light">({preparationTime})</span>
-          )}
-        </div>
+        <h3 
+          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          style={{ color: '#81715E' }}
+        >
+          {name}
+        </h3>
         <span 
           className="font-light text-base transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
@@ -63,9 +56,9 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
           {price}
         </span>
       </div>
-      <p className="text-neutral-600 text-sm font-light tracking-wide">{description}</p>
+      <p className="text-neutral-600 text-sm font-light tracking-wide">{ingredients}</p>
       <AnimatePresence>
-        {isExpanded && detailedDescription && (
+        {isExpanded && description && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto', marginTop: 12 }}
@@ -73,13 +66,13 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <p className="text-neutral-500 italic text-sm pl-4 border-l-2 border-amber-200">{detailedDescription}</p>
+            <p className="text-neutral-500 italic text-sm pl-4 border-l-2 border-amber-200">{description}</p>
           </motion.div>
         )}
       </AnimatePresence>
-      {detailedDescription && (
+      {description && (
         <div className="mt-2 text-xs text-amber-700 opacity-70 flex items-center">
-          <span className="mr-1">{isExpanded ? 'Less' : 'Details'}</span>
+          <span className="mr-1">{isExpanded ? 'Menos' : 'Detalles'}</span>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="12" 
@@ -100,7 +93,7 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
   );
 };
 
-const DessertMenuSection: React.FC<MenuSection> = ({ title, items }) => {
+const DrinkMenuSection: React.FC<MenuSection> = ({ title, items }) => {
   const [expandedItem, setExpandedItem] = useState<number | null>(null);
 
   const handleExpand = (index: number) => {
@@ -113,7 +106,7 @@ const DessertMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-white bg-opacity-60 backdrop-blur-sm p-8 rounded-lg shadow-sm mb-12"
+      className="bg-white bg-opacity-60 backdrop-blur-sm p-8 rounded-lg shadow-sm"
     >
       <h2 
         className="text-2xl font-serif tracking-wide mb-8 pb-3 border-b relative" 
@@ -129,7 +122,7 @@ const DessertMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       </h2>
       <div className="space-y-2">
         {items.map((item, index) => (
-          <DessertMenuItem
+          <DrinkMenuItem
             key={index}
             {...item}
             onExpand={() => handleExpand(index)}
@@ -141,78 +134,63 @@ const DessertMenuSection: React.FC<MenuSection> = ({ title, items }) => {
   );
 };
 
-const DessertsMenu: React.FC = () => {
+const DrinkMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'DESSERTS',
+      title: 'AGUAS MINERALES',
       items: [
         {
-          name: 'Happiness Pineapple',
-          price: 130,
-          description: 'Sorbet ananas coco fait maison',
-          detailedDescription: 'Une symphonie tropicale où l\'ananas succulent rencontre la douceur crémeuse de la noix de coco, transportant vos papilles sous les palmiers d\'une plage paradisiaque.'
+          name: 'Aïn Saiss 75cl',
+          price: 50,
+          ingredients: 'Agua mineral natural',
+          description: 'Agua mineral natural refrescante de Marruecos'
         },
         {
-          name: 'Pain Perdu',
-          price: 80,
-          description: 'Caramel au beurre salé et glace à la vanille',
-          preparationTime: '10 min',
-          detailedDescription: 'Un souvenir d\'enfance réinventé avec du pain brioché doré et croustillant, nappé d\'un caramel onctueux qui danse avec les notes délicates de la vanille de Madagascar.'
+          name: 'Evian 75cl',
+          price: 90,
+          ingredients: 'Agua mineral premium',
+          description: 'Agua mineral pura de los Alpes franceses'
         },
         {
-          name: 'Pavlova aux fruits rouges',
-          price: 80,
-          description: 'Meringue craquante et fruits rouges de saison',
-          detailedDescription: 'Un nuage de légèreté croustillante couronné de baies éclatantes et d\'une touche de crème fouettée, comme un ballet de textures qui se révèle à chaque bouchée.'
+          name: 'Oulmès 75cl',
+          price: 50,
+          ingredients: 'Agua mineral con gas',
+          description: 'Agua mineral con gas marroquí clásica'
         },
         {
-          name: 'Fondant au chocolat',
-          price: 80,
-          description: 'Servi avec une glace à la vanille',
-          preparationTime: '10 min',
-          detailedDescription: 'Un cœur mystérieux de chocolat noir intense qui se dévoile dans un flot de chaleur voluptueuse, contrasté par la fraîcheur d\'une glace vanille artisanale.'
+          name: 'Evian con Gas 75cl',
+          price: 90,
+          ingredients: 'Agua mineral con gas natural',
+          description: 'Agua mineral naturalmente burbujeante de Evian'
+        }
+      ]
+    },
+    {
+      title: 'OTRAS BEBIDAS',
+      items: [
+        {
+          name: 'Refresco',
+          price: 50,
+          ingredients: 'Diferentes sabores disponibles',
+          description: 'Elección entre cola, limón-lima o naranja'
         },
         {
-          name: 'Tiramisú spéculoos',
-          price: 80,
-          description: 'Réinterprétation du classique italien',
-          detailedDescription: 'Une romance franco-italienne où la richesse du mascarpone rencontre les épices chaleureuses des spéculoos, créant une harmonie parfaite entre douceur et caractère.'
+          name: 'Zumo de Frutas Fresco',
+          price: 90,
+          ingredients: 'Frutas de temporada',
+          description: 'Preparado diariamente con frutas frescas'
         },
         {
-          name: 'Crème brûlée',
-          price: 70,
-          description: 'Crème onctueuse avec une croûte au caramel croquante',
-          detailedDescription: 'Un classique intemporel aux deux visages : le craquant exquis du caramel brûlé qui protège un trésor de vanille soyeux et délicat. Une valse de contradictions parfaites.'
+          name: 'Café Espresso',
+          price: 50,
+          ingredients: 'Granos de arábica',
+          description: 'Espresso rico y aromático'
         },
         {
-          name: 'Glaces / Sorbets',
-          price: 80,
-          description: 'Vanille ou citron',
-          detailedDescription: 'Des créations glacées aux saveurs pures et intenses, élaborées chaque jour dans notre cuisine avec des ingrédients soigneusement sélectionnés pour une expérience rafraîchissante.'
-        },
-        {
-          name: 'Fruits de saison',
-          price: 70,
-          description: 'Sélection de fruits frais',
-          detailedDescription: 'Une cueillette colorée des meilleurs fruits du marché, présentée dans sa simplicité naturelle pour célébrer les saveurs authentiques que la nature nous offre à chaque saison.'
-        },
-        {
-          name: 'Irish Coffee',
-          price: 80,
-          description: 'Whiskey, café et crème fouettée',
-          detailedDescription: 'Une douce ivresse où l\'amertume élégante du café embrasse la chaleur du whiskey irlandais, le tout délicatement adouci par un nuage de crème légèrement sucrée.'
-        },
-        {
-          name: 'Café gourmand',
-          price: 80,
-          description: 'Fondant au chocolat, crème brûlée et glace à la vanille',
-          detailedDescription: 'Une trilogie de plaisirs en miniature accompagnant notre café signature, offrant un voyage gustatif complet pour satisfaire toutes vos envies sucrées en une seule assiette.'
-        },
-        {
-          name: 'Colonel',
-          price: 120,
-          description: 'Vodka, sorbet au citron',
-          detailedDescription: 'Un entracte glacé et alcoolisé où la morsure vive du citron s\'entrelace avec la chaleur discrète de la vodka, créant un moment de fraîcheur sophistiquée et revigorante.'
+          name: 'Té de Menta',
+          price: 50,
+          ingredients: 'Té marroquí tradicional',
+          description: 'Té de menta refrescante preparado a la manera tradicional'
         }
       ]
     }
@@ -220,10 +198,10 @@ const DessertsMenu: React.FC = () => {
 
   return (
     <div 
-      id="desserts-menu-section"
+      id="menu-section"
       className="min-h-screen py-16 px-4" 
       style={{ 
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92))', 
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/api/placeholder/1000/1000)', 
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundSize: 'cover'
@@ -248,7 +226,7 @@ const DessertsMenu: React.FC = () => {
             className="font-serif text-5xl md:text-6xl font-light mb-6"
             style={{ color: '#81715E' }}
           >
-            Desserts
+            Bebidas
           </motion.h1>
           
           <motion.p
@@ -258,7 +236,7 @@ const DessertsMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Douceurs et plaisirs sucrés
+            Refrescantes y deliciosas
           </motion.p>
 
           <motion.p 
@@ -268,14 +246,14 @@ const DessertsMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            Une charge de service de 6% sera ajoutée à votre facture.
-            <br/>L'établissement n'accepte que les chèques certifiés.
+            Se añadirá un servicio del 6% a su cuenta.
+            <br/>El establecimiento solo acepta cheques certificados.
           </motion.p>
         </header>
 
-        <div className="space-y-4">
+        <div className="space-y-12">
           {menuSections.map((section, index) => (
-            <DessertMenuSection 
+            <DrinkMenuSection 
               key={index} 
               title={section.title} 
               items={section.items} 
@@ -293,7 +271,7 @@ const DessertsMenu: React.FC = () => {
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
-              Bonne dégustation
+              Buen provecho
             </p>
           </motion.div>
         </footer>
@@ -302,4 +280,4 @@ const DessertsMenu: React.FC = () => {
   );
 };
 
-export default DessertsMenu;
+export default DrinkMenu;

@@ -149,70 +149,70 @@ const DessertsMenu: React.FC = () => {
         {
           name: 'Happiness Pineapple',
           price: 130,
-          description: 'Sorbet ananas coco fait maison',
-          detailedDescription: 'Une symphonie tropicale où l\'ananas succulent rencontre la douceur crémeuse de la noix de coco, transportant vos papilles sous les palmiers d\'une plage paradisiaque.'
+          description: 'Homemade coconut pineapple sorbet',
+          detailedDescription: 'A tropical symphony where the succulent pineapple meets the creamy sweetness of coconut, transporting your taste buds under the palms of a paradise beach.'
         },
         {
           name: 'Pain Perdu',
           price: 80,
-          description: 'Caramel au beurre salé et glace à la vanille',
+          description: 'Salted butter caramel and vanilla ice cream',
           preparationTime: '10 min',
-          detailedDescription: 'Un souvenir d\'enfance réinventé avec du pain brioché doré et croustillant, nappé d\'un caramel onctueux qui danse avec les notes délicates de la vanille de Madagascar.'
+          detailedDescription: 'A reinvented childhood memory with golden, crispy brioche bread, topped with a smooth caramel that dances with the delicate notes of Madagascar vanilla.'
         },
         {
-          name: 'Pavlova aux fruits rouges',
+          name: 'Pavlova with red fruits',
           price: 80,
-          description: 'Meringue craquante et fruits rouges de saison',
-          detailedDescription: 'Un nuage de légèreté croustillante couronné de baies éclatantes et d\'une touche de crème fouettée, comme un ballet de textures qui se révèle à chaque bouchée.'
+          description: 'Crispy meringue and seasonal red fruits',
+          detailedDescription: 'A cloud of crispy lightness crowned with bright berries and a touch of whipped cream, like a ballet of textures revealed with every bite.'
         },
         {
-          name: 'Fondant au chocolat',
+          name: 'Chocolate fondant',
           price: 80,
-          description: 'Servi avec une glace à la vanille',
+          description: 'Served with vanilla ice cream',
           preparationTime: '10 min',
-          detailedDescription: 'Un cœur mystérieux de chocolat noir intense qui se dévoile dans un flot de chaleur voluptueuse, contrasté par la fraîcheur d\'une glace vanille artisanale.'
+          detailedDescription: 'A mysterious heart of intense dark chocolate that reveals itself in a flow of voluptuous heat, contrasted by the freshness of artisanal vanilla ice cream.'
         },
         {
-          name: 'Tiramisú spéculoos',
+          name: 'Speculoos tiramisu',
           price: 80,
-          description: 'Réinterprétation du classique italien',
-          detailedDescription: 'Une romance franco-italienne où la richesse du mascarpone rencontre les épices chaleureuses des spéculoos, créant une harmonie parfaite entre douceur et caractère.'
+          description: 'Reinterpretation of the classic Italian dessert',
+          detailedDescription: 'A Franco-Italian romance where the richness of mascarpone meets the warm spices of speculoos, creating a perfect harmony between sweetness and character.'
         },
         {
           name: 'Crème brûlée',
           price: 70,
-          description: 'Crème onctueuse avec une croûte au caramel croquante',
-          detailedDescription: 'Un classique intemporel aux deux visages : le craquant exquis du caramel brûlé qui protège un trésor de vanille soyeux et délicat. Une valse de contradictions parfaites.'
+          description: 'Creamy custard with a crunchy caramel crust',
+          detailedDescription: 'A timeless classic with two faces: the exquisite crunch of burnt caramel that protects a silky, delicate vanilla treasure. A waltz of perfect contradictions.'
         },
         {
-          name: 'Glaces / Sorbets',
+          name: 'Ice cream / Sorbet',
           price: 80,
-          description: 'Vanille ou citron',
-          detailedDescription: 'Des créations glacées aux saveurs pures et intenses, élaborées chaque jour dans notre cuisine avec des ingrédients soigneusement sélectionnés pour une expérience rafraîchissante.'
+          description: 'Vanilla or lemon',
+          detailedDescription: 'Frozen creations with pure, intense flavors, made fresh every day in our kitchen using carefully selected ingredients for a refreshing experience.'
         },
         {
-          name: 'Fruits de saison',
+          name: 'Seasonal fruits',
           price: 70,
-          description: 'Sélection de fruits frais',
-          detailedDescription: 'Une cueillette colorée des meilleurs fruits du marché, présentée dans sa simplicité naturelle pour célébrer les saveurs authentiques que la nature nous offre à chaque saison.'
+          description: 'Fresh fruit selection',
+          detailedDescription: 'A colorful harvest of the best market fruits, presented in its natural simplicity to celebrate the authentic flavors nature offers us every season.'
         },
         {
           name: 'Irish Coffee',
           price: 80,
-          description: 'Whiskey, café et crème fouettée',
-          detailedDescription: 'Une douce ivresse où l\'amertume élégante du café embrasse la chaleur du whiskey irlandais, le tout délicatement adouci par un nuage de crème légèrement sucrée.'
+          description: 'Whiskey, coffee, and whipped cream',
+          detailedDescription: 'A gentle intoxication where the elegant bitterness of coffee embraces the warmth of Irish whiskey, all delicately softened by a cloud of slightly sweet cream.'
         },
         {
-          name: 'Café gourmand',
+          name: 'Gourmet coffee',
           price: 80,
-          description: 'Fondant au chocolat, crème brûlée et glace à la vanille',
-          detailedDescription: 'Une trilogie de plaisirs en miniature accompagnant notre café signature, offrant un voyage gustatif complet pour satisfaire toutes vos envies sucrées en une seule assiette.'
+          description: 'Chocolate fondant, crème brûlée, and vanilla ice cream',
+          detailedDescription: 'A trilogy of miniature pleasures accompanying our signature coffee, offering a full taste journey to satisfy all your sweet cravings in one plate.'
         },
         {
           name: 'Colonel',
           price: 120,
-          description: 'Vodka, sorbet au citron',
-          detailedDescription: 'Un entracte glacé et alcoolisé où la morsure vive du citron s\'entrelace avec la chaleur discrète de la vodka, créant un moment de fraîcheur sophistiquée et revigorante.'
+          description: 'Vodka, lemon sorbet',
+          detailedDescription: 'A frozen and alcoholic interlude where the sharp bite of lemon intertwines with the subtle heat of vodka, creating a moment of sophisticated and refreshing coolness.'
         }
       ]
     }
@@ -258,7 +258,7 @@ const DessertsMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Douceurs et plaisirs sucrés
+            Sweets and sugary pleasures
           </motion.p>
 
           <motion.p 
@@ -268,8 +268,8 @@ const DessertsMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            Une charge de service de 6% sera ajoutée à votre facture.
-            <br/>L'établissement n'accepte que les chèques certifiés.
+            A 6% service charge will be added to your bill.
+            <br/>The establishment only accepts certified checks.
           </motion.p>
         </header>
 
@@ -293,7 +293,7 @@ const DessertsMenu: React.FC = () => {
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
-              Bonne dégustation
+              Enjoy your meal
             </p>
           </motion.div>
         </footer>

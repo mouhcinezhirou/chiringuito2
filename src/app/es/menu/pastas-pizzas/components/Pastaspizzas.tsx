@@ -72,7 +72,7 @@ const PizzaPastaMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded
       </AnimatePresence>
       {description && (
         <div className="mt-2 text-xs text-amber-700 opacity-70 flex items-center">
-          <span className="mr-1">{isExpanded ? 'Less' : 'Details'}</span>
+          <span className="mr-1">{isExpanded ? 'Menos' : 'Detalles'}</span>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="12" 
@@ -140,99 +140,99 @@ const PizzaPastaMenu: React.FC = () => {
       title: 'PIZZAS',
       items: [
         {
-          name: 'Pizza végétarienne',
+          name: 'Pizza vegetariana',
           price: 140,
-          ingredients: 'Légumes de saison, sauce tomate et fromage',
-          description: 'Une symphonie colorée de légumes frais sur une base de sauce tomate maison. Chaque bouchée évoque un jardin méditerranéen en plein été avec des saveurs fraîches et équilibrées.'
+          ingredients: 'Verduras de temporada, salsa de tomate y queso',
+          description: 'Una sinfonía colorida de verduras frescas sobre una base de salsa de tomate casera. Cada bocado evoca un jardín mediterráneo en pleno verano con sabores frescos y equilibrados.'
         },
         {
           name: 'Pizza margherita',
           price: 120,
-          ingredients: 'Fromage avec sauce tomate',
-          description: 'L\'élégance dans sa forme la plus pure - notre interprétation du classique napolitain avec une sauce tomate aromatisée au basilic frais et une mozzarella fondante sur une pâte fine et croustillante.'
+          ingredients: 'Queso con salsa de tomate',
+          description: 'La elegancia en su forma más pura - nuestra interpretación del clásico napolitano con una salsa de tomate aromatizada con albahaca fresca y una mozzarella fundente sobre una masa fina y crujiente.'
         },
         {
-          name: 'Pizza fromage de chèvre et roquettes',
+          name: 'Pizza de queso de cabra y rúcula',
           price: 140,
-          ingredients: 'Fromage de chèvre, feuilles de roquettes et petites tomates confites',
-          description: 'Un contraste parfait entre le crémeux du chèvre, la fraîcheur poivrée de la roquette et la douceur des tomates confites. Une création qui célèbre la simplicité raffinée de la cuisine méditerranéenne.'
+          ingredients: 'Queso de cabra, hojas de rúcula y pequeños tomates confitados',
+          description: 'Un contraste perfecto entre la cremosidad del queso de cabra, la frescura picante de la rúcula y la dulzura de los tomates confitados. Una creación que celebra la simplicidad refinada de la cocina mediterránea.'
         },
         {
-          name: 'Pizza sicilienne de thon',
+          name: 'Pizza siciliana de atún',
           price: 150,
-          ingredients: 'Thon, oignons, anchois, câpres, tomates et olives noires',
-          description: 'Un voyage vers la Sicile ensoleillée où le thon savoureux rencontre les accents salés des anchois et des câpres, équilibré par la douceur des oignons et la profondeur des olives noires.'
+          ingredients: 'Atún, cebollas, anchoas, alcaparras, tomates y aceitunas negras',
+          description: 'Un viaje hacia la soleada Sicilia donde el sabroso atún se encuentra con los acentos salados de las anchoas y alcaparras, equilibrado por la dulzura de las cebollas y la profundidad de las aceitunas negras.'
         },
         {
-          name: 'Pizza fruits de mer',
+          name: 'Pizza de mariscos',
           price: 180,
-          ingredients: 'Fruits de mer, sauce tomate et fromage',
-          description: 'La Méditerranée dans chaque bouchée avec un mélange généreux de trésors marins sur notre sauce tomate parfumée. Une légère couche de fromage complète sans dominer les saveurs océaniques.'
+          ingredients: 'Mariscos, salsa de tomate y queso',
+          description: 'El Mediterráneo en cada bocado con una mezcla generosa de tesoros marinos sobre nuestra salsa de tomate perfumada. Una ligera capa de queso complementa sin dominar los sabores oceánicos.'
         },
         {
-          name: 'Pizza bolognaise',
+          name: 'Pizza boloñesa',
           price: 160,
-          ingredients: 'Viande hachée avec sauce bolognaise',
-          description: 'Notre hommage à l\'Émilie-Romagne avec une sauce bolognaise mijotée lentement selon la recette traditionnelle. Riche en viande et en herbes aromatiques pour une expérience réconfortante.'
+          ingredients: 'Carne picada con salsa boloñesa',
+          description: 'Nuestro homenaje a la Emilia-Romaña con una salsa boloñesa cocinada a fuego lento según la receta tradicional. Rica en carne y hierbas aromáticas para una experiencia reconfortante.'
         },
         {
           name: 'Pizza carbonara',
           price: 140,
-          ingredients: 'Bacon de dinde "halal", sauce blanche et fromage',
-          description: 'Une réinterprétation du classique romain sur une base croustillante. Notre sauce blanche onctueuse enrobe des morceaux dorés de bacon de dinde halal, sublimée par notre mélange de fromages italiens.'
+          ingredients: 'Bacon de pavo "halal", salsa blanca y queso',
+          description: 'Una reinterpretación del clásico romano sobre una base crujiente. Nuestra cremosa salsa blanca envuelve trozos dorados de bacon de pavo halal, sublimada por nuestra mezcla de quesos italianos.'
         },
         {
           name: 'Calzone pepperoni',
           price: 160,
-          ingredients: 'Pepperoni italien halal, champignons, mozzarelle, olives noirs',
-          description: 'Notre croissant de pâte doré renferme un trésor de saveurs où le pepperoni italien halal rencontre les champignons terreux et la mozzarella fondante, relevés par des olives noires parfumées.'
+          ingredients: 'Pepperoni italiano halal, champiñones, mozzarella, aceitunas negras',
+          description: 'Nuestro dorado croissant de masa encierra un tesoro de sabores donde el pepperoni italiano halal se encuentra con los champiñones terrosos y la mozzarella fundente, realzados por aromáticas aceitunas negras.'
         }
       ]
     },
     {
-      title: 'PÂTES',
+      title: 'PASTAS',
       items: [
         {
-          name: 'Linguine au saumon',
+          name: 'Linguine con salmón',
           price: 180,
-          ingredients: 'Duo de saumon avec une sauce rosé',
-          description: 'Un duo de saumon frais et fumé enlace des linguine al dente dans une sauce rosée veloutée. Chaque bouchée transporte entre mer et montagne pour une expérience raffinée et réconfortante.'
+          ingredients: 'Dúo de salmón con una salsa rosada',
+          description: 'Un dúo de salmón fresco y ahumado abraza unos linguine al dente en una aterciopelada salsa rosada. Cada bocado transporta entre mar y montaña para una experiencia refinada y reconfortante.'
         },
         {
-          name: 'Linguine aux gambas',
+          name: 'Linguine con gambas',
           price: 180,
-          ingredients: 'Avec une sauce tomate épicée',
-          description: 'Des gambas sauvages saisies à la perfection sur un nid de linguine enrobées d\'une sauce tomate relevée. Les notes épicées dansent avec la douceur des crustacés pour un plat mémorable.'
+          ingredients: 'Con una salsa de tomate picante',
+          description: 'Gambas salvajes selladas a la perfección sobre un nido de linguine envueltos en una salsa de tomate especiada. Las notas picantes bailan con la dulzura de los crustáceos para un plato memorable.'
         },
         {
           name: 'Penne arrabbiata',
           price: 120,
-          ingredients: 'Pâtes avec une sauce tomate pimentée et du basilic',
-          description: 'La passion italienne dans chaque bouchée - nos penne capturent parfaitement la sauce tomate ardente, ponctuée de piment et adoucie par des feuilles de basilic frais pour un équilibre harmonieux.'
+          ingredients: 'Pasta con una salsa de tomate picante y albahaca',
+          description: 'La pasión italiana en cada bocado - nuestros penne capturan perfectamente la ardiente salsa de tomate, puntuada de picante y suavizada por hojas de albahaca fresca para un equilibrio armonioso.'
         },
         {
-          name: 'Spaghetti à la marinera (fruits de mer)',
+          name: 'Espaguetis a la marinera (mariscos)',
           price: 320,
-          ingredients: 'Palourdes, fruits de mer et crevettes sauvages',
-          description: 'Une célébration des trésors de la mer où palourdes fraîches, fruits de mer délicats et crevettes sauvages se rencontrent dans une sauce légère parfumée à l\'ail et au persil.'
+          ingredients: 'Almejas, mariscos y gambas salvajes',
+          description: 'Una celebración de los tesoros del mar donde almejas frescas, delicados mariscos y gambas salvajes se encuentran en una ligera salsa perfumada con ajo y perejil.'
         },
         {
-          name: 'Spaghetti alle vongole',
+          name: 'Espaguetis alle vongole',
           price: 190,
-          ingredients: 'Palourdes et tomates fraîches',
-          description: 'L\'élégance marine à l\'état pur - des palourdes fraîches libèrent leur jus savoureux qui se mêle aux tomates et à l\'huile d\'olive pour une symphonie de saveurs maritimes.'
+          ingredients: 'Almejas y tomates frescos',
+          description: 'La elegancia marina en estado puro - almejas frescas liberan su jugo sabroso que se mezcla con los tomates y el aceite de oliva para una sinfonía de sabores marítimos.'
         },
         {
-          name: 'Spaghetti carbonara',
+          name: 'Espaguetis carbonara',
           price: 140,
-          ingredients: 'Bacon de dinde halal avec sauce blanche',
-          description: 'Notre interprétation du classique romain - des spaghetti al dente enrobés d\'une sauce crémeuse aux œufs, parsemés de bacon de dinde halal croustillant et d\'une généreuse touche de poivre noir.'
+          ingredients: 'Bacon de pavo halal con salsa blanca',
+          description: 'Nuestra interpretación del clásico romano - espaguetis al dente envueltos en una salsa cremosa de huevos, espolvoreados con crujiente bacon de pavo halal y un generoso toque de pimienta negra.'
         },
         {
-          name: 'Tagliatelles au poulet et champignons',
+          name: 'Tagliatelle con pollo y champiñones',
           price: 160,
-          ingredients: 'Poulet, champignons, sauce blanche parfumée au truffe',
-          description: 'Des rubans de pâtes fraîches enlacent des morceaux de poulet juteux et des champignons, le tout enveloppé d\'une sauce délicatement infusée à la truffe. Un équilibre parfait entre rusticité et raffinement.'
+          ingredients: 'Pollo, champiñones, salsa blanca perfumada con trufa',
+          description: 'Cintas de pasta fresca entrelazan jugosos trozos de pollo y champiñones, todo envuelto en una salsa delicadamente infusionada con trufa. Un equilibrio perfecto entre rusticidad y refinamiento.'
         }
       ]
     }
@@ -268,7 +268,7 @@ const PizzaPastaMenu: React.FC = () => {
             className="font-serif text-5xl md:text-6xl font-light mb-6"
             style={{ color: '#81715E' }}
           >
-            Pizzas & Pâtes
+            Pizzas & Pastas
           </motion.h1>
           
           <motion.p
@@ -278,7 +278,7 @@ const PizzaPastaMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Authenticité et saveurs
+            Autenticidad y sabores
           </motion.p>
 
           <motion.p 
@@ -288,8 +288,8 @@ const PizzaPastaMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            Une charge de service de 6% sera ajoutée à votre facture.
-            <br/>L'établissement n'accepte que les chèques certifiés.
+            Se añadirá un cargo por servicio del 6% a su factura.
+            <br/>El establecimiento solo acepta cheques certificados.
           </motion.p>
         </header>
 
@@ -313,7 +313,7 @@ const PizzaPastaMenu: React.FC = () => {
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
-              Bon appétit
+              Buen provecho
             </p>
           </motion.div>
         </footer>

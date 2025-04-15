@@ -146,119 +146,119 @@ const FoodMenuSection: React.FC<MenuSection> = ({ title, items, subtitle }) => {
 const FishMeatMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'POISSONS',
-      subtitle: 'Servis avec accompagnement au choix',
+      title: 'FISH',
+      subtitle: 'Served with side dish of your choice',
       items: [
         {
-          name: 'Tagra (tagine) de poisson "spécialité maison"',
+          name: 'Fish Tagra (tagine) "house specialty"',
           price: 340,
-          description: 'Notre tagine signature cuit lentement dans sa terrine traditionnelle, où le poisson frais du jour est mijoté avec des tomates, des poivrons colorés, des olives et des épices marocaines aromatiques, créant un plat authentique riche en saveurs méditerranéennes et nord-africaines.'
+          description: 'Our signature tagine slowly cooked in its traditional terrine, where fresh fish of the day is simmered with tomatoes, colorful peppers, olives, and aromatic Moroccan spices, creating an authentic dish rich in Mediterranean and North African flavors.'
         },
         {
-          name: 'Tagra (tagine) de crevettes royale',
+          name: 'Royal Shrimp Tagra (tagine)',
           price: 800,
-          description: 'Un festin luxueux de crevettes royales préparées dans notre tagine maison, mijotées délicatement avec un mélange de safran, d\'ail, de gingembre frais, de coriandre et d\'un soupçon de piment doux. Servi bouillonnant dans sa terrine traditionnelle.'
+          description: 'A luxurious feast of king prawns prepared in our house tagine, gently simmered with a blend of saffron, garlic, fresh ginger, coriander, and a hint of mild chili. Served bubbling in its traditional terrine.'
         },
         {
-          name: 'Saumon grillé',
+          name: 'Grilled Salmon',
           price: 340,
-          description: 'Filet de saumon premium grillé à la perfection avec une croûte dorée et un intérieur tendre et juteux. Assaisonné simplement d\'herbes fraîches, d\'un filet d\'huile d\'olive et de zeste de citron pour mettre en valeur sa saveur naturelle et délicate.'
+          description: 'Premium salmon fillet grilled to perfection with a golden crust and tender, juicy interior. Simply seasoned with fresh herbs, a drizzle of olive oil, and lemon zest to highlight its natural and delicate flavor.'
         },
         {
-          name: 'Espadon grillé',
+          name: 'Grilled Swordfish',
           price: 260,
-          description: 'Steak d\'espadon charnu grillé à la perfection, offrant une texture ferme et une saveur riche mais délicate. Légèrement mariné avec des herbes méditerranéennes, de l\'huile d\'olive et du citron pour rehausser sa fraîcheur marine naturelle.'
+          description: 'Meaty swordfish steak grilled to perfection, offering a firm texture and rich yet delicate flavor. Lightly marinated with Mediterranean herbs, olive oil, and lemon to enhance its natural marine freshness.'
         },
         {
           name: 'Sole "meunière"',
           price: 280,
-          description: 'Un classique français préparé avec finesse - filet de sole délicatement poêlé dans un beurre noisette, parfumé à l\'ail et au persil, créant une croûte dorée qui contraste parfaitement avec la chair blanche et tendre du poisson. Accompagné d\'un quartier de citron frais.'
+          description: 'A French classic prepared with finesse - sole fillet delicately pan-fried in brown butter, flavored with garlic and parsley, creating a golden crust that perfectly contrasts with the white tender flesh of the fish. Served with a wedge of fresh lemon.'
         },
         {
-          name: 'Loup grillé',
+          name: 'Grilled Sea Bass',
           price: 280,
-          description: 'Bar méditerranéen (loup de mer) grillé entier ou en filet selon disponibilité, avec une peau croustillante et une chair blanche délicate. Préparé simplement avec huile d\'olive, herbes fraîches et sel de mer pour préserver sa saveur naturelle exceptionnelle.'
+          description: 'Mediterranean sea bass grilled whole or as a fillet depending on availability, with crispy skin and delicate white flesh. Simply prepared with olive oil, fresh herbs, and sea salt to preserve its exceptional natural flavor.'
         },
         {
-          name: 'Saint-Pierre grillé',
+          name: 'Grilled John Dory',
           price: 290,
-          description: 'Ce poisson noble à la chair fine est grillé délicatement pour préserver sa texture délicate et sa saveur subtile. Son goût délicat est rehaussé par un simple assaisonnement d\'herbes fraîches, d\'huile d\'olive extra vierge et d\'une touche de fleur de sel.'
+          description: 'This noble fish with fine flesh is delicately grilled to preserve its delicate texture and subtle flavor. Its delicate taste is enhanced by a simple seasoning of fresh herbs, extra virgin olive oil, and a touch of fleur de sel.'
         },
         {
-          name: 'Langoustines grillées',
+          name: 'Grilled Langoustines',
           price: 600,
-          description: 'Langoustines fraîches grillées à la perfection, révélant leur chair douce et sucrée. Servies dans leur carapace avec un beurre à l\'ail et aux herbes fait maison qui fond délicatement sur ces crustacés délicats et aromatiques.'
+          description: 'Fresh langoustines grilled to perfection, revealing their sweet and tender meat. Served in their shell with homemade garlic and herb butter that delicately melts over these delicate and aromatic crustaceans.'
         },
         {
-          name: 'Crevettes Royales grillées',
+          name: 'Grilled King Prawns',
           price: 800,
-          description: 'Somptueuses crevettes royales de calibre exceptionnel, grillées délicatement pour préserver leur texture ferme et leur goût naturellement sucré. Servies avec une touche d\'huile d\'olive infusée au citron et aux herbes de Provence fraîches.'
+          description: 'Sumptuous king prawns of exceptional caliber, delicately grilled to preserve their firm texture and naturally sweet taste. Served with a touch of lemon-infused olive oil and fresh herbs of Provence.'
         }
       ]
     },
     {
-      title: 'VIANDES',
-      subtitle: 'Servies avec accompagnement au choix',
+      title: 'MEATS',
+      subtitle: 'Served with side dish of your choice',
       items: [
         {
-          name: 'Tagliata de boeuf (filet de boeuf)',
+          name: 'Beef Tagliata (beef tenderloin)',
           price: 380,
-          description: 'Filet de bœuf tendre tranché finement après cuisson parfaite, servi légèrement rosé et garni de copeaux de parmesan, roquette fraîche et un filet d\'huile d\'olive extra vierge parfumée à la truffe. Un plat d\'inspiration italienne qui met en valeur la qualité exceptionnelle de notre viande.'
+          description: 'Tender beef tenderloin thinly sliced after perfect cooking, served slightly pink and garnished with parmesan shavings, fresh arugula, and a drizzle of truffle-scented extra virgin olive oil. An Italian-inspired dish that highlights the exceptional quality of our meat.'
         },
         {
-          name: 'Filet de boeuf sauté à l\'ail',
+          name: 'Beef Tenderloin Sautéed with Garlic',
           price: 340,
-          description: 'Morceaux tendres de filet de bœuf sautés à feu vif avec de l\'ail frais écrasé, créant un contraste parfait entre l\'extérieur caramélisé et l\'intérieur juteux et tendre. Une préparation simple qui célèbre la qualité de notre viande sélectionnée avec soin.'
+          description: 'Tender pieces of beef tenderloin sautéed over high heat with crushed fresh garlic, creating a perfect contrast between the caramelized exterior and juicy, tender interior. A simple preparation that celebrates the quality of our carefully selected meat.'
         },
         {
-          name: 'Chich taouk',
+          name: 'Shish Taouk',
           price: 220,
-          description: 'Brochettes de poulet mariné dans un mélange traditionnel libanais de yaourt, d\'ail, de citron et d\'épices comme le sumac et le zaatar. Grillées jusqu\'à obtenir une parfaite tendreté avec une légère caramélisation, et servies avec notre sauce aïoli maison aux herbes fraîches.'
+          description: 'Chicken skewers marinated in a traditional Lebanese blend of yogurt, garlic, lemon, and spices like sumac and zaatar. Grilled until perfectly tender with light caramelization, and served with our homemade herb aioli sauce.'
         },
         {
-          name: 'Entrecôte de Paris',
+          name: 'Rib Eye Steak',
           price: 320,
-          description: 'Entrecôte maturée de première qualité, grillée selon votre préférence et servie avec notre sauce maison au poivre noir concassé, échalotes et cognac. La marbrure parfaite de cette coupe offre une tendreté et une saveur incomparables.'
+          description: 'Top-quality aged ribeye, grilled to your preference and served with our house sauce of crushed black pepper, shallots, and cognac. The perfect marbling of this cut offers incomparable tenderness and flavor.'
         },
         {
-          name: 'Hamburger (100% fait maison)',
+          name: 'Hamburger (100% homemade)',
           price: 140,
-          description: 'Notre burger signature élaboré avec un steak de bœuf haché à la main, grillé à la perfection et garni de fromage cheddar fondu, d\'oignons lentement caramélisés et de notre sauce secrète légèrement fumée. Le tout servi dans un pain brioché artisanal doré au beurre.'
+          description: 'Our signature burger made with hand-ground beef steak, grilled to perfection and topped with melted cheddar cheese, slowly caramelized onions, and our slightly smoked secret sauce. All served in a butter-toasted artisanal brioche bun.'
         },
         {
-          name: 'Mini hamburger au boeuf',
+          name: 'Mini Beef Hamburger',
           price: 140,
-          description: 'Trio de délicieux mini burgers préparés avec le même soin que notre version classique. Chaque bouchée offre un équilibre parfait entre le bœuf juteux, le cheddar fondant et notre sauce maison crémeuse, le tout dans un petit pain brioché moelleux. Idéal pour partager ou comme entrée généreuse.'
+          description: 'Trio of delicious mini burgers prepared with the same care as our classic version. Each bite offers a perfect balance between juicy beef, melting cheddar, and our creamy homemade sauce, all in a soft mini brioche bun. Ideal for sharing or as a generous appetizer.'
         }
       ]
     },
     {
-      title: 'ACCOMPAGNEMENTS',
+      title: 'SIDE DISHES',
       items: [
         {
-          name: 'Légumes sautés',
+          name: 'Sautéed Vegetables',
           price: 60,
-          description: 'Un mélange coloré de légumes de saison finement coupés et sautés rapidement à l\'huile d\'olive avec une touche d\'ail et d\'herbes fraîches. La cuisson préserve leur croquant et leurs saveurs naturelles pour un accompagnement à la fois sain et délicieux.'
+          description: 'A colorful mix of seasonal vegetables finely cut and quickly sautéed in olive oil with a touch of garlic and fresh herbs. The cooking preserves their crunch and natural flavors for a side dish that is both healthy and delicious.'
         },
         {
-          name: 'Purée de pommes de terre',
+          name: 'Mashed Potatoes',
           price: 60,
-          description: 'Purée onctueuse préparée à partir de pommes de terre à chair farineuse, écrasées avec du beurre de baratte et de la crème fraîche. Sa texture veloutée et sa richesse en font le complément parfait pour nos poissons et viandes.'
+          description: 'Creamy purée prepared from floury potatoes, mashed with churned butter and fresh cream. Its velvety texture and richness make it the perfect complement to our fish and meat dishes.'
         },
         {
-          name: 'Pommes de terre sautées',
+          name: 'Sautéed Potatoes',
           price: 60,
-          description: 'Pommes de terre nouvelles coupées en quartiers et sautées lentement jusqu\'à obtenir un extérieur doré et croustillant avec un intérieur tendre. Parfumées au thym frais et à l\'ail, elles sont l\'accompagnement idéal pour rehausser nos plats principaux.'
+          description: 'New potatoes cut into quarters and slowly sautéed until golden and crispy on the outside with a tender interior. Flavored with fresh thyme and garlic, they are the ideal accompaniment to enhance our main dishes.'
         },
         {
-          name: 'Pommes frites',
+          name: 'French Fries',
           price: 60,
-          description: 'Frites croustillantes préparées dans notre cuisine selon la méthode traditionnelle: coupées à la main, cuites deux fois pour obtenir un extérieur parfaitement doré et un intérieur moelleux, et assaisonnées d\'une pincée de fleur de sel.'
+          description: 'Crispy fries prepared in our kitchen according to the traditional method: hand-cut, cooked twice to obtain a perfectly golden exterior and a soft interior, and seasoned with a pinch of fleur de sel.'
         },
         {
-          name: 'Salade verte',
+          name: 'Green Salad',
           price: 60,
-          description: 'Mélange frais de jeunes pousses et de feuilles croquantes, légèrement assaisonnées d\'une vinaigrette maison à base d\'huile d\'olive extra vierge et de vinaigre balsamique âgé. L\'option parfaite pour un accompagnement léger et rafraîchissant.'
+          description: 'Fresh mix of young shoots and crisp leaves, lightly dressed with a homemade vinaigrette made from extra virgin olive oil and aged balsamic vinegar. The perfect option for a light and refreshing side dish.'
         }
       ]
     }
@@ -294,7 +294,7 @@ const FishMeatMenu: React.FC = () => {
             className="font-serif text-5xl md:text-6xl font-light mb-6"
             style={{ color: '#81715E' }}
           >
-            Poissons & Viandes
+            Fish & Meats
           </motion.h1>
           
           <motion.p
@@ -304,7 +304,7 @@ const FishMeatMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Fraîcheur et qualité
+            Freshness and quality
           </motion.p>
 
           <motion.p 
@@ -314,8 +314,8 @@ const FishMeatMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            Une charge de service de 6% sera ajoutée à votre facture.
-            <br/>L'établissement n'accepte que les chèques certifiés.
+            A service charge of 6% will be added to your bill.
+            <br/>The establishment only accepts certified checks.
           </motion.p>
         </header>
 
@@ -340,7 +340,7 @@ const FishMeatMenu: React.FC = () => {
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
-              Bon appétit
+              Enjoy your meal
             </p>
           </motion.div>
         </footer>

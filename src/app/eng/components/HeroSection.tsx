@@ -70,11 +70,11 @@ export default function HeroSection() {
         className="absolute top-6 right-6 z-20 flex space-x-2"
       >
         <Link 
-          href="/eng" 
+          href="/" 
           className="group relative px-3 py-1 overflow-hidden"
         >
           <span className="relative z-10 text-amber-100 font-medium tracking-wider text-sm">
-            ENG
+            FR
           </span>
           <span className="absolute inset-0 border border-amber-200/70 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
           <span className="absolute bottom-0 left-0 w-full h-px bg-amber-200/70 transform origin-right scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out delay-75"></span>
@@ -134,7 +134,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl md:text-2xl mb-10 max-w-2xl font-light text-stone-200"
         >
-          Saveurs authentiques, ingrédients frais, expérience culinaire inoubliable
+          Authentic flavors, fresh ingredients, unforgettable culinary experience
         </motion.p>
 
         {/* CTA Button */}
@@ -147,7 +147,7 @@ export default function HeroSection() {
             href="#menu" 
             className="border border-amber-200 hover:bg-amber-800/20 text-amber-100 py-3 px-8 transition duration-300 ease-in-out tracking-widest uppercase text-sm"
           >
-            Explorez notre menu
+            Explore our menu
           </a>
         </motion.div>
       </div>

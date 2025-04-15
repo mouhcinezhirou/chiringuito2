@@ -54,7 +54,7 @@ const SushiMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boo
             {name}
           </h3>
           {pieces && (
-            <span className="text-xs text-neutral-500 font-light">({pieces} pièces)</span>
+            <span className="text-xs text-neutral-500 font-light">({pieces} pieces)</span>
           )}
         </div>
         <span 
@@ -148,74 +148,74 @@ const SushiMenuSection: React.FC<MenuSection> = ({ title, items, note }) => {
 const SushiMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'POUR COMMENCER',
+      title: 'STARTERS',
       items: [
         {
-          name: 'Nems au Poulet',
+          name: 'Chicken Spring Rolls',
           price: 160,
-          description: 'Poulet, champignons chinois, vermicelles, feuille de riz frite',
-          details: 'Un classique revisité avec finesse – nos nems croustillants révèlent un cœur tendre où le poulet s\'entrelace aux champignons dans une danse de saveurs, enveloppés dans une feuille de riz qui craque à chaque bouchée.'
+          description: 'Chicken, Chinese mushrooms, vermicelli, fried rice paper',
+          details: 'A classic revisited with finesse – our crispy spring rolls reveal a tender heart where chicken intertwines with mushrooms in a dance of flavors, wrapped in rice paper that cracks with every bite.'
         },
         {
           name: 'Spicy Ebi Fry',
           price: 150,
-          description: 'Crevettes frites, mayonaise picante',
-          details: 'Des crevettes capturées à l\'aube, enrobées d\'une panure légère aux épices secrètes, puis frites à perfection. Servies avec notre mayonnaise piquante maison qui enflamme délicatement les papilles sans les brûler.'
+          description: 'Fried shrimp, spicy mayonnaise',
+          details: 'Shrimp captured at dawn, coated in a light batter with secret spices, then fried to perfection. Served with our homemade spicy mayonnaise that gently inflames the taste buds without burning them.'
         }
       ]
     },
     {
       title: 'ROLLS',
-      note: '(8 pièces par roll sauf indication contraire)',
+      note: '(8 pieces per roll unless otherwise indicated)',
       items: [
         {
           name: 'Spicy Tuna Roll',
           price: 160,
-          description: 'Tartare de thon rouge piquant, thon rouge frais, mayonnaise au wasabi',
+          description: 'Spicy bluefin tuna tartare, fresh bluefin tuna, wasabi mayonnaise',
           pieces: 8,
-          details: 'Une double expérience de thon – cru et en tartare – relevée par une touche de piment qui éveille les sens sans masquer la noblesse de ce poisson. La mayonnaise au wasabi ajoute une dimension crémeuse avec une finale qui monte en puissance.'
+          details: 'A double tuna experience – raw and tartare – enhanced by a touch of chili that awakens the senses without masking the nobility of this fish. Wasabi mayonnaise adds a creamy dimension with a finale that builds in intensity.'
         },
         {
           name: 'Spicy Salmon Roll',
           price: 160,
-          description: 'Tartare de saumon piquant, saumon frais, mayonnaise au sriracha',
+          description: 'Spicy salmon tartare, fresh salmon, sriracha mayonnaise',
           pieces: 8,
-          details: 'La tendresse onctueuse du saumon rencontre l\'audace du sriracha dans ce roll qui joue sur les contrastes. Chaque bouchée révèle progressivement sa complexité, commençant par la douceur et terminant sur une agréable chaleur épicée.'
+          details: 'The unctuous tenderness of salmon meets the boldness of sriracha in this roll that plays on contrasts. Each bite progressively reveals its complexity, starting with sweetness and ending with a pleasant spicy warmth.'
         },
         {
           name: 'Tropical Crab Roll',
           price: 160,
-          description: 'Tartare de crabe, avocat, mangue de saison',
+          description: 'Crab tartare, avocado, seasonal mango',
           pieces: 8,
-          details: 'Un voyage tropical en huit bouchées où la chair délicate du crabe s\'unit au beurre végétal de l\'avocat, tandis que la mangue apporte une touche solaire qui illumine l\'ensemble avec sa douce acidité exotique.'
+          details: 'A tropical journey in eight bites where the delicate crab meat unites with the vegetable butter of avocado, while mango brings a sunny touch that illuminates the ensemble with its sweet exotic acidity.'
         },
         {
           name: 'Salmon Avocado California Roll',
           price: 180,
-          description: 'Saumon frais, saumon fumé, avocat, fromage frais',
+          description: 'Fresh salmon, smoked salmon, avocado, cream cheese',
           pieces: 8,
-          details: 'Un dialogue entre deux expressions du saumon – la fraîcheur crue et la profondeur fumée – harmonisé par la richesse crémeuse de l\'avocat et la légèreté du fromage frais. Notre interprétation d\'un classique californien avec une touche méditerranéenne.'
+          details: 'A dialogue between two expressions of salmon – fresh rawness and smoked depth – harmonized by the creamy richness of avocado and the lightness of cream cheese. Our interpretation of a Californian classic with a Mediterranean touch.'
         },
         {
           name: 'Shrimp Green Roll',
           price: 180,
-          description: 'Crevettes frites, tartare de concombre et avocat, sésame grillé, mayonnaise piquante',
+          description: 'Fried shrimp, cucumber and avocado tartare, toasted sesame, spicy mayonnaise',
           pieces: 8,
-          details: 'La texture croustillante des crevettes dorées se marie à la fraîcheur herbacée du tartare vert dans ce roll vivifiant. Les graines de sésame torréfiées ajoutent des notes noisettées qui dansent avec la chaleur subtile de la mayonnaise.'
+          details: 'The crispy texture of golden shrimp marries with the herbal freshness of green tartare in this invigorating roll. Toasted sesame seeds add nutty notes that dance with the subtle heat of the mayonnaise.'
         },
         {
           name: 'Crispy Chicken Roll',
           price: 180,
-          description: 'Poulet tempura, fromage frais, oignons caramélisés, mayonnaise piquante, oignons frits',
+          description: 'Chicken tempura, cream cheese, caramelized onions, spicy mayonnaise, fried onions',
           pieces: 8,
-          details: 'Une création fusion audacieuse où le croustillant du poulet tempura rencontre la douceur sucrée-salée des oignons caramélisés. Une double texture d\'oignons et une mayonnaise épicée créent un roll aux saveurs réconfortantes et complexes.'
+          details: 'A bold fusion creation where crispy chicken tempura meets the sweet-savory gentleness of caramelized onions. A double texture of onions and spicy mayonnaise create a roll with comforting and complex flavors.'
         },
         {
           name: 'Chiringuito Roll',
           price: 190,
-          description: 'Thon rouge, crevette tempura, saumon frais, crabe d\'Asilah, fromage frais, ciboulette',
+          description: 'Bluefin tuna, tempura shrimp, fresh salmon, Asilah crab, cream cheese, chives',
           pieces: 8,
-          details: 'Notre signature ultime – un quatuor marin d\'exception où chaque ingrédient préserve son caractère tout en formant une symphonie harmonieuse. Le crabe d\'Asilah, pêché à la main, apporte une douceur iodée que la fraîcheur de la ciboulette sublime.'
+          details: 'Our ultimate signature – an exceptional marine quartet where each ingredient preserves its character while forming a harmonious symphony. Hand-caught Asilah crab brings an iodized sweetness that the freshness of chives sublimely enhances.'
         }
       ]
     },
@@ -225,63 +225,63 @@ const SushiMenu: React.FC = () => {
         {
           name: 'Crunchy Roll',
           price: 140,
-          description: 'Crevette, avocat, fromage frais, tobiko, teriyaki, mayonnaise piquante',
+          description: 'Shrimp, avocado, cream cheese, tobiko, teriyaki, spicy mayonnaise',
           pieces: 8,
-          details: 'La quintessence du contraste: le craquant extérieur cède place à un cœur tendre où les crevettes dansent avec l\'avocat. Les œufs de poisson éclatent en bouche comme des bulles de saveur marine, pendant que les sauces entrelacent leurs notes sucrées et épicées.'
+          details: 'The quintessence of contrast: the crispy exterior gives way to a tender heart where shrimp dance with avocado. Fish eggs burst in the mouth like bubbles of marine flavor, while the sauces intertwine their sweet and spicy notes.'
         },
         {
           name: 'Dragon Roll',
           price: 160,
-          description: 'Saumon, fromage frais, sauce piquante, tobiko, teriyaki, ciboulette',
+          description: 'Salmon, cream cheese, spicy sauce, tobiko, teriyaki, chives',
           pieces: 8,
-          details: 'Inspiré du légendaire dragon asiatique, ce roll sinueux capture sa force et sa grâce. Le saumon, tel des écailles précieuses, enveloppe un cœur crémeux vibrant d\'épices, tandis que le tobiko ajoute une dimension tactile évoquant le feu du dragon.'
+          details: 'Inspired by the legendary Asian dragon, this sinuous roll captures its strength and grace. Salmon, like precious scales, wraps around a creamy heart vibrant with spices, while tobiko adds a tactile dimension evoking the dragon\'s fire.'
         },
         {
-          name: 'Pizza Sushi Saumon',
+          name: 'Salmon Sushi Pizza',
           price: 160,
-          description: 'Saumon, avocat, fromage frais, tobiko, mayonnaise piquante, teriyaki',
-          details: 'Une fusion audacieuse entre l\'Italie et le Japon – notre disque de riz croustillant évoque la pizza, garni généreusement de saumon velouté et d\'avocat. Les sauces s\'entrelacent en spirales artistiques, créant un tableau gustatif unique.'
+          description: 'Salmon, avocado, cream cheese, tobiko, spicy mayonnaise, teriyaki',
+          details: 'A bold fusion between Italy and Japan – our crispy rice disc evokes pizza, generously topped with velvety salmon and avocado. The sauces intertwine in artistic spirals, creating a unique gustatory tableau.'
         }
       ]
     },
     {
       title: 'NIGIRI',
-      note: '(8 pièces par commande sauf indication contraire)',
+      note: '(8 pieces per order unless otherwise indicated)',
       items: [
         {
-          name: 'Nigiri Thon Rouge',
+          name: 'Bluefin Tuna Nigiri',
           price: 180,
-          description: 'Tranches de thon rouge sur riz à sushi pressé',
+          description: 'Slices of bluefin tuna on pressed sushi rice',
           pieces: 8,
-          details: 'La noblesse marine à l\'état pur – notre thon rouge, sélectionné pour sa couleur profonde et sa texture soyeuse, repose majestueusement sur un oreiller de riz parfumé. Un dialogue minimaliste entre deux ingrédients d\'exception.'
+          details: 'Marine nobility in its purest form – our bluefin tuna, selected for its deep color and silky texture, majestically rests on a pillow of fragrant rice. A minimalist dialogue between two exceptional ingredients.'
         },
         {
-          name: 'Nigiri Saumon',
+          name: 'Salmon Nigiri',
           price: 180,
-          description: 'Tranches de saumon frais sur riz à sushi pressé',
+          description: 'Slices of fresh salmon on pressed sushi rice',
           pieces: 8,
-          details: 'Des lamelles de saumon d\'une tendreté incomparable, coupées avec précision pour révéler leur marbrure délicate. Sur le riz, elles fondent lentement, libérant leurs huiles essentielles qui se marient au vinaigre subtil du riz.'
+          details: 'Salmon slices of incomparable tenderness, precisely cut to reveal their delicate marbling. On the rice, they slowly melt, releasing their essential oils that blend with the subtle vinegar of the rice.'
         },
         {
-          name: 'Nigiri Loup',
+          name: 'Sea Bass Nigiri',
           price: 180,
-          description: 'Tranches de loup délicates sur riz à sushi pressé',
+          description: 'Delicate sea bass slices on pressed sushi rice',
           pieces: 8,
-          details: 'La finesse incarnée – notre loup de Méditerranée offre une chair nacrée d\'une délicatesse exceptionnelle. Sa saveur pure et élégante est mise en valeur par la simplicité du riz, créant une expérience d\'une pureté zen.'
+          details: 'Refinement incarnate – our Mediterranean sea bass offers a pearly flesh of exceptional delicacy. Its pure and elegant flavor is enhanced by the simplicity of the rice, creating an experience of zen purity.'
         },
         {
-          name: 'Nigiri Crevette',
+          name: 'Shrimp Nigiri',
           price: 140,
-          description: 'Crevettes cuites sur riz à sushi pressé',
+          description: 'Cooked shrimp on pressed sushi rice',
           pieces: 8,
-          details: 'Nos crevettes sont délicatement cuites pour préserver leur texture rebondissante et leur douceur naturelle. Posées comme des joyaux roses sur leur socle de riz, elles offrent un contraste de température qui amplifie leurs arômes marins.'
+          details: 'Our shrimp are delicately cooked to preserve their bouncy texture and natural sweetness. Placed like pink jewels on their rice base, they offer a temperature contrast that amplifies their marine aromas.'
         },
         {
-          name: 'Sélection de Nigiris',
+          name: 'Nigiri Selection',
           price: 180,
-          description: 'Thon rouge, saumon, crevette & loup',
+          description: 'Bluefin tuna, salmon, shrimp & sea bass',
           pieces: 8,
-          details: 'Un quatuor harmonieux qui célèbre la diversité des saveurs marines – du puissant thon rouge à la délicatesse du loup, en passant par le crémeux du saumon et la douceur des crevettes. Une dégustation complète servie dans l\'ordre idéal.'
+          details: 'A harmonious quartet celebrating the diversity of marine flavors – from powerful bluefin tuna to delicate sea bass, through creamy salmon and sweet shrimp. A complete tasting served in the ideal order.'
         }
       ]
     },
@@ -289,40 +289,40 @@ const SushiMenu: React.FC = () => {
       title: 'SASHIMI & TATAKI',
       items: [
         {
-          name: 'Sashimi Thon Rouge',
+          name: 'Bluefin Tuna Sashimi',
           price: 220,
-          description: 'Tranches fraîches de thon rouge premium',
-          details: 'Des rubis marins découpés avec la précision d\'un artisan joaillier. Notre thon, sélectionné pour sa qualité exceptionnelle, est tranché en lamelles parfaites qui célèbrent sa texture ferme et sa saveur profonde, relevée par une simple touche de wasabi véritable.'
+          description: 'Fresh slices of premium bluefin tuna',
+          details: 'Marine rubies cut with the precision of a master jeweler. Our tuna, selected for its exceptional quality, is sliced into perfect strips that celebrate its firm texture and deep flavor, enhanced by a simple touch of real wasabi.'
         },
         {
-          name: 'Sashimi Saumon',
+          name: 'Salmon Sashimi',
           price: 220,
-          description: 'Tranches fraîches de saumon de haute qualité',
-          details: 'Des pétales d\'un corail délicat – notre saumon est découpé en fines tranches qui captent la lumière comme des vitraux. Sa chair fondante libère une richesse beurrée et une délicate saveur marine qui évoque les eaux froides dont il provient.'
+          description: 'Fresh slices of high-quality salmon',
+          details: 'Petals of delicate coral – our salmon is cut into thin slices that catch the light like stained glass. Its melting flesh releases a buttery richness and a delicate marine flavor that evokes the cold waters from which it comes.'
         },
         {
-          name: 'Sashimi Loup',
+          name: 'Sea Bass Sashimi',
           price: 220,
-          description: 'Tranches fraîches de loup délicat',
-          details: 'L\'essence même de la subtilité marine – notre loup de ligne est présenté en tranches transparentes qui révèlent sa chair immaculée. Sa saveur délicate, presque sucrée, est un hymne à la pureté des fonds sablonneux méditerranéens.'
+          description: 'Fresh slices of delicate sea bass',
+          details: 'The very essence of marine subtlety – our line-caught sea bass is presented in transparent slices that reveal its immaculate flesh. Its delicate, almost sweet flavor is a hymn to the purity of Mediterranean sandy bottoms.'
         },
         {
           name: 'Rainbow Sashimi',
           price: 220,
-          description: 'Assortiment de thon rouge, saumon et loup',
-          details: 'Une palette chromatique qui ravit autant les yeux que les papilles – du rouge profond du thon au orange lumineux du saumon jusqu\'au blanc nacré du loup. Chaque variété est disposée avec art pour créer un dégradé marin enchanteur.'
+          description: 'Assortment of bluefin tuna, salmon and sea bass',
+          details: 'A chromatic palette that delights the eyes as much as the taste buds – from the deep red of tuna to the bright orange of salmon to the pearly white of sea bass. Each variety is artistically arranged to create an enchanting marine gradient.'
         },
         {
-          name: 'Tataki Thon Rouge',
+          name: 'Bluefin Tuna Tataki',
           price: 240,
-          description: 'Thon rouge saisi avec assaisonnement léger',
-          details: 'Un équilibre parfait entre cru et cuit – notre thon est brièvement saisi sur une flamme vive pour caraméliser sa surface tout en préservant son cœur cru. Cette alchimie thermique révèle de nouvelles dimensions aromatiques, rehaussées par notre marinade secrète.'
+          description: 'Seared bluefin tuna with light seasoning',
+          details: 'A perfect balance between raw and cooked – our tuna is briefly seared over a high flame to caramelize its surface while preserving its raw heart. This thermal alchemy reveals new aromatic dimensions, enhanced by our secret marinade.'
         },
         {
-          name: 'Tataki Saumon',
+          name: 'Salmon Tataki',
           price: 240,
-          description: 'Saumon saisi avec assaisonnement léger',
-          details: 'La métamorphose du saumon – la chaleur furtive transforme sa surface en un voile doré qui scelle les huiles précieuses à l\'intérieur. Notre assaisonnement aux agrumes et sésame amplifie sa richesse naturelle, créant un contraste fascinant entre extérieur et intérieur.'
+          description: 'Seared salmon with light seasoning',
+          details: 'The metamorphosis of salmon – the fleeting heat transforms its surface into a golden veil that seals the precious oils inside. Our citrus and sesame seasoning amplifies its natural richness, creating a fascinating contrast between exterior and interior.'
         }
       ]
     }
@@ -358,7 +358,7 @@ const SushiMenu: React.FC = () => {
             className="font-serif text-5xl md:text-6xl font-light mb-6"
             style={{ color: '#81715E' }}
           >
-            Menu Sushi Asiatique
+            Asian Sushi Menu
           </motion.h1>
           
           <motion.p
@@ -368,7 +368,7 @@ const SushiMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Frais & Délicieux
+            Fresh & Delicious
           </motion.p>
 
           <motion.p 
@@ -378,8 +378,8 @@ const SushiMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            Une charge de service de 6% sera ajoutée à votre facture.
-            <br/>L'établissement n'accepte que les chèques certifiés.
+            A service charge of 6% will be added to your bill.
+            <br/>The establishment only accepts certified checks.
           </motion.p>
         </header>
 
@@ -404,7 +404,7 @@ const SushiMenu: React.FC = () => {
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
-              Bon appétit
+              Enjoy your meal
             </p>
           </motion.div>
         </footer>

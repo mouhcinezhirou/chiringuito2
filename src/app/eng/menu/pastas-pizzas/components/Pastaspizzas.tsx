@@ -6,9 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface MenuItem {
   name: string;
   price: number;
-  description: string;
-  preparationTime?: string;
-  detailedDescription?: string;
+  ingredients: string;
+  description?: string;
 }
 
 interface MenuSection {
@@ -16,14 +15,13 @@ interface MenuSection {
   items: MenuItem[];
 }
 
-const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boolean }> = ({ 
+const PizzaPastaMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boolean }> = ({ 
   name, 
   price, 
+  ingredients, 
   description,
-  preparationTime,
-  detailedDescription,
   onExpand,
-  isExpanded
+  isExpanded 
 }) => {
   const itemRef = useRef<HTMLDivElement>(null);
 
@@ -45,17 +43,12 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       transition={{ duration: 0.5 }}
     >
       <div className="flex justify-between items-baseline mb-3">
-        <div>
-          <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
-            style={{ color: '#81715E' }}
-          >
-            {name}
-          </h3>
-          {preparationTime && (
-            <span className="text-xs text-neutral-500 font-light">({preparationTime})</span>
-          )}
-        </div>
+        <h3 
+          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          style={{ color: '#81715E' }}
+        >
+          {name}
+        </h3>
         <span 
           className="font-light text-base transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
@@ -63,9 +56,9 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
           {price}
         </span>
       </div>
-      <p className="text-neutral-600 text-sm font-light tracking-wide">{description}</p>
+      <p className="text-neutral-600 text-sm font-light tracking-wide">{ingredients}</p>
       <AnimatePresence>
-        {isExpanded && detailedDescription && (
+        {isExpanded && description && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto', marginTop: 12 }}
@@ -73,11 +66,11 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <p className="text-neutral-500 italic text-sm pl-4 border-l-2 border-amber-200">{detailedDescription}</p>
+            <p className="text-neutral-500 italic text-sm pl-4 border-l-2 border-amber-200">{description}</p>
           </motion.div>
         )}
       </AnimatePresence>
-      {detailedDescription && (
+      {description && (
         <div className="mt-2 text-xs text-amber-700 opacity-70 flex items-center">
           <span className="mr-1">{isExpanded ? 'Less' : 'Details'}</span>
           <svg 
@@ -100,7 +93,7 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
   );
 };
 
-const DessertMenuSection: React.FC<MenuSection> = ({ title, items }) => {
+const PizzaPastaMenuSection: React.FC<MenuSection> = ({ title, items }) => {
   const [expandedItem, setExpandedItem] = useState<number | null>(null);
 
   const handleExpand = (index: number) => {
@@ -129,7 +122,7 @@ const DessertMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       </h2>
       <div className="space-y-2">
         {items.map((item, index) => (
-          <DessertMenuItem
+          <PizzaPastaMenuItem
             key={index}
             {...item}
             onExpand={() => handleExpand(index)}
@@ -141,78 +134,105 @@ const DessertMenuSection: React.FC<MenuSection> = ({ title, items }) => {
   );
 };
 
-const DessertsMenu: React.FC = () => {
+const PizzaPastaMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'DESSERTS',
+      title: 'PIZZAS',
       items: [
         {
-          name: 'Happiness Pineapple',
-          price: 130,
-          description: 'Sorbet ananas coco fait maison',
-          detailedDescription: 'Une symphonie tropicale où l\'ananas succulent rencontre la douceur crémeuse de la noix de coco, transportant vos papilles sous les palmiers d\'une plage paradisiaque.'
+          name: 'Vegetarian Pizza',
+          price: 140,
+          ingredients: 'Seasonal vegetables, tomato sauce and cheese',
+          description: 'A colorful symphony of fresh vegetables on a homemade tomato sauce base. Each bite evokes a Mediterranean garden in midsummer with fresh and balanced flavors.'
         },
         {
-          name: 'Pain Perdu',
-          price: 80,
-          description: 'Caramel au beurre salé et glace à la vanille',
-          preparationTime: '10 min',
-          detailedDescription: 'Un souvenir d\'enfance réinventé avec du pain brioché doré et croustillant, nappé d\'un caramel onctueux qui danse avec les notes délicates de la vanille de Madagascar.'
-        },
-        {
-          name: 'Pavlova aux fruits rouges',
-          price: 80,
-          description: 'Meringue craquante et fruits rouges de saison',
-          detailedDescription: 'Un nuage de légèreté croustillante couronné de baies éclatantes et d\'une touche de crème fouettée, comme un ballet de textures qui se révèle à chaque bouchée.'
-        },
-        {
-          name: 'Fondant au chocolat',
-          price: 80,
-          description: 'Servi avec une glace à la vanille',
-          preparationTime: '10 min',
-          detailedDescription: 'Un cœur mystérieux de chocolat noir intense qui se dévoile dans un flot de chaleur voluptueuse, contrasté par la fraîcheur d\'une glace vanille artisanale.'
-        },
-        {
-          name: 'Tiramisú spéculoos',
-          price: 80,
-          description: 'Réinterprétation du classique italien',
-          detailedDescription: 'Une romance franco-italienne où la richesse du mascarpone rencontre les épices chaleureuses des spéculoos, créant une harmonie parfaite entre douceur et caractère.'
-        },
-        {
-          name: 'Crème brûlée',
-          price: 70,
-          description: 'Crème onctueuse avec une croûte au caramel croquante',
-          detailedDescription: 'Un classique intemporel aux deux visages : le craquant exquis du caramel brûlé qui protège un trésor de vanille soyeux et délicat. Une valse de contradictions parfaites.'
-        },
-        {
-          name: 'Glaces / Sorbets',
-          price: 80,
-          description: 'Vanille ou citron',
-          detailedDescription: 'Des créations glacées aux saveurs pures et intenses, élaborées chaque jour dans notre cuisine avec des ingrédients soigneusement sélectionnés pour une expérience rafraîchissante.'
-        },
-        {
-          name: 'Fruits de saison',
-          price: 70,
-          description: 'Sélection de fruits frais',
-          detailedDescription: 'Une cueillette colorée des meilleurs fruits du marché, présentée dans sa simplicité naturelle pour célébrer les saveurs authentiques que la nature nous offre à chaque saison.'
-        },
-        {
-          name: 'Irish Coffee',
-          price: 80,
-          description: 'Whiskey, café et crème fouettée',
-          detailedDescription: 'Une douce ivresse où l\'amertume élégante du café embrasse la chaleur du whiskey irlandais, le tout délicatement adouci par un nuage de crème légèrement sucrée.'
-        },
-        {
-          name: 'Café gourmand',
-          price: 80,
-          description: 'Fondant au chocolat, crème brûlée et glace à la vanille',
-          detailedDescription: 'Une trilogie de plaisirs en miniature accompagnant notre café signature, offrant un voyage gustatif complet pour satisfaire toutes vos envies sucrées en une seule assiette.'
-        },
-        {
-          name: 'Colonel',
+          name: 'Pizza Margherita',
           price: 120,
-          description: 'Vodka, sorbet au citron',
-          detailedDescription: 'Un entracte glacé et alcoolisé où la morsure vive du citron s\'entrelace avec la chaleur discrète de la vodka, créant un moment de fraîcheur sophistiquée et revigorante.'
+          ingredients: 'Cheese with tomato sauce',
+          description: 'Elegance in its purest form - our interpretation of the Neapolitan classic with a tomato sauce flavored with fresh basil and melting mozzarella on a thin, crispy crust.'
+        },
+        {
+          name: 'Goat Cheese and Arugula Pizza',
+          price: 140,
+          ingredients: 'Goat cheese, arugula leaves and candied cherry tomatoes',
+          description: 'A perfect contrast between the creaminess of goat cheese, the peppery freshness of arugula and the sweetness of candied tomatoes. A creation that celebrates the refined simplicity of Mediterranean cuisine.'
+        },
+        {
+          name: 'Sicilian Tuna Pizza',
+          price: 150,
+          ingredients: 'Tuna, onions, anchovies, capers, tomatoes and black olives',
+          description: 'A journey to sunny Sicily where savory tuna meets the salty accents of anchovies and capers, balanced by the sweetness of onions and the depth of black olives.'
+        },
+        {
+          name: 'Seafood Pizza',
+          price: 180,
+          ingredients: 'Seafood, tomato sauce and cheese',
+          description: 'The Mediterranean in every bite with a generous mix of ocean treasures on our flavorful tomato sauce. A light layer of cheese complements without overpowering the oceanic flavors.'
+        },
+        {
+          name: 'Bolognese Pizza',
+          price: 160,
+          ingredients: 'Ground meat with bolognese sauce',
+          description: 'Our tribute to Emilia-Romagna with a slowly simmered bolognese sauce according to the traditional recipe. Rich in meat and aromatic herbs for a comforting experience.'
+        },
+        {
+          name: 'Carbonara Pizza',
+          price: 140,
+          ingredients: 'Halal turkey bacon, white sauce and cheese',
+          description: 'A reinterpretation of the Roman classic on a crispy base. Our creamy white sauce coats golden pieces of halal turkey bacon, enhanced by our blend of Italian cheeses.'
+        },
+        {
+          name: 'Pepperoni Calzone',
+          price: 160,
+          ingredients: 'Halal Italian pepperoni, mushrooms, mozzarella, black olives',
+          description: 'Our golden pastry crescent holds a treasure of flavors where halal Italian pepperoni meets earthy mushrooms and melting mozzarella, enhanced by fragrant black olives.'
+        }
+      ]
+    },
+    {
+      title: 'PASTA',
+      items: [
+        {
+          name: 'Salmon Linguine',
+          price: 180,
+          ingredients: 'Duo of salmon with a rosé sauce',
+          description: 'A duo of fresh and smoked salmon embraces al dente linguine in a velvety rosé sauce. Each bite transports between sea and mountain for a refined and comforting experience.'
+        },
+        {
+          name: 'Prawn Linguine',
+          price: 180,
+          ingredients: 'With a spicy tomato sauce',
+          description: 'Wild prawns perfectly seared on a bed of linguine coated in a zesty tomato sauce. The spicy notes dance with the sweetness of the shellfish for a memorable dish.'
+        },
+        {
+          name: 'Penne Arrabbiata',
+          price: 120,
+          ingredients: 'Pasta with a spicy tomato sauce and basil',
+          description: 'Italian passion in every bite - our penne perfectly capture the fiery tomato sauce, punctuated with chili and softened by fresh basil leaves for a harmonious balance.'
+        },
+        {
+          name: 'Spaghetti Marinera (seafood)',
+          price: 320,
+          ingredients: 'Clams, seafood and wild shrimp',
+          description: 'A celebration of the treasures of the sea where fresh clams, delicate seafood and wild shrimp meet in a light sauce flavored with garlic and parsley.'
+        },
+        {
+          name: 'Spaghetti alle Vongole',
+          price: 190,
+          ingredients: 'Clams and fresh tomatoes',
+          description: 'Marine elegance in its purest form - fresh clams release their savory juice that blends with tomatoes and olive oil for a symphony of maritime flavors.'
+        },
+        {
+          name: 'Spaghetti Carbonara',
+          price: 140,
+          ingredients: 'Halal turkey bacon with white sauce',
+          description: 'Our interpretation of the Roman classic - al dente spaghetti coated in a creamy egg sauce, sprinkled with crispy halal turkey bacon and a generous touch of black pepper.'
+        },
+        {
+          name: 'Chicken and Mushroom Tagliatelle',
+          price: 160,
+          ingredients: 'Chicken, mushrooms, white sauce flavored with truffle',
+          description: 'Ribbons of fresh pasta embrace juicy pieces of chicken and mushrooms, all wrapped in a sauce delicately infused with truffle. A perfect balance between rusticity and refinement.'
         }
       ]
     }
@@ -220,7 +240,7 @@ const DessertsMenu: React.FC = () => {
 
   return (
     <div 
-      id="desserts-menu-section"
+      id="pizza-pasta-menu-section"
       className="min-h-screen py-16 px-4" 
       style={{ 
         backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92))', 
@@ -248,7 +268,7 @@ const DessertsMenu: React.FC = () => {
             className="font-serif text-5xl md:text-6xl font-light mb-6"
             style={{ color: '#81715E' }}
           >
-            Desserts
+            Pizzas & Pasta
           </motion.h1>
           
           <motion.p
@@ -258,7 +278,7 @@ const DessertsMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Douceurs et plaisirs sucrés
+            Authenticity and flavors
           </motion.p>
 
           <motion.p 
@@ -268,14 +288,14 @@ const DessertsMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            Une charge de service de 6% sera ajoutée à votre facture.
-            <br/>L'établissement n'accepte que les chèques certifiés.
+            A service charge of 6% will be added to your bill.
+            <br/>The establishment only accepts certified checks.
           </motion.p>
         </header>
 
         <div className="space-y-4">
           {menuSections.map((section, index) => (
-            <DessertMenuSection 
+            <PizzaPastaMenuSection 
               key={index} 
               title={section.title} 
               items={section.items} 
@@ -293,7 +313,7 @@ const DessertsMenu: React.FC = () => {
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
-              Bonne dégustation
+              Enjoy your meal
             </p>
           </motion.div>
         </footer>
@@ -302,4 +322,4 @@ const DessertsMenu: React.FC = () => {
   );
 };
 
-export default DessertsMenu;
+export default PizzaPastaMenu;

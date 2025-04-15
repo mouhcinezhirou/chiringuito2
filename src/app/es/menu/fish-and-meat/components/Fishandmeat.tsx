@@ -79,7 +79,7 @@ const FoodMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
         )}
       </AnimatePresence>
       <div className="mt-2 text-xs text-amber-700 opacity-70 flex items-center">
-        <span className="mr-1">{isExpanded ? 'Less' : 'Details'}</span>
+        <span className="mr-1">{isExpanded ? 'Menos' : 'Detalles'}</span>
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           width="12" 
@@ -146,119 +146,119 @@ const FoodMenuSection: React.FC<MenuSection> = ({ title, items, subtitle }) => {
 const FishMeatMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'POISSONS',
-      subtitle: 'Servis avec accompagnement au choix',
+      title: 'PESCADOS',
+      subtitle: 'Servidos con guarnición a elegir',
       items: [
         {
-          name: 'Tagra (tagine) de poisson "spécialité maison"',
+          name: 'Tagra (tajine) de pescado "especialidad de la casa"',
           price: 340,
-          description: 'Notre tagine signature cuit lentement dans sa terrine traditionnelle, où le poisson frais du jour est mijoté avec des tomates, des poivrons colorés, des olives et des épices marocaines aromatiques, créant un plat authentique riche en saveurs méditerranéennes et nord-africaines.'
+          description: 'Nuestro tajine estrella cocinado lentamente en su terrina tradicional, donde el pescado fresco del día se guisa con tomates, pimientos de colores, aceitunas y especias marroquíes aromáticas, creando un plato auténtico rico en sabores mediterráneos y norteafricanos.'
         },
         {
-          name: 'Tagra (tagine) de crevettes royale',
+          name: 'Tagra (tajine) de gambas reales',
           price: 800,
-          description: 'Un festin luxueux de crevettes royales préparées dans notre tagine maison, mijotées délicatement avec un mélange de safran, d\'ail, de gingembre frais, de coriandre et d\'un soupçon de piment doux. Servi bouillonnant dans sa terrine traditionnelle.'
+          description: 'Un festín lujoso de gambas reales preparadas en nuestro tajine casero, cocinadas suavemente con una mezcla de azafrán, ajo, jengibre fresco, cilantro y un toque de pimiento dulce. Servido burbujeante en su terrina tradicional.'
         },
         {
-          name: 'Saumon grillé',
+          name: 'Salmón a la parrilla',
           price: 340,
-          description: 'Filet de saumon premium grillé à la perfection avec une croûte dorée et un intérieur tendre et juteux. Assaisonné simplement d\'herbes fraîches, d\'un filet d\'huile d\'olive et de zeste de citron pour mettre en valeur sa saveur naturelle et délicate.'
+          description: 'Filete de salmón premium a la parrilla con una corteza dorada y un interior tierno y jugoso. Sazonado simplemente con hierbas frescas, un chorrito de aceite de oliva y ralladura de limón para realzar su sabor natural y delicado.'
         },
         {
-          name: 'Espadon grillé',
+          name: 'Pez espada a la parrilla',
           price: 260,
-          description: 'Steak d\'espadon charnu grillé à la perfection, offrant une texture ferme et une saveur riche mais délicate. Légèrement mariné avec des herbes méditerranéennes, de l\'huile d\'olive et du citron pour rehausser sa fraîcheur marine naturelle.'
+          description: 'Filete de pez espada carnoso a la parrilla perfectamente cocinado, ofreciendo una textura firme y un sabor rico pero delicado. Ligeramente marinado con hierbas mediterráneas, aceite de oliva y limón para realzar su frescura marina natural.'
         },
         {
-          name: 'Sole "meunière"',
+          name: 'Lenguado "meunière"',
           price: 280,
-          description: 'Un classique français préparé avec finesse - filet de sole délicatement poêlé dans un beurre noisette, parfumé à l\'ail et au persil, créant une croûte dorée qui contraste parfaitement avec la chair blanche et tendre du poisson. Accompagné d\'un quartier de citron frais.'
+          description: 'Un clásico francés preparado con finura - filete de lenguado delicadamente salteado en mantequilla avellana, perfumado con ajo y perejil, creando una corteza dorada que contrasta perfectamente con la carne blanca y tierna del pescado. Acompañado de un gajo de limón fresco.'
         },
         {
-          name: 'Loup grillé',
+          name: 'Lubina a la parrilla',
           price: 280,
-          description: 'Bar méditerranéen (loup de mer) grillé entier ou en filet selon disponibilité, avec une peau croustillante et une chair blanche délicate. Préparé simplement avec huile d\'olive, herbes fraîches et sel de mer pour préserver sa saveur naturelle exceptionnelle.'
+          description: 'Lubina mediterránea a la parrilla entera o en filete según disponibilidad, con una piel crujiente y carne blanca delicada. Preparada simplemente con aceite de oliva, hierbas frescas y sal marina para preservar su excepcional sabor natural.'
         },
         {
-          name: 'Saint-Pierre grillé',
+          name: 'San Pedro a la parrilla',
           price: 290,
-          description: 'Ce poisson noble à la chair fine est grillé délicatement pour préserver sa texture délicate et sa saveur subtile. Son goût délicat est rehaussé par un simple assaisonnement d\'herbes fraîches, d\'huile d\'olive extra vierge et d\'une touche de fleur de sel.'
+          description: 'Este noble pescado de carne fina se cocina delicadamente a la parrilla para preservar su textura delicada y su sabor sutil. Su delicado sabor se realza con un simple aderezo de hierbas frescas, aceite de oliva virgen extra y un toque de flor de sal.'
         },
         {
-          name: 'Langoustines grillées',
+          name: 'Cigalas a la parrilla',
           price: 600,
-          description: 'Langoustines fraîches grillées à la perfection, révélant leur chair douce et sucrée. Servies dans leur carapace avec un beurre à l\'ail et aux herbes fait maison qui fond délicatement sur ces crustacés délicats et aromatiques.'
+          description: 'Cigalas frescas a la parrilla perfectamente cocinadas, revelando su carne suave y dulce. Servidas en su caparazón con mantequilla casera de ajo y hierbas que se derrite delicadamente sobre estos delicados y aromáticos crustáceos.'
         },
         {
-          name: 'Crevettes Royales grillées',
+          name: 'Gambas Reales a la parrilla',
           price: 800,
-          description: 'Somptueuses crevettes royales de calibre exceptionnel, grillées délicatement pour préserver leur texture ferme et leur goût naturellement sucré. Servies avec une touche d\'huile d\'olive infusée au citron et aux herbes de Provence fraîches.'
+          description: 'Suntuosas gambas reales de calibre excepcional, cocinadas delicadamente a la parrilla para preservar su textura firme y su sabor naturalmente dulce. Servidas con un toque de aceite de oliva infusionado con limón y hierbas frescas de Provenza.'
         }
       ]
     },
     {
-      title: 'VIANDES',
-      subtitle: 'Servies avec accompagnement au choix',
+      title: 'CARNES',
+      subtitle: 'Servidas con guarnición a elegir',
       items: [
         {
-          name: 'Tagliata de boeuf (filet de boeuf)',
+          name: 'Tagliata de ternera (solomillo)',
           price: 380,
-          description: 'Filet de bœuf tendre tranché finement après cuisson parfaite, servi légèrement rosé et garni de copeaux de parmesan, roquette fraîche et un filet d\'huile d\'olive extra vierge parfumée à la truffe. Un plat d\'inspiration italienne qui met en valeur la qualité exceptionnelle de notre viande.'
+          description: 'Solomillo de ternera tierno finamente cortado después de una cocción perfecta, servido ligeramente rosado y guarnecido con virutas de parmesano, rúcula fresca y un chorrito de aceite de oliva virgen extra perfumado con trufa. Un plato de inspiración italiana que realza la calidad excepcional de nuestra carne.'
         },
         {
-          name: 'Filet de boeuf sauté à l\'ail',
+          name: 'Solomillo de ternera salteado al ajo',
           price: 340,
-          description: 'Morceaux tendres de filet de bœuf sautés à feu vif avec de l\'ail frais écrasé, créant un contraste parfait entre l\'extérieur caramélisé et l\'intérieur juteux et tendre. Une préparation simple qui célèbre la qualité de notre viande sélectionnée avec soin.'
+          description: 'Trozos tiernos de solomillo de ternera salteados a fuego vivo con ajo fresco machacado, creando un contraste perfecto entre el exterior caramelizado y el interior jugoso y tierno. Una preparación sencilla que celebra la calidad de nuestra carne seleccionada cuidadosamente.'
         },
         {
           name: 'Chich taouk',
           price: 220,
-          description: 'Brochettes de poulet mariné dans un mélange traditionnel libanais de yaourt, d\'ail, de citron et d\'épices comme le sumac et le zaatar. Grillées jusqu\'à obtenir une parfaite tendreté avec une légère caramélisation, et servies avec notre sauce aïoli maison aux herbes fraîches.'
+          description: 'Brochetas de pollo marinado en una mezcla tradicional libanesa de yogur, ajo, limón y especias como el zumaque y el zataar. Asadas hasta conseguir una perfecta ternura con una ligera caramelización, y servidas con nuestra salsa alioli casera de hierbas frescas.'
         },
         {
-          name: 'Entrecôte de Paris',
+          name: 'Entrecot de París',
           price: 320,
-          description: 'Entrecôte maturée de première qualité, grillée selon votre préférence et servie avec notre sauce maison au poivre noir concassé, échalotes et cognac. La marbrure parfaite de cette coupe offre une tendreté et une saveur incomparables.'
+          description: 'Entrecot madurado de primera calidad, asado según su preferencia y servido con nuestra salsa casera de pimienta negra triturada, chalotes y coñac. El veteado perfecto de este corte ofrece una ternura y un sabor incomparables.'
         },
         {
-          name: 'Hamburger (100% fait maison)',
+          name: 'Hamburguesa (100% casera)',
           price: 140,
-          description: 'Notre burger signature élaboré avec un steak de bœuf haché à la main, grillé à la perfection et garni de fromage cheddar fondu, d\'oignons lentement caramélisés et de notre sauce secrète légèrement fumée. Le tout servi dans un pain brioché artisanal doré au beurre.'
+          description: 'Nuestra hamburguesa estrella elaborada con carne de ternera picada a mano, asada a la perfección y guarnecida con queso cheddar fundido, cebollas lentamente caramelizadas y nuestra salsa secreta ligeramente ahumada. Todo ello servido en un pan brioche artesanal dorado en mantequilla.'
         },
         {
-          name: 'Mini hamburger au boeuf',
+          name: 'Mini hamburguesa de ternera',
           price: 140,
-          description: 'Trio de délicieux mini burgers préparés avec le même soin que notre version classique. Chaque bouchée offre un équilibre parfait entre le bœuf juteux, le cheddar fondant et notre sauce maison crémeuse, le tout dans un petit pain brioché moelleux. Idéal pour partager ou comme entrée généreuse.'
+          description: 'Trío de deliciosas mini hamburguesas preparadas con el mismo cuidado que nuestra versión clásica. Cada bocado ofrece un equilibrio perfecto entre la ternera jugosa, el cheddar fundido y nuestra salsa casera cremosa, todo ello en un pequeño pan brioche esponjoso. Ideal para compartir o como entrada generosa.'
         }
       ]
     },
     {
-      title: 'ACCOMPAGNEMENTS',
+      title: 'GUARNICIONES',
       items: [
         {
-          name: 'Légumes sautés',
+          name: 'Verduras salteadas',
           price: 60,
-          description: 'Un mélange coloré de légumes de saison finement coupés et sautés rapidement à l\'huile d\'olive avec une touche d\'ail et d\'herbes fraîches. La cuisson préserve leur croquant et leurs saveurs naturelles pour un accompagnement à la fois sain et délicieux.'
+          description: 'Una mezcla colorida de verduras de temporada finamente cortadas y salteadas rápidamente en aceite de oliva con un toque de ajo y hierbas frescas. La cocción preserva su crujido y sus sabores naturales para un acompañamiento tanto saludable como delicioso.'
         },
         {
-          name: 'Purée de pommes de terre',
+          name: 'Puré de patatas',
           price: 60,
-          description: 'Purée onctueuse préparée à partir de pommes de terre à chair farineuse, écrasées avec du beurre de baratte et de la crème fraîche. Sa texture veloutée et sa richesse en font le complément parfait pour nos poissons et viandes.'
+          description: 'Puré cremoso preparado con patatas de pulpa harinosa, aplastadas con mantequilla de barril y nata fresca. Su textura aterciopelada y su riqueza lo convierten en el complemento perfecto para nuestros pescados y carnes.'
         },
         {
-          name: 'Pommes de terre sautées',
+          name: 'Patatas salteadas',
           price: 60,
-          description: 'Pommes de terre nouvelles coupées en quartiers et sautées lentement jusqu\'à obtenir un extérieur doré et croustillant avec un intérieur tendre. Parfumées au thym frais et à l\'ail, elles sont l\'accompagnement idéal pour rehausser nos plats principaux.'
+          description: 'Patatas nuevas cortadas en cuartos y salteadas lentamente hasta conseguir un exterior dorado y crujiente con un interior tierno. Perfumadas con tomillo fresco y ajo, son el acompañamiento ideal para realzar nuestros platos principales.'
         },
         {
-          name: 'Pommes frites',
+          name: 'Patatas fritas',
           price: 60,
-          description: 'Frites croustillantes préparées dans notre cuisine selon la méthode traditionnelle: coupées à la main, cuites deux fois pour obtenir un extérieur parfaitement doré et un intérieur moelleux, et assaisonnées d\'une pincée de fleur de sel.'
+          description: 'Patatas fritas crujientes preparadas en nuestra cocina según el método tradicional: cortadas a mano, cocinadas dos veces para obtener un exterior perfectamente dorado y un interior suave, y sazonadas con una pizca de flor de sal.'
         },
         {
-          name: 'Salade verte',
+          name: 'Ensalada verde',
           price: 60,
-          description: 'Mélange frais de jeunes pousses et de feuilles croquantes, légèrement assaisonnées d\'une vinaigrette maison à base d\'huile d\'olive extra vierge et de vinaigre balsamique âgé. L\'option parfaite pour un accompagnement léger et rafraîchissant.'
+          description: 'Mezcla fresca de brotes jóvenes y hojas crujientes, ligeramente aliñadas con una vinagreta casera a base de aceite de oliva virgen extra y vinagre balsámico añejo. La opción perfecta para un acompañamiento ligero y refrescante.'
         }
       ]
     }
@@ -294,7 +294,7 @@ const FishMeatMenu: React.FC = () => {
             className="font-serif text-5xl md:text-6xl font-light mb-6"
             style={{ color: '#81715E' }}
           >
-            Poissons & Viandes
+            Pescados & Carnes
           </motion.h1>
           
           <motion.p
@@ -304,7 +304,7 @@ const FishMeatMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Fraîcheur et qualité
+            Frescura y calidad
           </motion.p>
 
           <motion.p 
@@ -314,8 +314,8 @@ const FishMeatMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            Une charge de service de 6% sera ajoutée à votre facture.
-            <br/>L'établissement n'accepte que les chèques certifiés.
+            Se añadirá un cargo por servicio del 6% a su factura.
+            <br/>El establecimiento solo acepta cheques certificados.
           </motion.p>
         </header>
 
@@ -340,7 +340,7 @@ const FishMeatMenu: React.FC = () => {
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
-              Bon appétit
+              Buen provecho
             </p>
           </motion.div>
         </footer>
