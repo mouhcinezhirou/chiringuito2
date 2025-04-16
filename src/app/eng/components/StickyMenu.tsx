@@ -83,7 +83,7 @@ export default function StickyMenuNavigation({ selectedCategory = null }) {
       >
         <div className="container mx-auto px-4 flex items-center justify-between max-w-6xl h-full">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/eng" className="flex items-center">
             <motion.div 
               whileHover={{ scale: 1.05 }} 
               whileTap={{ scale: 0.95 }}
