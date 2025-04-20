@@ -24,7 +24,8 @@ const DrinkMenuItem: React.FC<DrinkItem> = ({
   return (
     <motion.div 
       ref={itemRef}
-      className="border-b border-amber-100 pb-4 mb-4"
+      className="border-b border-amber-100 py-1.5 group" // Matching the Wine menu's py-1.5
+      whileHover={{ x: 4 }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -33,21 +34,21 @@ const DrinkMenuItem: React.FC<DrinkItem> = ({
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-8 pr-2">
           <h3 
-            className="font-serif italic text-sm sm:text-base md:text-lg"
+            className="font-serif italic text-sm md:text-base transition-all duration-300 group-hover:text-amber-800" // Matching font size
             style={{ 
               color: '#81715E',
               display: 'block',
               whiteSpace: 'normal',
               overflow: 'visible',
-              lineHeight: '1.4',
-              minHeight: '2.8em'
+              lineHeight: '1.2', // Matching line height
+              minHeight: '1.2em'  // Matching min height
             }}
           >
             {name}
           </h3>
         </div>
         
-        <div className="col-span-2 text-right pr-2 sm:pr-2">
+        <div className="col-span-2 text-right pr-1 sm:pr-2">
           <span className="text-[#81715E] font-light text-xs">{bottlePrice || '—'}</span>
         </div>
         
@@ -66,10 +67,10 @@ const DrinkMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-white bg-opacity-60 backdrop-blur-sm p-4 md:p-8 rounded-lg shadow-sm mb-12"
+      className="bg-white bg-opacity-60 backdrop-blur-sm p-3 md:p-6 rounded-lg shadow-sm" // Matching padding
     >
       <h2 
-        className="text-xl md:text-2xl font-serif tracking-wide mb-6 pb-3 border-b relative" 
+        className="text-lg md:text-xl font-serif tracking-wide mb-4 pb-2 border-b relative" // Matching font size and margins
         style={{ color: '#81715E', borderColor: 'rgba(129, 113, 94, 0.2)' }}
       >
         <span className="relative z-10">{title}</span>
@@ -81,7 +82,7 @@ const DrinkMenuSection: React.FC<MenuSection> = ({ title, items }) => {
         />
       </h2>
       
-      <div className="grid grid-cols-12 mb-4 pb-2 border-b border-amber-200 relative">
+      <div className="grid grid-cols-12 mb-2 pb-1 border-b border-amber-200 relative"> {/* Matching margins */}
         <div className="col-span-8"></div>
         <div className="col-span-2 text-right pr-1 sm:pr-2">
           <span className="text-xs font-medium text-amber-800">Bouteille</span>
@@ -89,14 +90,6 @@ const DrinkMenuSection: React.FC<MenuSection> = ({ title, items }) => {
         <div className="col-span-2 text-right">
           <span className="text-xs font-medium text-amber-800">Verre</span>
         </div>
-        
-        <motion.div 
-          className="absolute bottom-0 left-0 h-0.5 bg-amber-400" 
-          style={{ width: '100%' }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.4 }}
-        />
       </div>
       
       <div>
@@ -244,7 +237,7 @@ const DrinksMenu: React.FC = () => {
   return (
     <div 
       id="drinks-menu-section"
-      className="min-h-screen py-16 px-4" 
+      className="min-h-screen py-6 md:py-12 px-2 sm:px-4" // Matching reduced padding
       style={{ 
         backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92))', 
         backgroundAttachment: 'fixed',
@@ -253,25 +246,25 @@ const DrinksMenu: React.FC = () => {
       }}
     >
       <div className="container mx-auto max-w-4xl">
-        <header className="mb-16 text-center">
+        <header className="mb-6 md:mb-12 text-center"> {/* Matching reduced margin */}
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-block mb-6"
+            className="inline-block mb-4" // Matching reduced margin
           >
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-60" />
-            <div className="w-16 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-40" />
+            <div className="w-16 h-1 mx-auto bg-amber-600 mb-4 rounded-full opacity-40" />
           </motion.div>
           
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-serif text-5xl md:text-6xl font-light mb-6"
+            className="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4" // Matching font size and margin
             style={{ color: '#81715E' }}
           >
-            Boissons & Alcools
+            Bières & Alcools
           </motion.h1>
           
           <motion.p
@@ -288,7 +281,7 @@ const DrinksMenu: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
+            className="text-center text-xs text-neutral-600 mt-6 max-w-md mx-auto font-light italic" // Matching margin
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
             Une charge de service de 6% sera ajoutée à votre facture.
@@ -296,7 +289,7 @@ const DrinksMenu: React.FC = () => {
           </motion.p>
         </header>
 
-        <div className="space-y-4">
+        <div className="space-y-4 md:space-y-8"> {/* Matching spacing */}
           {menuSections.map((section, index) => (
             <DrinkMenuSection 
               key={index} 
@@ -306,7 +299,7 @@ const DrinksMenu: React.FC = () => {
           ))}
         </div>
         
-        <footer className="mt-16 text-center">
+        <footer className="mt-8 md:mt-12 text-center"> {/* Matching margin */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -314,7 +307,7 @@ const DrinksMenu: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
-            <div className="w-20 h-1 mx-auto bg-amber-600 mb-6 rounded-full opacity-60" />
+            <div className="w-20 h-1 mx-auto bg-amber-600 mb-4 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
               À consommer avec modération
             </p>

@@ -24,7 +24,7 @@ const menuCategories = [
     href: "/eng/menu/champagne-wines"
   },
   {
-    title: "Beers & Drinks",
+    title: "Beers & Alcohol",
     image: "/beers.jpg",
     description: "A discerning collection of artisanal brews and distinguished spirit selections.",
     href: "/eng/menu/beers-drinks"

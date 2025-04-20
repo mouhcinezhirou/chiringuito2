@@ -24,7 +24,7 @@ const menuCategories = [
     href: "/es/menu/champagne-wines"
   },
   {
-    title: "Cervezas y Bebidas",
+    title: "Cervezas y Alcohol",
     image: "/beers.jpg",
     description: "Una colección selecta de cervezas artesanales y espirituosos de distinción.",
     href: "/es/menu/beers-drinks"

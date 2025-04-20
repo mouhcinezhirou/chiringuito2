@@ -58,7 +58,7 @@ const DrinksHero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-serif text-5xl md:text-6xl font-light mb-6 text-stone-100 tracking-wide"
           >
-            Drinks <br/><span className="italic text-amber-200">& Alcohol</span>
+            Beers <br/><span className="italic text-amber-200">& Alcohol</span>
           </motion.h1>
           
           <motion.p
