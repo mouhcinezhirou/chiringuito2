@@ -151,7 +151,7 @@ const SushiMenu: React.FC = () => {
       title: 'PARA COMENZAR',
       items: [
         {
-          name: 'Rollitos de Primavera',
+          name: 'Rollitos de Pollo',
           price: 160,
           description: 'Pollo, setas chinas, fideos de arroz, hoja de arroz frita',
           details: 'Un clásico reinventado con delicadeza - nuestros rollitos crujientes revelan un corazón tierno donde el pollo se entrelaza con las setas en un baile de sabores, envueltos en una hoja de arroz que cruje en cada bocado.'
@@ -172,49 +172,42 @@ const SushiMenu: React.FC = () => {
           name: 'Spicy Tuna Roll',
           price: 160,
           description: 'Tartar de atún rojo picante, atún rojo fresco, mayonesa de wasabi',
-          pieces: 8,
           details: 'Una doble experiencia de atún - crudo y en tartar - realzada por un toque de picante que despierta los sentidos sin eclipsar la nobleza de este pescado. La mayonesa de wasabi añade una dimensión cremosa con un final que aumenta en intensidad.'
         },
         {
           name: 'Spicy Salmon Roll',
           price: 160,
           description: 'Tartar de salmón picante, salmón fresco, mayonesa de sriracha',
-          pieces: 8,
           details: 'La ternura mantecosa del salmón se encuentra con el atrevimiento del sriracha en este roll que juega con contrastes. Cada bocado revela progresivamente su complejidad, comenzando con suavidad y terminando con un agradable calor picante.'
         },
         {
           name: 'Tropical Crab Roll',
           price: 160,
           description: 'Tartar de cangrejo, aguacate, mango de temporada',
-          pieces: 8,
           details: 'Un viaje tropical en ocho bocados donde la delicada carne de cangrejo se une a la mantequilla vegetal del aguacate, mientras el mango aporta un toque solar que ilumina el conjunto con su dulce acidez exótica.'
         },
         {
           name: 'Salmon Avocado California Roll',
           price: 180,
           description: 'Salmón fresco, salmón ahumado, aguacate, queso fresco',
-          pieces: 8,
           details: 'Un diálogo entre dos expresiones del salmón - la frescura cruda y la profundidad ahumada - armonizado por la riqueza cremosa del aguacate y la ligereza del queso fresco. Nuestra interpretación de un clásico californiano con un toque mediterráneo.'
         },
         {
           name: 'Shrimp Green Roll',
           price: 180,
           description: 'Camarones fritos, tartar de pepino y aguacate, sésamo tostado, mayonesa picante',
-          pieces: 8,
           details: 'La textura crujiente de los camarones dorados se combina con la frescura herbácea del tartar verde en este roll vivificante. Las semillas de sésamo tostadas añaden notas avellanadas que bailan con el calor sutil de la mayonesa.'
         },
         {
           name: 'Crispy Chicken Roll',
           price: 180,
           description: 'Pollo tempura, queso fresco, cebollas caramelizadas, mayonesa picante, cebollas fritas',
-          pieces: 8,
           details: 'Una creación fusión audaz donde lo crujiente del pollo tempura encuentra la dulzura agridulce de las cebollas caramelizadas. Una doble textura de cebollas y una mayonesa especiada crean un roll con sabores reconfortantes y complejos.'
         },
         {
           name: 'Chiringuito Roll',
           price: 190,
           description: 'Atún rojo, camarón tempura, salmón fresco, cangrejo de Asilah, queso fresco, cebollino',
-          pieces: 8,
           details: 'Nuestra firma definitiva - un cuarteto marino de excepción donde cada ingrediente preserva su carácter mientras forma una sinfonía armoniosa. El cangrejo de Asilah, pescado a mano, aporta una dulzura yodada que la frescura del cebollino sublima.'
         }
       ]
@@ -252,35 +245,30 @@ const SushiMenu: React.FC = () => {
           name: 'Nigiri Atún Rojo',
           price: 180,
           description: 'Lonchas de atún rojo sobre arroz de sushi prensado',
-          pieces: 8,
           details: 'La nobleza marina en estado puro - nuestro atún rojo, seleccionado por su color profundo y textura sedosa, reposa majestuosamente sobre un almohadón de arroz perfumado. Un diálogo minimalista entre dos ingredientes excepcionales.'
         },
         {
           name: 'Nigiri Salmón',
           price: 180,
           description: 'Lonchas de salmón fresco sobre arroz de sushi prensado',
-          pieces: 8,
           details: 'Láminas de salmón de una ternura incomparable, cortadas con precisión para revelar su delicado veteado. Sobre el arroz, se derriten lentamente, liberando sus aceites esenciales que se casan con el vinagre sutil del arroz.'
         },
         {
           name: 'Nigiri Lubina',
           price: 180,
           description: 'Lonchas de lubina delicadas sobre arroz de sushi prensado',
-          pieces: 8,
           details: 'La finura encarnada - nuestra lubina del Mediterráneo ofrece una carne nacarada de excepcional delicadeza. Su sabor puro y elegante se realza con la simplicidad del arroz, creando una experiencia de pureza zen.'
         },
         {
           name: 'Nigiri Camarón',
           price: 140,
           description: 'Camarones cocidos sobre arroz de sushi prensado',
-          pieces: 8,
           details: 'Nuestros camarones se cocinan delicadamente para preservar su textura elástica y dulzura natural. Colocados como joyas rosas sobre su base de arroz, ofrecen un contraste de temperatura que amplifica sus aromas marinos.'
         },
         {
           name: 'Selección de Nigiris',
           price: 180,
           description: 'Atún rojo, salmón, camarón & lubina',
-          pieces: 8,
           details: 'Un cuarteto armonioso que celebra la diversidad de sabores marinos - desde el potente atún rojo hasta la delicadeza de la lubina, pasando por lo cremoso del salmón y la dulzura de los camarones. Una degustación completa servida en el orden ideal.'
         }
       ]

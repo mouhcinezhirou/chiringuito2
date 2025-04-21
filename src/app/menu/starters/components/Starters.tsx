@@ -154,9 +154,9 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Joyaux brillants de la côte atlantique de Dakhla, ces huîtres offrent un goût délicatement iodé et une texture crémeuse qui évoquent l\'essence pure de l\'océan à chaque bouchée.'
         },
         {
-          name: 'Poivrons "Padron" Frit avec Gros Sel',
+          name: 'Poivrons "Padron"',
           price: 80,
-          description: 'Poivrons verts doux légèrement pimentés',
+          description: 'Poivrons verts doux frits, accompagnés de fleur de sel',
           detailedDescription: 'Un jeu de roulette espagnole où certains sont doux et d\'autres surprennent par leur chaleur, ces petits poivrons frits croustillants sont rehaussés par le craquant du gros sel de mer.'
         },
         {
@@ -238,7 +238,7 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'La rencontre du poulet fondant et des champignons terreux dans une béchamel veloutée, le tout enveloppé d\'une chapelure dorée qui craque joyeusement sous la dent.'
         },
         {
-          name: 'Crunchi-champignons avec sauce tartare',
+          name: 'Crunchi-champi',
           price: 100,
           description: 'Champignons panés marinés et piquants avec sauce tartare',
           detailedDescription: 'Des champignons rendus addictifs par une marinade épicée et une panure croustillante, accompagnés d\'une sauce tartare maison qui équilibre parfaitement leur caractère audacieux.'
@@ -309,13 +309,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Une évasion vers les îles grecques dans chaque bouchée, où la fraîcheur des légumes gorgés de soleil se marie à la salinité de la feta et à la douceur des herbes méditerranéennes.'
         },
         {
-          name: 'Salade de crabe bleu TANGEROIS',
+          name: 'Salade de crabe bleu Tangerois',
           price: 130,
           description: 'Chiffonnade fine de salade romaine, 100gr chair de crabe et mayonnaise',
           detailedDescription: 'Notre signature locale où la délicatesse de la chair de crabe bleu s\'épanouit sur un lit de romaine croquante, le tout enveloppé d\'une mayonnaise aérienne aux notes citronnées subtiles.'
         },
         {
-          name: 'Salade Chiringuito (fruits de mer)',
+          name: 'Salade Chiringuito',
           price: 140,
           description: 'Salade, avocat, mélange de fruits de mer et une sauce cocktail',
           detailedDescription: 'Notre création emblématique qui capture l\'essence même de notre établissement - une généreuse portion de fruits de mer frais rencontrant l\'avocat crémeux sur un lit de verdure croquante.'
@@ -327,13 +327,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Le poulpe tendre et charnu s\'unit aux pommes de terre fondantes et aux poivrons fumés dans une danse d\'huile d\'olive parfumée au persil frais - une véritable ode à la Méditerranée.'
         },
         {
-          name: 'Salade burrata et tomates',
+          name: 'Salade burrata',
           price: 160,
           description: 'Servie avec des tomates et notre pesto fait maison',
           detailedDescription: 'Le contraste parfait entre la burrata crémeuse au cœur coulant et les tomates gorgées de soleil, magnifié par notre pesto artisanal aux notes de basilic fraîchement cueilli.'
         },
         {
-          name: 'Salade de chèvre chaud',
+          name: 'Salade de chèvre',
           price: 140,
           description: 'Roquette, fromage de chèvre, crème balsamique, framboises confits',
           detailedDescription: 'La chaleur du fromage de chèvre fondant se marie à la fraîcheur poivrée de la roquette, tandis que les framboises confites apportent une note sucrée-acidulée qui danse avec le vinaigre balsamique.'

@@ -142,7 +142,7 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'De Tu Bikini',
           price: 220,
-          ingredients: 'White & gold Bacardi / mango / cinnamon / pastis / grenadine / orange',
+          ingredients: 'White Bacardi / Gold Bacardi / mango / cinnamon / pastis / grenadine / orange',
           description: 'A tropical escape that combines the warmth of cinnamon with the sweet freshness of mango and grenadine, completed by a subtle touch of anise.'
         },
         {

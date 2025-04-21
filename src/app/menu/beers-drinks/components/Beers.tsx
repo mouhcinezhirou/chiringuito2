@@ -24,7 +24,7 @@ const DrinkMenuItem: React.FC<DrinkItem> = ({
   return (
     <motion.div 
       ref={itemRef}
-      className="border-b border-amber-100 py-1.5 group" // Matching the Wine menu's py-1.5
+      className="border-b border-amber-100 py-1.5 group" 
       whileHover={{ x: 4 }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -34,14 +34,14 @@ const DrinkMenuItem: React.FC<DrinkItem> = ({
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-8 pr-2">
           <h3 
-            className="font-serif italic text-sm md:text-base transition-all duration-300 group-hover:text-amber-800" // Matching font size
+            className="font-serif italic text-sm md:text-base transition-all duration-300 group-hover:text-amber-800"
             style={{ 
               color: '#81715E',
               display: 'block',
               whiteSpace: 'normal',
               overflow: 'visible',
-              lineHeight: '1.2', // Matching line height
-              minHeight: '1.2em'  // Matching min height
+              lineHeight: '1.2',
+              minHeight: '1.2em'
             }}
           >
             {name}
@@ -49,11 +49,11 @@ const DrinkMenuItem: React.FC<DrinkItem> = ({
         </div>
         
         <div className="col-span-2 text-right pr-1 sm:pr-2">
-          <span className="text-[#81715E] font-light text-xs">{bottlePrice || '—'}</span>
+          <span className="text-[#81715E] font-light text-xs">{glassPrice || '—'}</span>
         </div>
         
         <div className="col-span-2 text-right">
-          <span className="text-[#81715E] font-light text-xs">{glassPrice || '—'}</span>
+          <span className="text-[#81715E] font-light text-xs">{bottlePrice || '—'}</span>
         </div>
       </div>
     </motion.div>
@@ -67,10 +67,10 @@ const DrinkMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-white bg-opacity-60 backdrop-blur-sm p-3 md:p-6 rounded-lg shadow-sm" // Matching padding
+      className="bg-white bg-opacity-60 backdrop-blur-sm p-3 md:p-6 rounded-lg shadow-sm"
     >
       <h2 
-        className="text-lg md:text-xl font-serif tracking-wide mb-4 pb-2 border-b relative" // Matching font size and margins
+        className="text-lg md:text-xl font-serif tracking-wide mb-4 pb-2 border-b relative"
         style={{ color: '#81715E', borderColor: 'rgba(129, 113, 94, 0.2)' }}
       >
         <span className="relative z-10">{title}</span>
@@ -82,13 +82,13 @@ const DrinkMenuSection: React.FC<MenuSection> = ({ title, items }) => {
         />
       </h2>
       
-      <div className="grid grid-cols-12 mb-2 pb-1 border-b border-amber-200 relative"> {/* Matching margins */}
+      <div className="grid grid-cols-12 mb-2 pb-1 border-b border-amber-200 relative">
         <div className="col-span-8"></div>
         <div className="col-span-2 text-right pr-1 sm:pr-2">
-          <span className="text-xs font-medium text-amber-800">Bouteille</span>
+          <span className="text-xs font-medium text-amber-800">Verre</span>
         </div>
         <div className="col-span-2 text-right">
-          <span className="text-xs font-medium text-amber-800">Verre</span>
+          <span className="text-xs font-medium text-amber-800">Bouteille</span>
         </div>
       </div>
       
@@ -109,23 +109,23 @@ const DrinksMenu: React.FC = () => {
     {
       title: 'BIÈRES',
       items: [
-        { name: 'Mahou Original', glassPrice: 60 },
-        { name: 'San Miguel', glassPrice: 45 },
-        { name: 'San Miguel Sans Alcool', glassPrice: 50 },
-        { name: 'Smirnoff Ice', glassPrice: 60 },
-        { name: 'Budweiser', glassPrice: 60 },
-        { name: 'Corona', glassPrice: 80 }
+        { name: 'San Miguel', bottlePrice: 45 },
+        { name: 'San Miguel Sans Alcool', bottlePrice: 50 },
+        { name: 'Mahou Original', bottlePrice: 60 },
+        { name: 'Smirnoff Ice', bottlePrice: 60 },
+        { name: 'Budweiser', bottlePrice: 60 },
+        { name: 'Corona', bottlePrice: 80 }
       ]
     },
     {
       title: 'SANGRIA',
       items: [
-        { name: 'Sangria Original (Rouge)', bottlePrice: 440, glassPrice: 140 },
-        { name: 'Sangria Original (Blanche)', bottlePrice: 440, glassPrice: 140 },
-        { name: 'Sangria Original (Rosé)', bottlePrice: 440, glassPrice: 140 },
-        { name: 'Sangria Cava (Rouge)', bottlePrice: 540, glassPrice: 180 },
-        { name: 'Sangria Cava (Blanche)', bottlePrice: 540, glassPrice: 180 },
-        { name: 'Sangria Cava (Rosé)', bottlePrice: 540, glassPrice: 180 }
+        { name: 'Sangria Original (Rouge)', glassPrice: 140, bottlePrice: 440 },
+        { name: 'Sangria Original (Blanche)', glassPrice: 140, bottlePrice: 440 },
+        { name: 'Sangria Original (Rosé)', glassPrice: 140, bottlePrice: 440 },
+        { name: 'Sangria Cava (Rouge)', glassPrice: 180, bottlePrice: 540 },
+        { name: 'Sangria Cava (Blanche)', glassPrice: 180, bottlePrice: 540 },
+        { name: 'Sangria Cava (Rosé)', glassPrice: 180, bottlePrice: 540 }
       ]
     },
     {
@@ -237,7 +237,7 @@ const DrinksMenu: React.FC = () => {
   return (
     <div 
       id="drinks-menu-section"
-      className="min-h-screen py-6 md:py-12 px-2 sm:px-4" // Matching reduced padding
+      className="min-h-screen py-6 md:py-12 px-2 sm:px-4"
       style={{ 
         backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92))', 
         backgroundAttachment: 'fixed',
@@ -246,12 +246,12 @@ const DrinksMenu: React.FC = () => {
       }}
     >
       <div className="container mx-auto max-w-4xl">
-        <header className="mb-6 md:mb-12 text-center"> {/* Matching reduced margin */}
+        <header className="mb-6 md:mb-12 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-block mb-4" // Matching reduced margin
+            className="inline-block mb-4"
           >
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-60" />
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-4 rounded-full opacity-40" />
@@ -261,7 +261,7 @@ const DrinksMenu: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4" // Matching font size and margin
+            className="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4"
             style={{ color: '#81715E' }}
           >
             Bières & Alcools
@@ -281,7 +281,7 @@ const DrinksMenu: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-center text-xs text-neutral-600 mt-6 max-w-md mx-auto font-light italic" // Matching margin
+            className="text-center text-xs text-neutral-600 mt-6 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
             Une charge de service de 6% sera ajoutée à votre facture.
@@ -289,7 +289,7 @@ const DrinksMenu: React.FC = () => {
           </motion.p>
         </header>
 
-        <div className="space-y-4 md:space-y-8"> {/* Matching spacing */}
+        <div className="space-y-4 md:space-y-8">
           {menuSections.map((section, index) => (
             <DrinkMenuSection 
               key={index} 
@@ -299,7 +299,7 @@ const DrinksMenu: React.FC = () => {
           ))}
         </div>
         
-        <footer className="mt-8 md:mt-12 text-center"> {/* Matching margin */}
+        <footer className="mt-8 md:mt-12 text-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

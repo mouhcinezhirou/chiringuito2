@@ -137,55 +137,55 @@ const PizzaPastaMenuSection: React.FC<MenuSection> = ({ title, items }) => {
 const PizzaPastaMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'PIZZAS',
-      items: [
+      "title": "PIZZAS",
+      "items": [
         {
-          name: 'Vegetarian Pizza',
-          price: 140,
-          ingredients: 'Seasonal vegetables, tomato sauce and cheese',
-          description: 'A colorful symphony of fresh vegetables on a homemade tomato sauce base. Each bite evokes a Mediterranean garden in midsummer with fresh and balanced flavors.'
+          "name": "Primavera",
+          "price": 140,
+          "ingredients": "Seasonal vegetables, tomato sauce and cheese",
+          "description": "A colorful symphony of fresh vegetables on a homemade tomato sauce base. Each bite evokes a Mediterranean garden in midsummer with fresh and balanced flavors."
         },
         {
-          name: 'Pizza Margherita',
-          price: 120,
-          ingredients: 'Cheese with tomato sauce',
-          description: 'Elegance in its purest form - our interpretation of the Neapolitan classic with a tomato sauce flavored with fresh basil and melting mozzarella on a thin, crispy crust.'
+          "name": "La Margherita",
+          "price": 120,
+          "ingredients": "Cheese with tomato sauce",
+          "description": "Elegance in its purest form - our interpretation of the Neapolitan classic with a tomato sauce flavored with fresh basil and melting mozzarella on a thin, crispy crust."
         },
         {
-          name: 'Goat Cheese and Arugula Pizza',
-          price: 140,
-          ingredients: 'Goat cheese, arugula leaves and candied cherry tomatoes',
-          description: 'A perfect contrast between the creaminess of goat cheese, the peppery freshness of arugula and the sweetness of candied tomatoes. A creation that celebrates the refined simplicity of Mediterranean cuisine.'
+          "name": "La Rustica",
+          "price": 140,
+          "ingredients": "Goat cheese, arugula leaves and candied cherry tomatoes",
+          "description": "A perfect contrast between the creaminess of goat cheese, the peppery freshness of arugula and the sweetness of candied tomatoes. A creation that celebrates the refined simplicity of Mediterranean cuisine."
         },
         {
-          name: 'Sicilian Tuna Pizza',
-          price: 150,
-          ingredients: 'Tuna, onions, anchovies, capers, tomatoes and black olives',
-          description: 'A journey to sunny Sicily where savory tuna meets the salty accents of anchovies and capers, balanced by the sweetness of onions and the depth of black olives.'
+          "name": "La Sicilienne",
+          "price": 150,
+          "ingredients": "Tuna, onions, anchovies, capers, tomatoes and black olives",
+          "description": "A journey to sunny Sicily where savory tuna meets the salty accents of anchovies and capers, balanced by the sweetness of onions and the depth of black olives."
         },
         {
-          name: 'Seafood Pizza',
-          price: 180,
-          ingredients: 'Seafood, tomato sauce and cheese',
-          description: 'The Mediterranean in every bite with a generous mix of ocean treasures on our flavorful tomato sauce. A light layer of cheese complements without overpowering the oceanic flavors.'
+          "name": "La Méditerranéenne",
+          "price": 180,
+          "ingredients": "Seafood, tomato sauce and cheese",
+          "description": "The Mediterranean in every bite with a generous mix of ocean treasures on our flavorful tomato sauce. A light layer of cheese complements without overpowering the oceanic flavors."
         },
         {
-          name: 'Bolognese Pizza',
-          price: 160,
-          ingredients: 'Ground meat with bolognese sauce',
-          description: 'Our tribute to Emilia-Romagna with a slowly simmered bolognese sauce according to the traditional recipe. Rich in meat and aromatic herbs for a comforting experience.'
+          "name": "La Bolognese",
+          "price": 160,
+          "ingredients": "Ground meat with bolognese sauce",
+          "description": "Our tribute to Emilia-Romagna with a slowly simmered bolognese sauce according to the traditional recipe. Rich in meat and aromatic herbs for a comforting experience."
         },
         {
-          name: 'Carbonara Pizza',
-          price: 140,
-          ingredients: 'Halal turkey bacon, white sauce and cheese',
-          description: 'A reinterpretation of the Roman classic on a crispy base. Our creamy white sauce coats golden pieces of halal turkey bacon, enhanced by our blend of Italian cheeses.'
+          "name": "La Carbonara",
+          "price": 140,
+          "ingredients": "Halal turkey bacon, white sauce and cheese",
+          "description": "A reinterpretation of the Roman classic on a crispy base. Our creamy white sauce coats golden pieces of halal turkey bacon, enhanced by our blend of Italian cheeses."
         },
         {
-          name: 'Pepperoni Calzone',
-          price: 160,
-          ingredients: 'Halal Italian pepperoni, mushrooms, mozzarella, black olives',
-          description: 'Our golden pastry crescent holds a treasure of flavors where halal Italian pepperoni meets earthy mushrooms and melting mozzarella, enhanced by fragrant black olives.'
+          "name": "Calzone Piccante",
+          "price": 160,
+          "ingredients": "Halal Italian pepperoni, mushrooms, mozzarella, black olives",
+          "description": "Our golden pastry crescent holds a treasure of flavors where halal Italian pepperoni meets earthy mushrooms and melting mozzarella, enhanced by fragrant black olives."
         }
       ]
     },
@@ -211,7 +211,7 @@ const PizzaPastaMenu: React.FC = () => {
           description: 'Italian passion in every bite - our penne perfectly capture the fiery tomato sauce, punctuated with chili and softened by fresh basil leaves for a harmonious balance.'
         },
         {
-          name: 'Spaghetti Marinera (seafood)',
+          name: 'Spaghetti Marinera',
           price: 320,
           ingredients: 'Clams, seafood and wild shrimp',
           description: 'A celebration of the treasures of the sea where fresh clams, delicate seafood and wild shrimp meet in a light sauce flavored with garlic and parsley.'
@@ -229,7 +229,7 @@ const PizzaPastaMenu: React.FC = () => {
           description: 'Our interpretation of the Roman classic - al dente spaghetti coated in a creamy egg sauce, sprinkled with crispy halal turkey bacon and a generous touch of black pepper.'
         },
         {
-          name: 'Chicken and Mushroom Tagliatelle',
+          name: 'Chicken and mushroom Taglatelle',
           price: 160,
           ingredients: 'Chicken, mushrooms, white sauce flavored with truffle',
           description: 'Ribbons of fresh pasta embrace juicy pieces of chicken and mushrooms, all wrapped in a sauce delicately infused with truffle. A perfect balance between rusticity and refinement.'

@@ -111,10 +111,11 @@ const ChampagneMenu: React.FC = () => {
         { name: 'Martini Prosecco', bottlePrice: 1200, glassPrice: 100 },
         { name: 'Laurent Perrier Brut', bottlePrice: 2000 },
         { name: 'Laurent Perrier Rosé', bottlePrice: 2900 },
+        { name: 'Laurent Perrier Blanc de Blanc', bottlePrice: 2900 },
         { name: 'Laurent Perrier Brut Magnum', bottlePrice: 3600 },
         { name: 'Ruinart Blanc de Blanc', bottlePrice: 3900 },
         { name: 'Dom Perignon', bottlePrice: 7000 },
-        { name: 'Dom Perignon Rosé', bottlePrice: 15000 }
+        { name: 'Dom Perignon Rosé', bottlePrice: 15000 },
       ]
     },
     {
@@ -189,7 +190,8 @@ const ChampagneMenu: React.FC = () => {
         { name: 'Celeste Crianza Torres', bottlePrice: 560 },
         { name: 'Conde de San Cristobal', bottlePrice: 620 },
         { name: 'Sela Bodega Roda', bottlePrice: 690 },
-        { name: 'Roda 1 Bodega Roda', bottlePrice: 1800 }
+        { name: 'Roda 1 Bodega Roda', bottlePrice: 1800 },
+        { name: 'Marques de Vargas Reserva', bottlePrice: 690 }
       ]
     },
     {

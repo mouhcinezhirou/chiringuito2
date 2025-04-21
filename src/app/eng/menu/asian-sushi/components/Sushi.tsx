@@ -172,49 +172,42 @@ const SushiMenu: React.FC = () => {
           name: 'Spicy Tuna Roll',
           price: 160,
           description: 'Spicy bluefin tuna tartare, fresh bluefin tuna, wasabi mayonnaise',
-          pieces: 8,
           details: 'A double tuna experience – raw and tartare – enhanced by a touch of chili that awakens the senses without masking the nobility of this fish. Wasabi mayonnaise adds a creamy dimension with a finale that builds in intensity.'
         },
         {
           name: 'Spicy Salmon Roll',
           price: 160,
           description: 'Spicy salmon tartare, fresh salmon, sriracha mayonnaise',
-          pieces: 8,
           details: 'The unctuous tenderness of salmon meets the boldness of sriracha in this roll that plays on contrasts. Each bite progressively reveals its complexity, starting with sweetness and ending with a pleasant spicy warmth.'
         },
         {
           name: 'Tropical Crab Roll',
           price: 160,
           description: 'Crab tartare, avocado, seasonal mango',
-          pieces: 8,
           details: 'A tropical journey in eight bites where the delicate crab meat unites with the vegetable butter of avocado, while mango brings a sunny touch that illuminates the ensemble with its sweet exotic acidity.'
         },
         {
           name: 'Salmon Avocado California Roll',
           price: 180,
           description: 'Fresh salmon, smoked salmon, avocado, cream cheese',
-          pieces: 8,
           details: 'A dialogue between two expressions of salmon – fresh rawness and smoked depth – harmonized by the creamy richness of avocado and the lightness of cream cheese. Our interpretation of a Californian classic with a Mediterranean touch.'
         },
         {
           name: 'Shrimp Green Roll',
           price: 180,
           description: 'Fried shrimp, cucumber and avocado tartare, toasted sesame, spicy mayonnaise',
-          pieces: 8,
           details: 'The crispy texture of golden shrimp marries with the herbal freshness of green tartare in this invigorating roll. Toasted sesame seeds add nutty notes that dance with the subtle heat of the mayonnaise.'
         },
         {
           name: 'Crispy Chicken Roll',
           price: 180,
           description: 'Chicken tempura, cream cheese, caramelized onions, spicy mayonnaise, fried onions',
-          pieces: 8,
           details: 'A bold fusion creation where crispy chicken tempura meets the sweet-savory gentleness of caramelized onions. A double texture of onions and spicy mayonnaise create a roll with comforting and complex flavors.'
         },
         {
           name: 'Chiringuito Roll',
           price: 190,
           description: 'Bluefin tuna, tempura shrimp, fresh salmon, Asilah crab, cream cheese, chives',
-          pieces: 8,
           details: 'Our ultimate signature – an exceptional marine quartet where each ingredient preserves its character while forming a harmonious symphony. Hand-caught Asilah crab brings an iodized sweetness that the freshness of chives sublimely enhances.'
         }
       ]
@@ -252,35 +245,30 @@ const SushiMenu: React.FC = () => {
           name: 'Bluefin Tuna Nigiri',
           price: 180,
           description: 'Slices of bluefin tuna on pressed sushi rice',
-          pieces: 8,
           details: 'Marine nobility in its purest form – our bluefin tuna, selected for its deep color and silky texture, majestically rests on a pillow of fragrant rice. A minimalist dialogue between two exceptional ingredients.'
         },
         {
           name: 'Salmon Nigiri',
           price: 180,
           description: 'Slices of fresh salmon on pressed sushi rice',
-          pieces: 8,
           details: 'Salmon slices of incomparable tenderness, precisely cut to reveal their delicate marbling. On the rice, they slowly melt, releasing their essential oils that blend with the subtle vinegar of the rice.'
         },
         {
           name: 'Sea Bass Nigiri',
           price: 180,
           description: 'Delicate sea bass slices on pressed sushi rice',
-          pieces: 8,
           details: 'Refinement incarnate – our Mediterranean sea bass offers a pearly flesh of exceptional delicacy. Its pure and elegant flavor is enhanced by the simplicity of the rice, creating an experience of zen purity.'
         },
         {
           name: 'Shrimp Nigiri',
           price: 140,
           description: 'Cooked shrimp on pressed sushi rice',
-          pieces: 8,
           details: 'Our shrimp are delicately cooked to preserve their bouncy texture and natural sweetness. Placed like pink jewels on their rice base, they offer a temperature contrast that amplifies their marine aromas.'
         },
         {
           name: 'Nigiri Selection',
           price: 180,
           description: 'Bluefin tuna, salmon, shrimp & sea bass',
-          pieces: 8,
           details: 'A harmonious quartet celebrating the diversity of marine flavors – from powerful bluefin tuna to delicate sea bass, through creamy salmon and sweet shrimp. A complete tasting served in the ideal order.'
         }
       ]

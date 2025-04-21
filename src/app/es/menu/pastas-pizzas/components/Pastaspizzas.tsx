@@ -137,55 +137,55 @@ const PizzaPastaMenuSection: React.FC<MenuSection> = ({ title, items }) => {
 const PizzaPastaMenu: React.FC = () => {
   const menuSections: MenuSection[] = [
     {
-      title: 'PIZZAS',
-      items: [
+      "title": "PIZZAS",
+      "items": [
         {
-          name: 'Pizza vegetariana',
-          price: 140,
-          ingredients: 'Verduras de temporada, salsa de tomate y queso',
-          description: 'Una sinfonía colorida de verduras frescas sobre una base de salsa de tomate casera. Cada bocado evoca un jardín mediterráneo en pleno verano con sabores frescos y equilibrados.'
+          "name": "Primavera",
+          "price": 140,
+          "ingredients": "Verduras de temporada, salsa de tomate y queso",
+          "description": "Una sinfonía colorida de verduras frescas sobre una base de salsa de tomate casera. Cada bocado evoca un jardín mediterráneo en pleno verano con sabores frescos y equilibrados."
         },
         {
-          name: 'Pizza margherita',
-          price: 120,
-          ingredients: 'Queso con salsa de tomate',
-          description: 'La elegancia en su forma más pura - nuestra interpretación del clásico napolitano con una salsa de tomate aromatizada con albahaca fresca y una mozzarella fundente sobre una masa fina y crujiente.'
+          "name": "La Margherita",
+          "price": 120,
+          "ingredients": "Queso con salsa de tomate",
+          "description": "La elegancia en su forma más pura - nuestra interpretación del clásico napolitano con una salsa de tomate aromatizada con albahaca fresca y una mozzarella fundente sobre una masa fina y crujiente."
         },
         {
-          name: 'Pizza de queso de cabra y rúcula',
-          price: 140,
-          ingredients: 'Queso de cabra, hojas de rúcula y pequeños tomates confitados',
-          description: 'Un contraste perfecto entre la cremosidad del queso de cabra, la frescura picante de la rúcula y la dulzura de los tomates confitados. Una creación que celebra la simplicidad refinada de la cocina mediterránea.'
+          "name": "La Rustica",
+          "price": 140,
+          "ingredients": "Queso de cabra, hojas de rúcula y pequeños tomates confitados",
+          "description": "Un contraste perfecto entre la cremosidad del queso de cabra, la frescura picante de la rúcula y la dulzura de los tomates confitados. Una creación que celebra la simplicidad refinada de la cocina mediterránea."
         },
         {
-          name: 'Pizza siciliana de atún',
-          price: 150,
-          ingredients: 'Atún, cebollas, anchoas, alcaparras, tomates y aceitunas negras',
-          description: 'Un viaje hacia la soleada Sicilia donde el sabroso atún se encuentra con los acentos salados de las anchoas y alcaparras, equilibrado por la dulzura de las cebollas y la profundidad de las aceitunas negras.'
+          "name": "La Siciliana",
+          "price": 150,
+          "ingredients": "Atún, cebollas, anchoas, alcaparras, tomates y aceitunas negras",
+          "description": "Un viaje hacia la soleada Sicilia donde el sabroso atún se encuentra con los acentos salados de las anchoas y alcaparras, equilibrado por la dulzura de las cebollas y la profundidad de las aceitunas negras."
         },
         {
-          name: 'Pizza de mariscos',
-          price: 180,
-          ingredients: 'Mariscos, salsa de tomate y queso',
-          description: 'El Mediterráneo en cada bocado con una mezcla generosa de tesoros marinos sobre nuestra salsa de tomate perfumada. Una ligera capa de queso complementa sin dominar los sabores oceánicos.'
+          "name": "La Mediterránea",
+          "price": 180,
+          "ingredients": "Mariscos, salsa de tomate y queso",
+          "description": "El Mediterráneo en cada bocado con una mezcla generosa de tesoros marinos sobre nuestra salsa de tomate perfumada. Una ligera capa de queso complementa sin dominar los sabores oceánicos."
         },
         {
-          name: 'Pizza boloñesa',
-          price: 160,
-          ingredients: 'Carne picada con salsa boloñesa',
-          description: 'Nuestro homenaje a la Emilia-Romaña con una salsa boloñesa cocinada a fuego lento según la receta tradicional. Rica en carne y hierbas aromáticas para una experiencia reconfortante.'
+          "name": "La Boloñesa",
+          "price": 160,
+          "ingredients": "Carne picada con salsa boloñesa",
+          "description": "Nuestro homenaje a la Emilia-Romaña con una salsa boloñesa cocinada a fuego lento según la receta tradicional. Rica en carne y hierbas aromáticas para una experiencia reconfortante."
         },
         {
-          name: 'Pizza carbonara',
-          price: 140,
-          ingredients: 'Bacon de pavo "halal", salsa blanca y queso',
-          description: 'Una reinterpretación del clásico romano sobre una base crujiente. Nuestra cremosa salsa blanca envuelve trozos dorados de bacon de pavo halal, sublimada por nuestra mezcla de quesos italianos.'
+          "name": "La Carbonara",
+          "price": 140,
+          "ingredients": "Bacon de pavo 'halal', salsa blanca y queso",
+          "description": "Una reinterpretación del clásico romano sobre una base crujiente. Nuestra cremosa salsa blanca envuelve trozos dorados de bacon de pavo halal, sublimada por nuestra mezcla de quesos italianos."
         },
         {
-          name: 'Calzone pepperoni',
-          price: 160,
-          ingredients: 'Pepperoni italiano halal, champiñones, mozzarella, aceitunas negras',
-          description: 'Nuestro dorado croissant de masa encierra un tesoro de sabores donde el pepperoni italiano halal se encuentra con los champiñones terrosos y la mozzarella fundente, realzados por aromáticas aceitunas negras.'
+          "name": "Calzone Piccante",
+          "price": 160,
+          "ingredients": "Pepperoni italiano halal, champiñones, mozzarella, aceitunas negras",
+          "description": "Nuestro dorado croissant de masa encierra un tesoro de sabores donde el pepperoni italiano halal se encuentra con los champiñones terrosos y la mozzarella fundente, realzados por aromáticas aceitunas negras."
         }
       ]
     },
@@ -211,7 +211,7 @@ const PizzaPastaMenu: React.FC = () => {
           description: 'La pasión italiana en cada bocado - nuestros penne capturan perfectamente la ardiente salsa de tomate, puntuada de picante y suavizada por hojas de albahaca fresca para un equilibrio armonioso.'
         },
         {
-          name: 'Espaguetis a la marinera (mariscos)',
+          name: 'Espaguetis a la marinera',
           price: 320,
           ingredients: 'Almejas, mariscos y gambas salvajes',
           description: 'Una celebración de los tesoros del mar donde almejas frescas, delicados mariscos y gambas salvajes se encuentran en una ligera salsa perfumada con ajo y perejil.'

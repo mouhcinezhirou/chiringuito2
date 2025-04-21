@@ -150,14 +150,16 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Served with side dish of your choice',
       items: [
         {
-          name: 'Fish Tagra (tagine) "house specialty"',
+          name: 'Fish Tagra (tagine)',
           price: 340,
-          description: 'Our signature tagine slowly cooked in its traditional terrine, where fresh fish of the day is simmered with tomatoes, colorful peppers, olives, and aromatic Moroccan spices, creating an authentic dish rich in Mediterranean and North African flavors.'
+          description: 'Our signature tagine slowly cooked in its traditional terrine, where fresh fish of the day is simmered with tomatoes, colorful peppers, olives, and aromatic Moroccan spices, creating an authentic dish rich in Mediterranean and North African flavors.',
+          note: 'house specialty'
         },
         {
           name: 'Royal Shrimp Tagra (tagine)',
           price: 800,
-          description: 'A luxurious feast of king prawns prepared in our house tagine, gently simmered with a blend of saffron, garlic, fresh ginger, coriander, and a hint of mild chili. Served bubbling in its traditional terrine.'
+          description: 'A luxurious feast of king prawns prepared in our house tagine, gently simmered with a blend of saffron, garlic, fresh ginger, coriander, and a hint of mild chili. Served bubbling in its traditional terrine.',
+          note: 'house specialty'
         },
         {
           name: 'Grilled Salmon',
@@ -170,7 +172,7 @@ const FishMeatMenu: React.FC = () => {
           description: 'Meaty swordfish steak grilled to perfection, offering a firm texture and rich yet delicate flavor. Lightly marinated with Mediterranean herbs, olive oil, and lemon to enhance its natural marine freshness.'
         },
         {
-          name: 'Sole "meunière"',
+          name: 'Sole meunière',
           price: 280,
           description: 'A French classic prepared with finesse - sole fillet delicately pan-fried in brown butter, flavored with garlic and parsley, creating a golden crust that perfectly contrasts with the white tender flesh of the fish. Served with a wedge of fresh lemon.'
         },
@@ -185,12 +187,12 @@ const FishMeatMenu: React.FC = () => {
           description: 'This noble fish with fine flesh is delicately grilled to preserve its delicate texture and subtle flavor. Its delicate taste is enhanced by a simple seasoning of fresh herbs, extra virgin olive oil, and a touch of fleur de sel.'
         },
         {
-          name: 'Grilled Langoustines',
+          name: 'Grilled Scampi',
           price: 600,
           description: 'Fresh langoustines grilled to perfection, revealing their sweet and tender meat. Served in their shell with homemade garlic and herb butter that delicately melts over these delicate and aromatic crustaceans.'
         },
         {
-          name: 'Grilled King Prawns',
+          name: 'Grilled Red Prawns',
           price: 800,
           description: 'Sumptuous king prawns of exceptional caliber, delicately grilled to preserve their firm texture and naturally sweet taste. Served with a touch of lemon-infused olive oil and fresh herbs of Provence.'
         }
@@ -201,7 +203,7 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Served with side dish of your choice',
       items: [
         {
-          name: 'Beef Tagliata (beef tenderloin)',
+          name: 'Beef Tagliata',
           price: 380,
           description: 'Tender beef tenderloin thinly sliced after perfect cooking, served slightly pink and garnished with parmesan shavings, fresh arugula, and a drizzle of truffle-scented extra virgin olive oil. An Italian-inspired dish that highlights the exceptional quality of our meat.'
         },
@@ -226,7 +228,7 @@ const FishMeatMenu: React.FC = () => {
           description: 'Our signature burger made with hand-ground beef steak, grilled to perfection and topped with melted cheddar cheese, slowly caramelized onions, and our slightly smoked secret sauce. All served in a butter-toasted artisanal brioche bun.'
         },
         {
-          name: 'Mini Beef Hamburger',
+          name: 'Mini Beef Hamburgers',
           price: 140,
           description: 'Trio of delicious mini burgers prepared with the same care as our classic version. Each bite offers a perfect balance between juicy beef, melting cheddar, and our creamy homemade sauce, all in a soft mini brioche bun. Ideal for sharing or as a generous appetizer.'
         }

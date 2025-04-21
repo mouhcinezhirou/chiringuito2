@@ -49,11 +49,11 @@ const DrinkMenuItem: React.FC<DrinkItem> = ({
         </div>
         
         <div className="col-span-2 text-right pr-1 sm:pr-2">
-          <span className="text-[#81715E] font-light text-xs">{bottlePrice || '—'}</span>
+          <span className="text-[#81715E] font-light text-xs">{glassPrice || '—'}</span>
         </div>
         
         <div className="col-span-2 text-right">
-          <span className="text-[#81715E] font-light text-xs">{glassPrice || '—'}</span>
+          <span className="text-[#81715E] font-light text-xs">{bottlePrice || '—'}</span>
         </div>
       </div>
     </motion.div>
@@ -85,10 +85,10 @@ const DrinkMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       <div className="grid grid-cols-12 mb-2 pb-1 border-b border-amber-200 relative"> {/* Same as champagne menu: reduced margins */}
         <div className="col-span-8"></div>
         <div className="col-span-2 text-right pr-1 sm:pr-2">
-          <span className="text-xs font-medium text-amber-800">Bottle</span>
+          <span className="text-xs font-medium text-amber-800">Glass</span>
         </div>
         <div className="col-span-2 text-right">
-          <span className="text-xs font-medium text-amber-800">Glass</span>
+          <span className="text-xs font-medium text-amber-800">Bottle</span>
         </div>
       </div>
       
@@ -109,36 +109,36 @@ const DrinksMenu: React.FC = () => {
     {
       title: 'BEERS',
       items: [
-        { name: 'Mahou Original', glassPrice: 60 },
-        { name: 'San Miguel', glassPrice: 45 },
-        { name: 'San Miguel Alcohol Free', glassPrice: 50 },
-        { name: 'Smirnoff Ice', glassPrice: 60 },
-        { name: 'Budweiser', glassPrice: 60 },
-        { name: 'Corona', glassPrice: 80 }
+        { name: 'San Miguel', bottlePrice: 45 },
+        { name: 'San Miguel Alcohol Free', bottlePrice: 50 },
+        { name: 'Mahou Original', bottlePrice: 60 },
+        { name: 'Smirnoff Ice', bottlePrice: 60 },
+        { name: 'Budweiser', bottlePrice: 60 },
+        { name: 'Corona', bottlePrice: 80 }
       ]
     },
     {
       title: 'SANGRIA',
       items: [
-        { name: 'Original Sangria (Red)', bottlePrice: 440, glassPrice: 140 },
-        { name: 'Original Sangria (White)', bottlePrice: 440, glassPrice: 140 },
-        { name: 'Original Sangria (Rosé)', bottlePrice: 440, glassPrice: 140 },
-        { name: 'Cava Sangria (Red)', bottlePrice: 540, glassPrice: 180 },
-        { name: 'Cava Sangria (White)', bottlePrice: 540, glassPrice: 180 },
-        { name: 'Cava Sangria (Rosé)', bottlePrice: 540, glassPrice: 180 }
+        { name: 'Original Sangria (Red)', glassPrice: 140, bottlePrice: 440 },
+        { name: 'Original Sangria (White)', glassPrice: 140, bottlePrice: 440 },
+        { name: 'Original Sangria (Rosé)', glassPrice: 140, bottlePrice: 440 },
+        { name: 'Cava Sangria (Red)', glassPrice: 180, bottlePrice: 540 },
+        { name: 'Cava Sangria (White)', glassPrice: 180, bottlePrice: 540 },
+        { name: 'Cava Sangria (Rosé)', glassPrice: 180, bottlePrice: 540 }
       ]
     },
     {
       title: 'APERITIFS',
       items: [
         { name: 'Pastis', glassPrice: 70 },
-        { name: 'Pastis 12/12 St Tropez', glassPrice: 100 },
         { name: 'Porto Offley Red', glassPrice: 70 },
         { name: 'Porto Offley White', glassPrice: 70 },
         { name: 'Martini Red', glassPrice: 70 },
         { name: 'Martini White', glassPrice: 80 },
         { name: 'Martini Rosé', glassPrice: 80 },
-        { name: 'Campari', glassPrice: 80 }
+        { name: 'Campari', glassPrice: 80 },
+        { name: 'Pastis 12/12 St Tropez', glassPrice: 100 }
       ]
     },
     {
@@ -147,8 +147,8 @@ const DrinksMenu: React.FC = () => {
         { name: 'Calvados Boulard', glassPrice: 90 },
         { name: 'ABK6 VS', glassPrice: 90 },
         { name: 'ABK6 VSOP', glassPrice: 150 },
-        { name: 'ABK6 XO', glassPrice: 300 },
         { name: 'HENNESSY V.S.', glassPrice: 190 },
+        { name: 'ABK6 XO', glassPrice: 300 },
         { name: 'HENNESSY V.S.O.P.', glassPrice: 290 },
         { name: 'HENNESSY X.O.', bottlePrice: 6500 }
       ]
@@ -162,11 +162,11 @@ const DrinksMenu: React.FC = () => {
         { name: 'Get 27', glassPrice: 70 },
         { name: 'Grappa Sandro Bottega', glassPrice: 70 },
         { name: 'Limoncello', glassPrice: 70 },
-        { name: 'Baileys', glassPrice: 100 },
-        { name: 'Amaretto Disaronno', glassPrice: 100 },
         { name: 'Cointreau', glassPrice: 90 },
         { name: 'Plum Brandy', glassPrice: 90 },
-        { name: 'Poire Williams Brandy', glassPrice: 90 }
+        { name: 'Poire Williams Brandy', glassPrice: 90 },
+        { name: 'Baileys', glassPrice: 100 },
+        { name: 'Amaretto Disaronno', glassPrice: 100 }
       ]
     },
     {
@@ -174,8 +174,8 @@ const DrinksMenu: React.FC = () => {
       items: [
         { name: 'Bacardi White', glassPrice: 100 },
         { name: 'Bacardi Gold', glassPrice: 100 },
-        { name: 'Bacardi 8 Years', glassPrice: 160 },
         { name: 'Relicario Superior', glassPrice: 100 },
+        { name: 'Bacardi 8 Years', glassPrice: 160 },
         { name: 'Relicario Supremo', glassPrice: 150 },
         { name: 'Ron Zacapa 23', glassPrice: 350 },
         { name: 'Ron Zacapa XO', bottlePrice: 6500 }
@@ -194,16 +194,16 @@ const DrinksMenu: React.FC = () => {
     {
       title: 'WHISKY',
       items: [
+        { name: 'Irish Tullamore Dew', glassPrice: 100 },
         { name: 'Monkey Shoulder', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Jack Daniel\'s', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Jack Daniel\'s Honey', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Gentleman Jack', glassPrice: 140, bottlePrice: 2500 },
         { name: 'Bourbon Bulleit', glassPrice: 150 },
-        { name: 'Irish Tullamore Dew', glassPrice: 100 },
         { name: 'Glenfiddich 12 Years', glassPrice: 150, bottlePrice: 2000 },
+        { name: 'Black Label', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Glenfiddich 15 Years', glassPrice: 180, bottlePrice: 2500 },
         { name: 'Glenfiddich 18 Years', glassPrice: 240, bottlePrice: 3000 },
-        { name: 'Black Label', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Gold Label', glassPrice: 240, bottlePrice: 3000 },
         { name: 'Blue Label', bottlePrice: 9500 }
       ]
@@ -213,10 +213,10 @@ const DrinksMenu: React.FC = () => {
       items: [
         { name: 'Bombay Sapphire', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Hendrick\'s', glassPrice: 150, bottlePrice: 2000 },
-        { name: 'Monkey 47', glassPrice: 250, bottlePrice: 3000 },
-        { name: 'Gin Mare', glassPrice: 200, bottlePrice: 3000 },
         { name: 'Tanqueray', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Tanqueray Royale', glassPrice: 180, bottlePrice: 2500 },
+        { name: 'Gin Mare', glassPrice: 200, bottlePrice: 3000 },
+        { name: 'Monkey 47', glassPrice: 250, bottlePrice: 3000 },
         { name: 'Palmarae', glassPrice: 250, bottlePrice: 3000 }
       ]
     },

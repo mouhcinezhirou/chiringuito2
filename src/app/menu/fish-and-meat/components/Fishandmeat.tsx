@@ -150,14 +150,16 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Servis avec accompagnement au choix',
       items: [
         {
-          name: 'Tagra (tagine) de poisson "spécialité maison"',
+          name: 'Tagra (tagine) de poisson',
           price: 340,
-          description: 'Notre tagine signature cuit lentement dans sa terrine traditionnelle, où le poisson frais du jour est mijoté avec des tomates, des poivrons colorés, des olives et des épices marocaines aromatiques, créant un plat authentique riche en saveurs méditerranéennes et nord-africaines.'
+          description: 'Notre tagine signature cuit lentement dans sa terrine traditionnelle, où le poisson frais du jour est mijoté avec des tomates, des poivrons colorés, des olives et des épices marocaines aromatiques, créant un plat authentique riche en saveurs méditerranéennes et nord-africaines.',
+          note: 'spécialité maison'
         },
         {
           name: 'Tagra (tagine) de crevettes royale',
           price: 800,
-          description: 'Un festin luxueux de crevettes royales préparées dans notre tagine maison, mijotées délicatement avec un mélange de safran, d\'ail, de gingembre frais, de coriandre et d\'un soupçon de piment doux. Servi bouillonnant dans sa terrine traditionnelle.'
+          description: 'Un festin luxueux de crevettes royales préparées dans notre tagine maison, mijotées délicatement avec un mélange de safran, d\'ail, de gingembre frais, de coriandre et d\'un soupçon de piment doux. Servi bouillonnant dans sa terrine traditionnelle.',
+          note: 'spécialité maison'
         },
         {
           name: 'Saumon grillé',
@@ -170,7 +172,7 @@ const FishMeatMenu: React.FC = () => {
           description: 'Steak d\'espadon charnu grillé à la perfection, offrant une texture ferme et une saveur riche mais délicate. Légèrement mariné avec des herbes méditerranéennes, de l\'huile d\'olive et du citron pour rehausser sa fraîcheur marine naturelle.'
         },
         {
-          name: 'Sole "meunière"',
+          name: 'Sole meunière',
           price: 280,
           description: 'Un classique français préparé avec finesse - filet de sole délicatement poêlé dans un beurre noisette, parfumé à l\'ail et au persil, créant une croûte dorée qui contraste parfaitement avec la chair blanche et tendre du poisson. Accompagné d\'un quartier de citron frais.'
         },
@@ -190,7 +192,7 @@ const FishMeatMenu: React.FC = () => {
           description: 'Langoustines fraîches grillées à la perfection, révélant leur chair douce et sucrée. Servies dans leur carapace avec un beurre à l\'ail et aux herbes fait maison qui fond délicatement sur ces crustacés délicats et aromatiques.'
         },
         {
-          name: 'Crevettes Royales grillées',
+          name: 'Crevettes royales grillées',
           price: 800,
           description: 'Somptueuses crevettes royales de calibre exceptionnel, grillées délicatement pour préserver leur texture ferme et leur goût naturellement sucré. Servies avec une touche d\'huile d\'olive infusée au citron et aux herbes de Provence fraîches.'
         }
@@ -201,7 +203,7 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Servies avec accompagnement au choix',
       items: [
         {
-          name: 'Tagliata de boeuf (filet de boeuf)',
+          name: 'Tagliata de boeuf',
           price: 380,
           description: 'Filet de bœuf tendre tranché finement après cuisson parfaite, servi légèrement rosé et garni de copeaux de parmesan, roquette fraîche et un filet d\'huile d\'olive extra vierge parfumée à la truffe. Un plat d\'inspiration italienne qui met en valeur la qualité exceptionnelle de notre viande.'
         },
@@ -226,7 +228,7 @@ const FishMeatMenu: React.FC = () => {
           description: 'Notre burger signature élaboré avec un steak de bœuf haché à la main, grillé à la perfection et garni de fromage cheddar fondu, d\'oignons lentement caramélisés et de notre sauce secrète légèrement fumée. Le tout servi dans un pain brioché artisanal doré au beurre.'
         },
         {
-          name: 'Mini hamburger au boeuf',
+          name: 'Mini hamburgers au boeuf',
           price: 140,
           description: 'Trio de délicieux mini burgers préparés avec le même soin que notre version classique. Chaque bouchée offre un équilibre parfait entre le bœuf juteux, le cheddar fondant et notre sauce maison crémeuse, le tout dans un petit pain brioché moelleux. Idéal pour partager ou comme entrée généreuse.'
         }

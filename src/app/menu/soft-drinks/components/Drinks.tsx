@@ -140,7 +140,7 @@ const DrinkMenu: React.FC = () => {
       title: 'EAUX MINÉRALES',
       items: [
         {
-          name: 'Aïn Saiss 75cl',
+          name: 'Sidi Ali 75cl',
           price: 50,
           ingredients: 'Eau minérale naturelle',
           description: 'Eau minérale naturelle rafraîchissante du Maroc'
@@ -172,7 +172,7 @@ const DrinkMenu: React.FC = () => {
           name: 'Soda',
           price: 50,
           ingredients: 'Différents parfums disponibles',
-          description: 'Choix entre cola, citron-lime ou orange'
+          description: 'coca cola, coca cola zero, shweppes citron, schweppes tonic, sprite, poms, hawai'
         },
         {
           name: 'Jus de Fruits Frais',
@@ -183,8 +183,8 @@ const DrinkMenu: React.FC = () => {
         {
           name: 'Café Espresso',
           price: 50,
-          ingredients: 'Grains d\'arabica',
-          description: 'Espresso riche et aromatique'
+          ingredients: 'Illy café ',
+          description: 'espresso, americain, café au lait'
         },
         {
           name: 'Thé à la Menthe',

@@ -172,49 +172,42 @@ const SushiMenu: React.FC = () => {
           name: 'Spicy Tuna Roll',
           price: 160,
           description: 'Tartare de thon rouge piquant, thon rouge frais, mayonnaise au wasabi',
-          pieces: 8,
           details: 'Une double expérience de thon – cru et en tartare – relevée par une touche de piment qui éveille les sens sans masquer la noblesse de ce poisson. La mayonnaise au wasabi ajoute une dimension crémeuse avec une finale qui monte en puissance.'
         },
         {
           name: 'Spicy Salmon Roll',
           price: 160,
           description: 'Tartare de saumon piquant, saumon frais, mayonnaise au sriracha',
-          pieces: 8,
           details: 'La tendresse onctueuse du saumon rencontre l\'audace du sriracha dans ce roll qui joue sur les contrastes. Chaque bouchée révèle progressivement sa complexité, commençant par la douceur et terminant sur une agréable chaleur épicée.'
         },
         {
           name: 'Tropical Crab Roll',
           price: 160,
           description: 'Tartare de crabe, avocat, mangue de saison',
-          pieces: 8,
           details: 'Un voyage tropical en huit bouchées où la chair délicate du crabe s\'unit au beurre végétal de l\'avocat, tandis que la mangue apporte une touche solaire qui illumine l\'ensemble avec sa douce acidité exotique.'
         },
         {
           name: 'Salmon Avocado California Roll',
           price: 180,
           description: 'Saumon frais, saumon fumé, avocat, fromage frais',
-          pieces: 8,
           details: 'Un dialogue entre deux expressions du saumon – la fraîcheur crue et la profondeur fumée – harmonisé par la richesse crémeuse de l\'avocat et la légèreté du fromage frais. Notre interprétation d\'un classique californien avec une touche méditerranéenne.'
         },
         {
           name: 'Shrimp Green Roll',
           price: 180,
           description: 'Crevettes frites, tartare de concombre et avocat, sésame grillé, mayonnaise piquante',
-          pieces: 8,
           details: 'La texture croustillante des crevettes dorées se marie à la fraîcheur herbacée du tartare vert dans ce roll vivifiant. Les graines de sésame torréfiées ajoutent des notes noisettées qui dansent avec la chaleur subtile de la mayonnaise.'
         },
         {
           name: 'Crispy Chicken Roll',
           price: 180,
           description: 'Poulet tempura, fromage frais, oignons caramélisés, mayonnaise piquante, oignons frits',
-          pieces: 8,
           details: 'Une création fusion audacieuse où le croustillant du poulet tempura rencontre la douceur sucrée-salée des oignons caramélisés. Une double texture d\'oignons et une mayonnaise épicée créent un roll aux saveurs réconfortantes et complexes.'
         },
         {
           name: 'Chiringuito Roll',
           price: 190,
           description: 'Thon rouge, crevette tempura, saumon frais, crabe d\'Asilah, fromage frais, ciboulette',
-          pieces: 8,
           details: 'Notre signature ultime – un quatuor marin d\'exception où chaque ingrédient préserve son caractère tout en formant une symphonie harmonieuse. Le crabe d\'Asilah, pêché à la main, apporte une douceur iodée que la fraîcheur de la ciboulette sublime.'
         }
       ]
@@ -252,35 +245,30 @@ const SushiMenu: React.FC = () => {
           name: 'Nigiri Thon Rouge',
           price: 180,
           description: 'Tranches de thon rouge sur riz à sushi pressé',
-          pieces: 8,
           details: 'La noblesse marine à l\'état pur – notre thon rouge, sélectionné pour sa couleur profonde et sa texture soyeuse, repose majestueusement sur un oreiller de riz parfumé. Un dialogue minimaliste entre deux ingrédients d\'exception.'
         },
         {
           name: 'Nigiri Saumon',
           price: 180,
           description: 'Tranches de saumon frais sur riz à sushi pressé',
-          pieces: 8,
           details: 'Des lamelles de saumon d\'une tendreté incomparable, coupées avec précision pour révéler leur marbrure délicate. Sur le riz, elles fondent lentement, libérant leurs huiles essentielles qui se marient au vinaigre subtil du riz.'
         },
         {
           name: 'Nigiri Loup',
           price: 180,
           description: 'Tranches de loup délicates sur riz à sushi pressé',
-          pieces: 8,
           details: 'La finesse incarnée – notre loup de Méditerranée offre une chair nacrée d\'une délicatesse exceptionnelle. Sa saveur pure et élégante est mise en valeur par la simplicité du riz, créant une expérience d\'une pureté zen.'
         },
         {
           name: 'Nigiri Crevette',
           price: 140,
           description: 'Crevettes cuites sur riz à sushi pressé',
-          pieces: 8,
           details: 'Nos crevettes sont délicatement cuites pour préserver leur texture rebondissante et leur douceur naturelle. Posées comme des joyaux roses sur leur socle de riz, elles offrent un contraste de température qui amplifie leurs arômes marins.'
         },
         {
           name: 'Sélection de Nigiris',
           price: 180,
           description: 'Thon rouge, saumon, crevette & loup',
-          pieces: 8,
           details: 'Un quatuor harmonieux qui célèbre la diversité des saveurs marines – du puissant thon rouge à la délicatesse du loup, en passant par le crémeux du saumon et la douceur des crevettes. Une dégustation complète servie dans l\'ordre idéal.'
         }
       ]

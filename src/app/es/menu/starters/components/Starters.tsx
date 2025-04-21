@@ -154,13 +154,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Joyas brillantes de la costa atlántica de Dakhla, estas ostras ofrecen un sabor delicadamente yodado y una textura cremosa que evoca la esencia pura del océano en cada bocado.'
         },
         {
-          name: 'Pimientos "Padrón" Fritos con Sal Gorda',
+          name: 'Pimientos "Padrón"',
           price: 80,
-          description: 'Pimientos verdes dulces ligeramente picantes',
+          description: 'fried sweet green peppers, accompanied by fleur de sel',
           detailedDescription: 'Un juego de ruleta española donde algunos son dulces y otros sorprenden por su calor, estos pequeños pimientos fritos crujientes se realzan con el crujido de la sal marina gruesa.'
         },
         {
-          name: 'Anchoas marinadas',
+          name: 'Boquerones en Vinagre',
           price: 80,
           description: 'Filetes de anchoas frescas marinadas en aceite de oliva y ajo',
           detailedDescription: 'Una preparación tradicional mediterránea donde el intenso sabor de las anchoas se suaviza con un marinado perfumado con aceite de oliva virgen y ajo, para una experiencia gustativa profunda.'
@@ -168,7 +168,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Gambas palomitas',
           price: 90,
-          description: 'Gambas crujientes especiadas',
+          description: 'Gambas fritas crujientes especiadas',
           detailedDescription: 'Bocados de gambas recubiertas con un rebozado ligeramente picante y fritas a la perfección, creando un contraste irresistible entre lo crujiente exterior y la tierna jugosidad interior.'
         },
         {
@@ -208,7 +208,7 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Una tabla seleccionada con pasión que presenta quesos con carácter, desde los más suaves hasta los más curados, acompañados de condimentos que realzan sus complejas notas.'
         },
         {
-          name: 'Ensaladilla Rusa',
+          name: 'Ensaladilla rusa',
           price: 70,
           description: 'Patatas, zanahorias, huevos, guisantes, atún, mayonesa',
           detailedDescription: 'Una preparación nostálgica donde las verduras crujientes y el atún se mezclan en un abrazo cremoso de mayonesa, creando un equilibrio perfecto entre riqueza y frescor.'
@@ -232,13 +232,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Bocados dorados y crujientes que revelan un corazón tierno de bechamel enriquecida con delicados mariscos, capturando la esencia del Mediterráneo en cada mordisco.'
         },
         {
-          name: 'Croquetas de pollo y champiñones',
+          name: 'Croquetas de pollo',
           price: 80,
           description: 'Pollo tierno y champiñones aromáticos',
           detailedDescription: 'El encuentro del pollo tierno y los champiñones terrosos en una bechamel aterciopelada, todo ello envuelto en un pan rallado dorado que cruje alegremente bajo el diente.'
         },
         {
-          name: 'Champiñones crujientes con salsa tártara',
+          name: 'Champi-Crunchi',
           price: 100,
           description: 'Champiñones empanados marinados y picantes con salsa tártara',
           detailedDescription: 'Champiñones adictivos por un marinado picante y un empanado crujiente, acompañados de una salsa tártara casera que equilibra perfectamente su carácter audaz.'
@@ -252,7 +252,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Almejas al ajillo',
           price: 140,
-          description: 'Almejas, aceite de oliva y perejil',
+          description: 'Almejas, ajo, aceite de oliva y perejil',
           detailedDescription: 'Estos delicados mariscos se abren para revelar su carne tierna, bañada en un elixir de aceite de oliva infusionado con ajo y espolvoreada con perejil fresco - un homenaje al mar.'
         },
         {
@@ -262,13 +262,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Gambas jugosas salteadas en un aceite de oliva ardiente que captura toda la esencia del ajo y del chile, creando un jugo irresistible que pide ser saboreado con pan.'
         },
         {
-          name: 'Calamares fritos "Estilo andaluz"',
+          name: 'Calamares "Estilo andaluz"',
           price: 160,
           description: 'Calamares fritos con harina andaluza',
           detailedDescription: 'El arte andaluz de la fritura en todo su esplendor, con anillos de calamar tiernos recubiertos de una masa ligera y crujiente, servidos con un toque de limón para despertar los sabores.'
         },
         {
-          name: 'Calamares pequeños a la parrilla',
+          name: 'Chipirones a la Plancha',
           price: 220,
           description: 'Con ensalada, aceite de oliva y ajo',
           detailedDescription: 'Pequeños calamares enteros a la parrilla en su punto, conservando su ternura natural y realzados por la sutil alianza del ajo y el aceite de oliva sobre un lecho de ensalada fresca.'
@@ -309,13 +309,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Una escapada a las islas griegas en cada bocado, donde la frescura de las verduras impregnadas de sol se casa con la salinidad del queso feta y la dulzura de las hierbas mediterráneas.'
         },
         {
-          name: 'Ensalada de cangrejo azul TANGERINO',
+          name: 'Ensalada de cangrejo azul Tangerino',
           price: 130,
           description: 'Fina juliana de lechuga romana, 100gr de carne de cangrejo y mayonesa',
           detailedDescription: 'Nuestra especialidad local donde la delicadeza de la carne de cangrejo azul se despliega sobre un lecho de romana crujiente, todo ello envuelto en una mayonesa aérea con sutiles notas de limón.'
         },
         {
-          name: 'Ensalada Chiringuito (mariscos)',
+          name: 'Ensalada Chiringuito',
           price: 140,
           description: 'Ensalada, aguacate, mezcla de mariscos y salsa cocktail',
           detailedDescription: 'Nuestra creación emblemática que captura la esencia misma de nuestro establecimiento - una generosa porción de mariscos frescos encontrándose con el cremoso aguacate sobre un lecho de verduras crujientes.'
@@ -327,13 +327,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'El pulpo tierno y carnoso se une a las patatas suaves y los pimientos ahumados en una danza de aceite de oliva perfumado con perejil fresco - una verdadera oda al Mediterráneo.'
         },
         {
-          name: 'Ensalada de burrata y tomates',
+          name: 'Ensalada de burrata',
           price: 160,
           description: 'Servida con tomates y nuestro pesto casero',
           detailedDescription: 'El contraste perfecto entre la burrata cremosa de corazón líquido y los tomates cargados de sol, magnificado por nuestro pesto artesanal con notas de albahaca recién cosechada.'
         },
         {
-          name: 'Ensalada de queso de cabra caliente',
+          name: 'Ensalada de queso de cabra',
           price: 140,
           description: 'Rúcula, queso de cabra, crema balsámica, frambuesas confitadas',
           detailedDescription: 'El calor del queso de cabra fundente se casa con la frescura picante de la rúcula, mientras que las frambuesas confitadas aportan una nota agridulce que baila con el vinagre balsámico.'

@@ -187,6 +187,10 @@ const WineMenu: React.FC = () => {
           bottlePrice: 2900
         },
         {
+          name: 'Laurent Perrier Blanc de Blanc',
+          bottlePrice: 2900
+        },
+        {
           name: 'Laurent Perrier Brut Magnum',
           bottlePrice: 3600
         },
@@ -371,7 +375,7 @@ const WineMenu: React.FC = () => {
           glassPrice: 110
         },
         {
-          name: 'Marques de vargas reserva',
+          name: 'Marques de Vargas Reserva',
           bottlePrice: 690
         },
         {
@@ -409,8 +413,8 @@ const WineMenu: React.FC = () => {
           glassPrice: 110
         },
         {
-          name: 'Brouilly les jarrons Thorin',
-          bottlePrice: 520
+          name: 'Brouilly Les Jarrons Thorins',
+          bottlePrice: 590
         },
         {
           name: 'Château Lafitte',
@@ -470,7 +474,7 @@ const WineMenu: React.FC = () => {
           bottlePrice: 290
         },
         {
-          name: 'Manon Côte de provence',
+          name: 'Manon Côte de Provence',
           bottlePrice: 320
         },
         {
@@ -478,7 +482,7 @@ const WineMenu: React.FC = () => {
           bottlePrice: 440
         },
         {
-          name: 'Pétales de rose',
+          name: 'Pétales de Rose',
           bottlePrice: 460
         },
         {

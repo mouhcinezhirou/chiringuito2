@@ -154,9 +154,9 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Glistening jewels from the Atlantic coast of Dakhla, these oysters offer a delicately briny taste and creamy texture that evoke the pure essence of the ocean with every bite.'
         },
         {
-          name: 'Fried "Padron" Peppers with Coarse Salt',
+          name: 'Fried "Padron"',
           price: 80,
-          description: 'Sweet green peppers with mild heat',
+          description: 'fried sweet green peppers, accompanied by fleur de sel',
           detailedDescription: 'A Spanish roulette game where some are mild and others surprise with their heat, these crispy fried little peppers are enhanced by the crunch of coarse sea salt.'
         },
         {
@@ -238,19 +238,19 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'The meeting of melting chicken and earthy mushrooms in a velvety béchamel, all wrapped in a golden breadcrumb that joyfully cracks under the tooth.'
         },
         {
-          name: 'Crunchy Mushrooms with Tartar Sauce',
+          name: 'Crunchy Mushrooms',
           price: 100,
           description: 'Breaded marinated and spicy mushrooms with tartar sauce',
           detailedDescription: 'Mushrooms made addictive by a spicy marinade and crispy coating, accompanied by a homemade tartar sauce that perfectly balances their bold character.'
         },
         {
-          name: 'Garlic Mushrooms',
+          name: 'Sautéed Mushrooms with garlic & herbs',
           price: 100,
           description: 'Mushrooms, olive oil, garlic and parsley',
           detailedDescription: 'Simplicity at its peak, where juicy mushrooms absorb the essence of golden garlic and the aroma of fresh parsley, all coated in a fruity first-press olive oil.'
         },
         {
-          name: 'Garlic Clams',
+          name: 'Sautéed Clams',
           price: 140,
           description: 'Clams, olive oil and parsley',
           detailedDescription: 'These delicate shellfish open to reveal their tender flesh, bathed in an elixir of garlic-infused olive oil and sprinkled with fresh parsley - a tribute to the sea.'
@@ -262,13 +262,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Juicy shrimp sautéed in an ardent olive oil that captures the essence of garlic and chili, creating an irresistible juice that calls to be savored with bread.'
         },
         {
-          name: 'Fried Calamari "Andalusian Style"',
+          name: 'Andalusian Style Calamari',
           price: 160,
           description: 'Fried calamari with Andalusian flour',
           detailedDescription: 'The Andalusian art of frying in all its splendor, with tender calamari rings coated in a light and crispy batter, served with a lemon zest to awaken the flavors.'
         },
         {
-          name: 'Small Grilled Calamari',
+          name: 'Grilled Baby Calamari',
           price: 220,
           description: 'With salad, olive oil and garlic',
           detailedDescription: 'Small whole calamari grilled to perfection, preserving their natural tenderness and enhanced by the subtle alliance of garlic and olive oil on a bed of fresh salad.'
@@ -280,9 +280,9 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'A classic Italian elegance where the delicacy of pink veal marries the richness of tuna sauce, punctuated by the salty bursts of capers and the acidity of lemon.'
         },
         {
-          name: 'Galician Octopus',
+          name: 'Galician Style Octopus',
           price: 160,
-          description: 'Octopus cooked on mashed potatoes',
+          description: 'boiled octopus, mashed potatoe, sea salt, de la vera paprika',
           detailedDescription: 'A specialty from northern Spain where tender octopus rests on a bed of velvety potatoes, all generously drizzled with olive oil and sprinkled with smoked paprika.'
         }
       ]
@@ -309,13 +309,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'An escape to the Greek islands in every bite, where the freshness of sun-drenched vegetables marries the saltiness of feta and the sweetness of Mediterranean herbs.'
         },
         {
-          name: 'TANGIER Blue Crab Salad',
+          name: 'Tangier Blue Crab Salad',
           price: 130,
           description: 'Fine chiffonade of romaine lettuce, 100gr crab meat and mayonnaise',
           detailedDescription: 'Our local signature where the delicacy of blue crab meat blooms on a bed of crunchy romaine, all wrapped in an airy mayonnaise with subtle lemony notes.'
         },
         {
-          name: 'Chiringuito Salad (seafood)',
+          name: 'Chiringuito Salad',
           price: 140,
           description: 'Salad, avocado, mixed seafood and a cocktail sauce',
           detailedDescription: 'Our emblematic creation that captures the very essence of our establishment - a generous portion of fresh seafood meeting creamy avocado on a bed of crunchy greens.'
@@ -327,13 +327,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Tender and meaty octopus unites with melting potatoes and smoky peppers in a dance of olive oil perfumed with fresh parsley - a true ode to the Mediterranean.'
         },
         {
-          name: 'Burrata and Tomato Salad',
+          name: 'Burrata Salad',
           price: 160,
           description: 'Served with tomatoes and our homemade pesto',
           detailedDescription: 'The perfect contrast between creamy burrata with a flowing heart and sun-drenched tomatoes, magnified by our artisanal pesto with notes of freshly picked basil.'
         },
         {
-          name: 'Warm Goat Cheese Salad',
+          name: 'Goat Cheese Salad',
           price: 140,
           description: 'Arugula, goat cheese, balsamic cream, candied raspberries',
           detailedDescription: 'The warmth of melting goat cheese marries the peppery freshness of arugula, while candied raspberries bring a sweet-tangy note that dances with the balsamic vinegar.'
@@ -345,7 +345,7 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Extremely thin slices of tomatoes adorned with delicate tuna, all drizzled with fruity olive oil and sprinkled with fresh herbs for a dish of elegant simplicity.'
         },
         {
-          name: 'Sautéed Red Tuna Slices on a Bed of Grilled Peppers',
+          name: 'Sautéed Red Tuna & Pepper Salad',
           price: 140,
           description: 'Lightly seared tuna',
           detailedDescription: 'Red tuna briefly seared to preserve its natural tenderness, placed on a bed of smoked-flavored peppers that perfectly complement the richness of the fish without ever dominating it.'
@@ -353,7 +353,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Beef Carpaccio',
           price: 140,
-          description: 'Thin slices of raw beef',
+          description: 'Thin slices of raw beef, shaved parmesan, olive oil, sea salt, capres',
           detailedDescription: 'Extraordinarily fine slices of beef, beautifully arranged and seasoned with first press olive oil, aged parmesan and capers that enhance its delicate taste.'
         }
       ]

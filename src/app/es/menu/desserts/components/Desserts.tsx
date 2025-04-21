@@ -153,9 +153,9 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Una sinfonía tropical donde la piña jugosa se encuentra con la suavidad cremosa del coco, transportando tu paladar bajo las palmeras de una playa paradisíaca.'
         },
         {
-          name: 'Pan Perdido',
+          name: 'Pain Perdu',
           price: 80,
-          description: 'Caramelo de mantequilla salada y helado de vainilla',
+          description: 'Tostada francesa caramelizada, servida con helado de vainilla',
           preparationTime: '10 min',
           detailedDescription: 'Un recuerdo de la infancia reinventado con pan brioche dorado y crujiente, cubierto con caramelo suave que danza con las delicadas notas de vainilla de Madagascar.'
         },

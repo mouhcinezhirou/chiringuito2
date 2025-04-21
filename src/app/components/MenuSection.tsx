@@ -8,55 +8,55 @@ const menuCategories = [
   {
     title: "Cocktails & Shots",
     image: "/cocktails.jpg",
-    description: "Meticulously crafted elixirs that harmonize sophistication and sensory delight.",
+    description: "Des élixirs méticuleusement élaborés qui harmonisent sophistication et plaisir sensoriel.",
     href: "/menu/cocktails"
   },
   {
-    title: "Soft Drinks",
+    title: "Boissons gazeuses",
     image: "/soft-drinks.jpg",
-    description: "Curated non-alcoholic beverages designed to refresh and elevate the palate.",
+    description: "Boissons non alcoolisées sélectionnées pour rafraîchir et rehausser le palais.",
     href: "/menu/soft-drinks"
   },
   {
-    title: "Champagne & Wines",
+    title: "Champagnes & Vins",
     image: "/champagne.jpg",
-    description: "Prestigious vintages and effervescent champagnes from the world's most distinguished vineyards.",
+    description: "Des cuvées prestigieuses et des champagnes effervescents issus des vignobles les plus prestigieux du monde.",
     href: "/menu/champagne-wines"
   },
   {
-    title: "Beers & Alcohol",
+    title: "Bières et alcool",
     image: "/beers.jpg",
     description: "A discerning collection of artisanal brews and distinguished spirit selections.",
     href: "/menu/beers-drinks"
   },
   {
-    title: "Asian / Sushi",
+    title: "Asiatique / Sushis",
     image: "/sushi.jpg",
-    description: "Authentic Asian cuisine and precision-crafted sushi, celebrating centuries of gastronomic tradition.",
+    description: "Cuisine asiatique authentique et sushis préparés avec précision, célébrant des siècles de tradition gastronomique.",
     href: "/menu/asian-sushi"
   },
   {
-    title: "Starters",
+    title: "Entrées",
     image: "/starters.jpg",
-    description: "Carefully composed appetizers that set the stage for a memorable culinary journey.",
+    description: "Des entrées soigneusement composées qui préparent le terrain pour un voyage culinaire mémorable.",
     href: "/menu/starters"
   },
   {
-    title: "Fish & Meat",
+    title: "Poisson et Viande",
     image: "/fish-meat.jpg",
-    description: "Pristine seafood and prime cuts, sourced with meticulous attention to quality and provenance.",
+    description: "Fruits de mer immaculés et morceaux de choix, sélectionnés avec une attention méticuleuse à la qualité et à la provenance.",
     href: "/menu/fish-and-meat"
   },
   {
-    title: "Pastas & Pizzas",
+    title: "Pâtes et pizzas",
     image: "/pasta-pizza.jpg",
-    description: "Authentic Italian compositions, prepared with reverence for traditional techniques and flavors.",
+    description: "Compositions italiennes authentiques, préparées avec respect des techniques et des saveurs traditionnelles.",
     href: "/menu/pastas-pizzas"
   },
   {
     title: "Desserts",
     image: "/desserts.jpg",
-    description: "Sublime confections that provide a nuanced and elegant conclusion to your dining experience.",
+    description: "Des confiseries sublimes qui offrent une conclusion nuancée et élégante à votre expérience culinaire.",
     href: "/menu/desserts"
   }
 ];
@@ -122,7 +122,7 @@ export default function MenuCategories() {
                   <span 
                     className="font-optima inline-block border border-white/30 text-white hover:bg-white/10 font-medium py-2 px-5 rounded-full transition duration-300 self-start backdrop-blur-sm"
                   >
-                    Explore
+                    Explorer
                   </span>
                 </div>
               </Link>

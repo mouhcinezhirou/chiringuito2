@@ -150,49 +150,51 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Servidos con guarnición a elegir',
       items: [
         {
-          name: 'Tagra (tajine) de pescado "especialidad de la casa"',
+          name: 'Tagra (tajine) de pescado',
           price: 340,
-          description: 'Nuestro tajine estrella cocinado lentamente en su terrina tradicional, donde el pescado fresco del día se guisa con tomates, pimientos de colores, aceitunas y especias marroquíes aromáticas, creando un plato auténtico rico en sabores mediterráneos y norteafricanos.'
+          description: 'Nuestro tajine estrella cocinado lentamente en su terrina tradicional, donde el pescado fresco del día se guisa con tomates, pimientos de colores, aceitunas y especias marroquíes aromáticas, creando un plato auténtico rico en sabores mediterráneos y norteafricanos.',
+          note: 'especialidad de la casa'
         },
         {
           name: 'Tagra (tajine) de gambas reales',
           price: 800,
-          description: 'Un festín lujoso de gambas reales preparadas en nuestro tajine casero, cocinadas suavemente con una mezcla de azafrán, ajo, jengibre fresco, cilantro y un toque de pimiento dulce. Servido burbujeante en su terrina tradicional.'
+          description: 'Un festín lujoso de gambas reales preparadas en nuestro tajine casero, cocinadas suavemente con una mezcla de azafrán, ajo, jengibre fresco, cilantro y un toque de pimiento dulce. Servido burbujeante en su terrina tradicional.',
+          note: 'especialidad de la casa'
         },
         {
-          name: 'Salmón a la parrilla',
+          name: 'Salmón a la plancha',
           price: 340,
-          description: 'Filete de salmón premium a la parrilla con una corteza dorada y un interior tierno y jugoso. Sazonado simplemente con hierbas frescas, un chorrito de aceite de oliva y ralladura de limón para realzar su sabor natural y delicado.'
+          description: 'Filete de salmón premium a la plancha con una corteza dorada y un interior tierno y jugoso. Sazonado simplemente con hierbas frescas, un chorrito de aceite de oliva y ralladura de limón para realzar su sabor natural y delicado.'
         },
         {
-          name: 'Pez espada a la parrilla',
+          name: 'Pez espada a la plancha',
           price: 260,
-          description: 'Filete de pez espada carnoso a la parrilla perfectamente cocinado, ofreciendo una textura firme y un sabor rico pero delicado. Ligeramente marinado con hierbas mediterráneas, aceite de oliva y limón para realzar su frescura marina natural.'
+          description: 'Filete de pez espada carnoso a la plancha perfectamente cocinado, ofreciendo una textura firme y un sabor rico pero delicado. Ligeramente marinado con hierbas mediterráneas, aceite de oliva y limón para realzar su frescura marina natural.'
         },
         {
-          name: 'Lenguado "meunière"',
+          name: 'Lenguado meunière',
           price: 280,
           description: 'Un clásico francés preparado con finura - filete de lenguado delicadamente salteado en mantequilla avellana, perfumado con ajo y perejil, creando una corteza dorada que contrasta perfectamente con la carne blanca y tierna del pescado. Acompañado de un gajo de limón fresco.'
         },
         {
-          name: 'Lubina a la parrilla',
+          name: 'Lubina a la plancha',
           price: 280,
-          description: 'Lubina mediterránea a la parrilla entera o en filete según disponibilidad, con una piel crujiente y carne blanca delicada. Preparada simplemente con aceite de oliva, hierbas frescas y sal marina para preservar su excepcional sabor natural.'
+          description: 'Lubina mediterránea a la plancha entera o en filete según disponibilidad, con una piel crujiente y carne blanca delicada. Preparada simplemente con aceite de oliva, hierbas frescas y sal marina para preservar su excepcional sabor natural.'
         },
         {
-          name: 'San Pedro a la parrilla',
+          name: 'San Pedro a la plancha',
           price: 290,
-          description: 'Este noble pescado de carne fina se cocina delicadamente a la parrilla para preservar su textura delicada y su sabor sutil. Su delicado sabor se realza con un simple aderezo de hierbas frescas, aceite de oliva virgen extra y un toque de flor de sal.'
+          description: 'Este noble pescado de carne fina se cocina delicadamente a la plancha para preservar su textura delicada y su sabor sutil. Su delicado sabor se realza con un simple aderezo de hierbas frescas, aceite de oliva virgen extra y un toque de flor de sal.'
         },
         {
-          name: 'Cigalas a la parrilla',
+          name: 'Cigalas a la plancha',
           price: 600,
-          description: 'Cigalas frescas a la parrilla perfectamente cocinadas, revelando su carne suave y dulce. Servidas en su caparazón con mantequilla casera de ajo y hierbas que se derrite delicadamente sobre estos delicados y aromáticos crustáceos.'
+          description: 'Cigalas frescas a la plancha perfectamente cocinadas, revelando su carne suave y dulce. Servidas en su caparazón con mantequilla casera de ajo y hierbas que se derrite delicadamente sobre estos delicados y aromáticos crustáceos.'
         },
         {
-          name: 'Gambas Reales a la parrilla',
+          name: 'Gambas reales a la plancha',
           price: 800,
-          description: 'Suntuosas gambas reales de calibre excepcional, cocinadas delicadamente a la parrilla para preservar su textura firme y su sabor naturalmente dulce. Servidas con un toque de aceite de oliva infusionado con limón y hierbas frescas de Provenza.'
+          description: 'Suntuosas gambas reales de calibre excepcional, cocinadas delicadamente a la plancha para preservar su textura firme y su sabor naturalmente dulce. Servidas con un toque de aceite de oliva infusionado con limón y hierbas frescas de Provenza.'
         }
       ]
     },
@@ -201,7 +203,7 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Servidas con guarnición a elegir',
       items: [
         {
-          name: 'Tagliata de ternera (solomillo)',
+          name: 'Tagliata de ternera',
           price: 380,
           description: 'Solomillo de ternera tierno finamente cortado después de una cocción perfecta, servido ligeramente rosado y guarnecido con virutas de parmesano, rúcula fresca y un chorrito de aceite de oliva virgen extra perfumado con trufa. Un plato de inspiración italiana que realza la calidad excepcional de nuestra carne.'
         },
@@ -226,7 +228,7 @@ const FishMeatMenu: React.FC = () => {
           description: 'Nuestra hamburguesa estrella elaborada con carne de ternera picada a mano, asada a la perfección y guarnecida con queso cheddar fundido, cebollas lentamente caramelizadas y nuestra salsa secreta ligeramente ahumada. Todo ello servido en un pan brioche artesanal dorado en mantequilla.'
         },
         {
-          name: 'Mini hamburguesa de ternera',
+          name: 'Mini hamburguesas de ternera',
           price: 140,
           description: 'Trío de deliciosas mini hamburguesas preparadas con el mismo cuidado que nuestra versión clásica. Cada bocado ofrece un equilibrio perfecto entre la ternera jugosa, el cheddar fundido y nuestra salsa casera cremosa, todo ello en un pequeño pan brioche esponjoso. Ideal para compartir o como entrada generosa.'
         }

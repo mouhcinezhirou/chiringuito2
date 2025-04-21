@@ -142,7 +142,7 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'De Tu Bikini',
           price: 220,
-          ingredients: 'Bacardi blanco y dorado / mango / canela / pastis / granadina / naranja',
+          ingredients: 'Bacardi blanco / Bacardi dorado / mango / canela / pastis / granadina / naranja',
           description: 'Una escapada tropical que combina el calor de la canela con la dulce frescura del mango y la granadina, complementada con un sutil toque de anís.'
         },
         {
