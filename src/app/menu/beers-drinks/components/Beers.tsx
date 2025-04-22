@@ -132,13 +132,13 @@ const DrinksMenu: React.FC = () => {
       title: 'APÉRITIF',
       items: [
         { name: 'Pastis', glassPrice: 70 },
-        { name: 'Pastis 12/12 St Tropez', glassPrice: 100 },
         { name: 'Porto Offley Rouge', glassPrice: 70 },
         { name: 'Porto Offley Blanc', glassPrice: 70 },
         { name: 'Martini Rouge', glassPrice: 70 },
         { name: 'Martini Blanc', glassPrice: 80 },
         { name: 'Martini Rosé', glassPrice: 80 },
-        { name: 'Campari', glassPrice: 80 }
+        { name: 'Campari', glassPrice: 80 },
+        { name: 'Pastis 12/12 St Tropez', glassPrice: 100 }
       ]
     },
     {
@@ -147,9 +147,9 @@ const DrinksMenu: React.FC = () => {
         { name: 'Calvados Boulard', glassPrice: 90 },
         { name: 'ABK6 VS', glassPrice: 90 },
         { name: 'ABK6 VSOP', glassPrice: 150 },
-        { name: 'ABK6 XO', glassPrice: 300 },
         { name: 'HENNESSY V.S.', glassPrice: 190 },
         { name: 'HENNESSY V.S.O.P.', glassPrice: 290 },
+        { name: 'ABK6 XO', glassPrice: 300 },
         { name: 'HENNESSY X.O.', bottlePrice: 6500 }
       ]
     },
@@ -162,11 +162,11 @@ const DrinksMenu: React.FC = () => {
         { name: 'Get 27', glassPrice: 70 },
         { name: 'Grappa Sandro Bottega', glassPrice: 70 },
         { name: 'Limoncello', glassPrice: 70 },
-        { name: 'Baileys', glassPrice: 100 },
-        { name: 'Amaretto Disaronno', glassPrice: 100 },
         { name: 'Cointreau', glassPrice: 90 },
         { name: 'Eau de vie Prune', glassPrice: 90 },
-        { name: 'Eau de vie Poire Williams', glassPrice: 90 }
+        { name: 'Eau de vie Poire Williams', glassPrice: 90 },
+        { name: 'Baileys', glassPrice: 100 },
+        { name: 'Amaretto Disaronno', glassPrice: 100 }
       ]
     },
     {
@@ -174,9 +174,9 @@ const DrinksMenu: React.FC = () => {
       items: [
         { name: 'Bacardi blanc', glassPrice: 100 },
         { name: 'Bacardi Gold', glassPrice: 100 },
-        { name: 'Bacardi 8 ans', glassPrice: 160 },
         { name: 'Relicario Superior', glassPrice: 100 },
         { name: 'Relicario Supremo', glassPrice: 150 },
+        { name: 'Bacardi 8 ans', glassPrice: 160 },
         { name: 'Ron Zacapa 23', glassPrice: 350 },
         { name: 'Ron Zacapa XO', bottlePrice: 6500 }
       ]
@@ -194,16 +194,16 @@ const DrinksMenu: React.FC = () => {
     {
       title: 'WHISKY',
       items: [
+        { name: 'Irish Tullamore Dew', glassPrice: 100 },
         { name: 'Monkey Shoulder', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Jack Daniel\'s', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Jack Daniel\'s Honey', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Gentleman Jack', glassPrice: 140, bottlePrice: 2500 },
         { name: 'Bourbon Bulleit', glassPrice: 150 },
-        { name: 'Irish Tullamore Dew', glassPrice: 100 },
         { name: 'Glenfiddich 12 years', glassPrice: 150, bottlePrice: 2000 },
+        { name: 'Black Label', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Glenfiddich 15 years', glassPrice: 180, bottlePrice: 2500 },
         { name: 'Glenfiddich 18 years', glassPrice: 240, bottlePrice: 3000 },
-        { name: 'Black Label', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Gold Label', glassPrice: 240, bottlePrice: 3000 },
         { name: 'Blue Label', bottlePrice: 9500 }
       ]
@@ -213,10 +213,10 @@ const DrinksMenu: React.FC = () => {
       items: [
         { name: 'Bombay Sapphire', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Hendrick\'s', glassPrice: 150, bottlePrice: 2000 },
-        { name: 'Monkey 47', glassPrice: 250, bottlePrice: 3000 },
-        { name: 'Gin Mare', glassPrice: 200, bottlePrice: 3000 },
         { name: 'Tanqueray', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Tanqueray Royale', glassPrice: 180, bottlePrice: 2500 },
+        { name: 'Monkey 47', glassPrice: 250, bottlePrice: 3000 },
+        { name: 'Gin Mare', glassPrice: 200, bottlePrice: 3000 },
         { name: 'Palmarae', glassPrice: 250, bottlePrice: 3000 }
       ]
     },

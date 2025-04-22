@@ -148,8 +148,8 @@ const DrinksMenu: React.FC = () => {
         { name: 'ABK6 VS', glassPrice: 90 },
         { name: 'ABK6 VSOP', glassPrice: 150 },
         { name: 'HENNESSY V.S.', glassPrice: 190 },
-        { name: 'ABK6 XO', glassPrice: 300 },
         { name: 'HENNESSY V.S.O.P.', glassPrice: 290 },
+        { name: 'ABK6 XO', glassPrice: 300 },
         { name: 'HENNESSY X.O.', bottlePrice: 6500 }
       ]
     },
@@ -175,8 +175,8 @@ const DrinksMenu: React.FC = () => {
         { name: 'Bacardi White', glassPrice: 100 },
         { name: 'Bacardi Gold', glassPrice: 100 },
         { name: 'Relicario Superior', glassPrice: 100 },
-        { name: 'Bacardi 8 Years', glassPrice: 160 },
         { name: 'Relicario Supremo', glassPrice: 150 },
+        { name: 'Bacardi 8 Years', glassPrice: 160 },
         { name: 'Ron Zacapa 23', glassPrice: 350 },
         { name: 'Ron Zacapa XO', bottlePrice: 6500 }
       ]

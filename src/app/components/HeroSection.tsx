@@ -134,7 +134,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl md:text-2xl mb-10 max-w-2xl font-light text-stone-200"
         >
-          There is no greater love than the love for food
+          Il n’y a pas de plus grand amour que l’amour de la nourriture
         </motion.p>
 
         {/* CTA Button */}

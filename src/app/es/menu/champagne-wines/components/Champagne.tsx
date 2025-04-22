@@ -185,13 +185,12 @@ const ChampagneMenu: React.FC = () => {
       title: 'VINOS TINTOS ESPAÑA',
       items: [
         { name: 'Marques de Caceres', bottlePrice: 420, glassPrice: 110 },
-        { name: 'Marques de vargas reserva', bottlePrice: 690 },
         { name: 'Altos Ibericos', bottlePrice: 360 },
         { name: 'Celeste Crianza Torres', bottlePrice: 560 },
         { name: 'Conde de San Cristobal', bottlePrice: 620 },
         { name: 'Sela Bodega Roda', bottlePrice: 690 },
-        { name: 'Roda 1 Bodega Roda', bottlePrice: 1800 },
-        { name: 'Marques de Vargas Reserva', bottlePrice: 690 }
+        { name: 'Marques de Vargas Reserva', bottlePrice: 690 },
+        { name: 'Roda 1 Bodega Roda', bottlePrice: 1800 }
       ]
     },
     {
@@ -199,7 +198,7 @@ const ChampagneMenu: React.FC = () => {
       items: [
         { name: 'La Vieille Ferme Ventoux', bottlePrice: 290 },
         { name: 'Fleur de Bazeau', bottlePrice: 320, glassPrice: 110 },
-        { name: 'Brouilly les jarrons Thorin', bottlePrice: 520 },
+        { name: 'Brouilly les Jarrons Thorin', bottlePrice: 520 },
         { name: 'Château Lafitte', bottlePrice: 640 },
         { name: 'Chamirey Mercurey Bourgogne', bottlePrice: 900 },
         { name: 'Châteauneuf Du-Pape Les Sinards Perrin', bottlePrice: 1200 }
@@ -233,9 +232,9 @@ const ChampagneMenu: React.FC = () => {
       title: 'VINOS ROSADOS DEL MUNDO',
       items: [
         { name: 'Mateus rosé', bottlePrice: 290 },
-        { name: 'Manon Côte de provence', bottlePrice: 320 },
+        { name: 'Manon Côte de Provence', bottlePrice: 320 },
         { name: 'Studio By Miraval', bottlePrice: 440 },
-        { name: 'Pétales de rose', bottlePrice: 460 },
+        { name: 'Pétales de Rose', bottlePrice: 460 },
         { name: 'Miraval', bottlePrice: 580 },
         { name: 'Minuty Prestige', bottlePrice: 590 }
       ]

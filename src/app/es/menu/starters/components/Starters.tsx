@@ -156,7 +156,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Pimientos "Padrón"',
           price: 80,
-          description: 'fried sweet green peppers, accompanied by fleur de sel',
+          description: 'Pimientos verdes dulces fritos, acompañados de flor de sal',
           detailedDescription: 'Un juego de ruleta española donde algunos son dulces y otros sorprenden por su calor, estos pequeños pimientos fritos crujientes se realzan con el crujido de la sal marina gruesa.'
         },
         {
@@ -345,7 +345,7 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Lonchas de tomate de extrema finura que se adornan con delicado atún, todo ello rociado con un aceite de oliva afrutado y espolvoreado con hierbas frescas para un plato de elegante simplicidad.'
         },
         {
-          name: 'Lonchas de atún rojo salteadas sobre un lecho de pimientos asados',
+          name: 'Pimientos asados con Tataki de Atun',
           price: 140,
           description: 'Atún marcado con ligereza',
           detailedDescription: 'El atún rojo brevemente marcado para preservar su ternura natural, colocado sobre un lecho de pimientos de sabor ahumado que complementa perfectamente la riqueza del pescado sin jamás dominarlo.'

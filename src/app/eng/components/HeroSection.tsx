@@ -124,7 +124,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-4xl md:text-6xl mb-4 tracking-wide"
         >
-          Taste the Passion of Chiringito
+          Passion, Love, Art 
         </motion.h1>
 
         {/* Subheadline */}
@@ -134,7 +134,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl md:text-2xl mb-10 max-w-2xl font-light text-stone-200"
         >
-          Authentic flavors, fresh ingredients, unforgettable culinary experience
+          There is no greater love than the love for food
         </motion.p>
 
         {/* CTA Button */}

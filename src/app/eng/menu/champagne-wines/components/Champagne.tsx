@@ -375,10 +375,6 @@ const WineMenu: React.FC = () => {
           glassPrice: 110
         },
         {
-          name: 'Marques de Vargas Reserva',
-          bottlePrice: 690
-        },
-        {
           name: 'Altos Ibericos',
           bottlePrice: 360
         },
@@ -392,6 +388,10 @@ const WineMenu: React.FC = () => {
         },
         {
           name: 'Sela Bodega Roda',
+          bottlePrice: 690
+        },
+        {
+          name: 'Marques de Vargas Reserva',
           bottlePrice: 690
         },
         {

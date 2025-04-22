@@ -238,7 +238,7 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'The meeting of melting chicken and earthy mushrooms in a velvety béchamel, all wrapped in a golden breadcrumb that joyfully cracks under the tooth.'
         },
         {
-          name: 'Crunchy Mushrooms',
+          name: 'Champi-Crunchi',
           price: 100,
           description: 'Breaded marinated and spicy mushrooms with tartar sauce',
           detailedDescription: 'Mushrooms made addictive by a spicy marinade and crispy coating, accompanied by a homemade tartar sauce that perfectly balances their bold character.'
