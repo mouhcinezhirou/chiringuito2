@@ -109,7 +109,7 @@ export default function HeroSection() {
           />
         </motion.div>
 
-        {/* Línea divisoria elegante */}
+        {/* Elegant line divider */}
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: '80px' }}
@@ -117,15 +117,64 @@ export default function HeroSection() {
           className="h-px bg-amber-200/80 mb-8"
         ></motion.div>
 
-        {/* Título principal */}
-        <motion.h1 
+        {/* Headline with creative styling to ensure one line on mobile */}
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-4xl md:text-6xl mb-4 tracking-wide"
+          className="mb-4 overflow-hidden"
         >
-          Passion, Love, Art 
-        </motion.h1>
+          <h1 className="text-3xl xs:text-4xl md:text-6xl tracking-wide whitespace-nowrap">
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="inline-block"
+            >
+              ART
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="inline-block mx-1 md:mx-2 text-amber-200"
+            >
+              •
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+              className="inline-block"
+            >
+              LOVE
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+              className="inline-block mx-1 md:mx-2 text-amber-200"
+            >
+              •
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 1.1 }}
+              className="inline-block"
+            >
+              PASSION
+            </motion.span>
+          </h1>
+        </motion.div>
+
+        {/* Elegant underline animation */}
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: '120px' }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+          className="h-px bg-amber-200/60 mb-8"
+        ></motion.div>
 
         {/* Subtítulo */}
         <motion.p 
@@ -134,7 +183,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl md:text-2xl mb-10 max-w-2xl font-light text-stone-200"
         >
-          No hay amor más grande que el amor por la comida.
+          There is no greater love than the love for food
         </motion.p>
 
         {/* Botón CTA */}

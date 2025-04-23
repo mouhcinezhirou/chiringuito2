@@ -12,7 +12,7 @@ const menuCategories = [
     href: "/menu/cocktails"
   },
   {
-    title: "Boissons gazeuses",
+    title: "Boissons & Softs",
     image: "/soft-drinks.jpg",
     description: "Boissons non alcoolisées sélectionnées pour rafraîchir et rehausser le palais.",
     href: "/menu/soft-drinks"
@@ -24,7 +24,7 @@ const menuCategories = [
     href: "/menu/champagne-wines"
   },
   {
-    title: "Bières et alcool",
+    title: "Bières & Alcools",
     image: "/beers.jpg",
     description: "A discerning collection of artisanal brews and distinguished spirit selections.",
     href: "/menu/beers-drinks"
@@ -42,13 +42,13 @@ const menuCategories = [
     href: "/menu/starters"
   },
   {
-    title: "Poisson et Viande",
+    title: "Poisson & Viande",
     image: "/fish-meat.jpg",
     description: "Fruits de mer immaculés et morceaux de choix, sélectionnés avec une attention méticuleuse à la qualité et à la provenance.",
     href: "/menu/fish-and-meat"
   },
   {
-    title: "Pâtes et pizzas",
+    title: "Pâtes & pizzas",
     image: "/pasta-pizza.jpg",
     description: "Compositions italiennes authentiques, préparées avec respect des techniques et des saveurs traditionnelles.",
     href: "/menu/pastas-pizzas"
