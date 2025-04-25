@@ -47,7 +47,7 @@ const StarterMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -160,25 +160,25 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Un jeu de roulette espagnole où certains sont doux et d\'autres surprennent par leur chaleur, ces petits poivrons frits croustillants sont rehaussés par le craquant du gros sel de mer.'
         },
         {
-          name: 'Anchois marinés',
+          name: 'Anchois Marinés',
           price: 80,
           description: 'Filets d\'anchois frais marinés dans de l\'huile d\'olive et de l\'ail',
           detailedDescription: 'Une préparation traditionnelle méditerranéenne où la saveur intense des anchois est adoucie par une marinade parfumée à l\'huile d\'olive vierge et à l\'ail, pour une expérience gustative profonde.'
         },
         {
-          name: 'Crevettes pop-corn',
+          name: 'Crevettes Pop-corn',
           price: 90,
           description: 'Crevettes croustillantes épicées',
           detailedDescription: 'Des bouchées de crevettes enrobées d\'une panure légèrement épicée et frites à la perfection, créant un contraste irrésistible entre le croustillant extérieur et la tendreté juteuse à l\'intérieur.'
         },
         {
-          name: 'Tacos de tartare de thon',
+          name: 'Tacos de Tartare de Thon',
           price: 120,
           description: 'Tacos croustillant, thon rouge, mangue, avocat',
           detailedDescription: 'Une fusion élégante de saveurs où le thon rouge cru rencontre la douceur exotique de la mangue et l\'onctuosité de l\'avocat, le tout enveloppé dans l\'étreinte croustillante d\'un tacos artisanal.'
         },
         {
-          name: 'Tacos de crevettes',
+          name: 'Tacos de Crevettes',
           price: 120,
           description: 'Tacos croustillant farcis d\'un mélange de crevettes grillées, avocat, tomates, oignons avec une vinaigrette légèrement épicée',
           detailedDescription: 'La mer et la terre s\'unissent dans ces tacos où les crevettes jutteuses rencontrent la fraîcheur des légumes et l\'onctuosité de l\'avocat, relevés par une vinaigrette qui éveille délicatement les papilles.'
@@ -190,19 +190,19 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Une recette ancestrale du Moyen-Orient transformant les pois chiches en une crème soyeuse, où l\'équilibre entre le tahini, le citron et l\'huile d\'olive crée une symphonie de saveurs.'
         },
         {
-          name: 'Pommes de terre alioli',
+          name: 'Pommes de Terre Alioli',
           price: 70,
           description: 'Pommes de terre frites avec mayonnaise à l\'ail',
           detailedDescription: 'Une tapas espagnole incontournable où la chaleur des pommes de terre dorées rencontre la fraîcheur d\'une aïoli crémeuse infusée d\'ail, pour un contraste de températures et de textures réconfortant.'
         },
         {
-          name: 'Batata harra',
+          name: 'Batata Harra',
           price: 60,
           description: 'Pommes de terre frites avec du piment, de la coriandre, du citron et de l\'ail',
           detailedDescription: 'Un voyage au Liban en une bouchée, où les pommes de terre croustillantes dansent avec la chaleur des piments, la fraîcheur du citron et les notes aromatiques de la coriandre.'
         },
         {
-          name: 'Assiette de fromages',
+          name: 'Assiette de Fromages',
           price: 180,
           description: 'Sélection de fromages variés',
           detailedDescription: 'Un plateau curated avec passion présentant des fromages de caractère, allant des plus doux aux plus affinés, accompagnés de condiments qui en rehaussent les notes complexes.'
@@ -220,67 +220,67 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Petits trésors verts du Japon, ces fèves de soja en cosses sont rehaussées par le sel marin et l\'ail, offrant une expérience tactile et gustative à la fois ludique et satisfaisante.'
         },
         {
-          name: 'Tortilla espagnole',
+          name: 'Tortilla Espagnole',
           price: 70,
           description: 'Omelette aux pommes de terre',
           detailedDescription: 'Un classique espagnol réinterprété avec des pommes de terre fondantes et des œufs moelleux, cuits lentement pour créer cette texture distinctive qui fond en bouche, entre solide et onctueux.'
         },
         {
-          name: 'Croquettes de fruits de mer',
+          name: 'Croquettes de Fruits de Mer',
           price: 80,
           description: 'Béchamel crémeuse aux fruits de mer',
           detailedDescription: 'Des bouchées dorées et croustillantes qui révèlent un cœur tendre de béchamel enrichie de fruits de mer délicats, capturant l\'essence de la Méditerranée dans chaque morsure.'
         },
         {
-          name: 'Croquettes de poulet et champignon',
+          name: 'Croquettes de Poulet et Champignon',
           price: 80,
           description: 'Poulet tendre et champignons aromatiques',
           detailedDescription: 'La rencontre du poulet fondant et des champignons terreux dans une béchamel veloutée, le tout enveloppé d\'une chapelure dorée qui craque joyeusement sous la dent.'
         },
         {
-          name: 'Crunchi-champi',
+          name: 'Crunchi-Champi',
           price: 100,
-          description: 'Champignons panés marinés et piquants avec sauce tartare',
+          description: 'Champignons panés marinés et frits avec une sauce tartare',
           detailedDescription: 'Des champignons rendus addictifs par une marinade épicée et une panure croustillante, accompagnés d\'une sauce tartare maison qui équilibre parfaitement leur caractère audacieux.'
         },
         {
-          name: 'Champignons à l\'ail',
+          name: 'Champignons à L\'ail',
           price: 100,
           description: 'Champignons, huile d\'olive ail et persil',
           detailedDescription: 'La simplicité à son apogée, où les champignons juteux absorbent l\'essence de l\'ail doré et le parfum du persil frais, le tout enrobé d\'une huile d\'olive fruitée de première pression.'
         },
         {
-          name: 'Palourdes à l\'ail',
+          name: 'Palourdes à L\'ail',
           price: 140,
           description: 'Palourdes, huile d\'olive et persil',
           detailedDescription: 'Ces coquillages délicats s\'ouvrent pour révéler leur chair tendre, baignée dans un élixir d\'huile d\'olive infusée à l\'ail et parsemée de persil frais - un hommage à la mer.'
         },
         {
-          name: 'Crevettes à l\'ail',
+          name: 'Crevettes à L\'ail',
           price: 140,
           description: 'Dans une huile d\'olive épicée',
           detailedDescription: 'Des crevettes juteuses sautées dans une huile d\'olive ardente qui capture toute l\'essence de l\'ail et du piment, créant un jus irrésistible qui appelle à être savouré avec du pain.'
         },
         {
-          name: 'Calamars frits "Style andalouse"',
+          name: 'Calamars Frits "Style Andalouse"',
           price: 160,
           description: 'Calamars frits avec farine andalouse',
           detailedDescription: 'L\'art andalou de la friture dans toute sa splendeur, avec des anneaux de calamars tendres enrobés d\'une pâte légère et croustillante, servis avec un zeste de citron pour réveiller les saveurs.'
         },
         {
-          name: 'Petits calamars grillés',
+          name: 'Petits Calamars Grillés',
           price: 220,
           description: 'Avec de la salade, de l\'huile d\'olive et de l\'ail',
           detailedDescription: 'De petits calamars entiers grillés à la perfection, conservant leur tendreté naturelle et relevés par l\'alliance subtile de l\'ail et de l\'huile d\'olive sur un lit de salade fraîche.'
         },
         {
-          name: 'Vitello tonnato',
+          name: 'Vitello Tonnato',
           price: 160,
           description: 'Fines tranches de veau dans une mayonnaise onctueuse au thon, servies avec des câpres',
           detailedDescription: 'Une élégance italienne classique où la délicatesse du veau rosé se marie à la richesse de la sauce au thon, ponctuée par les éclats salés des câpres et l\'acidité du citron.'
         },
         {
-          name: 'Poulpe à la galicienne',
+          name: 'Poulpe à la Galicienne',
           price: 160,
           description: 'Poulpe cuit sur une purée de pommes de terre',
           detailedDescription: 'Une spécialité du nord de l\'Espagne où le poulpe tendre repose sur un lit de pommes de terre veloutées, le tout généreusement arrosé d\'huile d\'olive et saupoudré de paprika fumé.'
@@ -293,23 +293,23 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Salade César – Classique –',
           price: 140,
-          description: 'Laitue romaine, poulet grillé, anchois, tomates, oeuf, croûtons de pain, copeaux de parmesan et sauce césar',
+          description: 'Laitue romaine, Poulet grillé, Anchois, Tomates, Oeuf, Croûtons de pain, Copeaux de parmesan et sauce césar',
           detailedDescription: 'L\'emblématique salade réinventée avec du poulet juteux et tous les ingrédients qui en ont fait sa renommée, rehaussée par notre sauce césar maison au parfait équilibre entre crème et umami.'
         },
         {
           name: 'Salade Arc-en-ciel',
           price: 120,
-          description: 'Laitue, légumes, thon, oeufs, anchois',
+          description: 'Laitue, Légumes, Thon, Oeufs, Anchois',
           detailedDescription: 'Un tableau coloré et nutritif où chaque bouchée offre une combinaison différente de saveurs et de textures, du croquant des légumes frais à la richesse du thon et des œufs.'
         },
         {
           name: 'Salade Grecque',
           price: 140,
-          description: 'Tomates, poivrons, oignons, concombre, feta',
+          description: 'Tomates, Poivrons, Oignons, Concombre, Feta',
           detailedDescription: 'Une évasion vers les îles grecques dans chaque bouchée, où la fraîcheur des légumes gorgés de soleil se marie à la salinité de la feta et à la douceur des herbes méditerranéennes.'
         },
         {
-          name: 'Salade de crabe bleu Tangerois',
+          name: 'Salade de Crabe Bleu Tangerois',
           price: 130,
           description: 'Chiffonnade fine de salade romaine, 100gr chair de crabe et mayonnaise',
           detailedDescription: 'Notre signature locale où la délicatesse de la chair de crabe bleu s\'épanouit sur un lit de romaine croquante, le tout enveloppé d\'une mayonnaise aérienne aux notes citronnées subtiles.'
@@ -317,41 +317,41 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Salade Chiringuito',
           price: 140,
-          description: 'Salade, avocat, mélange de fruits de mer et une sauce cocktail',
+          description: 'Salade, Avocat, Mélange de fruits de mer et une sauce cocktail',
           detailedDescription: 'Notre création emblématique qui capture l\'essence même de notre établissement - une généreuse portion de fruits de mer frais rencontrant l\'avocat crémeux sur un lit de verdure croquante.'
         },
         {
           name: 'Salade de Poulpe',
           price: 160,
-          description: 'Poulpe, pommes de terres, poivrons grillés, persil, huile, sel',
+          description: 'Poulpe, Pommes de terres, Poivrons grillés, Persil, Huile, sel',
           detailedDescription: 'Le poulpe tendre et charnu s\'unit aux pommes de terre fondantes et aux poivrons fumés dans une danse d\'huile d\'olive parfumée au persil frais - une véritable ode à la Méditerranée.'
         },
         {
-          name: 'Salade burrata',
+          name: 'Salade Burrata',
           price: 160,
-          description: 'Servie avec des tomates et notre pesto fait maison',
+          description: 'Servie avec des tomates, Pesto fait maison, et crème balsamique',
           detailedDescription: 'Le contraste parfait entre la burrata crémeuse au cœur coulant et les tomates gorgées de soleil, magnifié par notre pesto artisanal aux notes de basilic fraîchement cueilli.'
         },
         {
-          name: 'Salade de chèvre',
+          name: 'Salade de Chèvre',
           price: 140,
-          description: 'Roquette, fromage de chèvre, crème balsamique, framboises confits',
+          description: 'Roquette, fromage de chèvre, Crème balsamique, Framboises confits',
           detailedDescription: 'La chaleur du fromage de chèvre fondant se marie à la fraîcheur poivrée de la roquette, tandis que les framboises confites apportent une note sucrée-acidulée qui danse avec le vinaigre balsamique.'
         },
         {
-          name: 'Carpaccio de tomates avec thon',
+          name: 'Carpaccio de Tomates avec Thon',
           price: 140,
           description: 'Tomates fines et thon premium',
           detailedDescription: 'Des tranches de tomates d\'une finesse extrême qui se parent de thon délicat, le tout arrosé d\'une huile d\'olive fruitée et parsemé d\'herbes fraîches pour un plat d\'une élégante simplicité.'
         },
         {
-          name: 'Emincé de thon rouge sautée sur un lit de poivrons grillés',
+          name: 'Emincé de Thon Rouge Sautée sur un Lit de Poivrons Grillés',
           price: 140,
           description: 'Thon saisi avec légèreté',
           detailedDescription: 'Le thon rouge brièvement saisi pour préserver sa tendreté naturelle, posé sur un lit de poivrons au goût fumé qui complète parfaitement la richesse du poisson sans jamais le dominer.'
         },
         {
-          name: 'Carpaccio de boeuf',
+          name: 'Carpaccio de Boeuf',
           price: 140,
           description: 'Fines tranches de bœuf cru',
           detailedDescription: 'Des tranches de bœuf d\'une finesse extraordinaire, joliment disposées et assaisonnées d\'huile d\'olive première pression, de parmesan affiné et de câpres qui en rehaussent le goût délicat.'

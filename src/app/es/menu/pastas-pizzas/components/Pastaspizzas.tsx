@@ -44,7 +44,7 @@ const PizzaPastaMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded
     >
       <div className="flex justify-between items-baseline mb-3">
         <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
         >
           {name}
@@ -142,7 +142,7 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "Primavera",
           "price": 140,
-          "ingredients": "Verduras de temporada, salsa de tomate y queso",
+          "ingredients": "Verduras de temporada, Salsa de tomate y queso",
           "description": "Una sinfonía colorida de verduras frescas sobre una base de salsa de tomate casera. Cada bocado evoca un jardín mediterráneo en pleno verano con sabores frescos y equilibrados."
         },
         {
@@ -154,19 +154,19 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Rustica",
           "price": 140,
-          "ingredients": "Queso de cabra, hojas de rúcula y pequeños tomates confitados",
+          "ingredients": "Queso de cabra, Hojas de rúcula y pequeños tomates confitados",
           "description": "Un contraste perfecto entre la cremosidad del queso de cabra, la frescura picante de la rúcula y la dulzura de los tomates confitados. Una creación que celebra la simplicidad refinada de la cocina mediterránea."
         },
         {
           "name": "La Siciliana",
           "price": 150,
-          "ingredients": "Atún, cebollas, anchoas, alcaparras, tomates y aceitunas negras",
+          "ingredients": "Atún, Cebollas, Anchoas, Alcaparras, Tomates y Aceitunas Negras",
           "description": "Un viaje hacia la soleada Sicilia donde el sabroso atún se encuentra con los acentos salados de las anchoas y alcaparras, equilibrado por la dulzura de las cebollas y la profundidad de las aceitunas negras."
         },
         {
           "name": "La Mediterránea",
           "price": 180,
-          "ingredients": "Mariscos, salsa de tomate y queso",
+          "ingredients": "Mariscos, Salsa de tomate y queso",
           "description": "El Mediterráneo en cada bocado con una mezcla generosa de tesoros marinos sobre nuestra salsa de tomate perfumada. Una ligera capa de queso complementa sin dominar los sabores oceánicos."
         },
         {
@@ -178,13 +178,13 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Carbonara",
           "price": 140,
-          "ingredients": "Bacon de pavo 'halal', salsa blanca y queso",
+          "ingredients": "Bacon de pavo 'halal', Salsa blanca y queso",
           "description": "Una reinterpretación del clásico romano sobre una base crujiente. Nuestra cremosa salsa blanca envuelve trozos dorados de bacon de pavo halal, sublimada por nuestra mezcla de quesos italianos."
         },
         {
           "name": "Calzone Piccante",
           "price": 160,
-          "ingredients": "Pepperoni italiano halal, champiñones, mozzarella, aceitunas negras",
+          "ingredients": "Pepperoni italiano halal, Champiñones, Mozzarella, Aceitunas negras",
           "description": "Nuestro dorado croissant de masa encierra un tesoro de sabores donde el pepperoni italiano halal se encuentra con los champiñones terrosos y la mozzarella fundente, realzados por aromáticas aceitunas negras."
         }
       ]
@@ -193,43 +193,43 @@ const PizzaPastaMenu: React.FC = () => {
       title: 'PASTAS',
       items: [
         {
-          name: 'Linguine con salmón',
+          name: 'Linguine Con Salmón',
           price: 180,
           ingredients: 'Dúo de salmón con una salsa rosada',
           description: 'Un dúo de salmón fresco y ahumado abraza unos linguine al dente en una aterciopelada salsa rosada. Cada bocado transporta entre mar y montaña para una experiencia refinada y reconfortante.'
         },
         {
-          name: 'Linguine con gambas',
+          name: 'Linguine Con Gambas',
           price: 180,
           ingredients: 'Con una salsa de tomate picante',
           description: 'Gambas salvajes selladas a la perfección sobre un nido de linguine envueltos en una salsa de tomate especiada. Las notas picantes bailan con la dulzura de los crustáceos para un plato memorable.'
         },
         {
-          name: 'Penne arrabbiata',
+          name: 'Penne Arrabbiata',
           price: 120,
           ingredients: 'Pasta con una salsa de tomate picante y albahaca',
           description: 'La pasión italiana en cada bocado - nuestros penne capturan perfectamente la ardiente salsa de tomate, puntuada de picante y suavizada por hojas de albahaca fresca para un equilibrio armonioso.'
         },
         {
-          name: 'Espaguetis a la marinera',
+          name: 'Espaguetis a la Marinera',
           price: 320,
           ingredients: 'Almejas, mariscos y gambas salvajes',
           description: 'Una celebración de los tesoros del mar donde almejas frescas, delicados mariscos y gambas salvajes se encuentran en una ligera salsa perfumada con ajo y perejil.'
         },
         {
-          name: 'Espaguetis alle vongole',
+          name: 'Espaguetis Alle Vongole',
           price: 190,
           ingredients: 'Almejas y tomates frescos',
           description: 'La elegancia marina en estado puro - almejas frescas liberan su jugo sabroso que se mezcla con los tomates y el aceite de oliva para una sinfonía de sabores marítimos.'
         },
         {
-          name: 'Espaguetis carbonara',
+          name: 'Espaguetis Carbonara',
           price: 140,
           ingredients: 'Bacon de pavo halal con salsa blanca',
           description: 'Nuestra interpretación del clásico romano - espaguetis al dente envueltos en una salsa cremosa de huevos, espolvoreados con crujiente bacon de pavo halal y un generoso toque de pimienta negra.'
         },
         {
-          name: 'Tagliatelle con pollo y champiñones',
+          name: 'Tagliatelle con Pollo y Champiñones',
           price: 160,
           ingredients: 'Pollo, champiñones, salsa blanca perfumada con trufa',
           description: 'Cintas de pasta fresca entrelazan jugosos trozos de pollo y champiñones, todo envuelto en una salsa delicadamente infusionada con trufa. Un equilibrio perfecto entre rusticidad y refinamiento.'

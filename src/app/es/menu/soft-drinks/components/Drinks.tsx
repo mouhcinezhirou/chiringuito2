@@ -44,7 +44,7 @@ const DrinkMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boo
     >
       <div className="flex justify-between items-baseline mb-3">
         <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
         >
           {name}
@@ -191,6 +191,12 @@ const DrinkMenu: React.FC = () => {
           price: 50,
           ingredients: 'Té marroquí tradicional',
           description: 'Té de menta refrescante preparado a la manera tradicional'
+        },
+        {
+          name: 'Té Sayra',
+          price: 50,
+          ingredients: 'Diferentes sabores disponibles',
+          description: 'Una colección exclusiva de tés aromáticos con sabores sutiles y cautivadores. Cada taza revela una sinfonía de sabores entre notas florales, frutales y especiadas, para un momento de pura relajación.'
         }
       ]
     }

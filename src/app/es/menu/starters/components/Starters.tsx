@@ -47,7 +47,7 @@ const StarterMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -166,19 +166,19 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Una preparación tradicional mediterránea donde el intenso sabor de las anchoas se suaviza con un marinado perfumado con aceite de oliva virgen y ajo, para una experiencia gustativa profunda.'
         },
         {
-          name: 'Gambas palomitas',
+          name: 'Gambas Palomitas',
           price: 90,
           description: 'Gambas fritas crujientes especiadas',
           detailedDescription: 'Bocados de gambas recubiertas con un rebozado ligeramente picante y fritas a la perfección, creando un contraste irresistible entre lo crujiente exterior y la tierna jugosidad interior.'
         },
         {
-          name: 'Tacos de tartar de atún',
+          name: 'Tacos de Tartar de Atún',
           price: 120,
           description: 'Tacos crujientes, atún rojo, mango, aguacate',
           detailedDescription: 'Una fusión elegante de sabores donde el atún rojo crudo se encuentra con la dulzura exótica del mango y la cremosidad del aguacate, todo ello envuelto en el abrazo crujiente de un taco artesanal.'
         },
         {
-          name: 'Tacos de gambas',
+          name: 'Tacos de Gambas',
           price: 120,
           description: 'Tacos crujientes rellenos de una mezcla de gambas a la parrilla, aguacate, tomates, cebollas con un aliño ligeramente picante',
           detailedDescription: 'El mar y la tierra se unen en estos tacos donde las jugosas gambas se encuentran con la frescura de las verduras y la cremosidad del aguacate, realzados por un aliño que despierta delicadamente las papilas gustativas.'
@@ -190,25 +190,25 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Una receta ancestral de Oriente Medio que transforma los garbanzos en una crema sedosa, donde el equilibrio entre el tahini, el limón y el aceite de oliva crea una sinfonía de sabores.'
         },
         {
-          name: 'Patatas alioli',
+          name: 'Patatas Alioli',
           price: 70,
           description: 'Patatas fritas con mayonesa de ajo',
           detailedDescription: 'Una tapa española imprescindible donde el calor de las patatas doradas se encuentra con la frescura de un alioli cremoso infusionado con ajo, para un contraste reconfortante de temperaturas y texturas.'
         },
         {
-          name: 'Batata harra',
+          name: 'Batata Harra',
           price: 60,
           description: 'Patatas fritas con chile, cilantro, limón y ajo',
           detailedDescription: 'Un viaje al Líbano en un bocado, donde las patatas crujientes bailan con el calor de los chiles, la frescura del limón y las notas aromáticas del cilantro.'
         },
         {
-          name: 'Tabla de quesos',
+          name: 'Tabla de Quesos',
           price: 180,
           description: 'Selección de quesos variados',
           detailedDescription: 'Una tabla seleccionada con pasión que presenta quesos con carácter, desde los más suaves hasta los más curados, acompañados de condimentos que realzan sus complejas notas.'
         },
         {
-          name: 'Ensaladilla rusa',
+          name: 'Ensaladilla Rusa',
           price: 70,
           description: 'Patatas, zanahorias, huevos, guisantes, atún, mayonesa',
           detailedDescription: 'Una preparación nostálgica donde las verduras crujientes y el atún se mezclan en un abrazo cremoso de mayonesa, creando un equilibrio perfecto entre riqueza y frescor.'
@@ -220,19 +220,19 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Pequeños tesoros verdes de Japón, estas habas de soja en vainas se realzan con sal marina y ajo, ofreciendo una experiencia táctil y gustativa que es a la vez lúdica y satisfactoria.'
         },
         {
-          name: 'Tortilla española',
+          name: 'Tortilla Española',
           price: 70,
           description: 'Tortilla de patatas',
           detailedDescription: 'Un clásico español reinterpretado con patatas suaves y huevos esponjosos, cocinados lentamente para crear esa textura distintiva que se deshace en la boca, entre sólido y cremoso.'
         },
         {
-          name: 'Croquetas de marisco',
+          name: 'Croquetas de Marisco',
           price: 80,
           description: 'Bechamel cremosa con mariscos',
           detailedDescription: 'Bocados dorados y crujientes que revelan un corazón tierno de bechamel enriquecida con delicados mariscos, capturando la esencia del Mediterráneo en cada mordisco.'
         },
         {
-          name: 'Croquetas de pollo',
+          name: 'Croquetas de Pollo',
           price: 80,
           description: 'Pollo tierno y champiñones aromáticos',
           detailedDescription: 'El encuentro del pollo tierno y los champiñones terrosos en una bechamel aterciopelada, todo ello envuelto en un pan rallado dorado que cruje alegremente bajo el diente.'
@@ -244,25 +244,25 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Champiñones adictivos por un marinado picante y un empanado crujiente, acompañados de una salsa tártara casera que equilibra perfectamente su carácter audaz.'
         },
         {
-          name: 'Champiñones al ajillo',
+          name: 'Champiñones al Ajillo',
           price: 100,
           description: 'Champiñones, aceite de oliva, ajo y perejil',
           detailedDescription: 'La simplicidad en su apogeo, donde los champiñones jugosos absorben la esencia del ajo dorado y el aroma del perejil fresco, todo ello envuelto en un aceite de oliva afrutado de primera presión.'
         },
         {
-          name: 'Almejas al ajillo',
+          name: 'Almejas al Ajillo',
           price: 140,
           description: 'Almejas, ajo, aceite de oliva y perejil',
           detailedDescription: 'Estos delicados mariscos se abren para revelar su carne tierna, bañada en un elixir de aceite de oliva infusionado con ajo y espolvoreada con perejil fresco - un homenaje al mar.'
         },
         {
-          name: 'Gambas al ajillo',
+          name: 'Gambas al Ajillo',
           price: 140,
           description: 'En un aceite de oliva picante',
           detailedDescription: 'Gambas jugosas salteadas en un aceite de oliva ardiente que captura toda la esencia del ajo y del chile, creando un jugo irresistible que pide ser saboreado con pan.'
         },
         {
-          name: 'Calamares "Estilo andaluz"',
+          name: 'Calamares "Estilo Andaluz"',
           price: 160,
           description: 'Calamares fritos con harina andaluza',
           detailedDescription: 'El arte andaluz de la fritura en todo su esplendor, con anillos de calamar tiernos recubiertos de una masa ligera y crujiente, servidos con un toque de limón para despertar los sabores.'
@@ -274,13 +274,13 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Pequeños calamares enteros a la parrilla en su punto, conservando su ternura natural y realzados por la sutil alianza del ajo y el aceite de oliva sobre un lecho de ensalada fresca.'
         },
         {
-          name: 'Vitello tonnato',
+          name: 'Vitello Tonnato',
           price: 160,
           description: 'Finas lonchas de ternera en una mayonesa cremosa de atún, servidas con alcaparras',
           detailedDescription: 'Una elegancia italiana clásica donde la delicadeza de la ternera rosada se casa con la riqueza de la salsa de atún, puntuada por los estallidos salados de las alcaparras y la acidez del limón.'
         },
         {
-          name: 'Pulpo a la gallega',
+          name: 'Pulpo a la Gallega',
           price: 160,
           description: 'Pulpo cocido sobre un puré de patatas',
           detailedDescription: 'Una especialidad del norte de España donde el tierno pulpo reposa sobre un lecho de patatas aterciopeladas, todo ello generosamente rociado con aceite de oliva y espolvoreado con pimentón ahumado.'
@@ -293,23 +293,23 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Ensalada César – Clásica –',
           price: 140,
-          description: 'Lechuga romana, pollo a la parrilla, anchoas, tomates, huevo, picatostes de pan, virutas de parmesano y salsa césar',
+          description: 'Lechuga romana, Pollo a la parrilla, Anchoas, Tomates, Huevo, Picatostes de pan, Virutas de parmesano y salsa césar',
           detailedDescription: 'La emblemática ensalada reinventada con pollo jugoso y todos los ingredientes que la han hecho famosa, realzada por nuestra salsa césar casera con un equilibrio perfecto entre cremosidad y umami.'
         },
         {
           name: 'Ensalada Arcoíris',
           price: 120,
-          description: 'Lechuga, verduras, atún, huevos, anchoas',
+          description: 'Lechuga, Verduras, Atún, Huevos, Anchoas',
           detailedDescription: 'Un cuadro colorido y nutritivo donde cada bocado ofrece una combinación diferente de sabores y texturas, desde el crujido de las verduras frescas hasta la riqueza del atún y los huevos.'
         },
         {
           name: 'Ensalada Griega',
           price: 140,
-          description: 'Tomates, pimientos, cebollas, pepino, feta',
+          description: 'Tomates, Pimientos, Cebollas, Pepino, Feta',
           detailedDescription: 'Una escapada a las islas griegas en cada bocado, donde la frescura de las verduras impregnadas de sol se casa con la salinidad del queso feta y la dulzura de las hierbas mediterráneas.'
         },
         {
-          name: 'Ensalada de cangrejo azul Tangerino',
+          name: 'Ensalada de Cangrejo Azul Tangerino',
           price: 130,
           description: 'Fina juliana de lechuga romana, 100gr de carne de cangrejo y mayonesa',
           detailedDescription: 'Nuestra especialidad local donde la delicadeza de la carne de cangrejo azul se despliega sobre un lecho de romana crujiente, todo ello envuelto en una mayonesa aérea con sutiles notas de limón.'
@@ -317,41 +317,41 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Ensalada Chiringuito',
           price: 140,
-          description: 'Ensalada, aguacate, mezcla de mariscos y salsa cocktail',
+          description: 'Ensalada, Aguacate, Mezcla de mariscos y salsa cocktail',
           detailedDescription: 'Nuestra creación emblemática que captura la esencia misma de nuestro establecimiento - una generosa porción de mariscos frescos encontrándose con el cremoso aguacate sobre un lecho de verduras crujientes.'
         },
         {
           name: 'Ensalada de Pulpo',
           price: 160,
-          description: 'Pulpo, patatas, pimientos asados, perejil, aceite, sal',
+          description: 'Pulpo, Patatas, Pimientos asados, Perejil, Aceite, sal',
           detailedDescription: 'El pulpo tierno y carnoso se une a las patatas suaves y los pimientos ahumados en una danza de aceite de oliva perfumado con perejil fresco - una verdadera oda al Mediterráneo.'
         },
         {
-          name: 'Ensalada de burrata',
+          name: 'Ensalada de Burrata',
           price: 160,
-          description: 'Servida con tomates y nuestro pesto casero',
+          description: 'Servida con tomates, Pesto casero, y créma balsámica',
           detailedDescription: 'El contraste perfecto entre la burrata cremosa de corazón líquido y los tomates cargados de sol, magnificado por nuestro pesto artesanal con notas de albahaca recién cosechada.'
         },
         {
-          name: 'Ensalada de queso de cabra',
+          name: 'Ensalada de Queso de Cabra',
           price: 140,
-          description: 'Rúcula, queso de cabra, crema balsámica, frambuesas confitadas',
+          description: 'Rúcula, Queso de cabra, Crema balsámica, Frambuesas confitadas',
           detailedDescription: 'El calor del queso de cabra fundente se casa con la frescura picante de la rúcula, mientras que las frambuesas confitadas aportan una nota agridulce que baila con el vinagre balsámico.'
         },
         {
-          name: 'Carpaccio de tomates con atún',
+          name: 'Carpaccio de Tomates con Atún',
           price: 140,
           description: 'Tomates finos y atún premium',
           detailedDescription: 'Lonchas de tomate de extrema finura que se adornan con delicado atún, todo ello rociado con un aceite de oliva afrutado y espolvoreado con hierbas frescas para un plato de elegante simplicidad.'
         },
         {
-          name: 'Pimientos asados con Tataki de Atun',
+          name: 'Pimientos Asados con Tataki de Atun',
           price: 140,
           description: 'Atún marcado con ligereza',
           detailedDescription: 'El atún rojo brevemente marcado para preservar su ternura natural, colocado sobre un lecho de pimientos de sabor ahumado que complementa perfectamente la riqueza del pescado sin jamás dominarlo.'
         },
         {
-          name: 'Carpaccio de ternera',
+          name: 'Carpaccio de Ternera',
           price: 140,
           description: 'Finas lonchas de ternera cruda',
           detailedDescription: 'Lonchas de ternera de extraordinaria finura, bellamente dispuestas y sazonadas con aceite de oliva de primera presión, parmesano curado y alcaparras que realzan su delicado sabor.'

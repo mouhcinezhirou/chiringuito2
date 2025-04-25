@@ -47,7 +47,7 @@ const StarterMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -244,7 +244,7 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Mushrooms made addictive by a spicy marinade and crispy coating, accompanied by a homemade tartar sauce that perfectly balances their bold character.'
         },
         {
-          name: 'Sautéed Mushrooms with garlic & herbs',
+          name: 'Sautéed Mushrooms with Garlic & Herbs',
           price: 100,
           description: 'Mushrooms, olive oil, garlic and parsley',
           detailedDescription: 'Simplicity at its peak, where juicy mushrooms absorb the essence of golden garlic and the aroma of fresh parsley, all coated in a fruity first-press olive oil.'
@@ -282,7 +282,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Galician Style Octopus',
           price: 160,
-          description: 'boiled octopus, mashed potatoe, sea salt, de la vera paprika',
+          description: 'Boiled octopus, mashed potatoe, sea salt, de la vera paprika',
           detailedDescription: 'A specialty from northern Spain where tender octopus rests on a bed of velvety potatoes, all generously drizzled with olive oil and sprinkled with smoked paprika.'
         }
       ]
@@ -299,13 +299,13 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Rainbow Salad',
           price: 120,
-          description: 'Lettuce, vegetables, tuna, eggs, anchovies',
+          description: 'Lettuce, Vegetables, Tuna, Eggs, Anchovies',
           detailedDescription: 'A colorful and nutritious tableau where each bite offers a different combination of flavors and textures, from the crunch of fresh vegetables to the richness of tuna and eggs.'
         },
         {
           name: 'Greek Salad',
           price: 140,
-          description: 'Tomatoes, peppers, onions, cucumber, feta',
+          description: 'Tomatoes, Peppers, Onions, Cucumber, Feta',
           detailedDescription: 'An escape to the Greek islands in every bite, where the freshness of sun-drenched vegetables marries the saltiness of feta and the sweetness of Mediterranean herbs.'
         },
         {
@@ -317,25 +317,25 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Chiringuito Salad',
           price: 140,
-          description: 'Salad, avocado, mixed seafood and a cocktail sauce',
+          description: 'Salad, Avocado, Mixed seafood and a cocktail sauce',
           detailedDescription: 'Our emblematic creation that captures the very essence of our establishment - a generous portion of fresh seafood meeting creamy avocado on a bed of crunchy greens.'
         },
         {
           name: 'Octopus Salad',
           price: 160,
-          description: 'Octopus, potatoes, grilled peppers, parsley, oil, salt',
+          description: 'Octopus, Potatoes, Grilled peppers, Parsley, Oil, Salt',
           detailedDescription: 'Tender and meaty octopus unites with melting potatoes and smoky peppers in a dance of olive oil perfumed with fresh parsley - a true ode to the Mediterranean.'
         },
         {
           name: 'Burrata Salad',
           price: 160,
-          description: 'Served with tomatoes and our homemade pesto',
+          description: 'Serviced with tomatoes, Homemade pesto, and balsamic cream',
           detailedDescription: 'The perfect contrast between creamy burrata with a flowing heart and sun-drenched tomatoes, magnified by our artisanal pesto with notes of freshly picked basil.'
         },
         {
           name: 'Goat Cheese Salad',
           price: 140,
-          description: 'Arugula, goat cheese, balsamic cream, candied raspberries',
+          description: 'Arugula, Goat cheese, Balsamic cream, Candied raspberries',
           detailedDescription: 'The warmth of melting goat cheese marries the peppery freshness of arugula, while candied raspberries bring a sweet-tangy note that dances with the balsamic vinegar.'
         },
         {

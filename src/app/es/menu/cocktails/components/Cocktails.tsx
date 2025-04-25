@@ -44,7 +44,7 @@ const CocktailMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: 
     >
       <div className="flex justify-between items-baseline mb-3">
         <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
         >
           {name}
@@ -142,25 +142,25 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'De Tu Bikini',
           price: 220,
-          ingredients: 'Bacardi blanco / Bacardi dorado / mango / canela / pastis / granadina / naranja',
+          ingredients: 'Bacardi Blanco / Bacardi Dorado / Mango / Canela / Pastis / Granadina / Naranja',
           description: 'Una escapada tropical que combina el calor de la canela con la dulce frescura del mango y la granadina, complementada con un sutil toque de anís.'
         },
         {
           name: 'Mai Tai Chiringuito',
           price: 220,
-          ingredients: 'Bacardi Gold / Licor de mandarina / Orgeat / Naranja / Bitter angostura',
+          ingredients: 'Bacardi Gold / Licor de Mandarina / Orgeat / Naranja / Bitter Angostura',
           description: 'Nuestra versión distintiva del clásico Mai Tai, trayendo la puesta de sol en la playa a tu vaso con ricas notas de almendra y cítricos vibrantes.'
         },
         {
           name: 'No Te Olvides Del Verano',
           price: 220,
-          ingredients: 'Vodka Russian Standard / Blue curaçao / Orgeat / Licor de coco / Tónica',
+          ingredients: 'Vodka Russian Standard / Blue Curaçao / Orgeat / Licor de Coco / Tónica',
           description: 'Un recuerdo del verano capturado en azul turquesa, con delicadas notas de coco y almendra que permanecen como el último día de vacaciones.'
         },
         {
           name: 'Tuki-Tuki',
           price: 220,
-          ingredients: 'Sake / maracuyá / licor de melocotón / falernum / limón',
+          ingredients: 'Sake / Maracuyá / Licor de Melocotón / Falernum / Limón',
           description: 'Un viaje exótico que combina la tradición japonesa con especias caribeñas, creando una equilibrada armonía de dulce, ácido y umami.'
         }
       ]
@@ -171,7 +171,7 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'Moscow Mule',
           price: 160,
-          ingredients: 'Vodka Russian standard / Ginger beer',
+          ingredients: 'Vodka Russian Standard / Ginger Beer',
           description: 'El clásico atemporal servido con un toque de cáscara mediterránea, en nuestra taza de cobre característica que lo mantiene perfectamente fresco.'
         },
         {
@@ -183,64 +183,64 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'Soprano',
           price: 160,
-          ingredients: 'Whisky Jack Daniel Honey / Amareto / Bitter Angostura / Twist naranja',
+          ingredients: 'Whisky Jack Daniel Honey / Amareto / Bitter Angostura / Twist Naranja',
         },
         {
           name: 'Caipitanja',
           price: 160,
-          ingredients: 'Vodka Russian / Sirope de sandía / Limón',
+          ingredients: 'Vodka Russian / Sirope de Sandía / Limón',
           description: 'Nuestra refrescante versión de la caipiriña, destacando la dulce sandía y los brillantes cítricos que danzan perfectamente juntos.'
         },
         {
           name: 'Bloody Tanja',
           price: 160,
-          ingredients: 'Vodka Ruso / Zumo de tomate casero / Apio / Salsa Worcestershire / Tabasco',
+          ingredients: 'Vodka Ruso / Zumo de Tomate Casero / Apio / Salsa Worcestershire / Tabasco',
           description: 'Nuestro Bloody Mary distintivo con zumo de tomate casero y un equilibrio preciso de calor y umami.'
         },
         {
           name: 'Alcides',
           price: 160,
-          ingredients: 'Bombay saphire / licor maraschino / violeta / remolacha / tónica',
+          ingredients: 'Bombay Saphire / Licor Maraschino / Violeta / Remolacha / Tónica',
           description: 'Una creación visualmente impresionante con la dulzura terrosa de la remolacha y la violeta floral, finalizada con una tónica efervescente.'
         },
         {
           name: 'Maroc Julep',
           price: 160,
-          ingredients: 'Whisky bourbon / té shiba / menta / azúcar glaseado',
+          ingredients: 'Whisky Bourbon / Té Shiba / Menta / Azúcar Glaseado',
           description: 'El norte de África se encuentra con Kentucky en esta aromática variación de julep con delicadas notas de té y menta fresca.'
         },
         {
           name: 'Paloma Ajena',
           price: 160,
-          ingredients: 'Tequila / yuzu / limón / zumo de pomelo / sal picante',
+          ingredients: 'Tequila / Yuzu / Limón / Zumo de Pomelo / Sal Picante',
           description: 'Una Paloma exótica con yuzu japonés que añade complejidad al pomelo tradicional, con un borde de sal picante.'
         },
         {
           name: 'Coco Jamboo',
           price: 160,
-          ingredients: 'Baileys / licor de plátano / puré de coco / canela / nuez moscada',
+          ingredients: 'Baileys / Licor de Plátano / Puré de Coco / Canela / Nuez Moscada',
         },
         {
           name: 'El General Spritz',
           price: 160,
-          ingredients: 'Campari / brandy de albaricoque / mango / prosecco',
+          ingredients: 'Campari / Brandy de Albaricoque / Mango / Prosecco',
         },
         {
           name: 'Vilma Palma',
           price: 160,
-          ingredients: 'Grey goose pera / calvados boulard / flor de saúco / prosecco',
+          ingredients: 'Grey Goose Pera / Calvados Boulard / Flor de Saúco / Prosecco',
           description: 'Un elegante spritz inspirado en los huertos, combinando el mejor vodka de pera con brandy de manzana y la delicada flor de saúco.'
         },
         {
           name: 'Green Mary',
           price: 160,
-          ingredients: 'Vodka russian / pepino / apio / pimienta negra / salsa inglesa',
+          ingredients: 'Vodka Russian / Pepino / Apio / Pimienta Negra / Salsa Inglesa',
           description: 'Una variación verde y fresca del jardín del Bloody Mary, más ligera pero con toda la complejidad sabrosa del original.'
         },
         {
           name: 'Burbujas de Amor',
           price: 160,
-          ingredients: 'Bombay bramble / rosas / licor de mandarina / frutos rojos / tónica',
+          ingredients: 'Bombay Bramble / Rosas / Licor de Mandarina / Frutos Rojos / Tónica',
           description: 'El romance en un vaso - floral, afrutado y efervescente con un sutil toque de color y una dulzura persistente.'
         }
       ]
@@ -251,25 +251,25 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'Detox Chiringuito',
           price: 60,
-          ingredients: 'Agua / limón / menta / pepino / apio',
+          ingredients: 'Agua / Limón / Menta / Pepino / Apio',
           description: 'Una mezcla pura y vigorizante que limpia y refresca, trayendo la esencia del bienestar a tu vaso.'
         },
         {
           name: 'Amor Narcótico',
           price: 120,
-          ingredients: 'Melocotón / sandía / hierbas',
+          ingredients: 'Melocotón / Sandía / Hierbas',
           description: 'Una mezcla refrescante y adictiva de frutas de hueso y melón con hierbas aromáticas que realzan esta indulgencia sin alcohol.'
         },
         {
           name: 'Tangerina Sour',
           price: 120,
-          ingredients: 'Mandarina / yuzu / miel / clara de huevo opcional',
+          ingredients: 'Mandarina / Yuzu / Miel / Clara de Huevo Opcional',
           description: 'Una sofisticada experiencia de cítricos con yuzu japonés y miel local, opcionalmente terminada con una sedosa espuma de clara de huevo.'
         },
         {
           name: 'Kiwi Mojito',
           price: 120,
-          ingredients: 'Agua de coco / kiwi / limón / menta / jengibre',
+          ingredients: 'Agua de coco / Kiwi / Limón / Menta / Jengibre',
           description: 'Toda la frescura de un mojito con kiwi tropical y coco, y un reconfortante toque de jengibre.'
         }
       ]
@@ -286,13 +286,13 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'B52',
           price: 550,
-          ingredients: 'Baileys / licor de café / triple sec',
+          ingredients: 'Baileys / licor de Café / Triple Sec',
           description: 'Un clásico de varias capas con cremoso Baileys, rico licor de café y Triple Sec cítrico - ¡enciéndelo para un efecto dramático!'
         },
         {
           name: 'Rainbow',
           price: 550,
-          ingredients: 'Vodka / curaçao azul / naranja / licor de coco / sirope de granadina',
+          ingredients: 'Vodka / Curaçao Azul / Naranja / Licor de Coco / Sirope de Granadina',
           description: 'Un chupito vibrante y colorido que te lleva a través de un espectro de sabores dulces y tropicales.'
         },
         {
@@ -309,12 +309,12 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'Chaouen (x4)',
           price: 160,
-          ingredients: 'Sambuca / Blue Curaçao / Vodka Ruso / Sirope de vainilla',
+          ingredients: 'Sambuca / Blue Curaçao / Vodka Ruso / Sirope de Vainilla',
         },
         {
           name: 'Te a la Meister (x4)',
           price: 160,
-          ingredients: 'Jägermeister / Sirope de jengibre / Licor de chocolate / Menta / Ron Blanco',
+          ingredients: 'Jägermeister / Sirope de Jengibre / Licor de Chocolate / Menta / Ron Blanco',
           description: 'Una compleja mezcla de hierbas y especias del Jägermeister, complementada con chocolate y menta para un chupito sorprendentemente equilibrado.'
         },
         {

@@ -44,7 +44,7 @@ const PizzaPastaMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded
     >
       <div className="flex justify-between items-baseline mb-3">
         <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
         >
           {name}
@@ -142,7 +142,7 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "Primavera",
           "price": 140,
-          "ingredients": "Seasonal vegetables, tomato sauce and cheese",
+          "ingredients": "Seasonal vegetables, Tomato sauce and cheese",
           "description": "A colorful symphony of fresh vegetables on a homemade tomato sauce base. Each bite evokes a Mediterranean garden in midsummer with fresh and balanced flavors."
         },
         {
@@ -154,19 +154,19 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Rustica",
           "price": 140,
-          "ingredients": "Goat cheese, arugula leaves and candied cherry tomatoes",
+          "ingredients": "Goat cheese, Arugula leaves and candied cherry tomatoes",
           "description": "A perfect contrast between the creaminess of goat cheese, the peppery freshness of arugula and the sweetness of candied tomatoes. A creation that celebrates the refined simplicity of Mediterranean cuisine."
         },
         {
           "name": "La Sicilienne",
           "price": 150,
-          "ingredients": "Tuna, onions, anchovies, capers, tomatoes and black olives",
+          "ingredients": "Tuna, Onions, Anchovies, Capers, Tomatoes and Black olives",
           "description": "A journey to sunny Sicily where savory tuna meets the salty accents of anchovies and capers, balanced by the sweetness of onions and the depth of black olives."
         },
         {
           "name": "La Méditerranéenne",
           "price": 180,
-          "ingredients": "Seafood, tomato sauce and cheese",
+          "ingredients": "Seafood, Tomato sauce and Cheese",
           "description": "The Mediterranean in every bite with a generous mix of ocean treasures on our flavorful tomato sauce. A light layer of cheese complements without overpowering the oceanic flavors."
         },
         {
@@ -178,13 +178,13 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Carbonara",
           "price": 140,
-          "ingredients": "Halal turkey bacon, white sauce and cheese",
+          "ingredients": "Halal turkey bacon, White sauce and Cheese",
           "description": "A reinterpretation of the Roman classic on a crispy base. Our creamy white sauce coats golden pieces of halal turkey bacon, enhanced by our blend of Italian cheeses."
         },
         {
           "name": "Calzone Piccante",
           "price": 160,
-          "ingredients": "Halal Italian pepperoni, mushrooms, mozzarella, black olives",
+          "ingredients": "Halal Italian Pepperoni, Mushrooms, Mozzarella, Black olives",
           "description": "Our golden pastry crescent holds a treasure of flavors where halal Italian pepperoni meets earthy mushrooms and melting mozzarella, enhanced by fragrant black olives."
         }
       ]
@@ -213,11 +213,11 @@ const PizzaPastaMenu: React.FC = () => {
         {
           name: 'Spaghetti Marinera',
           price: 320,
-          ingredients: 'Clams, seafood and wild shrimp',
+          ingredients: 'Clams, Seafood and wild shrimp',
           description: 'A celebration of the treasures of the sea where fresh clams, delicate seafood and wild shrimp meet in a light sauce flavored with garlic and parsley.'
         },
         {
-          name: 'Spaghetti alle Vongole',
+          name: 'Spaghetti Alle Vongole',
           price: 190,
           ingredients: 'Clams and fresh tomatoes',
           description: 'Marine elegance in its purest form - fresh clams release their savory juice that blends with tomatoes and olive oil for a symphony of maritime flavors.'
@@ -229,9 +229,9 @@ const PizzaPastaMenu: React.FC = () => {
           description: 'Our interpretation of the Roman classic - al dente spaghetti coated in a creamy egg sauce, sprinkled with crispy halal turkey bacon and a generous touch of black pepper.'
         },
         {
-          name: 'Chicken and mushroom Taglatelle',
+          name: 'Chicken and Mushroom Taglatelle',
           price: 160,
-          ingredients: 'Chicken, mushrooms, white sauce flavored with truffle',
+          ingredients: 'Chicken, Mushrooms, White sauce flavored with truffle',
           description: 'Ribbons of fresh pasta embrace juicy pieces of chicken and mushrooms, all wrapped in a sauce delicately infused with truffle. A perfect balance between rusticity and refinement.'
         }
       ]

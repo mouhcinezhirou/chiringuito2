@@ -46,7 +46,7 @@ const FoodMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -150,13 +150,13 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Served with side dish of your choice',
       items: [
         {
-          name: 'Fish Tagra (tagine)',
+          name: 'Fish Tagra (Tagine)',
           price: 340,
           description: 'Our signature tagine slowly cooked in its traditional terrine, where fresh fish of the day is simmered with tomatoes, colorful peppers, olives, and aromatic Moroccan spices, creating an authentic dish rich in Mediterranean and North African flavors.',
           note: 'house specialty'
         },
         {
-          name: 'Royal Shrimp Tagra (tagine)',
+          name: 'Royal Shrimp Tagra (Tagine)',
           price: 800,
           description: 'A luxurious feast of king prawns prepared in our house tagine, gently simmered with a blend of saffron, garlic, fresh ginger, coriander, and a hint of mild chili. Served bubbling in its traditional terrine.',
           note: 'house specialty'
@@ -172,7 +172,7 @@ const FishMeatMenu: React.FC = () => {
           description: 'Meaty swordfish steak grilled to perfection, offering a firm texture and rich yet delicate flavor. Lightly marinated with Mediterranean herbs, olive oil, and lemon to enhance its natural marine freshness.'
         },
         {
-          name: 'Sole meunière',
+          name: 'Sole Meunière',
           price: 280,
           description: 'A French classic prepared with finesse - sole fillet delicately pan-fried in brown butter, flavored with garlic and parsley, creating a golden crust that perfectly contrasts with the white tender flesh of the fish. Served with a wedge of fresh lemon.'
         },

@@ -44,7 +44,7 @@ const DrinkMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boo
     >
       <div className="flex justify-between items-baseline mb-3">
         <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
         >
           {name}
@@ -183,14 +183,20 @@ const DrinkMenu: React.FC = () => {
         {
           name: 'Espresso Coffee',
           price: 50,
-          ingredients: 'Illy Coffee ',
-          description: 'espresso, Americano, latte'
+          ingredients: 'Illy coffee ',
+          description: 'Espresso, americano, latte'
         },
         {
           name: 'Mint Tea',
           price: 50,
-          ingredients: 'Traditional Moroccan tea',
+          ingredients: 'Traditional moroccan tea',
           description: 'Refreshing mint tea prepared the traditional way'
+        },
+        {
+          name: 'Sayra Tea',
+          price: 50,
+          ingredients: 'Various flavors available',
+          description: 'An exclusive collection of aromatic teas with subtle and captivating flavors. Each cup reveals a symphony of tastes from floral to fruity and spiced notes, offering a moment of pure relaxation.'
         }
       ]
     }

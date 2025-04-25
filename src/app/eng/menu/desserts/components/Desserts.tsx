@@ -47,7 +47,7 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -160,26 +160,26 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'A reinvented childhood memory with golden, crispy brioche bread, topped with a smooth caramel that dances with the delicate notes of Madagascar vanilla.'
         },
         {
-          name: 'Pavlova with red fruits',
+          name: 'Pavlova with Red Fruits',
           price: 80,
           description: 'Crispy meringue and seasonal red fruits',
           detailedDescription: 'A cloud of crispy lightness crowned with bright berries and a touch of whipped cream, like a ballet of textures revealed with every bite.'
         },
         {
-          name: 'Chocolate fondant',
+          name: 'Chocolate Fondant',
           price: 80,
           description: 'Served with vanilla ice cream',
           preparationTime: '10 min',
           detailedDescription: 'A mysterious heart of intense dark chocolate that reveals itself in a flow of voluptuous heat, contrasted by the freshness of artisanal vanilla ice cream.'
         },
         {
-          name: 'Speculoos tiramisu',
+          name: 'Speculoos Tiramisu',
           price: 80,
           description: 'Reinterpretation of the classic Italian dessert',
           detailedDescription: 'A Franco-Italian romance where the richness of mascarpone meets the warm spices of speculoos, creating a perfect harmony between sweetness and character.'
         },
         {
-          name: 'Crème brûlée',
+          name: 'Crème Brûlée',
           price: 70,
           description: 'Creamy custard with a crunchy caramel crust',
           detailedDescription: 'A timeless classic with two faces: the exquisite crunch of burnt caramel that protects a silky, delicate vanilla treasure. A waltz of perfect contradictions.'
@@ -191,7 +191,7 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Frozen creations with pure, intense flavors, made fresh every day in our kitchen using carefully selected ingredients for a refreshing experience.'
         },
         {
-          name: 'Seasonal fruits',
+          name: 'Seasonal Fruits',
           price: 70,
           description: 'Fresh fruit selection',
           detailedDescription: 'A colorful harvest of the best market fruits, presented in its natural simplicity to celebrate the authentic flavors nature offers us every season.'
@@ -203,7 +203,7 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'A gentle intoxication where the elegant bitterness of coffee embraces the warmth of Irish whiskey, all delicately softened by a cloud of slightly sweet cream.'
         },
         {
-          name: 'Gourmet coffee',
+          name: 'Gourmet Coffee',
           price: 80,
           description: 'Chocolate fondant, crème brûlée, and vanilla ice cream',
           detailedDescription: 'A trilogy of miniature pleasures accompanying our signature coffee, offering a full taste journey to satisfy all your sweet cravings in one plate.'

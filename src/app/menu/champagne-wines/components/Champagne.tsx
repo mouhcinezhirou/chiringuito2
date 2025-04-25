@@ -50,7 +50,7 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-6 pr-2">
           <h3 
-            className="font-serif italic text-sm md:text-base transition-all duration-300 group-hover:text-amber-800" // Reduced font size
+            className="font-serif text-sm md:text-base transition-all duration-300 group-hover:text-amber-800" // Reduced font size
             style={{ 
               color: '#81715E',
               display: 'block',

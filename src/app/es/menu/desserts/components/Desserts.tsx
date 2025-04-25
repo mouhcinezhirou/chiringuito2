@@ -47,7 +47,7 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -160,26 +160,26 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Un recuerdo de la infancia reinventado con pan brioche dorado y crujiente, cubierto con caramelo suave que danza con las delicadas notas de vainilla de Madagascar.'
         },
         {
-          name: 'Pavlova de frutos rojos',
+          name: 'Pavlova de Frutos Rojos',
           price: 80,
           description: 'Merengue crujiente y frutos rojos de temporada',
           detailedDescription: 'Una nube de ligereza crujiente coronada con bayas brillantes y un toque de crema batida, como un ballet de texturas que se revela en cada bocado.'
         },
         {
-          name: 'Fondant de chocolate',
+          name: 'Fondant de Chocolate',
           price: 80,
           description: 'Servido con helado de vainilla',
           preparationTime: '10 min',
           detailedDescription: 'Un corazón misterioso de chocolate negro intenso que se revela en un flujo de calidez voluptuosa, contrastado por la frescura de un helado de vainilla artesanal.'
         },
         {
-          name: 'Tiramisú de spéculoos',
+          name: 'Tiramisú de Spéculoos',
           price: 80,
           description: 'Reinterpretación del clásico italiano',
           detailedDescription: 'Un romance franco-italiano donde la riqueza del mascarpone se encuentra con las especias cálidas de los spéculoos, creando una armonía perfecta entre dulzura y carácter.'
         },
         {
-          name: 'Crème brûlée',
+          name: 'Crème Brûlée',
           price: 70,
           description: 'Crema suave con una costra de caramelo crujiente',
           detailedDescription: 'Un clásico atemporal con dos caras: el crujido exquisito del caramelo quemado protege un tesoro de vainilla sedoso y delicado. Un vals de contradicciones perfectas.'
@@ -191,7 +191,7 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Creaciones heladas con sabores puros e intensos, elaboradas cada día en nuestra cocina con ingredientes cuidadosamente seleccionados para una experiencia refrescante.'
         },
         {
-          name: 'Frutas de temporada',
+          name: 'Frutas de Temporada',
           price: 70,
           description: 'Selección de frutas frescas',
           detailedDescription: 'Una cosecha colorida de las mejores frutas del mercado, presentada en su simplicidad natural para celebrar los sabores auténticos que la naturaleza nos ofrece cada temporada.'
@@ -203,7 +203,7 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Una dulce embriaguez donde la elegante amargura del café abraza el calor del whiskey irlandés, todo suavemente cubierto por una nube de crema ligeramente endulzada.'
         },
         {
-          name: 'Café gourmand',
+          name: 'Café Gourmand',
           price: 80,
           description: 'Fondant de chocolate, crème brûlée y helado de vainilla',
           detailedDescription: 'Una trilogía de placeres en miniatura acompañando nuestro café de autor, ofreciendo un viaje gustativo completo para satisfacer todos tus antojos dulces en un solo plato.'

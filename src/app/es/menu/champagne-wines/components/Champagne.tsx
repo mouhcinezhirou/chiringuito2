@@ -33,7 +33,7 @@ const DrinkMenuItem: React.FC<DrinkItem> = ({
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-8 pr-2">
           <h3 
-            className="font-serif italic text-sm md:text-base"
+            className="font-serif text-sm md:text-base"
             style={{ 
               color: '#81715E',
               display: 'block',

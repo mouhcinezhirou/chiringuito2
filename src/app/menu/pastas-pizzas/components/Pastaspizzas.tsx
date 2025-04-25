@@ -44,7 +44,7 @@ const PizzaPastaMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded
     >
       <div className="flex justify-between items-baseline mb-3">
         <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
         >
           {name}
@@ -142,7 +142,7 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "Primavera",
           "price": 140,
-          "ingredients": "Légumes de saison, sauce tomate et fromage",
+          "ingredients": "Légumes de saison, Sauce tomate et fromage",
           "description": "Une symphonie colorée de légumes frais sur une base de sauce tomate maison. Chaque bouchée évoque un jardin méditerranéen en plein été avec des saveurs fraîches et équilibrées."
         },
         {
@@ -154,19 +154,19 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Rustica",
           "price": 140,
-          "ingredients": "Fromage de chèvre, feuilles de roquettes et petites tomates confites",
+          "ingredients": "Fromage de chèvre, Feuilles de roquettes et petites tomates confites",
           "description": "Un contraste parfait entre le crémeux du chèvre, la fraîcheur poivrée de la roquette et la douceur des tomates confites. Une création qui célèbre la simplicité raffinée de la cuisine méditerranéenne."
         },
         {
           "name": "La Sicilienne",
           "price": 150,
-          "ingredients": "Thon, oignons, anchois, câpres, tomates et olives noires",
+          "ingredients": "Thon, Oignons, Anchois, Câpres, Tomates et olives noires",
           "description": "Un voyage vers la Sicile ensoleillée où le thon savoureux rencontre les accents salés des anchois et des câpres, équilibré par la douceur des oignons et la profondeur des olives noires."
         },
         {
           "name": "La Méditerranéenne",
           "price": 180,
-          "ingredients": "Fruits de mer, sauce tomate et fromage",
+          "ingredients": "Fruits de mer, Sauce tomate et fromage",
           "description": "La Méditerranée dans chaque bouchée avec un mélange généreux de trésors marins sur notre sauce tomate parfumée. Une légère couche de fromage complète sans dominer les saveurs océaniques."
         },
         {
@@ -178,7 +178,7 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Carbonara",
           "price": 140,
-          "ingredients": "Bacon de dinde \"halal\", sauce blanche et fromage",
+          "ingredients": "Bacon de dinde \"halal\", Sauce blanche et fromage",
           "description": "Une réinterprétation du classique romain sur une base croustillante. Notre sauce blanche onctueuse enrobe des morceaux dorés de bacon de dinde halal, sublimée par notre mélange de fromages italiens."
         },
         {
@@ -193,13 +193,13 @@ const PizzaPastaMenu: React.FC = () => {
       title: 'PÂTES',
       items: [
         {
-          name: 'Linguine au saumon',
+          name: 'Linguine Au Saumon',
           price: 180,
           ingredients: 'Duo de saumon avec une sauce rosé',
           description: 'Un duo de saumon frais et fumé enlace des linguine al dente dans une sauce rosée veloutée. Chaque bouchée transporte entre mer et montagne pour une expérience raffinée et réconfortante.'
         },
         {
-          name: 'Linguine aux gambas',
+          name: 'Linguine Aux gambas',
           price: 180,
           ingredients: 'Avec une sauce tomate épicée',
           description: 'Des gambas sauvages saisies à la perfection sur un nid de linguine enrobées d\'une sauce tomate relevée. Les notes épicées dansent avec la douceur des crustacés pour un plat mémorable.'
@@ -211,25 +211,25 @@ const PizzaPastaMenu: React.FC = () => {
           description: 'La passion italienne dans chaque bouchée - nos penne capturent parfaitement la sauce tomate ardente, ponctuée de piment et adoucie par des feuilles de basilic frais pour un équilibre harmonieux.'
         },
         {
-          name: 'Spaghetti à la marinera',
+          name: 'Spaghetti à la Marinera',
           price: 320,
-          ingredients: 'Palourdes, fruits de mer et crevettes sauvages',
+          ingredients: 'Palourdes, Fruits de mer et crevettes sauvages',
           description: 'Une célébration des trésors de la mer où palourdes fraîches, fruits de mer délicats et crevettes sauvages se rencontrent dans une sauce légère parfumée à l\'ail et au persil.'
         },
         {
-          name: 'Spaghetti alle vongole',
+          name: 'Spaghetti Alle Vongole',
           price: 190,
           ingredients: 'Palourdes et tomates fraîches',
           description: 'L\'élégance marine à l\'état pur - des palourdes fraîches libèrent leur jus savoureux qui se mêle aux tomates et à l\'huile d\'olive pour une symphonie de saveurs maritimes.'
         },
         {
-          name: 'Spaghetti carbonara',
+          name: 'Spaghetti Carbonara',
           price: 140,
           ingredients: 'Bacon de dinde halal avec sauce blanche',
           description: 'Notre interprétation du classique romain - des spaghetti al dente enrobés d\'une sauce crémeuse aux œufs, parsemés de bacon de dinde halal croustillant et d\'une généreuse touche de poivre noir.'
         },
         {
-          name: 'Taglatelles poulet champignon',
+          name: 'Taglatelles Poulet Champignon',
           price: 160,
           ingredients: 'Poulet, champignons, sauce blanche parfumée au truffe',
           description: 'Des rubans de pâtes fraîches enlacent des morceaux de poulet juteux et des champignons, le tout enveloppé d\'une sauce délicatement infusée à la truffe. Un équilibre parfait entre rusticité et raffinement.'

@@ -46,7 +46,7 @@ const FoodMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -150,49 +150,49 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Servidos con guarnición a elegir',
       items: [
         {
-          name: 'Tagra (tajine) de pescado',
+          name: 'Tagra (Tajine) de Pescado',
           price: 340,
           description: 'Nuestro tajine estrella cocinado lentamente en su terrina tradicional, donde el pescado fresco del día se guisa con tomates, pimientos de colores, aceitunas y especias marroquíes aromáticas, creando un plato auténtico rico en sabores mediterráneos y norteafricanos.',
           note: 'especialidad de la casa'
         },
         {
-          name: 'Tagra (tajine) de gambas reales',
+          name: 'Tagra (Tajine) de Carabineros',
           price: 800,
           description: 'Un festín lujoso de gambas reales preparadas en nuestro tajine casero, cocinadas suavemente con una mezcla de azafrán, ajo, jengibre fresco, cilantro y un toque de pimiento dulce. Servido burbujeante en su terrina tradicional.',
           note: 'especialidad de la casa'
         },
         {
-          name: 'Salmón a la plancha',
+          name: 'Salmón a La Plancha',
           price: 340,
           description: 'Filete de salmón premium a la plancha con una corteza dorada y un interior tierno y jugoso. Sazonado simplemente con hierbas frescas, un chorrito de aceite de oliva y ralladura de limón para realzar su sabor natural y delicado.'
         },
         {
-          name: 'Pez espada a la plancha',
+          name: 'Pez Espada a La Plancha',
           price: 260,
           description: 'Filete de pez espada carnoso a la plancha perfectamente cocinado, ofreciendo una textura firme y un sabor rico pero delicado. Ligeramente marinado con hierbas mediterráneas, aceite de oliva y limón para realzar su frescura marina natural.'
         },
         {
-          name: 'Lenguado meunière',
+          name: 'Lenguado Meunière',
           price: 280,
           description: 'Un clásico francés preparado con finura - filete de lenguado delicadamente salteado en mantequilla avellana, perfumado con ajo y perejil, creando una corteza dorada que contrasta perfectamente con la carne blanca y tierna del pescado. Acompañado de un gajo de limón fresco.'
         },
         {
-          name: 'Lubina a la plancha',
+          name: 'Lubina a La Plancha',
           price: 280,
           description: 'Lubina mediterránea a la plancha entera o en filete según disponibilidad, con una piel crujiente y carne blanca delicada. Preparada simplemente con aceite de oliva, hierbas frescas y sal marina para preservar su excepcional sabor natural.'
         },
         {
-          name: 'San Pedro a la plancha',
+          name: 'San Pedro a La Plancha',
           price: 290,
           description: 'Este noble pescado de carne fina se cocina delicadamente a la plancha para preservar su textura delicada y su sabor sutil. Su delicado sabor se realza con un simple aderezo de hierbas frescas, aceite de oliva virgen extra y un toque de flor de sal.'
         },
         {
-          name: 'Cigalas a la plancha',
+          name: 'Cigalas a La Plancha',
           price: 600,
           description: 'Cigalas frescas a la plancha perfectamente cocinadas, revelando su carne suave y dulce. Servidas en su caparazón con mantequilla casera de ajo y hierbas que se derrite delicadamente sobre estos delicados y aromáticos crustáceos.'
         },
         {
-          name: 'Gambas reales a la plancha',
+          name: 'Carabineros a La Plancha',
           price: 800,
           description: 'Suntuosas gambas reales de calibre excepcional, cocinadas delicadamente a la plancha para preservar su textura firme y su sabor naturalmente dulce. Servidas con un toque de aceite de oliva infusionado con limón y hierbas frescas de Provenza.'
         }
@@ -203,17 +203,17 @@ const FishMeatMenu: React.FC = () => {
       subtitle: 'Servidas con guarnición a elegir',
       items: [
         {
-          name: 'Tagliata de ternera',
+          name: 'Tagliata de Ternera',
           price: 380,
           description: 'Solomillo de ternera tierno finamente cortado después de una cocción perfecta, servido ligeramente rosado y guarnecido con virutas de parmesano, rúcula fresca y un chorrito de aceite de oliva virgen extra perfumado con trufa. Un plato de inspiración italiana que realza la calidad excepcional de nuestra carne.'
         },
         {
-          name: 'Solomillo de ternera salteado al ajo',
+          name: 'Solomillo de Ternera Salteado Al Ajo',
           price: 340,
           description: 'Trozos tiernos de solomillo de ternera salteados a fuego vivo con ajo fresco machacado, creando un contraste perfecto entre el exterior caramelizado y el interior jugoso y tierno. Una preparación sencilla que celebra la calidad de nuestra carne seleccionada cuidadosamente.'
         },
         {
-          name: 'Chich taouk',
+          name: 'Chich Taouk',
           price: 220,
           description: 'Brochetas de pollo marinado en una mezcla tradicional libanesa de yogur, ajo, limón y especias como el zumaque y el zataar. Asadas hasta conseguir una perfecta ternura con una ligera caramelización, y servidas con nuestra salsa alioli casera de hierbas frescas.'
         },
@@ -223,12 +223,12 @@ const FishMeatMenu: React.FC = () => {
           description: 'Entrecot madurado de primera calidad, asado según su preferencia y servido con nuestra salsa casera de pimienta negra triturada, chalotes y coñac. El veteado perfecto de este corte ofrece una ternura y un sabor incomparables.'
         },
         {
-          name: 'Hamburguesa (100% casera)',
+          name: 'Hamburguesa (100% Casera)',
           price: 140,
           description: 'Nuestra hamburguesa estrella elaborada con carne de ternera picada a mano, asada a la perfección y guarnecida con queso cheddar fundido, cebollas lentamente caramelizadas y nuestra salsa secreta ligeramente ahumada. Todo ello servido en un pan brioche artesanal dorado en mantequilla.'
         },
         {
-          name: 'Mini hamburguesas de ternera',
+          name: 'Mini Hamburguesas de Ternera',
           price: 140,
           description: 'Trío de deliciosas mini hamburguesas preparadas con el mismo cuidado que nuestra versión clásica. Cada bocado ofrece un equilibrio perfecto entre la ternera jugosa, el cheddar fundido y nuestra salsa casera cremosa, todo ello en un pequeño pan brioche esponjoso. Ideal para compartir o como entrada generosa.'
         }
@@ -238,27 +238,27 @@ const FishMeatMenu: React.FC = () => {
       title: 'GUARNICIONES',
       items: [
         {
-          name: 'Verduras salteadas',
+          name: 'Verduras Salteadas',
           price: 60,
           description: 'Una mezcla colorida de verduras de temporada finamente cortadas y salteadas rápidamente en aceite de oliva con un toque de ajo y hierbas frescas. La cocción preserva su crujido y sus sabores naturales para un acompañamiento tanto saludable como delicioso.'
         },
         {
-          name: 'Puré de patatas',
+          name: 'Puré de Patatas',
           price: 60,
           description: 'Puré cremoso preparado con patatas de pulpa harinosa, aplastadas con mantequilla de barril y nata fresca. Su textura aterciopelada y su riqueza lo convierten en el complemento perfecto para nuestros pescados y carnes.'
         },
         {
-          name: 'Patatas salteadas',
+          name: 'Patatas Salteadas',
           price: 60,
           description: 'Patatas nuevas cortadas en cuartos y salteadas lentamente hasta conseguir un exterior dorado y crujiente con un interior tierno. Perfumadas con tomillo fresco y ajo, son el acompañamiento ideal para realzar nuestros platos principales.'
         },
         {
-          name: 'Patatas fritas',
+          name: 'Patatas Fritas',
           price: 60,
           description: 'Patatas fritas crujientes preparadas en nuestra cocina según el método tradicional: cortadas a mano, cocinadas dos veces para obtener un exterior perfectamente dorado y un interior suave, y sazonadas con una pizca de flor de sal.'
         },
         {
-          name: 'Ensalada verde',
+          name: 'Ensalada Verde',
           price: 60,
           description: 'Mezcla fresca de brotes jóvenes y hojas crujientes, ligeramente aliñadas con una vinagreta casera a base de aceite de oliva virgen extra y vinagre balsámico añejo. La opción perfecta para un acompañamiento ligero y refrescante.'
         }

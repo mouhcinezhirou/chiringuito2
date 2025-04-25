@@ -47,7 +47,7 @@ const DessertMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
       <div className="flex justify-between items-baseline mb-3">
         <div>
           <h3 
-            className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+            className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
             style={{ color: '#81715E' }}
           >
             {name}
@@ -160,26 +160,26 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Un souvenir d\'enfance réinventé avec du pain brioché doré et croustillant, nappé d\'un caramel onctueux qui danse avec les notes délicates de la vanille de Madagascar.'
         },
         {
-          name: 'Pavlova aux fruits rouges',
+          name: 'Pavlova aux Fruits Rouges',
           price: 80,
           description: 'Meringue craquante et fruits rouges de saison',
           detailedDescription: 'Un nuage de légèreté croustillante couronné de baies éclatantes et d\'une touche de crème fouettée, comme un ballet de textures qui se révèle à chaque bouchée.'
         },
         {
-          name: 'Fondant au chocolat',
+          name: 'Fondant au Chocolat',
           price: 80,
-          description: 'Servi avec une glace à la vanille',
+          description: 'Servi avec une Glace à la Vanille',
           preparationTime: '10 min',
           detailedDescription: 'Un cœur mystérieux de chocolat noir intense qui se dévoile dans un flot de chaleur voluptueuse, contrasté par la fraîcheur d\'une glace vanille artisanale.'
         },
         {
-          name: 'Tiramisú spéculoos',
+          name: 'Tiramisú Spéculoos',
           price: 80,
           description: 'Réinterprétation du classique italien',
           detailedDescription: 'Une romance franco-italienne où la richesse du mascarpone rencontre les épices chaleureuses des spéculoos, créant une harmonie parfaite entre douceur et caractère.'
         },
         {
-          name: 'Crème brûlée',
+          name: 'Crème Brûlée',
           price: 70,
           description: 'Crème onctueuse avec une croûte au caramel croquante',
           detailedDescription: 'Un classique intemporel aux deux visages : le craquant exquis du caramel brûlé qui protège un trésor de vanille soyeux et délicat. Une valse de contradictions parfaites.'
@@ -191,7 +191,7 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Des créations glacées aux saveurs pures et intenses, élaborées chaque jour dans notre cuisine avec des ingrédients soigneusement sélectionnés pour une expérience rafraîchissante.'
         },
         {
-          name: 'Fruits de saison',
+          name: 'Fruits de Saison',
           price: 70,
           description: 'Sélection de fruits frais',
           detailedDescription: 'Une cueillette colorée des meilleurs fruits du marché, présentée dans sa simplicité naturelle pour célébrer les saveurs authentiques que la nature nous offre à chaque saison.'
@@ -203,7 +203,7 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Une douce ivresse où l\'amertume élégante du café embrasse la chaleur du whiskey irlandais, le tout délicatement adouci par un nuage de crème légèrement sucrée.'
         },
         {
-          name: 'Café gourmand',
+          name: 'Café Gourmand',
           price: 80,
           description: 'Fondant au chocolat, crème brûlée et glace à la vanille',
           detailedDescription: 'Une trilogie de plaisirs en miniature accompagnant notre café signature, offrant un voyage gustatif complet pour satisfaire toutes vos envies sucrées en une seule assiette.'
