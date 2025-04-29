@@ -44,7 +44,7 @@ const CocktailMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: 
     >
       <div className="flex justify-between items-baseline mb-3">
         <h3 
-          className="font-serif italic text-xl transition-all duration-300 group-hover:text-amber-800"
+          className="font-serif text-xl transition-all duration-300 group-hover:text-amber-800"
           style={{ color: '#81715E' }}
         >
           {name}
