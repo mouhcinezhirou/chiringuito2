@@ -244,19 +244,19 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Des champignons rendus addictifs par une marinade épicée et une panure croustillante, accompagnés d\'une sauce tartare maison qui équilibre parfaitement leur caractère audacieux.'
         },
         {
-          name: 'Champignons à L\'ail',
+          name: 'Champignons à L\'Ail',
           price: 100,
           description: 'Champignons, huile d\'olive ail et persil',
           detailedDescription: 'La simplicité à son apogée, où les champignons juteux absorbent l\'essence de l\'ail doré et le parfum du persil frais, le tout enrobé d\'une huile d\'olive fruitée de première pression.'
         },
         {
-          name: 'Palourdes à L\'ail',
+          name: 'Palourdes à L\'Ail',
           price: 140,
           description: 'Palourdes, huile d\'olive et persil',
           detailedDescription: 'Ces coquillages délicats s\'ouvrent pour révéler leur chair tendre, baignée dans un élixir d\'huile d\'olive infusée à l\'ail et parsemée de persil frais - un hommage à la mer.'
         },
         {
-          name: 'Crevettes à L\'ail',
+          name: 'Crevettes à L\'Ail',
           price: 140,
           description: 'Dans une huile d\'olive épicée',
           detailedDescription: 'Des crevettes juteuses sautées dans une huile d\'olive ardente qui capture toute l\'essence de l\'ail et du piment, créant un jus irrésistible qui appelle à être savouré avec du pain.'
@@ -353,7 +353,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Carpaccio de Boeuf',
           price: 140,
-          description: 'Fines tranches de bœuf cru',
+          description: 'Fines tranches de bœuf cru, copeaux de parmesan, câpres, fleur de sel, huile d’olive',
           detailedDescription: 'Des tranches de bœuf d\'une finesse extraordinaire, joliment disposées et assaisonnées d\'huile d\'olive première pression, de parmesan affiné et de câpres qui en rehaussent le goût délicat.'
         }
       ]

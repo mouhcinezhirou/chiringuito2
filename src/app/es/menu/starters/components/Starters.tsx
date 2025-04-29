@@ -353,7 +353,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Carpaccio de Ternera',
           price: 140,
-          description: 'Finas lonchas de ternera cruda',
+          description: 'Finas lonchas de ternera cruda, parmesan, alcaparras, sal escama, aciete de oliva',
           detailedDescription: 'Lonchas de ternera de extraordinaria finura, bellamente dispuestas y sazonadas con aceite de oliva de primera presión, parmesano curado y alcaparras que realzan su delicado sabor.'
         }
       ]

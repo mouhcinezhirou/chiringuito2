@@ -252,7 +252,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Sautéed Clams',
           price: 140,
-          description: 'Clams, olive oil and parsley',
+          description: 'Clams, garlic, olive oil and parsley',
           detailedDescription: 'These delicate shellfish open to reveal their tender flesh, bathed in an elixir of garlic-infused olive oil and sprinkled with fresh parsley - a tribute to the sea.'
         },
         {

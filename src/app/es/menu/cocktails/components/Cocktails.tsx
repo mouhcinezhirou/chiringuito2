@@ -142,13 +142,13 @@ const CocktailMenu: React.FC = () => {
         {
           name: 'De Tu Bikini',
           price: 220,
-          ingredients: 'Bacardi Blanco / Bacardi Dorado / Mango / Canela / Pastis / Granadina / Naranja',
+          ingredients: 'Bacardi Blanco / Bacardi oro / Mango / Canela / Pastis / Granadina / Naranja',
           description: 'Una escapada tropical que combina el calor de la canela con la dulce frescura del mango y la granadina, complementada con un sutil toque de anís.'
         },
         {
           name: 'Mai Tai Chiringuito',
           price: 220,
-          ingredients: 'Bacardi Gold / Licor de Mandarina / Orgeat / Naranja / Bitter Angostura',
+          ingredients: 'Bacardi oro / Licor de Mandarina / Orgeat / Naranja / Bitter Angostura',
           description: 'Nuestra versión distintiva del clásico Mai Tai, trayendo la puesta de sol en la playa a tu vaso con ricas notas de almendra y cítricos vibrantes.'
         },
         {
