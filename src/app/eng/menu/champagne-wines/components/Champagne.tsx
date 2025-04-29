@@ -352,7 +352,7 @@ const WineMenu: React.FC = () => {
           bottlePrice: 590
         },
         {
-          name: 'Pouilly fumé J de Villebois',
+          name: 'Pouilly Fumé J de Villebois',
           bottlePrice: 640
         }
       ]
@@ -461,7 +461,7 @@ const WineMenu: React.FC = () => {
       title: 'PORTUGUESE RED WINES',
       items: [
         {
-          name: 'Silk & Spice rouge',
+          name: 'Silk & Spice',
           bottlePrice: 320
         }
       ]

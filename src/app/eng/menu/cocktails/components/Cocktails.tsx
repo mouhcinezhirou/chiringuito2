@@ -56,7 +56,7 @@ const CocktailMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: 
           {price}
         </span>
       </div>
-      <p className="text-neutral-600 text-sm font-light tracking-wide">{ingredients}</p>
+      <p className="text-neutral-600 text-sm font-light tracking-wide">{ingredients.toLowerCase()}</p>
       <AnimatePresence>
         {isExpanded && description && (
           <motion.div

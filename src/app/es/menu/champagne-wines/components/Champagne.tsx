@@ -172,7 +172,7 @@ const ChampagneMenu: React.FC = () => {
         { name: 'Bourgogne Chardonnay Rodet', bottlePrice: 540 },
         { name: 'Chablis Tremblay', bottlePrice: 560 },
         { name: 'Sancerre J de Villebois', bottlePrice: 590 },
-        { name: 'Pouilly fumé J de Villebois', bottlePrice: 640 }
+        { name: 'Pouilly Fumé J de Villebois', bottlePrice: 640 }
       ]
     },
     {
@@ -225,7 +225,7 @@ const ChampagneMenu: React.FC = () => {
     {
       title: 'VINOS TINTOS PORTUGAL',
       items: [
-        { name: 'Silk & Spice rouge', bottlePrice: 320 }
+        { name: 'Silk & Spice', bottlePrice: 320 }
       ]
     },
     {

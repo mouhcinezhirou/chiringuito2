@@ -63,7 +63,7 @@ const StarterMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: b
           {price}
         </span>
       </div>
-      <p className="text-neutral-600 text-sm font-light tracking-wide">{description}</p>
+      <p className="text-neutral-600 text-sm font-light tracking-wide">{description.toLowerCase()}</p>
       <AnimatePresence>
         {isExpanded && detailedDescription && (
           <motion.div

@@ -79,7 +79,7 @@ Culinary Landscape
   className="text-sm mb-12 tracking-wide max-w-2xl mx-auto text-center"
   style={{ color: '#81715E' }}
 >
-A culinary journey where each dish tells a story and each bite reveals the art of our cuisine.
+A culinary journey where each dish tells a story and every bite reveals the art of our cuisine.
 </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

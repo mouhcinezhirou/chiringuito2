@@ -56,7 +56,7 @@ const PizzaPastaMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded
           {price}
         </span>
       </div>
-      <p className="text-neutral-600 text-sm font-light tracking-wide">{ingredients}</p>
+      <p className="text-neutral-600 text-sm font-light tracking-wide">{ingredients.toLowerCase()}</p>
       <AnimatePresence>
         {isExpanded && description && (
           <motion.div
@@ -193,19 +193,19 @@ const PizzaPastaMenu: React.FC = () => {
       title: 'PÂTES',
       items: [
         {
-          name: 'Linguine Au Saumon',
+          name: 'Linguine au Saumon',
           price: 180,
           ingredients: 'Duo de saumon avec une sauce rosé',
           description: 'Un duo de saumon frais et fumé enlace des linguine al dente dans une sauce rosée veloutée. Chaque bouchée transporte entre mer et montagne pour une expérience raffinée et réconfortante.'
         },
         {
-          name: 'Linguine Aux gambas',
+          name: 'Linguine aux Gambas',
           price: 180,
           ingredients: 'Avec une sauce tomate épicée',
           description: 'Des gambas sauvages saisies à la perfection sur un nid de linguine enrobées d\'une sauce tomate relevée. Les notes épicées dansent avec la douceur des crustacés pour un plat mémorable.'
         },
         {
-          name: 'Penne arrabbiata',
+          name: 'Penne Arrabbiata',
           price: 120,
           ingredients: 'Pâtes avec une sauce tomate pimentée et du basilic',
           description: 'La passion italienne dans chaque bouchée - nos penne capturent parfaitement la sauce tomate ardente, ponctuée de piment et adoucie par des feuilles de basilic frais pour un équilibre harmonieux.'

@@ -64,7 +64,7 @@ const SushiMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: boo
           {price}
         </span>
       </div>
-      <p className="text-neutral-600 text-sm font-light tracking-wide">{description}</p>
+      <p className="text-neutral-600 text-sm font-light tracking-wide">{description.toLowerCase()}</p>
       <AnimatePresence>
         {isExpanded && details && (
           <motion.div
