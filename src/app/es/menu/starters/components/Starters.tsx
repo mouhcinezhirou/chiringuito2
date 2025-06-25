@@ -173,9 +173,9 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Tacos de Tartar de Atún',
-          price: 120,
-          description: 'Tacos crujientes, atún rojo, mango, aguacate',
-          detailedDescription: 'Una fusión elegante de sabores donde el atún rojo crudo se encuentra con la dulzura exótica del mango y la cremosidad del aguacate, todo ello envuelto en el abrazo crujiente de un taco artesanal.'
+          price: 160,
+          description: 'Tacos crujientes, mousse de aguacate casera, mango fresco, atún rojo, chalotas fritas',
+          detailedDescription: 'Una creación audaz donde el atún rojo de primera calidad se combina con la dulzura exótica del mango fresco y la cremosidad de una mousse de aguacate casera. El plato se eleva con el crujiente de las chalotas fritas y se sirve en el abrazo crujiente de un taco artesanal - una explosión inolvidable de sabores y texturas.'
         },
         {
           name: 'Tacos de Gambas',
@@ -290,12 +290,12 @@ const StartersMenu: React.FC = () => {
     {
       title: 'ENSALADAS',
       items: [
-        {
-          name: 'Ensalada César – Clásica –',
-          price: 140,
-          description: 'Lechuga romana, Pollo a la parrilla, Anchoas, Tomates, Huevo, Picatostes de pan, Virutas de parmesano y salsa césar',
-          detailedDescription: 'La emblemática ensalada reinventada con pollo jugoso y todos los ingredientes que la han hecho famosa, realzada por nuestra salsa césar casera con un equilibrio perfecto entre cremosidad y umami.'
-        },
+{
+  name: 'Ensalada César – Clásica –',
+  price: 140,
+  description: 'Lechuga romana, salsa César casera, pollo a la parrilla (o) frito, anchoas, alcaparras, picatostes de pan, parmesano',
+  detailedDescription: 'La emblemática ensalada César con lechuga romana fresca, pollo a la parrilla o frito según su preferencia, anchoas sabrosas, alcaparras picantes, picatostes crujientes y parmesano, todo realzado por nuestra auténtica salsa César casera.'
+},
         {
           name: 'Ensalada Arcoíris',
           price: 120,
@@ -321,10 +321,10 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Nuestra creación emblemática que captura la esencia misma de nuestro establecimiento - una generosa porción de mariscos frescos encontrándose con el cremoso aguacate sobre un lecho de verduras crujientes.'
         },
         {
-          name: 'Ensalada de Pulpo',
+          name: 'Ensalada Fresca de Pulpo',
           price: 160,
-          description: 'Pulpo, Patatas, Pimientos asados, Perejil, Aceite, sal',
-          detailedDescription: 'El pulpo tierno y carnoso se une a las patatas suaves y los pimientos ahumados en una danza de aceite de oliva perfumado con perejil fresco - una verdadera oda al Mediterráneo.'
+          description: 'Pulpo, pimientos, tomates cherry, apio, cilantro, aceitunas negras, aceite de oliva',
+          detailedDescription: 'El pulpo tierno y delicado armoniza perfectamente con el crujiente de los pimientos y el apio, acompañado de jugosos tomates cherry y aceitunas negras. El plato está delicadamente aromatizado con cilantro fresco y realzado con aceite de oliva de calidad - una refrescante sinfonía de sabores mediterráneos.'
         },
         {
           name: 'Ensalada de Burrata',

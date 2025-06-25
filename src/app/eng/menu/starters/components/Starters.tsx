@@ -173,9 +173,9 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Tuna Tartare Tacos',
-          price: 120,
-          description: 'Crispy tacos, red tuna, mango, avocado',
-          detailedDescription: 'An elegant fusion of flavors where raw red tuna meets the exotic sweetness of mango and the creaminess of avocado, all wrapped in the crispy embrace of an artisanal taco.'
+          price: 160,
+          description: 'Crispy tacos, homemade avocado mousse, fresh mango, red tuna, fried shallots',
+          detailedDescription: 'A bold creation where premium red tuna marries the exotic sweetness of fresh mango and the creaminess of homemade avocado mousse. The dish is elevated by the crunch of fried shallots and served in the crispy embrace of an artisanal taco - an unforgettable explosion of flavors and textures.'
         },
         {
           name: 'Shrimp Tacos',
@@ -290,12 +290,12 @@ const StartersMenu: React.FC = () => {
     {
       title: 'SALADS',
       items: [
-        {
-          name: 'Caesar Salad – Classic –',
-          price: 140,
-          description: 'Romaine lettuce, grilled chicken, anchovies, tomatoes, egg, bread croutons, parmesan shavings and caesar dressing',
-          detailedDescription: 'The iconic salad reinvented with juicy chicken and all the ingredients that have made it famous, enhanced by our homemade caesar dressing with the perfect balance between cream and umami.'
-        },
+{
+  name: 'Caesar Salad – Classic –',
+  price: 140,
+  description: 'Romaine lettuce, homemade Caesar sauce, grilled (or) fried chicken, anchovies, capers, bread croutons, parmesan',
+  detailedDescription: 'The iconic Caesar salad featuring fresh romaine lettuce, grilled or fried chicken as per your preference, flavorful anchovies, tangy capers, crispy croutons and parmesan, all enhanced by our authentic homemade Caesar sauce.'
+},
         {
           name: 'Rainbow Salad',
           price: 120,
@@ -321,10 +321,10 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Our emblematic creation that captures the very essence of our establishment - a generous portion of fresh seafood meeting creamy avocado on a bed of crunchy greens.'
         },
         {
-          name: 'Octopus Salad',
+          name: 'Fresh Octopus Salad',
           price: 160,
-          description: 'Octopus, Potatoes, Grilled peppers, Parsley, Oil, Salt',
-          detailedDescription: 'Tender and meaty octopus unites with melting potatoes and smoky peppers in a dance of olive oil perfumed with fresh parsley - a true ode to the Mediterranean.'
+          description: 'Octopus, bell peppers, cherry tomatoes, celery, coriander, black olives, olive oil',
+          detailedDescription: 'Tender and delicate octopus harmonizes perfectly with the crunch of bell peppers and celery, accompanied by juicy cherry tomatoes and black olives. The dish is delicately flavored with fresh coriander and enhanced by quality olive oil - a refreshing symphony of Mediterranean flavors.'
         },
         {
           name: 'Burrata Salad',

@@ -173,9 +173,9 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Tacos de Tartare de Thon',
-          price: 120,
-          description: 'Tacos croustillant, thon rouge, mangue, avocat',
-          detailedDescription: 'Une fusion élégante de saveurs où le thon rouge cru rencontre la douceur exotique de la mangue et l\'onctuosité de l\'avocat, le tout enveloppé dans l\'étreinte croustillante d\'un tacos artisanal.'
+          price: 160,
+          description: 'Tacos croustillant, mousse d\'avocat maison, mangue frais, thon rouge, échalotes frites',
+          detailedDescription: 'Une création audacieuse où le thon rouge de première qualité se marie à la douceur exotique de la mangue fraîche et à l\'onctuosité d\'une mousse d\'avocat maison. Le tout est rehaussé par le croquant des échalotes frites et servi dans l\'étreinte croustillante d\'un tacos artisanal - une explosion de saveurs et de textures inoubliables.'
         },
         {
           name: 'Tacos de Crevettes',
@@ -293,8 +293,8 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Salade César – Classique –',
           price: 140,
-          description: 'Laitue romaine, Poulet grillé, Anchois, Tomates, Oeuf, Croûtons de pain, Copeaux de parmesan et sauce césar',
-          detailedDescription: 'L\'emblématique salade réinventée avec du poulet juteux et tous les ingrédients qui en ont fait sa renommée, rehaussée par notre sauce césar maison au parfait équilibre entre crème et umami.'
+          description: 'Laitue roumaine, sauce César maison, poulet grillé (ou) frit, anchois, câpres, croûtons de pain, parmesan',
+          detailedDescription: 'L\'emblématique salade César avec laitue roumaine fraîche, poulet grillé ou frit selon votre préférence, anchois savoureux, câpres piquantes, croûtons croustillants et parmesan, le tout sublimé par notre sauce César maison authentique.'
         },
         {
           name: 'Salade Arc-en-ciel',
@@ -321,10 +321,10 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Notre création emblématique qui capture l\'essence même de notre établissement - une généreuse portion de fruits de mer frais rencontrant l\'avocat crémeux sur un lit de verdure croquante.'
         },
         {
-          name: 'Salade de Poulpe',
+          name: 'Salade Fraîche de Poulpe',
           price: 160,
-          description: 'Poulpe, Pommes de terres, Poivrons grillés, Persil, Huile, sel',
-          detailedDescription: 'Le poulpe tendre et charnu s\'unit aux pommes de terre fondantes et aux poivrons fumés dans une danse d\'huile d\'olive parfumée au persil frais - une véritable ode à la Méditerranée.'
+          description: 'Poulpe, poivrons, tomate cerise, céleri, coriandre, olive noir, huile d\'olive',
+          detailedDescription: 'Le poulpe tendre et délicat s\'harmonise parfaitement avec le croquant des poivrons et du céleri, accompagné de tomates cerises juteuses et d\'olives noires. Le tout est délicatement parfumé à la coriandre fraîche et sublimé par une huile d\'olive de qualité - une symphonie de saveurs méditerranéennes rafraîchissantes.'
         },
         {
           name: 'Salade Burrata',

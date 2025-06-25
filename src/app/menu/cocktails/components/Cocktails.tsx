@@ -139,12 +139,12 @@ const CocktailMenu: React.FC = () => {
     {
       title: 'COCKTAILS TIKI',
       items: [
-        {
-          name: 'De Tu Bikini',
-          price: 220,
-          ingredients: 'Bacardi Blanc / Bacardi Gold / Mangue / Cannelle / Pastis / Grenadine / Orange',
-          description: 'Une évasion tropicale qui combine la chaleur de la cannelle avec la fraîcheur sucrée de la mangue et de la grenadine, complétée par une subtile touche d\'anis.'
-        },
+{
+  name: 'De Tu Bikini',
+  price: 220,
+  ingredients: 'mangue / grand marnier / tequila infusée au piment / coriandre',
+  description: 'Une évasion tropicale qui marie la douceur exotique de la mangue avec la sophistication du Grand Marnier et la chaleur épicée de la tequila au piment, rehaussée par la fraîcheur herbacée de la coriandre.'
+},
         {
           name: 'Mai Tai Chiringuito',
           price: 220,
@@ -167,83 +167,62 @@ const CocktailMenu: React.FC = () => {
     },
     {
       title: 'COCKTAILS CHIRINGUITO',
-      items: [
-        {
-          name: 'Moscow Mule',
-          price: 160,
-          ingredients: 'Vodka Russian standard / Ginger Beer',
-          description: 'Le classique intemporel servi avec une touche de zestes méditerranéens, dans notre tasse en cuivre signature qui le garde parfaitement frais.'
-        },
-        {
-          name: 'Copresso',
-          price: 160,
-          ingredients: 'Bacardi Gold / Bacardi Blanc / Liqueur de Café / Expresso / Purée de Coco',
-          description: 'Une fusion sophistiquée de rhum des Caraïbes et de café intense, adoucie par la douceur subtile de la noix de coco.'
-        },
-        {
-          name: 'Soprano',
-          price: 160,
-          ingredients: 'Whisky Jack Daniel Honey / Amareto / Bitter Angostura / Twist Orange',
-        },
-        {
-          name: 'Caipitanja',
-          price: 160,
-          ingredients: 'Vodka Russian / Sirop de Pastèque / Citron',
-          description: 'Notre version rafraîchissante de la caipirinha, mettant en vedette la pastèque sucrée et les agrumes brillants qui dansent parfaitement ensemble.'
-        },
-        {
-          name: 'Bloody Tanja',
-          price: 160,
-          ingredients: 'Vodka Russe / Jus de Tomate Fait Maison / Céleri / Sauce Worcestershire / Tabasco',
-          description: 'Notre Bloody Mary signature avec du jus de tomate maison et un équilibre précis de chaleur et d\'umami.'
-        },
-        {
-          name: 'Alcides',
-          price: 160,
-          ingredients: 'Bombay Saphire / Liqueur Maraschino / Violet / Betterave / Tonic',
-          description: 'Une création visuellement étonnante avec la douceur terreuse de la betterave et la violette florale, terminée par un tonique effervescent.'
-        },
-        {
-          name: 'Maroc Julep',
-          price: 160,
-          ingredients: 'Whisky Bourbon / Thé Shiba / Menthe / Sucre Glacé',
-          description: 'L\'Afrique du Nord rencontre le Kentucky dans cette variation de julep aromatique avec des notes de thé délicates et de la menthe fraîche.'
-        },
-        {
-          name: 'Paloma Ajena',
-          price: 160,
-          ingredients: 'Tequila / Yuzu / Citron / Jus de Pamplemousse / Sel Piquant',
-          description: 'Une Paloma exotique avec du yuzu japonais qui ajoute de la complexité au pamplemousse traditionnel, avec une bordure de sel épicé.'
-        },
-        {
-          name: 'Coco Jamboo',
-          price: 160,
-          ingredients: 'Baileys / Liqueur Banane / Purée Coco / Cannelle / Noix de Muscade',
-        },
-        {
-          name: 'El General Spritz',
-          price: 160,
-          ingredients: 'Campari / Brandy Abricot / Mangue / Prosecco',
-        },
-        {
-          name: 'Vilma Palma',
-          price: 160,
-          ingredients: 'Grey goose poire / Calvados Boulard / Fleur Sureau / Prosecco',
-          description: 'Un spritz élégant inspiré par les vergers, combinant la meilleure vodka à la poire avec du brandy de pomme et de la délicate fleur de sureau.'
-        },
-        {
-          name: 'Green Mary',
-          price: 160,
-          ingredients: 'Vodka russian / Concombre / Céleri / Poivre Noir / Sauce Anglaise',
-          description: 'Une variation verte et fraîche du jardin sur le Bloody Mary, plus légère mais avec toute la complexité savoureuse de l\'original.'
-        },
-        {
-          name: 'Burbujas de Amor',
-          price: 160,
-          ingredients: 'Bombay Bramble / Roses / Liqueur Mandarine / Fruits Rouges / Tonic',
-          description: 'La romance dans un verre - floral, fruité et effervescent avec une subtile touche de couleur et une douceur persistante.'
-        }
-      ]
+  items: [
+    {
+      name: 'Mediterranean Collins',
+      price: 160,
+      ingredients: 'Gin / Fliou (menthe marocaine) / Lavande / Eau tonique fever tree mediterranean',
+      description: 'Un soupir rafraîchissant pour l\'âme'
+    },
+    {
+      name: 'Bloody Tanja',
+      price: 160,
+      ingredients: 'Vodka / Jus maison de céleri et de tomate / Mélange de sauces / Clarifié',
+      description: 'Classique cristallin'
+    },
+    {
+      name: 'Tora Sensai',
+      price: 160,
+      ingredients: 'Mélange de saké et de cachaça / Sirop maison au wasabi / Citron / Gingembre caramélisé',
+      description: 'Délicat, avec une âme féroce'
+    },
+    {
+      name: 'Chebakia',
+      price: 160,
+      ingredients: 'Liqueur maison de chebakia / Liqueur d\'amande / Miel',
+      description: 'Douce maison, mon foyer'
+    },
+    {
+      name: 'Zahara',
+      price: 160,
+      ingredients: 'Aperol / Cointreau / Carotte / Cardamome / Eau de fleur d\'oranger / Cuillère de Rhumtella',
+      description: 'Gorgée de coucher de soleil doré'
+    },
+    {
+      name: 'Ambarina',
+      price: 160,
+      ingredients: 'Réduction de vin rosé et romarin / Orange / Pêche / Vermouth / Prosecco',
+      description: 'Doux, épicé, herbacé, éclat chaleureux'
+    },
+    {
+      name: 'Berber Fire',
+      price: 160,
+      ingredients: 'Bourbon infusé aux épices et aux pommes rouges / Amaro / Trait d\'eau gazeuse / Parfum d\'agrumes / Olives',
+      description: 'Entre la tradition et le désir'
+    },
+    {
+      name: 'Carmesi',
+      price: 160,
+      ingredients: 'Liqueur de marasquin / Shrub aux fruits rouges gazeux / Cava',
+      description: 'Fraîcheur vibrante'
+    },
+    {
+      name: 'Paloma Ajena',
+      price: 160,
+      ingredients: 'Tequila / Yuzu / Citron / Jus de Pamplemousse / Sel Piquant',
+      description: 'Une Paloma exotique avec du yuzu japonais qui ajoute de la complexité au pamplemousse traditionnel, avec une bordure de sel épicé.'
+    }
+  ]
     },
     {
       title: 'MOCKTAILS',
@@ -261,17 +240,11 @@ const CocktailMenu: React.FC = () => {
           description: 'Un mélange rafraîchissant et addictif de fruits à noyau et de melon avec des herbes aromatiques qui rehaussent cette indulgence sans alcool.'
         },
         {
-          name: 'Tangerina Sour',
-          price: 120,
-          ingredients: 'Mandarine / Yuzu / Miel / Blanc D\'œuf en Option',
-          description: 'Une expérience d\'agrumes sophistiquée avec du yuzu japonais et du miel local, éventuellement terminée par une mousse soyeuse de blanc d\'œuf.'
-        },
-        {
-          name: 'Kiwi Mojito',
-          price: 120,
-          ingredients: 'Eau de coco / Kiwi / Citron / Menthe / Gingembre',
-          description: 'Toute la fraîcheur d\'un mojito avec du kiwi tropical et de la noix de coco, et une touche réconfortante de gingembre.'
-        }
+  name: 'Mango Mojito',
+  price: 120,
+  ingredients: 'Mangue / citron / menthe / eau pétillante',
+  description: 'Une version tropicale et exotique d\'un classique'
+}
       ]
     },
     {
@@ -288,12 +261,6 @@ const CocktailMenu: React.FC = () => {
           price: 550,
           ingredients: 'Baileys / Liqueur Café / Triple Sec',
           description: 'Un classique à plusieurs couches avec du Baileys crémeux, une riche liqueur de café et du Triple Sec citronné - enflammez-le pour un effet dramatique !'
-        },
-        {
-          name: 'Rainbow',
-          price: 550,
-          ingredients: 'Vodka / Curaçao Bleu / Orange / Liqueur Coco / Sirop de Grenadine',
-          description: 'Un shot vibrant et coloré qui vous emmène à travers un spectre de saveurs sucrées et tropicales.'
         },
         {
           name: 'Tequila',

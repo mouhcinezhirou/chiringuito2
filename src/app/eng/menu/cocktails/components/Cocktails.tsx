@@ -139,12 +139,12 @@ const CocktailMenu: React.FC = () => {
     {
       title: 'TIKI COCKTAILS',
       items: [
-        {
-          name: 'De Tu Bikini',
-          price: 220,
-          ingredients: 'White Bacardi / Gold Bacardi / Mango / Cinnamon / Pastis / Grenadine / Orange',
-          description: 'A tropical escape that combines the warmth of cinnamon with the sweet freshness of mango and grenadine, completed by a subtle touch of anise.'
-        },
+{
+  name: 'De Tu Bikini',
+  price: 220,
+  ingredients: 'mango / grand marnier / Chili-infused tequila / cilantro',
+  description: 'A tropical escape that combines the exotic sweetness of mango with the sophistication of Grand Marnier and the spicy heat of chili-infused tequila, enhanced by the herbaceous freshness of cilantro.'
+},
         {
           name: 'Mai Tai Chiringuito',
           price: 220,
@@ -169,80 +169,59 @@ const CocktailMenu: React.FC = () => {
       title: 'CHIRINGUITO COCKTAILS',
       items: [
         {
-          name: 'Moscow Mule',
-          price: 160,
-          ingredients: 'Russian Standard Vodka / Ginger Beer',
-          description: 'The timeless classic served with a touch of Mediterranean zest, in our signature copper mug that keeps it perfectly chilled.'
-        },
-        {
-          name: 'Copresso',
-          price: 160,
-          ingredients: 'Bacardi Gold / Bacardi White / Coffee Liqueur / Espresso / Coconut Puree',
-          description: 'A sophisticated fusion of Caribbean rum and intense coffee, softened by the subtle sweetness of coconut.'
-        },
-        {
-          name: 'Soprano',
-          price: 160,
-          ingredients: 'Jack Daniel\'s Honey Whiskey / Amaretto / Angostura Bitters / Orange twist',
-        },
-        {
-          name: 'Caipitanja',
-          price: 160,
-          ingredients: 'Russian Vodka / Watermelon Syrup / Lemon',
-          description: 'Our refreshing take on the caipirinha, featuring sweet watermelon and bright citrus that dance perfectly together.'
-        },
-        {
-          name: 'Bloody Tanja',
-          price: 160,
-          ingredients: 'Russian Vodka / Homemade Tomato Juice / Celery / Worcestershire Sauce / Tabasco',
-          description: 'Our signature Bloody Mary with homemade tomato juice and a precise balance of heat and umami.'
-        },
-        {
-          name: 'Alcides',
-          price: 160,
-          ingredients: 'Bombay Sapphire / Maraschino Liqueur / Violet / Beetroot / Tonic',
-          description: 'A visually stunning creation with the earthy sweetness of beetroot and floral violet, finished with effervescent tonic.'
-        },
-        {
-          name: 'Maroc Julep',
-          price: 160,
-          ingredients: 'Bourbon Whiskey / Shiba Tea / Mint / Powdered Sugar',
-          description: 'North Africa meets Kentucky in this aromatic julep variation with delicate tea notes and fresh mint.'
-        },
-        {
-          name: 'Paloma Ajena',
-          price: 160,
-          ingredients: 'Tequila / Yuzu / Lemon / Grapefruit Juice / Spicy Salt',
-          description: 'An exotic Paloma with Japanese yuzu adding complexity to traditional grapefruit, with a spicy salt rim.'
-        },
-        {
-          name: 'Coco Jamboo',
-          price: 160,
-          ingredients: 'Baileys / Banana Liqueur / Coconut Puree / Cinnamon / Nutmeg',
-        },
-        {
-          name: 'El General Spritz',
-          price: 160,
-          ingredients: 'Campari / Apricot Brandy / Mango / Prosecco',
-        },
-        {
-          name: 'Vilma Palma',
-          price: 160,
-          ingredients: 'Grey Goose Pear / Boulard Calvados / Elderflower / Prosecco',
-          description: 'An elegant spritz inspired by orchards, combining the finest pear vodka with apple brandy and delicate elderflower.'
-        },
-        {
-          name: 'Green Mary',
-          price: 160,
-          ingredients: 'Russian Vodka / Cucumber / Celery / Black Pepper / Worcestershire Sauce',
-          description: 'A fresh, garden-green variation on the Bloody Mary, lighter but with all the savory complexity of the original.'
-        },
-        {
-          name: 'Burbujas de Amor',
-          price: 160,
-          ingredients: 'Bombay Bramble / Roses / Mandarin Liqueur / Red Berries / Tonic',
-          description: 'Romance in a glass - floral, fruity and effervescent with a subtle touch of color and lingering sweetness.'
-        }
+      name: 'Mediterranean Collins',
+      price: 160,
+      ingredients: 'Gin / Fliou (Moroccan mint) / Lavender / Fever Tree Mediterranean tonic water',
+      description: 'A refreshing sigh for the soul'
+    },
+    {
+      name: 'Bloody Tanja',
+      price: 160,
+      ingredients: 'Vodka / Homemade celery and tomato juice / Sauce blend / Clarified',
+      description: 'Crystalline classic'
+    },
+    {
+      name: 'Tora Sensai',
+      price: 160,
+      ingredients: 'Sake and cachaça blend / Homemade wasabi syrup / Lemon / Caramelized ginger',
+      description: 'Delicate, with a fierce soul'
+    },
+    {
+      name: 'Chebakia',
+      price: 160,
+      ingredients: 'Homemade chebakia liqueur / Almond liqueur / Honey',
+      description: 'Sweet home, my refuge'
+    },
+    {
+      name: 'Zahara',
+      price: 160,
+      ingredients: 'Aperol / Cointreau / Carrot / Cardamom / Orange blossom water / Spoonful of Rhumtella',
+      description: 'Sip of golden sunset'
+    },
+    {
+      name: 'Ambarina',
+      price: 160,
+      ingredients: 'Rosé wine and rosemary reduction / Orange / Peach / Vermouth / Prosecco',
+      description: 'Sweet, spicy, herbaceous, warm glow'
+    },
+    {
+      name: 'Berber Fire',
+      price: 160,
+      ingredients: 'Bourbon infused with spices and red apples / Amaro / Splash of sparkling water / Citrus aroma / Olives',
+      description: 'Between tradition and desire'
+    },
+    {
+      name: 'Carmesí',
+      price: 160,
+      ingredients: 'Maraschino liqueur / Sparkling red berry shrub / Cava',
+      description: 'Vibrant freshness'
+    },
+    {
+      name: 'Paloma Ajena',
+      price: 160,
+      ingredients: 'Tequila / Yuzu / Lemon / Grapefruit Juice / Spicy Salt',
+      description: 'An exotic Paloma with Japanese yuzu adding complexity to traditional grapefruit, with a spicy salt rim.'
+    }
       ]
     },
     {
@@ -260,17 +239,11 @@ const CocktailMenu: React.FC = () => {
           ingredients: 'Peach / Watermelon / Herbs',
           description: 'A refreshing and addictive blend of stone fruit and melon with aromatic herbs that elevate this alcohol-free indulgence.'
         },
-        {
-          name: 'Tangerina Sour',
+                {
+          name: 'Mango Mojito',
           price: 120,
-          ingredients: 'Mandarin / Yuzu / Honey / Egg White Optional',
-          description: 'A sophisticated citrus experience with Japanese yuzu and local honey, optionally finished with a silky egg white foam.'
-        },
-        {
-          name: 'Kiwi Mojito',
-          price: 120,
-          ingredients: 'Coconut Water / Kiwi / Lemon / Mint / Ginger',
-          description: 'All the freshness of a mojito with tropical kiwi and coconut, and a comforting touch of ginger.'
+          ingredients: 'Mangue / citron / mint / sparkling water',
+          description: 'A tropical and exotic twist on a classic'
         }
       ]
     },
@@ -288,12 +261,6 @@ const CocktailMenu: React.FC = () => {
           price: 550,
           ingredients: 'Baileys / Coffee Liqueur / Triple Sec',
           description: 'A layered classic with creamy Baileys, rich coffee liqueur and citrusy Triple Sec - light it on fire for dramatic effect!'
-        },
-        {
-          name: 'Rainbow',
-          price: 550,
-          ingredients: 'Vodka / Blue Curaçao / Orange / Coconut liqueur / Grenadine Syrup',
-          description: 'A vibrant, colorful shot that takes you through a spectrum of sweet, tropical flavors.'
         },
         {
           name: 'Tequila',
