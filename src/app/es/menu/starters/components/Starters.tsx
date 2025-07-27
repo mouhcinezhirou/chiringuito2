@@ -154,11 +154,11 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Joyas brillantes de la costa atlántica de Dakhla, estas ostras ofrecen un sabor delicadamente yodado y una textura cremosa que evoca la esencia pura del océano en cada bocado.'
         },
         {
-          name: 'Pimientos "Padrón"',
-          price: 80,
-          description: 'Pimientos verdes dulces fritos, acompañados de flor de sal',
-          detailedDescription: 'Un juego de ruleta española donde algunos son dulces y otros sorprenden por su calor, estos pequeños pimientos fritos crujientes se realzan con el crujido de la sal marina gruesa.'
-        },
+  name: 'Tapenade Casera de Aceitunas Negras',
+  price: 60,
+  description: 'Deliciosa tapenade artesanal preparada con aceitunas negras',
+  detailedDescription: 'Tapenade casero de aceitunas negras, preparado según la tradición mediterránea'
+},
         {
           name: 'Boquerones en Vinagre',
           price: 80,
@@ -167,7 +167,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Gambas Palomitas',
-          price: 90,
+          price: 160,
           description: 'Gambas fritas crujientes especiadas',
           detailedDescription: 'Bocados de gambas recubiertas con un rebozado ligeramente picante y fritas a la perfección, creando un contraste irresistible entre lo crujiente exterior y la tierna jugosidad interior.'
         },

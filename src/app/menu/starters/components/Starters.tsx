@@ -154,10 +154,10 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Joyaux brillants de la côte atlantique de Dakhla, ces huîtres offrent un goût délicatement iodé et une texture crémeuse qui évoquent l\'essence pure de l\'océan à chaque bouchée.'
         },
         {
-          name: 'Poivrons "Padron"',
-          price: 80,
-          description: 'Poivrons verts doux frits, accompagnés de fleur de sel',
-          detailedDescription: 'Un jeu de roulette espagnole où certains sont doux et d\'autres surprennent par leur chaleur, ces petits poivrons frits croustillants sont rehaussés par le craquant du gros sel de mer.'
+          name: 'Tapenade Maison aux Olives Noires',
+          price: 60,
+          description: 'Délicieuse tapenade artisanale préparée avec des olives noires',
+          detailedDescription: 'Tapenade maison aux olives noires, préparée selon la tradition méditerranéenne'
         },
         {
           name: 'Anchois Marinés',
@@ -167,7 +167,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Crevettes Pop-corn',
-          price: 90,
+          price: 160,
           description: 'Crevettes croustillantes épicées',
           detailedDescription: 'Des bouchées de crevettes enrobées d\'une panure légèrement épicée et frites à la perfection, créant un contraste irrésistible entre le croustillant extérieur et la tendreté juteuse à l\'intérieur.'
         },

@@ -217,11 +217,11 @@ const FishMeatMenu: React.FC = () => {
           price: 220,
           description: 'Chicken skewers marinated in a traditional Lebanese blend of yogurt, garlic, lemon, and spices like sumac and zaatar. Grilled until perfectly tender with light caramelization, and served with our homemade herb aioli sauce.'
         },
-        {
-          name: 'Rib Eye Steak',
-          price: 320,
-          description: 'Top-quality aged ribeye, grilled to your preference and served with our house sauce of crushed black pepper, shallots, and cognac. The perfect marbling of this cut offers incomparable tenderness and flavor.'
-        },
+{
+  name: 'Rib Eye Steak',
+  price: 320,
+  description: 'Top-quality aged ribeye, grilled to your preference and served with our house sauce of crushed black pepper. The perfect marbling of this cut offers incomparable tenderness and flavor.'
+},
         {
           name: 'Hamburger (100% homemade)',
           price: 140,

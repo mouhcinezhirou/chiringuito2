@@ -154,11 +154,11 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Glistening jewels from the Atlantic coast of Dakhla, these oysters offer a delicately briny taste and creamy texture that evoke the pure essence of the ocean with every bite.'
         },
         {
-          name: 'Fried "Padron"',
-          price: 80,
-          description: 'fried sweet green peppers, accompanied by fleur de sel',
-          detailedDescription: 'A Spanish roulette game where some are mild and others surprise with their heat, these crispy fried little peppers are enhanced by the crunch of coarse sea salt.'
-        },
+  name: 'Homemade Black Olive Tapenade',
+  price: 60,
+  description: 'Delicious artisanal tapenade made with black olives',
+  detailedDescription: 'Homemade black olive tapenade, prepared according to Mediterranean tradition'
+},
         {
           name: 'Marinated Anchovies',
           price: 80,
@@ -167,7 +167,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Popcorn Shrimp',
-          price: 90,
+          price: 160,
           description: 'Crispy spiced shrimp',
           detailedDescription: 'Bite-sized shrimp coated in a lightly spiced batter and fried to perfection, creating an irresistible contrast between the crispy exterior and juicy tenderness inside.'
         },

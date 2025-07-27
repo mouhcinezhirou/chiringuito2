@@ -217,11 +217,11 @@ const FishMeatMenu: React.FC = () => {
           price: 220,
           description: 'Brochetas de pollo marinado en una mezcla tradicional libanesa de yogur, ajo, limón y especias como el zumaque y el zataar. Asadas hasta conseguir una perfecta ternura con una ligera caramelización, y servidas con nuestra salsa alioli casera de hierbas frescas.'
         },
-        {
-          name: 'Entrecot de París',
-          price: 320,
-          description: 'Entrecot madurado de primera calidad, asado según su preferencia y servido con nuestra salsa casera de pimienta negra triturada, chalotes y coñac. El veteado perfecto de este corte ofrece una ternura y un sabor incomparables.'
-        },
+{
+  name: 'Entrecot de París',
+  price: 320,
+  description: 'Entrecot madurado de primera calidad, asado según su preferencia y servido con nuestra salsa casera de pimienta negra triturada. El veteado perfecto de este corte ofrece una ternura y un sabor incomparables.'
+},
         {
           name: 'Hamburguesa (100% Casera)',
           price: 140,

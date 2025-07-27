@@ -217,11 +217,12 @@ const FishMeatMenu: React.FC = () => {
           price: 220,
           description: 'Brochettes de poulet mariné dans un mélange traditionnel libanais de yaourt, d\'ail, de citron et d\'épices comme le sumac et le zaatar. Grillées jusqu\'à obtenir une parfaite tendreté avec une légère caramélisation, et servies avec notre sauce aïoli maison aux herbes fraîches.'
         },
-        {
-          name: 'Entrecôte de Paris',
-          price: 320,
-          description: 'Entrecôte maturée de première qualité, grillée selon votre préférence et servie avec notre sauce maison au poivre noir concassé, échalotes et cognac. La marbrure parfaite de cette coupe offre une tendreté et une saveur incomparables.'
-        },
+
+{
+  name: 'Entrecôte de Paris',
+  price: 320,
+  description: 'Entrecôte maturée de première qualité, grillée selon votre préférence et servie avec notre sauce maison au poivre noir concassé. La marbrure parfaite de cette coupe offre une tendreté et une saveur incomparables.'
+},
         {
           name: 'Hamburger (100% Fait Maison)',
           price: 140,
