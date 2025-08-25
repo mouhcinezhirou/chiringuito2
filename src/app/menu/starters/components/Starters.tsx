@@ -210,7 +210,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Salade Russe',
           price: 70,
-          description: 'Pommes de terre, carottes, oeufs, petits pois, thon, mayonnaise',
+          description: 'Pommes de terre, carottes, oeufs, haricot vert, thon, mayonnaise',
           detailedDescription: 'Une préparation nostalgique où les légumes croquants et le thon se marient dans une étreinte crémeuse de mayonnaise, créant un équilibre parfait entre richesse et fraîcheur.'
         },
         {

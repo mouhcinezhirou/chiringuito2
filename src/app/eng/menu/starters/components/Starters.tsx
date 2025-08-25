@@ -210,7 +210,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Russian Salad',
           price: 70,
-          description: 'Potatoes, carrots, eggs, peas, tuna, mayonnaise',
+          description: 'Potatoes, carrots, eggs, green bean, tuna, mayonnaise',
           detailedDescription: 'A nostalgic preparation where crunchy vegetables and tuna marry in a creamy mayonnaise embrace, creating a perfect balance between richness and freshness.'
         },
         {

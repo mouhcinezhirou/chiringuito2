@@ -210,7 +210,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Ensaladilla Rusa',
           price: 70,
-          description: 'Patatas, zanahorias, huevos, guisantes, atún, mayonesa',
+          description: 'Patatas, zanahorias, huevos, judías verdes, atún, mayonesa',
           detailedDescription: 'Una preparación nostálgica donde las verduras crujientes y el atún se mezclan en un abrazo cremoso de mayonesa, creando un equilibrio perfecto entre riqueza y frescor.'
         },
         {
