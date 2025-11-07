@@ -187,11 +187,6 @@ const FishMeatMenu: React.FC = () => {
           description: 'Ce poisson noble à la chair fine est grillé délicatement pour préserver sa texture délicate et sa saveur subtile. Son goût délicat est rehaussé par un simple assaisonnement d\'herbes fraîches, d\'huile d\'olive extra vierge et d\'une touche de fleur de sel.'
         },
         {
-          name: 'Langoustines Grillées',
-          price: 600,
-          description: 'Langoustines fraîches grillées à la perfection, révélant leur chair douce et sucrée. Servies dans leur carapace avec un beurre à l\'ail et aux herbes fait maison qui fond délicatement sur ces crustacés délicats et aromatiques.'
-        },
-        {
           name: 'Crevettes Royales Grillées',
           price: 800,
           description: 'Somptueuses crevettes royales de calibre exceptionnel, grillées délicatement pour préserver leur texture ferme et leur goût naturellement sucré. Servies avec une touche d\'huile d\'olive infusée au citron et aux herbes de Provence fraîches.'

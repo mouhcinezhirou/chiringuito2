@@ -187,11 +187,6 @@ const FishMeatMenu: React.FC = () => {
           description: 'This noble fish with fine flesh is delicately grilled to preserve its delicate texture and subtle flavor. Its delicate taste is enhanced by a simple seasoning of fresh herbs, extra virgin olive oil, and a touch of fleur de sel.'
         },
         {
-          name: 'Grilled Scampi',
-          price: 600,
-          description: 'Fresh langoustines grilled to perfection, revealing their sweet and tender meat. Served in their shell with homemade garlic and herb butter that delicately melts over these delicate and aromatic crustaceans.'
-        },
-        {
           name: 'Grilled Red Prawns',
           price: 800,
           description: 'Sumptuous king prawns of exceptional caliber, delicately grilled to preserve their firm texture and naturally sweet taste. Served with a touch of lemon-infused olive oil and fresh herbs of Provence.'

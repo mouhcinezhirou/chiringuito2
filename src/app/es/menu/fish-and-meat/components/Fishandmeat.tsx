@@ -187,11 +187,6 @@ const FishMeatMenu: React.FC = () => {
           description: 'Este noble pescado de carne fina se cocina delicadamente a la plancha para preservar su textura delicada y su sabor sutil. Su delicado sabor se realza con un simple aderezo de hierbas frescas, aceite de oliva virgen extra y un toque de flor de sal.'
         },
         {
-          name: 'Cigalas a La Plancha',
-          price: 600,
-          description: 'Cigalas frescas a la plancha perfectamente cocinadas, revelando su carne suave y dulce. Servidas en su caparazón con mantequilla casera de ajo y hierbas que se derrite delicadamente sobre estos delicados y aromáticos crustáceos.'
-        },
-        {
           name: 'Carabineros a La Plancha',
           price: 800,
           description: 'Suntuosas gambas reales de calibre excepcional, cocinadas delicadamente a la plancha para preservar su textura firme y su sabor naturalmente dulce. Servidas con un toque de aceite de oliva infusionado con limón y hierbas frescas de Provenza.'
