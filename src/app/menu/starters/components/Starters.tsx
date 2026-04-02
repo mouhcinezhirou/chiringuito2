@@ -154,10 +154,10 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Joyaux brillants de la côte atlantique de Dakhla, ces huîtres offrent un goût délicatement iodé et une texture crémeuse qui évoquent l\'essence pure de l\'océan à chaque bouchée.'
         },
         {
-          name: 'Tapenade Maison aux Olives Noires',
-          price: 60,
-          description: 'Délicieuse tapenade artisanale préparée avec des olives noires',
-          detailedDescription: 'Tapenade maison aux olives noires, préparée selon la tradition méditerranéenne'
+          name: 'Trio de tapenades d’olives',
+          price: 95,
+          description: 'Déclinaison d’olives vertes, d’olives noires et d’olives délicatement parfumées à l’harissa',
+          detailedDescription: 'Olives soigneusement sélectionnées et finement travaillées pour offrir trois saveurs uniques : la fraîcheur des olives vertes, la richesse des olives noires et le piquant subtil des olives à l’harissa. Une symphonie méditerranéenne délicate et raffinée, qui ravira les amateurs de saveurs authentiques.'
         },
         {
           name: 'Anchois Marinés',
@@ -174,12 +174,12 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Tacos de Tartare de Thon',
           price: 160,
-          description: 'Tacos croustillant, mousse d\'avocat maison, mangue frais, thon rouge, échalotes frites',
-          detailedDescription: 'Une création audacieuse où le thon rouge de première qualité se marie à la douceur exotique de la mangue fraîche et à l\'onctuosité d\'une mousse d\'avocat maison. Le tout est rehaussé par le croquant des échalotes frites et servi dans l\'étreinte croustillante d\'un tacos artisanal - une explosion de saveurs et de textures inoubliables.'
+          description: 'Tacos croustillant, mousse d’avocat maison, mangue fraîche, thon rouge et échalotes frites.',
+          detailedDescription: 'Le thon rouge de première qualité s’allie à la douceur exotique de la mangue fraîche et à l’onctuosité d’une mousse d’avocat maison. Le tout est rehaussé par le croquant délicat des échalotes frites et servi dans un taco maison croustillant, offrant un jeu subtil de textures et de saveurs raffinées.'
         },
         {
           name: 'Tacos de Crevettes',
-          price: 120,
+          price: 140,
           description: 'Tacos croustillant farcis d\'un mélange de crevettes grillées, avocat, tomates, oignons avec une vinaigrette légèrement épicée',
           detailedDescription: 'La mer et la terre s\'unissent dans ces tacos où les crevettes jutteuses rencontrent la fraîcheur des légumes et l\'onctuosité de l\'avocat, relevés par une vinaigrette qui éveille délicatement les papilles.'
         },
@@ -192,8 +192,8 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Pommes de Terre Alioli',
           price: 70,
-          description: 'Pommes de terre frites avec mayonnaise à l\'ail',
-          detailedDescription: 'Une tapas espagnole incontournable où la chaleur des pommes de terre dorées rencontre la fraîcheur d\'une aïoli crémeuse infusée d\'ail, pour un contraste de températures et de textures réconfortant.'
+          description: 'Pommes de terre dorées servies avec une aïoli maison délicatement parfumée à l’ail.',
+          detailedDescription: 'Une tapas espagnole emblématique où les pommes de terre dorées à la perfection se mêlent à l’onctuosité d’une aïoli maison subtilement infusée à l’ail, offrant un contraste délicat de textures et de saveurs raffinées.'
         },
         {
           name: 'Batata Harra',
@@ -209,7 +209,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Salade Russe',
-          price: 70,
+          price: 90,
           description: 'Pommes de terre, carottes, oeufs, haricot vert, thon, mayonnaise',
           detailedDescription: 'Une préparation nostalgique où les légumes croquants et le thon se marient dans une étreinte crémeuse de mayonnaise, créant un équilibre parfait entre richesse et fraîcheur.'
         },
@@ -221,7 +221,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Tortilla Espagnole',
-          price: 70,
+          price: 90,
           description: 'Omelette aux pommes de terre',
           detailedDescription: 'Un classique espagnol réinterprété avec des pommes de terre fondantes et des œufs moelleux, cuits lentement pour créer cette texture distinctive qui fond en bouche, entre solide et onctueux.'
         },
@@ -276,8 +276,8 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Vitello Tonnato',
           price: 160,
-          description: 'Fines tranches de veau dans une mayonnaise onctueuse au thon, servies avec des câpres',
-          detailedDescription: 'Une élégance italienne classique où la délicatesse du veau rosé se marie à la richesse de la sauce au thon, ponctuée par les éclats salés des câpres et l\'acidité du citron.'
+          description: 'Fines tranches d’entrecôte rôtie, nappées d’une sauce onctueuse au thon et parsemées de câpres, tomates cerises et copeaux de parmesan.',
+          detailedDescription: 'Une interprétation raffinée de l’élégance italienne, où l’entrecôte rôtie tranchée finement se mêle à la richesse onctueuse de la sauce au thon. Les câpres, les tomates cerises et les copeaux de parmesan apportent fraîcheur, notes salées et texture, pour un équilibre délicat et savoureux.'
         },
         {
           name: 'Poulpe à la Galicienne',
@@ -292,15 +292,15 @@ const StartersMenu: React.FC = () => {
       items: [
         {
           name: 'Salade César – Classique –',
-          price: 140,
-          description: 'Laitue roumaine, sauce César maison, poulet grillé (ou) frit, anchois, câpres, croûtons de pain, parmesan',
-          detailedDescription: 'L\'emblématique salade César avec laitue roumaine fraîche, poulet grillé ou frit selon votre préférence, anchois savoureux, câpres piquantes, croûtons croustillants et parmesan, le tout sublimé par notre sauce César maison authentique.'
+          price: 160,
+          description: 'Laitue romaine, poulet grillé, tomates cerises, anchois marinés, œuf, câpres, croûtons dorés et parmesan en copeaux, accompagnés d’une sauce César maison.',
+          detailedDescription: 'Laitue romaine croquante, poulet grillé et tomates cerises juteuses, relevés par des anchois marinés et des câpres délicatement assaisonnés. Les croûtons dorés et les copeaux de parmesan apportent texture et richesse, tandis que notre sauce César maison, onctueuse et savoureuse, lie l’ensemble pour offrir une expérience à la fois classique et gourmande.'
         },
         {
           name: 'Salade Arc-en-ciel',
           price: 120,
-          description: 'Laitue, Légumes, Thon, Oeufs, Anchois',
-          detailedDescription: 'Un tableau coloré et nutritif où chaque bouchée offre une combinaison différente de saveurs et de textures, du croquant des légumes frais à la richesse du thon et des œufs.'
+          description: 'Salade romaine et mesclun, carottes, concombre, oignons, poivrons rouges, verts et jaunes, tomates cerises, thon, œufs et anchois.',
+          detailedDescription: 'Un véritable tableau de couleurs et de saveurs, où les légumes frais croquants rencontrent la richesse du thon et des œufs. Chaque bouchée offre un équilibre harmonieux de textures et de goûts, pour une expérience légère, saine et raffinée.'
         },
         {
           name: 'Salade Grecque',
@@ -317,14 +317,14 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Salade Chiringuito',
           price: 140,
-          description: 'Salade, Avocat, Mélange de fruits de mer et une sauce cocktail',
-          detailedDescription: 'Notre création emblématique qui capture l\'essence même de notre établissement - une généreuse portion de fruits de mer frais rencontrant l\'avocat crémeux sur un lit de verdure croquante.'
+          description: 'Salade croquante, avocat en fines lamelles, crevettes, poulpe, calamars et saumon fumé, le tout sublimé par une sauce cocktail maison.',
+          detailedDescription: 'Notre salade signature met en valeur la fraîcheur et la finesse des fruits de mer : crevettes, poulpe, calamars et saumon fumé se marient à l’onctuosité de l’avocat et au croquant des feuilles de salade. Subtilement relevée par notre sauce cocktail maison, elle offre un équilibre raffiné de textures et de saveurs.'
         },
         {
           name: 'Salade Fraîche de Poulpe',
-          price: 160,
-          description: 'Poulpe, poivrons, tomate cerise, céleri, coriandre, olive noir, huile d\'olive',
-          detailedDescription: 'Le poulpe tendre et délicat s\'harmonise parfaitement avec le croquant des poivrons et du céleri, accompagné de tomates cerises juteuses et d\'olives noires. Le tout est délicatement parfumé à la coriandre fraîche et sublimé par une huile d\'olive de qualité - une symphonie de saveurs méditerranéennes rafraîchissantes.'
+          price: 180,
+          description: 'Poulpe tendre, tomates fraîches, brunoise de poivrons rouges, jaunes et verts, échalote et coriandre, délicatement assaisonnés d’un filet d’huile d’olive, de jus de citron frais et d’une pincée de fleur de sel',
+          detailedDescription: 'Le poulpe tendre et fondant s’allie au croquant des poivrons multicolores et à la douceur juteuse des tomates cerises. Parfumée à la coriandre fraîche et relevée d’un filet d’huile d’olive de première qualité et d’une pincée de de fleur de sel, cette salade offre une harmonie de saveurs méditerranéennes délicates et rafraîchissantes.'
         },
         {
           name: 'Salade Burrata',
@@ -334,9 +334,9 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Salade de Chèvre',
-          price: 140,
-          description: 'Roquette, fromage de chèvre, Crème balsamique, Framboises confits',
-          detailedDescription: 'La chaleur du fromage de chèvre fondant se marie à la fraîcheur poivrée de la roquette, tandis que les framboises confites apportent une note sucrée-acidulée qui danse avec le vinaigre balsamique.'
+          price: 160,
+          description: 'Salade romaine et mesclun croquants, fromage de chèvre frais, deux crottins de chèvre frits, noix, figues séchées et pignons de pin, sublimés par une crème balsamique et une touche de confiture de framboises.',
+          detailedDescription: 'La douceur fondante du fromage de chèvre et des crottins frits se mêle à la fraîcheur croquante de la salade romaine et du mesclun, tandis que les framboises confites et la crème balsamique apportent des notes sucrées et acidulées, créant une harmonie délicate et raffinée de saveurs.'
         },
         {
           name: 'Carpaccio de Tomates avec Thon',
@@ -345,16 +345,16 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'Des tranches de tomates d\'une finesse extrême qui se parent de thon délicat, le tout arrosé d\'une huile d\'olive fruitée et parsemé d\'herbes fraîches pour un plat d\'une élégante simplicité.'
         },
         {
-          name: 'Emincé de Thon Rouge Sautée sur un Lit de Poivrons Grillés',
+          name: 'Salade Tomate, Avocat, Oignon, Thon',
           price: 140,
-          description: 'Thon saisi avec légèreté',
-          detailedDescription: 'Le thon rouge brièvement saisi pour préserver sa tendreté naturelle, posé sur un lit de poivrons au goût fumé qui complète parfaitement la richesse du poisson sans jamais le dominer.'
+          description: 'Fines tranches de tomates, thon premium, avocat en délicates lamelles et oignons finement émincés, le tout sublimé d’un filet d’huile d’olive et d’une pointe de fleur de sel',
+          detailedDescription: 'Les fines tranches de tomates s’allient au thon de qualité supérieure et à l’avocat en délicates lamelles, tandis que les oignons finement émincés apportent une touche subtile. Le tout est relevé par un filet d’huile d’olive vierge et une pointe de fleur de sel, offrant un équilibre frais, raffiné et délicatement parfumé.'
         },
         {
           name: 'Carpaccio de Boeuf',
           price: 140,
-          description: 'Fines tranches de bœuf cru, copeaux de parmesan, câpres, fleur de sel, huile d’olive',
-          detailedDescription: 'Des tranches de bœuf d\'une finesse extraordinaire, joliment disposées et assaisonnées d\'huile d\'olive première pression, de parmesan affiné et de câpres qui en rehaussent le goût délicat.'
+          description: 'Fines tranches de bœuf cru, copeaux de parmesan, câpres, sauce pesto, huile d’olive, fleur de sel et pignons de pin.',
+          detailedDescription: 'Des tranches de bœuf d’une finesse exceptionnelle, délicatement disposées et sublimées par un filet d’huile d’olive première pression, des copeaux de parmesan affiné et des câpres qui en accentuent le goût délicat. La touche de pesto maison et les pignons de pin ajoutent fraîcheur et texture, pour une expérience raffinée et équilibrée.'
         }
       ]
     }

@@ -150,211 +150,211 @@ const StartersMenu: React.FC = () => {
           name: 'Dakhla Oysters',
           price: '140 / 260',
           description: 'Fresh and briny',
-          options: '6 units / 12 units',
-          detailedDescription: 'Glistening jewels from the Atlantic coast of Dakhla, these oysters offer a delicately briny taste and creamy texture that evoke the pure essence of the ocean with every bite.'
+          options: '6 pieces / 12 pieces',
+          detailedDescription: 'Shining gems from the Atlantic coast of Dakhla, these oysters offer a delicately briny taste and a creamy texture that evoke the pure essence of the ocean with every bite.'
         },
         {
-  name: 'Homemade Black Olive Tapenade',
-  price: 60,
-  description: 'Delicious artisanal tapenade made with black olives',
-  detailedDescription: 'Homemade black olive tapenade, prepared according to Mediterranean tradition'
-},
+          name: 'Olive Tapenade Trio',
+          price: 95,
+          description: 'A trio of green olive, black olive, and harissa-spiced olive spreads',
+          detailedDescription: 'Carefully selected olives finely crafted to deliver three unique flavors: the freshness of green olives, the richness of black olives, and the subtle heat of harissa olives. A delicate Mediterranean symphony that will delight lovers of authentic flavors.'
+        },
         {
           name: 'Marinated Anchovies',
           price: 80,
           description: 'Fresh anchovy fillets marinated in olive oil and garlic',
-          detailedDescription: 'A traditional Mediterranean preparation where the intense flavor of anchovies is softened by a fragrant marinade of virgin olive oil and garlic, for a deep flavor experience.'
+          detailedDescription: 'A traditional Mediterranean preparation where the intense flavor of anchovies is softened by a fragrant marinade of virgin olive oil and garlic, for a deep and satisfying taste experience.'
         },
         {
           name: 'Popcorn Shrimp',
           price: 160,
-          description: 'Crispy spiced shrimp',
-          detailedDescription: 'Bite-sized shrimp coated in a lightly spiced batter and fried to perfection, creating an irresistible contrast between the crispy exterior and juicy tenderness inside.'
+          description: 'Crispy spiced shrimp bites',
+          detailedDescription: 'Shrimp coated in a lightly spiced breading and fried to perfection, creating an irresistible contrast between the crispy exterior and the juicy tenderness within.'
         },
         {
           name: 'Tuna Tartare Tacos',
           price: 160,
-          description: 'Crispy tacos, homemade avocado mousse, fresh mango, red tuna, fried shallots',
-          detailedDescription: 'A bold creation where premium red tuna marries the exotic sweetness of fresh mango and the creaminess of homemade avocado mousse. The dish is elevated by the crunch of fried shallots and served in the crispy embrace of an artisanal taco - an unforgettable explosion of flavors and textures.'
+          description: 'Crispy taco, homemade avocado mousse, fresh mango, bluefin tuna and fried shallots.',
+          detailedDescription: 'Premium bluefin tuna pairs with the exotic sweetness of fresh mango and the smoothness of a homemade avocado mousse. Finished with the delicate crunch of fried shallots and served in a crispy homemade taco, offering a subtle interplay of refined textures and flavors.'
         },
         {
           name: 'Shrimp Tacos',
-          price: 120,
-          description: 'Crispy tacos filled with a mix of grilled shrimp, avocado, tomatoes, onions with a lightly spiced vinaigrette',
-          detailedDescription: 'Sea and land unite in these tacos where juicy shrimp meet the freshness of vegetables and the creaminess of avocado, enhanced by a vinaigrette that gently awakens the taste buds.'
+          price: 140,
+          description: 'Crispy tacos filled with grilled shrimp, avocado, tomatoes, onions and a lightly spiced vinaigrette',
+          detailedDescription: 'Sea and land unite in these tacos where juicy shrimp meet fresh vegetables and creamy avocado, lifted by a vinaigrette that gently awakens the palate.'
         },
         {
           name: 'Hummus',
           price: 120,
           description: 'Lebanese-style chickpea cream',
-          detailedDescription: 'An ancestral Middle Eastern recipe transforming chickpeas into a silky cream, where the balance between tahini, lemon and olive oil creates a symphony of flavors.'
+          detailedDescription: 'An ancient Middle Eastern recipe transforming chickpeas into a silky cream, where the balance of tahini, lemon and olive oil creates a symphony of flavors.'
         },
         {
           name: 'Alioli Potatoes',
           price: 70,
-          description: 'Fried potatoes with garlic mayonnaise',
-          detailedDescription: 'An essential Spanish tapas where the warmth of golden potatoes meets the freshness of a creamy garlic aioli, for a comforting contrast of temperatures and textures.'
+          description: 'Golden potatoes served with a homemade garlic aioli.',
+          detailedDescription: 'An iconic Spanish tapa where perfectly golden potatoes meet the smoothness of a homemade aioli subtly infused with garlic, offering a delicate contrast of textures and refined flavors.'
         },
         {
           name: 'Batata Harra',
           price: 60,
           description: 'Fried potatoes with chili, coriander, lemon and garlic',
-          detailedDescription: 'A journey to Lebanon in one bite, where crispy potatoes dance with the heat of chilies, the freshness of lemon and the aromatic notes of coriander.'
+          detailedDescription: 'A journey to Lebanon in one bite, where crispy potatoes dance with the warmth of chili, the brightness of lemon and the aromatic notes of fresh coriander.'
         },
         {
-          name: 'Cheese Platter',
+          name: 'Cheese Board',
           price: 180,
-          description: 'Selection of various cheeses',
-          detailedDescription: 'A passionately curated platter featuring character cheeses, ranging from mild to mature, accompanied by condiments that enhance their complex notes.'
+          description: 'Selection of assorted cheeses',
+          detailedDescription: 'A passionately curated board presenting cheeses of character, ranging from the mildest to the most aged, accompanied by condiments that enhance their complex notes.'
         },
         {
           name: 'Russian Salad',
-          price: 70,
-          description: 'Potatoes, carrots, eggs, green bean, tuna, mayonnaise',
-          detailedDescription: 'A nostalgic preparation where crunchy vegetables and tuna marry in a creamy mayonnaise embrace, creating a perfect balance between richness and freshness.'
+          price: 90,
+          description: 'Potatoes, carrots, eggs, green beans, tuna, mayonnaise',
+          detailedDescription: 'A nostalgic preparation where crunchy vegetables and tuna come together in a creamy mayonnaise embrace, creating the perfect balance between richness and freshness.'
         },
         {
           name: 'Edamame',
           price: 80,
-          description: 'Steamed soybeans with sea salt and garlic marinade',
-          detailedDescription: 'Little green treasures from Japan, these soybean pods are enhanced by sea salt and garlic, offering a tactile and gustatory experience that is both playful and satisfying.'
+          description: 'Steamed soy beans with sea salt and garlic marinade',
+          detailedDescription: 'Little green treasures from Japan, these soy beans in their pods are enhanced with sea salt and garlic, offering a tactile and flavorful experience that is both playful and satisfying.'
         },
         {
           name: 'Spanish Tortilla',
-          price: 70,
+          price: 90,
           description: 'Potato omelette',
-          detailedDescription: 'A Spanish classic reinterpreted with melting potatoes and fluffy eggs, slowly cooked to create this distinctive texture that melts in the mouth, between solid and creamy.'
+          detailedDescription: 'A Spanish classic made with melt-in-the-mouth potatoes and soft eggs, slowly cooked to create that distinctive texture — somewhere between firm and silky.'
         },
         {
           name: 'Seafood Croquettes',
           price: 80,
-          description: 'Creamy béchamel with seafood',
-          detailedDescription: 'Golden and crispy bites that reveal a tender heart of béchamel enriched with delicate seafood, capturing the essence of the Mediterranean in every bite.'
+          description: 'Creamy seafood béchamel',
+          detailedDescription: 'Golden, crispy bites that reveal a tender heart of béchamel enriched with delicate seafood, capturing the essence of the Mediterranean in every mouthful.'
         },
         {
-          name: 'Chicken and Mushroom Croquettes',
+          name: 'Chicken & Mushroom Croquettes',
           price: 80,
           description: 'Tender chicken and aromatic mushrooms',
-          detailedDescription: 'The meeting of melting chicken and earthy mushrooms in a velvety béchamel, all wrapped in a golden breadcrumb that joyfully cracks under the tooth.'
+          detailedDescription: 'Melt-in-the-mouth chicken and earthy mushrooms come together in a velvety béchamel, all wrapped in a golden breadcrumb crust that crackles delightfully with every bite.'
         },
         {
-          name: 'Champi-Crunchi',
+          name: 'Crunchy Mushrooms',
           price: 100,
-          description: 'Breaded marinated and spicy mushrooms with tartar sauce',
-          detailedDescription: 'Mushrooms made addictive by a spicy marinade and crispy coating, accompanied by a homemade tartar sauce that perfectly balances their bold character.'
+          description: 'Marinated breaded mushrooms, fried and served with tartare sauce',
+          detailedDescription: 'Mushrooms made irresistible by a spiced marinade and a crispy coating, served with a homemade tartare sauce that perfectly balances their bold character.'
         },
         {
-          name: 'Sautéed Mushrooms with Garlic & Herbs',
+          name: 'Garlic Mushrooms',
           price: 100,
           description: 'Mushrooms, olive oil, garlic and parsley',
-          detailedDescription: 'Simplicity at its peak, where juicy mushrooms absorb the essence of golden garlic and the aroma of fresh parsley, all coated in a fruity first-press olive oil.'
+          detailedDescription: 'Simplicity at its finest, where juicy mushrooms absorb the essence of golden garlic and fresh parsley, all coated in a fruity first-press olive oil.'
         },
         {
-          name: 'Sautéed Clams',
+          name: 'Garlic Clams',
           price: 140,
-          description: 'Clams, garlic, olive oil and parsley',
-          detailedDescription: 'These delicate shellfish open to reveal their tender flesh, bathed in an elixir of garlic-infused olive oil and sprinkled with fresh parsley - a tribute to the sea.'
+          description: 'Clams, olive oil and parsley',
+          detailedDescription: 'These delicate shellfish open to reveal their tender flesh, bathed in an elixir of garlic-infused olive oil and scattered with fresh parsley — a true homage to the sea.'
         },
         {
           name: 'Garlic Shrimp',
           price: 140,
-          description: 'In spicy olive oil',
-          detailedDescription: 'Juicy shrimp sautéed in an ardent olive oil that captures the essence of garlic and chili, creating an irresistible juice that calls to be savored with bread.'
+          description: 'In spiced olive oil',
+          detailedDescription: 'Juicy shrimp sautéed in a fiery olive oil that captures all the essence of garlic and chili, creating an irresistible sauce best savored with bread.'
         },
         {
-          name: 'Andalusian Style Calamari',
+          name: 'Fried Calamari "Andalusian Style"',
           price: 160,
-          description: 'Fried calamari with Andalusian flour',
-          detailedDescription: 'The Andalusian art of frying in all its splendor, with tender calamari rings coated in a light and crispy batter, served with a lemon zest to awaken the flavors.'
+          description: 'Calamari fried in Andalusian flour',
+          detailedDescription: 'The Andalusian art of frying at its finest, with tender calamari rings coated in a light, crispy batter and served with a squeeze of lemon to brighten the flavors.'
         },
         {
-          name: 'Grilled Baby Calamari',
+          name: 'Grilled Baby Squid',
           price: 220,
           description: 'With salad, olive oil and garlic',
-          detailedDescription: 'Small whole calamari grilled to perfection, preserving their natural tenderness and enhanced by the subtle alliance of garlic and olive oil on a bed of fresh salad.'
+          detailedDescription: 'Whole baby squid grilled to perfection, retaining their natural tenderness and lifted by the subtle pairing of garlic and olive oil on a bed of fresh salad.'
         },
         {
           name: 'Vitello Tonnato',
           price: 160,
-          description: 'Thin slices of veal in a creamy tuna mayonnaise, served with capers',
-          detailedDescription: 'A classic Italian elegance where the delicacy of pink veal marries the richness of tuna sauce, punctuated by the salty bursts of capers and the acidity of lemon.'
+          description: 'Thin slices of roasted entrecôte, topped with a creamy tuna sauce, capers, cherry tomatoes and parmesan shavings.',
+          detailedDescription: 'A refined take on Italian elegance, where thinly sliced roasted entrecôte meets the richness of a smooth tuna sauce. Capers, cherry tomatoes and parmesan shavings add freshness, savory notes and texture, for a delicate and well-balanced dish.'
         },
         {
-          name: 'Galician Style Octopus',
+          name: 'Galician-Style Octopus',
           price: 160,
-          description: 'Boiled octopus, mashed potatoe, sea salt, de la vera paprika',
-          detailedDescription: 'A specialty from northern Spain where tender octopus rests on a bed of velvety potatoes, all generously drizzled with olive oil and sprinkled with smoked paprika.'
+          description: 'Octopus served on a potato purée',
+          detailedDescription: 'A specialty from northern Spain where tender octopus rests on a bed of velvety potatoes, generously drizzled with olive oil and dusted with smoked paprika.'
         }
       ]
     },
     {
       title: 'SALADS',
       items: [
-{
-  name: 'Caesar Salad – Classic –',
-  price: 140,
-  description: 'Romaine lettuce, homemade Caesar sauce, grilled (or) fried chicken, anchovies, capers, bread croutons, parmesan',
-  detailedDescription: 'The iconic Caesar salad featuring fresh romaine lettuce, grilled or fried chicken as per your preference, flavorful anchovies, tangy capers, crispy croutons and parmesan, all enhanced by our authentic homemade Caesar sauce.'
-},
+        {
+          name: 'Classic Caesar Salad',
+          price: 160,
+          description: 'Romaine lettuce, grilled chicken, cherry tomatoes, marinated anchovies, egg, capers, golden croutons and parmesan shavings, with a homemade Caesar dressing.',
+          detailedDescription: 'Crunchy romaine lettuce, grilled chicken and juicy cherry tomatoes, complemented by marinated anchovies and delicately seasoned capers. Golden croutons and parmesan shavings add texture and richness, while our homemade Caesar dressing — smooth and flavorful — ties it all together for a classic yet indulgent experience.'
+        },
         {
           name: 'Rainbow Salad',
           price: 120,
-          description: 'Lettuce, Vegetables, Tuna, Eggs, Anchovies',
-          detailedDescription: 'A colorful and nutritious tableau where each bite offers a different combination of flavors and textures, from the crunch of fresh vegetables to the richness of tuna and eggs.'
+          description: 'Romaine and mesclun, carrots, cucumber, onions, red, green and yellow peppers, cherry tomatoes, tuna, eggs and anchovies.',
+          detailedDescription: 'A true tableau of colors and flavors, where crunchy fresh vegetables meet the richness of tuna and eggs. Every bite offers a harmonious balance of textures and tastes, for a light, healthy and refined experience.'
         },
         {
           name: 'Greek Salad',
           price: 140,
-          description: 'Tomatoes, Peppers, Onions, Cucumber, Feta',
-          detailedDescription: 'An escape to the Greek islands in every bite, where the freshness of sun-drenched vegetables marries the saltiness of feta and the sweetness of Mediterranean herbs.'
+          description: 'Tomatoes, peppers, onions, cucumber, feta',
+          detailedDescription: 'An escape to the Greek islands in every bite, where sun-ripened vegetables meet the saltiness of feta and the sweetness of Mediterranean herbs.'
         },
         {
           name: 'Tangier Blue Crab Salad',
           price: 130,
-          description: 'Fine chiffonade of romaine lettuce, 100gr crab meat and mayonnaise',
-          detailedDescription: 'Our local signature where the delicacy of blue crab meat blooms on a bed of crunchy romaine, all wrapped in an airy mayonnaise with subtle lemony notes.'
+          description: 'Finely shredded romaine lettuce, 100g crab meat and mayonnaise',
+          detailedDescription: 'Our local signature where the delicate blue crab meat blossoms on a bed of crunchy romaine, all enveloped in a light mayonnaise with subtle citrus notes.'
         },
         {
           name: 'Chiringuito Salad',
           price: 140,
-          description: 'Salad, Avocado, Mixed seafood and a cocktail sauce',
-          detailedDescription: 'Our emblematic creation that captures the very essence of our establishment - a generous portion of fresh seafood meeting creamy avocado on a bed of crunchy greens.'
+          description: 'Crisp salad, thinly sliced avocado, shrimp, octopus, calamari and smoked salmon, all brought together by a homemade cocktail sauce.',
+          detailedDescription: 'Our signature salad showcases the freshness and finesse of seafood: shrimp, octopus, calamari and smoked salmon pair with creamy avocado and crisp salad leaves. Subtly lifted by our homemade cocktail sauce, it offers a refined balance of textures and flavors.'
         },
         {
           name: 'Fresh Octopus Salad',
-          price: 160,
-          description: 'Octopus, bell peppers, cherry tomatoes, celery, coriander, black olives, olive oil',
-          detailedDescription: 'Tender and delicate octopus harmonizes perfectly with the crunch of bell peppers and celery, accompanied by juicy cherry tomatoes and black olives. The dish is delicately flavored with fresh coriander and enhanced by quality olive oil - a refreshing symphony of Mediterranean flavors.'
+          price: 180,
+          description: 'Tender octopus, fresh tomatoes, red, yellow and green pepper brunoise, shallot and coriander, delicately dressed with olive oil, fresh lemon juice and a pinch of fleur de sel',
+          detailedDescription: 'Tender, melt-in-the-mouth octopus pairs with the crunch of multicolored peppers and the juicy sweetness of cherry tomatoes. Fragrant with fresh coriander and lifted by a drizzle of premium olive oil and a pinch of fleur de sel, this salad offers a harmonious and refreshing blend of Mediterranean flavors.'
         },
         {
           name: 'Burrata Salad',
           price: 160,
-          description: 'Serviced with tomatoes, Homemade pesto, and balsamic cream',
-          detailedDescription: 'The perfect contrast between creamy burrata with a flowing heart and sun-drenched tomatoes, magnified by our artisanal pesto with notes of freshly picked basil.'
+          description: 'Served with tomatoes, homemade pesto and balsamic cream',
+          detailedDescription: 'The perfect contrast between creamy burrata with its flowing heart and sun-ripened tomatoes, elevated by our artisanal pesto with notes of freshly picked basil.'
         },
         {
           name: 'Goat Cheese Salad',
-          price: 140,
-          description: 'Arugula, Goat cheese, Balsamic cream, Candied raspberries',
-          detailedDescription: 'The warmth of melting goat cheese marries the peppery freshness of arugula, while candied raspberries bring a sweet-tangy note that dances with the balsamic vinegar.'
+          price: 160,
+          description: 'Crisp romaine and mesclun, fresh goat cheese, two fried goat cheese rounds, walnuts, dried figs and pine nuts, finished with balsamic cream and a touch of raspberry jam.',
+          detailedDescription: 'The melt-in-the-mouth softness of goat cheese and fried rounds mingles with the crunch of romaine and mesclun, while raspberry jam and balsamic cream bring sweet and tangy notes, creating a delicate and refined harmony of flavors.'
         },
         {
-          name: 'Tomato Carpaccio with Tuna',
+          name: 'Tomato & Tuna Carpaccio',
           price: 140,
-          description: 'Fine tomatoes and premium tuna',
-          detailedDescription: 'Extremely thin slices of tomatoes adorned with delicate tuna, all drizzled with fruity olive oil and sprinkled with fresh herbs for a dish of elegant simplicity.'
+          description: 'Thinly sliced tomatoes and premium tuna',
+          detailedDescription: 'Extremely thin slices of tomato dressed with delicate tuna, drizzled with fruity olive oil and scattered with fresh herbs for a dish of elegant simplicity.'
         },
         {
-          name: 'Sautéed Red Tuna & Pepper Salad',
+          name: 'Tomato, Avocado, Onion & Tuna Salad',
           price: 140,
-          description: 'Lightly seared tuna',
-          detailedDescription: 'Red tuna briefly seared to preserve its natural tenderness, placed on a bed of smoked-flavored peppers that perfectly complement the richness of the fish without ever dominating it.'
+          description: 'Thin slices of tomato, premium tuna, delicate avocado slices and finely sliced onions, finished with a drizzle of olive oil and a pinch of fleur de sel',
+          detailedDescription: 'Thin slices of tomato meet premium tuna and delicate avocado, while finely sliced onions add a subtle touch. Finished with a drizzle of virgin olive oil and a pinch of fleur de sel, this salad offers a fresh, refined and delicately fragrant balance.'
         },
         {
           name: 'Beef Carpaccio',
           price: 140,
-          description: 'Thin slices of raw beef, shaved parmesan, olive oil, sea salt, capres',
-          detailedDescription: 'Extraordinarily fine slices of beef, beautifully arranged and seasoned with first press olive oil, aged parmesan and capers that enhance its delicate taste.'
+          description: 'Thin slices of raw beef, parmesan shavings, capers, pesto sauce, olive oil, fleur de sel and pine nuts.',
+          detailedDescription: 'Exceptionally thin slices of beef, delicately arranged and elevated by a drizzle of first-press olive oil, aged parmesan shavings and capers that accentuate its gentle flavor. A touch of homemade pesto and pine nuts add freshness and texture, for a refined and well-balanced experience.'
         }
       ]
     }
@@ -400,7 +400,7 @@ const StartersMenu: React.FC = () => {
             className="text-sm tracking-widest uppercase mb-2 font-light"
             style={{ color: 'rgba(129, 113, 94, 0.8)' }}
           >
-            Freshness and flavors
+            Freshness and flavor
           </motion.p>
 
           <motion.p 
@@ -410,8 +410,8 @@ const StartersMenu: React.FC = () => {
             className="text-center text-xs text-neutral-600 mt-8 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
-            A service charge of 6% will be added to your bill.
-            <br/>The establishment accepts only certified checks.
+            A 6% service charge will be added to your bill.
+            <br/>The establishment only accepts certified checks.
           </motion.p>
         </header>
 
