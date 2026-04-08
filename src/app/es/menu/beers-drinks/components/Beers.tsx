@@ -114,7 +114,6 @@ const DrinksMenu: React.FC = () => {
         { name: 'Mahou Original', bottlePrice: 60 },
         { name: 'Smirnoff Ice', bottlePrice: 60 },
         { name: 'Budweiser', bottlePrice: 60 },
-        { name: 'Casablanca', bottlePrice: 60 },
         { name: 'Corona', bottlePrice: 80 }
       ]
     },
