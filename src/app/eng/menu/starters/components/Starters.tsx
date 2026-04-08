@@ -183,12 +183,18 @@ const StartersMenu: React.FC = () => {
           description: 'Crispy tacos filled with grilled shrimp, avocado, tomatoes, onions and a lightly spiced vinaigrette',
           detailedDescription: 'Sea and land unite in these tacos where juicy shrimp meet fresh vegetables and creamy avocado, lifted by a vinaigrette that gently awakens the palate.'
         },
-        {
-          name: 'Hummus',
-          price: 120,
-          description: 'Lebanese-style chickpea cream',
-          detailedDescription: 'An ancient Middle Eastern recipe transforming chickpeas into a silky cream, where the balance of tahini, lemon and olive oil creates a symphony of flavors.'
-        },
+{
+  name: 'Tangy/Spicy Hummus',
+  price: 120,
+  description: 'Subtly tangy and spiced chickpea cream, served with golden, tender homemade bread',
+  detailedDescription: 'A bold take on classic hummus, where the mildness of chickpeas meets the brightness of pickles and marinated onions. Tahini and olive oil create a silky texture, while the tangy flavors bring balance and character. Served with golden, tender homemade bread — perfect for savoring every nuance.'
+},
+{
+  name: 'Classic Hummus',
+  price: 120,
+  description: 'Smooth and velvety chickpea cream, served with golden, tender homemade bread',
+  detailedDescription: 'A pure and refined take on hummus, showcasing the natural richness of chickpeas. Its velvety, creamy texture, delicately perfumed with olive oil, offers a subtle and indulgent experience — the perfect way to enjoy the simplicity of a Middle Eastern classic. Served with golden, tender homemade bread, ideal for bringing out all its delicacy.'
+},
         {
           name: 'Alioli Potatoes',
           price: 70,
@@ -222,7 +228,7 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Spanish Tortilla',
           price: 90,
-          description: 'Potato omelette',
+          description: 'Spanish omelet with eggs, melting potatoes and delicately caramelized onions.',
           detailedDescription: 'A Spanish classic made with melt-in-the-mouth potatoes and soft eggs, slowly cooked to create that distinctive texture — somewhere between firm and silky.'
         },
         {
@@ -307,12 +313,6 @@ const StartersMenu: React.FC = () => {
           price: 140,
           description: 'Tomatoes, peppers, onions, cucumber, feta',
           detailedDescription: 'An escape to the Greek islands in every bite, where sun-ripened vegetables meet the saltiness of feta and the sweetness of Mediterranean herbs.'
-        },
-        {
-          name: 'Tangier Blue Crab Salad',
-          price: 130,
-          description: 'Finely shredded romaine lettuce, 100g crab meat and mayonnaise',
-          detailedDescription: 'Our local signature where the delicate blue crab meat blossoms on a bed of crunchy romaine, all enveloped in a light mayonnaise with subtle citrus notes.'
         },
         {
           name: 'Chiringuito Salad',

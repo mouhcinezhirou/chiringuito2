@@ -183,12 +183,18 @@ const StartersMenu: React.FC = () => {
           description: 'Tacos crujientes rellenos de gambas a la plancha, aguacate, tomates, cebolla y una vinagreta ligeramente especiada',
           detailedDescription: 'El mar y la tierra se unen en estos tacos donde las jugosas gambas se encuentran con la frescura de las verduras y la cremosidad del aguacate, realzados por una vinagreta que despierta delicadamente el paladar.'
         },
-        {
-          name: 'Hummus',
-          price: 120,
-          description: 'Crema de garbanzos al estilo libanés',
-          detailedDescription: 'Una receta ancestral de Oriente Medio que transforma los garbanzos en una crema sedosa, donde el equilibrio entre el tahini, el limón y el aceite de oliva crea una sinfonía de sabores.'
-        },
+{
+  name: 'Hummus Ácido/Picante',
+  price: 120,
+  description: 'Crema de garbanzos sutilmente ácida y especiada, acompañada de pan casero dorado y tierno',
+  detailedDescription: 'Una interpretación audaz del hummus clásico, donde la suavidad de los garbanzos se encuentra con la viveza de los pepinillos y las cebollas marinadas. El tahini y el aceite de oliva crean una textura sedosa, mientras que los sabores ácidos aportan equilibrio y carácter. Servido con pan casero dorado y tierno, ideal para apreciar toda su fineza.'
+},
+{
+  name: 'Hummus Clásico',
+  price: 120,
+  description: 'Crema de garbanzos suave y aterciopelada, acompañada de pan casero dorado y tierno',
+  detailedDescription: 'Una versión pura y refinada del hummus, que resalta la riqueza natural de los garbanzos. Su textura aterciopelada y untuosa, sutilmente perfumada con aceite de oliva, ofrece una experiencia delicada y sabrosa, ideal para saborear la sencillez de un clásico de Oriente Medio. Acompañado de pan casero dorado y tierno, perfecto para revelar toda su delicadeza.'
+},
         {
           name: 'Patatas Alioli',
           price: 70,
@@ -222,8 +228,8 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Tortilla Española',
           price: 90,
-          description: 'Tortilla de patatas',
-          detailedDescription: 'Un clásico español elaborado con patatas que se deshacen en la boca y huevos esponjosos, cocinados lentamente para crear esa textura característica que se funde entre lo sólido y lo suave.'
+          description: 'Tortilla española con huevos, patatas fundidas y cebollas delicadamente caramelizadas',
+          detailedDescription: 'Una tortilla generosa y delicadamente fundente, donde las patatas y cebollas cocinadas a fuego lento revelan todo su dulzor. Su centro ligeramente líquido aporta una textura deliciosamente cremosa, realzando este plato clásico español con delicadeza y autenticidad.'
         },
         {
           name: 'Croquetas de Mariscos',
@@ -307,12 +313,6 @@ const StartersMenu: React.FC = () => {
           price: 140,
           description: 'Tomates, pimientos, cebolla, pepino, feta',
           detailedDescription: 'Una escapada a las islas griegas en cada bocado, donde las verduras maduras al sol se combinan con la salinidad de la feta y la dulzura de las hierbas mediterráneas.'
-        },
-        {
-          name: 'Ensalada de Cangrejo Azul de Tánger',
-          price: 130,
-          description: 'Chifonada fina de lechuga romana, 100g de carne de cangrejo y mayonesa',
-          detailedDescription: 'Nuestra firma local donde la delicada carne de cangrejo azul florece sobre un lecho de crujiente romana, todo envuelto en una ligera mayonesa con sutiles notas cítricas.'
         },
         {
           name: 'Ensalada Chiringuito',

@@ -147,12 +147,6 @@ const DessertsMenu: React.FC = () => {
       title: 'DESSERTS',
       items: [
         {
-          name: 'Happiness Pineapple',
-          price: 130,
-          description: 'Sorbet ananas coco fait maison',
-          detailedDescription: 'Une symphonie tropicale où l\'ananas succulent rencontre la douceur crémeuse de la noix de coco, transportant vos papilles sous les palmiers d\'une plage paradisiaque.'
-        },
-        {
           name: 'Pain Perdu',
           price: 80,
           description: 'Caramel au beurre salé et glace à la vanille',
@@ -167,7 +161,7 @@ const DessertsMenu: React.FC = () => {
         },
         {
           name: 'Fondant au Chocolat',
-          price: 80,
+          price: 90,
           description: 'Servi avec une Glace à la Vanille',
           preparationTime: '10 min',
           detailedDescription: 'Un cœur mystérieux de chocolat noir intense qui se dévoile dans un flot de chaleur voluptueuse, contrasté par la fraîcheur d\'une glace vanille artisanale.'
@@ -180,27 +174,15 @@ const DessertsMenu: React.FC = () => {
         },
         {
           name: 'Crème Brûlée',
-          price: 70,
+          price: 80,
           description: 'Crème onctueuse avec une croûte au caramel croquante',
           detailedDescription: 'Un classique intemporel aux deux visages : le craquant exquis du caramel brûlé qui protège un trésor de vanille soyeux et délicat. Une valse de contradictions parfaites.'
         },
         {
-          name: 'Glaces / Sorbets',
-          price: 80,
-          description: 'Vanille ou citron',
-          detailedDescription: 'Des créations glacées aux saveurs pures et intenses, élaborées chaque jour dans notre cuisine avec des ingrédients soigneusement sélectionnés pour une expérience rafraîchissante.'
-        },
-        {
           name: 'Fruits de Saison',
-          price: 70,
+          price: 80,
           description: 'Sélection de fruits frais',
           detailedDescription: 'Une cueillette colorée des meilleurs fruits du marché, présentée dans sa simplicité naturelle pour célébrer les saveurs authentiques que la nature nous offre à chaque saison.'
-        },
-        {
-          name: 'Irish Coffee',
-          price: 80,
-          description: 'Whiskey, café et crème fouettée',
-          detailedDescription: 'Une douce ivresse où l\'amertume élégante du café embrasse la chaleur du whiskey irlandais, le tout délicatement adouci par un nuage de crème légèrement sucrée.'
         },
         {
           name: 'Café Gourmand',
@@ -209,10 +191,16 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Une trilogie de plaisirs en miniature accompagnant notre café signature, offrant un voyage gustatif complet pour satisfaire toutes vos envies sucrées en une seule assiette.'
         },
         {
-          name: 'Colonel',
+          name: 'Carpaccio d’Ananas',
+          price: 90,
+          description: 'Fines tranches d’ananas frais, légèrement caramélisées, crème brûlée onctueuse et glace vanille.',
+          detailedDescription: 'Un dessert tout en fraîcheur et en gourmandise : un carpaccio d’ananas finement tranché, délicatement caramélisé, reposant sur une crème brûlée onctueuse. L’ensemble est sublimé par une boule de glace vanille et un filet de caramel pour une touche finale irrésistible.'
+        },
+        {
+          name: 'Crunchy Nutella Pizza',
           price: 120,
-          description: 'Vodka, sorbet au citron',
-          detailedDescription: 'Un entracte glacé et alcoolisé où la morsure vive du citron s\'entrelace avec la chaleur discrète de la vodka, créant un moment de fraîcheur sophistiquée et revigorante.'
+          description: 'Pizza gourmande au Nutella, cœur croustillant et touche de caramel',
+          detailedDescription: 'Une création généreuse et réconfortante : une base croustillante au chocolat, délicatement étalée sur notre pâte à pizza maison, recouverte d’un nappage fondant au Nutella. L’ensemble est sublimé par un filet de caramel pour une expérience intensément gourmande, entre croquant et onctuosité.'
         }
       ]
     }

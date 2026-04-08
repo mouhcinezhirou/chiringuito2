@@ -160,8 +160,8 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Siciliana",
           "price": 150,
-          "ingredients": "Atún, Cebollas, Anchoas, Alcaparras, Tomates y Aceitunas Negras",
-          "description": "Un viaje hacia la soleada Sicilia donde el sabroso atún se encuentra con los acentos salados de las anchoas y alcaparras, equilibrado por la dulzura de las cebollas y la profundidad de las aceitunas negras."
+          "ingredients": "Atún, champiñones, alcaparras y queso fundido.",
+          "description": "Una invitación a los sabores de Sicilia, donde el suculento atún se combina con la dulzura de las setas y el delicado toque salado de las alcaparras. Todo ello realzado por un queso fundido, para una composición equilibrada y llena de carácter."
         },
         {
           "name": "La Mediterránea",

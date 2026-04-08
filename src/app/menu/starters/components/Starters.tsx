@@ -184,15 +184,21 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'La mer et la terre s\'unissent dans ces tacos où les crevettes jutteuses rencontrent la fraîcheur des légumes et l\'onctuosité de l\'avocat, relevés par une vinaigrette qui éveille délicatement les papilles.'
         },
         {
-          name: 'Hummus',
+          name: 'Hummus Relevé/acidulé',
           price: 120,
-          description: 'Crème de pois chiches à la libanaise',
-          detailedDescription: 'Une recette ancestrale du Moyen-Orient transformant les pois chiches en une crème soyeuse, où l\'équilibre entre le tahini, le citron et l\'huile d\'olive crée une symphonie de saveurs.'
+          description: 'Crème de pois chiches subtilement acidulée et relevée, accompagnée de pain maison doré et tendre',
+          detailedDescription: 'Une interprétation audacieuse de l’hummus classique, où la douceur des pois chiches rencontre la vivacité des cornichons et oignons marinés. Le tahini et l’huile d’olive créent une texture soyeuse, tandis que les saveurs acidulées apportent équilibre et caractère. Servi avec un pain maison doré et tendre, idéal pour en apprécier toute la finesse.'
+        },
+        {
+          name: 'Hummus Classique',
+          price: 120,
+          description: 'Crème de pois chiches douce et veloutée, accompagnée de pain maison doré et tendre',
+          detailedDescription: 'Une version pure et raffinée de l’hummus, mettant en avant la richesse naturelle des pois chiches. Sa texture veloutée et onctueuse, subtilement parfumée à l’huile d’olive, offre une expérience délicate et gourmande, idéale pour savourer la simplicité d’un classique du Moyen-Orient. Accompagné d’un pain maison doré et tendre, parfait pour en révéler toute la délicatesse.'
         },
         {
           name: 'Pommes de Terre Alioli',
           price: 70,
-          description: 'Pommes de terre dorées servies avec une aïoli maison délicatement parfumée à l’ail.',
+          description: 'Pommes de terre dorées servies avec une aïoli maison délicatement parfumée à l’ail',
           detailedDescription: 'Une tapas espagnole emblématique où les pommes de terre dorées à la perfection se mêlent à l’onctuosité d’une aïoli maison subtilement infusée à l’ail, offrant un contraste délicat de textures et de saveurs raffinées.'
         },
         {
@@ -222,8 +228,8 @@ const StartersMenu: React.FC = () => {
         {
           name: 'Tortilla Espagnole',
           price: 90,
-          description: 'Omelette aux pommes de terre',
-          detailedDescription: 'Un classique espagnol réinterprété avec des pommes de terre fondantes et des œufs moelleux, cuits lentement pour créer cette texture distinctive qui fond en bouche, entre solide et onctueux.'
+          description: 'Omelette espagnole aux œufs, pommes de terre fondantes et oignons délicatement confits.',
+          detailedDescription: 'Une tortilla généreuse et délicatement fondante, où les pommes de terre et les oignons longuement cuits révèlent toute leur douceur. Sa texture légèrement coulante au cœur apporte une onctuosité gourmande, sublimant ce grand classique de la cuisine espagnole avec finesse et authenticité.'
         },
         {
           name: 'Croquettes de Fruits de Mer',
@@ -307,12 +313,6 @@ const StartersMenu: React.FC = () => {
           price: 140,
           description: 'Tomates, Poivrons, Oignons, Concombre, Feta',
           detailedDescription: 'Une évasion vers les îles grecques dans chaque bouchée, où la fraîcheur des légumes gorgés de soleil se marie à la salinité de la feta et à la douceur des herbes méditerranéennes.'
-        },
-        {
-          name: 'Salade de Crabe Bleu Tangerois',
-          price: 130,
-          description: 'Chiffonnade fine de salade romaine, 100gr chair de crabe et mayonnaise',
-          detailedDescription: 'Notre signature locale où la délicatesse de la chair de crabe bleu s\'épanouit sur un lit de romaine croquante, le tout enveloppé d\'une mayonnaise aérienne aux notes citronnées subtiles.'
         },
         {
           name: 'Salade Chiringuito',

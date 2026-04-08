@@ -160,8 +160,8 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Sicilienne",
           "price": 150,
-          "ingredients": "Thon, Oignons, Anchois, Câpres, Tomates et olives noires",
-          "description": "Un voyage vers la Sicile ensoleillée où le thon savoureux rencontre les accents salés des anchois et des câpres, équilibré par la douceur des oignons et la profondeur des olives noires."
+          "ingredients": "Thon, champignons, câpres et fromage fondant",
+          "description": "A generous and delicately melting tortilla, where the slow-cooked potatoes and onions reveal their full sweetness. Its slightly runny center provides a deliciously creamy texture, enhancing this classic Spanish dish with finesse and authenticity."
         },
         {
           "name": "La Méditerranéenne",

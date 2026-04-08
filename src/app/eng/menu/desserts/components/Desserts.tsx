@@ -147,12 +147,6 @@ const DessertsMenu: React.FC = () => {
       title: 'DESSERTS',
       items: [
         {
-          name: 'Happiness Pineapple',
-          price: 130,
-          description: 'Homemade coconut pineapple sorbet',
-          detailedDescription: 'A tropical symphony where the succulent pineapple meets the creamy sweetness of coconut, transporting your taste buds under the palms of a paradise beach.'
-        },
-        {
           name: 'Pain Perdu',
           price: 80,
           description: 'Salted butter caramel and vanilla ice cream',
@@ -167,7 +161,7 @@ const DessertsMenu: React.FC = () => {
         },
         {
           name: 'Chocolate Fondant',
-          price: 80,
+          price: 90,
           description: 'Served with vanilla ice cream',
           preparationTime: '10 min',
           detailedDescription: 'A mysterious heart of intense dark chocolate that reveals itself in a flow of voluptuous heat, contrasted by the freshness of artisanal vanilla ice cream.'
@@ -180,27 +174,15 @@ const DessertsMenu: React.FC = () => {
         },
         {
           name: 'Crème Brûlée',
-          price: 70,
+          price: 80,
           description: 'Creamy custard with a crunchy caramel crust',
           detailedDescription: 'A timeless classic with two faces: the exquisite crunch of burnt caramel that protects a silky, delicate vanilla treasure. A waltz of perfect contradictions.'
         },
         {
-          name: 'Ice cream / Sorbet',
-          price: 80,
-          description: 'Vanilla or lemon',
-          detailedDescription: 'Frozen creations with pure, intense flavors, made fresh every day in our kitchen using carefully selected ingredients for a refreshing experience.'
-        },
-        {
           name: 'Seasonal Fruits',
-          price: 70,
+          price: 80,
           description: 'Fresh fruit selection',
           detailedDescription: 'A colorful harvest of the best market fruits, presented in its natural simplicity to celebrate the authentic flavors nature offers us every season.'
-        },
-        {
-          name: 'Irish Coffee',
-          price: 80,
-          description: 'Whiskey, coffee, and whipped cream',
-          detailedDescription: 'A gentle intoxication where the elegant bitterness of coffee embraces the warmth of Irish whiskey, all delicately softened by a cloud of slightly sweet cream.'
         },
         {
           name: 'Gourmet Coffee',
@@ -209,11 +191,17 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'A trilogy of miniature pleasures accompanying our signature coffee, offering a full taste journey to satisfy all your sweet cravings in one plate.'
         },
         {
-          name: 'Colonel',
-          price: 120,
-          description: 'Vodka, lemon sorbet',
-          detailedDescription: 'A frozen and alcoholic interlude where the sharp bite of lemon intertwines with the subtle heat of vodka, creating a moment of sophisticated and refreshing coolness.'
-        }
+  name: 'Pineapple Carpaccio',
+  price: 90,
+  description: 'Thinly sliced fresh pineapple, lightly caramelized, with silky crème brûlée and vanilla ice cream.',
+  detailedDescription: 'A dessert that\'s both refreshing and indulgent: thinly sliced pineapple carpaccio, delicately caramelized, resting on a silky crème brûlée. Topped with a scoop of vanilla ice cream and a drizzle of caramel for an irresistible finishing touch.'
+},
+{
+  name: 'Crunchy Nutella Pizza',
+  price: 120,
+  description: 'Decadent Nutella pizza with a crispy base and a hint of caramel.',
+  detailedDescription: 'A generous and comforting creation: a crispy chocolate base spread over our homemade pizza dough, topped with a luscious Nutella glaze. Finished with a drizzle of caramel for an intensely indulgent experience that balances crunch and creaminess.'
+}
       ]
     }
   ];

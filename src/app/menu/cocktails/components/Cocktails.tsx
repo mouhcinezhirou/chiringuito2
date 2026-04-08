@@ -175,12 +175,6 @@ const CocktailMenu: React.FC = () => {
       description: 'Un soupir rafraîchissant pour l\'âme'
     },
     {
-      name: 'Bloody Tanja',
-      price: 160,
-      ingredients: 'Vodka / Jus maison de céleri et de tomate / Mélange de sauces / Clarifié',
-      description: 'Classique cristallin'
-    },
-    {
       name: 'Tora Sensai',
       price: 160,
       ingredients: 'Mélange de saké et de cachaça / Sirop maison au wasabi / Citron / Gingembre caramélisé',
@@ -218,8 +212,8 @@ const CocktailMenu: React.FC = () => {
     },
     {
       name: 'Paloma Ajena',
-      price: 160,
-      ingredients: 'Tequila / Yuzu / Citron / Jus de Pamplemousse / Sel Piquant',
+      price: 180,
+      ingredients: 'Mezcal / Yuzu / Citron / Jus de Pamplemousse / Sel Piquant',
       description: 'Une Paloma exotique avec du yuzu japonais qui ajoute de la complexité au pamplemousse traditionnel, avec une bordure de sel épicé.'
     }
   ]

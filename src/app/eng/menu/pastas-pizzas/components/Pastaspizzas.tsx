@@ -160,8 +160,8 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "La Sicilienne",
           "price": 150,
-          "ingredients": "Tuna, Onions, Anchovies, Capers, Tomatoes and Black olives",
-          "description": "A journey to sunny Sicily where savory tuna meets the salty accents of anchovies and capers, balanced by the sweetness of onions and the depth of black olives."
+          "ingredients": "Tuna, mushrooms, capers and melted cheese",
+          "description": "An invitation to the flavors of Sicily, where succulent tuna is combined with the sweetness of mushrooms and the delicately salty notes of capers. All enhanced by a melting cheese, for a balanced and characterful composition."
         },
         {
           "name": "La Méditerranéenne",

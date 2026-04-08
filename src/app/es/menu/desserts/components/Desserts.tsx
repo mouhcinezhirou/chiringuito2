@@ -147,12 +147,6 @@ const DessertsMenu: React.FC = () => {
       title: 'POSTRES',
       items: [
         {
-          name: 'Happiness Piña',
-          price: 130,
-          description: 'Sorbete casero de piña y coco',
-          detailedDescription: 'Una sinfonía tropical donde la piña jugosa se encuentra con la suavidad cremosa del coco, transportando tu paladar bajo las palmeras de una playa paradisíaca.'
-        },
-        {
           name: 'Pain Perdu',
           price: 80,
           description: 'Tostada francesa caramelizada, servida con helado de vainilla',
@@ -167,7 +161,7 @@ const DessertsMenu: React.FC = () => {
         },
         {
           name: 'Fondant de Chocolate',
-          price: 80,
+          price: 90,
           description: 'Servido con helado de vainilla',
           preparationTime: '10 min',
           detailedDescription: 'Un corazón misterioso de chocolate negro intenso que se revela en un flujo de calidez voluptuosa, contrastado por la frescura de un helado de vainilla artesanal.'
@@ -180,27 +174,15 @@ const DessertsMenu: React.FC = () => {
         },
         {
           name: 'Crème Brûlée',
-          price: 70,
+          price: 80,
           description: 'Crema suave con una costra de caramelo crujiente',
           detailedDescription: 'Un clásico atemporal con dos caras: el crujido exquisito del caramelo quemado protege un tesoro de vainilla sedoso y delicado. Un vals de contradicciones perfectas.'
         },
         {
-          name: 'Helados / Sorbetes',
-          price: 80,
-          description: 'Vainilla o limón',
-          detailedDescription: 'Creaciones heladas con sabores puros e intensos, elaboradas cada día en nuestra cocina con ingredientes cuidadosamente seleccionados para una experiencia refrescante.'
-        },
-        {
           name: 'Frutas de Temporada',
-          price: 70,
+          price: 80,
           description: 'Selección de frutas frescas',
           detailedDescription: 'Una cosecha colorida de las mejores frutas del mercado, presentada en su simplicidad natural para celebrar los sabores auténticos que la naturaleza nos ofrece cada temporada.'
-        },
-        {
-          name: 'Irish Coffee',
-          price: 80,
-          description: 'Whiskey, café y crema batida',
-          detailedDescription: 'Una dulce embriaguez donde la elegante amargura del café abraza el calor del whiskey irlandés, todo suavemente cubierto por una nube de crema ligeramente endulzada.'
         },
         {
           name: 'Café Gourmand',
@@ -209,11 +191,17 @@ const DessertsMenu: React.FC = () => {
           detailedDescription: 'Una trilogía de placeres en miniatura acompañando nuestro café de autor, ofreciendo un viaje gustativo completo para satisfacer todos tus antojos dulces en un solo plato.'
         },
         {
-          name: 'Colonel',
-          price: 120,
-          description: 'Vodka, sorbete de limón',
-          detailedDescription: 'Un interludio helado y alcohólico donde la mordida viva del limón se entrelaza con el calor sutil de la vodka, creando un momento de frescura sofisticada y vigorizante.'
-        }
+  name: 'Carpaccio de Piña',
+  price: 90,
+  description: 'Finas láminas de piña fresca, ligeramente caramelizadas, con crema brûlée sedosa y helado de vainilla.',
+  detailedDescription: 'Un postre a la vez refrescante y goloso: un carpaccio de piña finamente laminada y delicadamente caramelizada, sobre una cremosa crema brûlée. El conjunto se culmina con una bola de helado de vainilla y un hilo de caramelo para un toque final irresistible.'
+},
+{
+  name: 'Pizza Crujiente de Nutella',
+  price: 120,
+  description: 'Pizza golosa de Nutella, base crujiente y toque de caramelo.',
+  detailedDescription: 'Una creación generosa y reconfortante: una base crujiente de chocolate extendida sobre nuestra masa de pizza artesanal, cubierta con una capa fundente de Nutella. Todo se remata con un hilo de caramelo para una experiencia intensamente golosa, entre lo crujiente y lo cremoso.'
+}
       ]
     }
   ];
