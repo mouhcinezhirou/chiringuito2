@@ -234,6 +234,18 @@ const SushiMenu: React.FC = () => {
           price: 160,
           description: 'Salmón, aguacate, queso fresco, tobiko, mayonesa picante, teriyaki',
           details: 'Una fusión audaz entre Italia y Japón - nuestro disco de arroz crujiente evoca la pizza, generosamente cubierto con suave salmón y aguacate. Las salsas se entrelazan en espirales artísticas, creando un cuadro gustativo único.'
+        },
+        {
+          name: 'Spicy Tuna Crispy Rice',
+          price: 160,
+          description: 'Atún picante, arroz crujiente',
+          details: 'Cubos de arroz dorado y crujiente coronados con un tartar de atún picante. Una explosión de texturas y sabores umami en cada bocado.'
+        },
+        {
+          name: 'Spicy Salmon Crispy Rice',
+          price: 160,
+          description: 'Salmón picante, arroz crujiente',
+          details: 'Cubos de arroz crujiente que se encuentran con la suavidad del salmón picante. Un equilibrio sutil entre el crujido del arroz y la riqueza aterciopelada del salmón.'
         }
       ]
     },

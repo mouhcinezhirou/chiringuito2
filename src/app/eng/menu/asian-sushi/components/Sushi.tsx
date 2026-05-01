@@ -234,7 +234,19 @@ const SushiMenu: React.FC = () => {
           price: 160,
           description: 'Salmon, avocado, cream cheese, tobiko, spicy mayonnaise, teriyaki',
           details: 'A bold fusion between Italy and Japan – our crispy rice disc evokes pizza, generously topped with velvety salmon and avocado. The sauces intertwine in artistic spirals, creating a unique gustatory tableau.'
-        }
+        },
+        {
+          name: 'Spicy Tuna Crispy Rice',
+          price: 160,
+          description: 'Spicy tuna, crispy rice',
+          details: 'Golden crispy rice cubes topped with spicy tuna tartare. An explosion of textures and umami flavors in every bite.'
+        },
+        {
+          name: 'Spicy Salmon Crispy Rice',
+          price: 160,
+          description: 'Spicy salmon, crispy rice',
+          details: 'Crispy rice cubes meet the melt-in-your-mouth richness of spicy salmon. A subtle balance between the crunch of the rice and the velvety smoothness of the salmon.'
+        },
       ]
     },
     {

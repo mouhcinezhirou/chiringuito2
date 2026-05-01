@@ -234,6 +234,18 @@ const SushiMenu: React.FC = () => {
           price: 160,
           description: 'Saumon, avocat, fromage frais, tobiko, mayonnaise piquante, teriyaki',
           details: 'Une fusion audacieuse entre l\'Italie et le Japon – notre disque de riz croustillant évoque la pizza, garni généreusement de saumon velouté et d\'avocat. Les sauces s\'entrelacent en spirales artistiques, créant un tableau gustatif unique.'
+        },
+        {
+          name: 'Spicy Tuna Crispy Rice',
+          price: 160,
+          description: 'Thon épicé, riz croustillant',
+          details: 'Des cubes de riz dorés et croustillants surmontés d\'un tartare de thon épicé. Une explosion de textures et de saveurs umami à chaque bouchée.'
+        },
+        {
+          name: 'Spicy Salmon Crispy Rice',
+          price: 160,
+          description: 'Saumon épicé, riz croustillant',
+          details: 'Des cubes de riz croustillants qui rencontrent la douceur fondante du saumon épicé. Un mariage subtil entre le craquant du riz et la richesse veloutée du saumon.'
         }
       ]
     },
