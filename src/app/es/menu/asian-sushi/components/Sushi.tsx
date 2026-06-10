@@ -266,6 +266,13 @@ const SushiMenu: React.FC = () => {
           details: 'Láminas de salmón de una ternura incomparable, cortadas con precisión para revelar su delicado veteado. Sobre el arroz, se derriten lentamente, liberando sus aceites esenciales que se casan con el vinagre sutil del arroz.'
         },
         {
+          name: 'Nigiri Salmón Flameado',
+          price: 180,
+          description: 'Lonchas de salmón flameado sobre arroz de sushi prensado',
+          pieces: 4,
+          details: 'Nuestro salmón brevemente acariciado por la llama viva desarrolla una superficie ligeramente caramelizada que contrasta con su corazón fundente. Una experiencia única entre calor y frescura, sublimada por los aromas ahumados que se entremezclan con la riqueza natural del salmón.'
+        },
+        {
           name: 'Nigiri Lubina',
           price: 180,
           description: 'Lonchas de lubina delicadas sobre arroz de sushi prensado',

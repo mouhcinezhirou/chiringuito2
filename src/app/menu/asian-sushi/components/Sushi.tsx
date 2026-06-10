@@ -266,6 +266,13 @@ const SushiMenu: React.FC = () => {
           details: 'Des lamelles de saumon d\'une tendreté incomparable, coupées avec précision pour révéler leur marbrure délicate. Sur le riz, elles fondent lentement, libérant leurs huiles essentielles qui se marient au vinaigre subtil du riz.'
         },
         {
+          name: 'Nigiri Saumon Flambé',
+          price: 180,
+          description: 'Tranches de saumon flambé sur riz à sushi pressé',
+          pieces: 4,
+          details: 'Notre saumon flambé à la flamme vive développe une surface légèrement caramélisée qui contraste avec son cœur fondant. Une expérience unique entre chaleur et fraîcheur, sublimée par les arômes fumés qui se mêlent à la richesse naturelle du saumon.'
+        },
+        {
           name: 'Nigiri Loup',
           price: 180,
           description: 'Tranches de loup délicates sur riz à sushi pressé',

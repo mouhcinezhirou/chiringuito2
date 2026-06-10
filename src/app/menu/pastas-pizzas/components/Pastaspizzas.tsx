@@ -182,6 +182,12 @@ const PizzaPastaMenu: React.FC = () => {
           "description": "Une réinterprétation du classique romain sur une base croustillante. Notre sauce blanche onctueuse enrobe des morceaux dorés de bacon de dinde halal, sublimée par notre mélange de fromages italiens."
         },
         {
+  "name": "Pizza aux artichauts, olives et jambon",
+  "price": 140,
+  "ingredients": "Artichauts, olives et jambon",
+  "description": "Une pizza généreuse qui marie la tendresse des cœurs d'artichaut, le caractère des olives et la douceur du jambon. Un trio méditerranéen savoureux sur notre sauce tomate maison et un voile de fromage fondant."
+},
+        {
           "name": "Calzone Piccante",
           "price": 160,
           "ingredients": "Pepperoni italien halal, champignons, mozzarelle, olives noirs",

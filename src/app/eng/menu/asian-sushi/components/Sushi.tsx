@@ -266,6 +266,13 @@ const SushiMenu: React.FC = () => {
           details: 'Salmon slices of incomparable tenderness, precisely cut to reveal their delicate marbling. On the rice, they slowly melt, releasing their essential oils that blend with the subtle vinegar of the rice.'
         },
         {
+          name: 'Flambéed Salmon Nigiri',
+          price: 180,
+          description: 'Slices of flambéed salmon on pressed sushi rice',
+          pieces: 4,
+          details: 'Our salmon briefly kissed by an open flame develops a lightly caramelized surface that contrasts with its melt-in-the-mouth heart. A unique interplay of warmth and freshness, elevated by smoky aromas that weave into the salmon\'s natural richness.'
+        },
+        {
           name: 'Sea Bass Nigiri',
           price: 180,
           description: 'Delicate sea bass slices on pressed sushi rice',

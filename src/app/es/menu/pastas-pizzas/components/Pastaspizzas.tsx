@@ -182,6 +182,12 @@ const PizzaPastaMenu: React.FC = () => {
           "description": "Una reinterpretación del clásico romano sobre una base crujiente. Nuestra cremosa salsa blanca envuelve trozos dorados de bacon de pavo halal, sublimada por nuestra mezcla de quesos italianos."
         },
         {
+  "name": "Pizza de alcachofas, aceitunas y jamón",
+  "price": 140,
+  "ingredients": "Alcachofas, aceitunas y jamón",
+  "description": "Una pizza generosa que combina la ternura de los corazones de alcachofa, el carácter de las aceitunas y la suavidad del jamón. Un sabroso trío mediterráneo sobre nuestra salsa de tomate casera y un velo de queso fundido."
+},
+        {
           "name": "Calzone Piccante",
           "price": 160,
           "ingredients": "Pepperoni italiano halal, Champiñones, Mozzarella, Aceitunas negras",

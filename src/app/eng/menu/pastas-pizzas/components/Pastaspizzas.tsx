@@ -182,6 +182,12 @@ const PizzaPastaMenu: React.FC = () => {
           "description": "A reinterpretation of the Roman classic on a crispy base. Our creamy white sauce coats golden pieces of halal turkey bacon, enhanced by our blend of Italian cheeses."
         },
         {
+  "name": "Pizza with artichokes, olives and ham",
+  "price": 140,
+  "ingredients": "Artichokes, olives and ham",
+  "description": "A generous pizza that brings together the tenderness of artichoke hearts, the bold character of olives and the delicate sweetness of ham. A flavorful Mediterranean trio on our homemade tomato sauce and a veil of melting cheese."
+},
+        {
           "name": "Calzone Piccante",
           "price": 160,
           "ingredients": "Halal Italian Pepperoni, Mushrooms, Mozzarella, Black olives",
