@@ -185,11 +185,6 @@ const FishMeatMenu: React.FC = () => {
           name: 'San Pedro a La Plancha',
           price: 290,
           description: 'Este noble pescado de carne fina se cocina delicadamente a la plancha para preservar su textura delicada y su sabor sutil. Su delicado sabor se realza con un simple aderezo de hierbas frescas, aceite de oliva virgen extra y un toque de flor de sal.'
-        },
-        {
-          name: 'Carabineros a La Plancha',
-          price: 800,
-          description: 'Suntuosas gambas reales de calibre excepcional, cocinadas delicadamente a la plancha para preservar su textura firme y su sabor naturalmente dulce. Servidas con un toque de aceite de oliva infusionado con limón y hierbas frescas de Provenza.'
         }
       ]
     },

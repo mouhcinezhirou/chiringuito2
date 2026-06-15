@@ -185,11 +185,6 @@ const FishMeatMenu: React.FC = () => {
           name: 'Grilled John Dory',
           price: 290,
           description: 'This noble fish with fine flesh is delicately grilled to preserve its delicate texture and subtle flavor. Its delicate taste is enhanced by a simple seasoning of fresh herbs, extra virgin olive oil, and a touch of fleur de sel.'
-        },
-        {
-          name: 'Grilled Red Prawns',
-          price: 800,
-          description: 'Sumptuous king prawns of exceptional caliber, delicately grilled to preserve their firm texture and naturally sweet taste. Served with a touch of lemon-infused olive oil and fresh herbs of Provence.'
         }
       ]
     },

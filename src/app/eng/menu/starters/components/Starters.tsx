@@ -274,12 +274,6 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'The Andalusian art of frying at its finest, with tender calamari rings coated in a light, crispy batter and served with a squeeze of lemon to brighten the flavors.'
         },
         {
-          name: 'Grilled Baby Squid',
-          price: 220,
-          description: 'With salad, olive oil and garlic',
-          detailedDescription: 'Whole baby squid grilled to perfection, retaining their natural tenderness and lifted by the subtle pairing of garlic and olive oil on a bed of fresh salad.'
-        },
-        {
           name: 'Vitello Tonnato',
           price: 160,
           description: 'Thin slices of roasted entrecôte, topped with a creamy tuna sauce, capers, cherry tomatoes and parmesan shavings.',

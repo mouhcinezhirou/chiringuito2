@@ -274,12 +274,6 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'L\'art andalou de la friture dans toute sa splendeur, avec des anneaux de calamars tendres enrobés d\'une pâte légère et croustillante, servis avec un zeste de citron pour réveiller les saveurs.'
         },
         {
-          name: 'Petits Calamars Grillés',
-          price: 220,
-          description: 'Avec de la salade, de l\'huile d\'olive et de l\'ail',
-          detailedDescription: 'De petits calamars entiers grillés à la perfection, conservant leur tendreté naturelle et relevés par l\'alliance subtile de l\'ail et de l\'huile d\'olive sur un lit de salade fraîche.'
-        },
-        {
           name: 'Vitello Tonnato',
           price: 160,
           description: 'Fines tranches d’entrecôte rôtie, nappées d’une sauce onctueuse au thon et parsemées de câpres, tomates cerises et copeaux de parmesan.',

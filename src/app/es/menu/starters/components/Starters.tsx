@@ -274,12 +274,6 @@ const StartersMenu: React.FC = () => {
           detailedDescription: 'El arte andaluz de la fritura en todo su esplendor, con anillas de calamar tiernas envueltas en una masa ligera y crujiente, servidas con un toque de limón para despertar los sabores.'
         },
         {
-          name: 'Chipirones a la Plancha',
-          price: 220,
-          description: 'Con ensalada, aceite de oliva y ajo',
-          detailedDescription: 'Chipirones enteros a la plancha en su punto perfecto, conservando su ternura natural y realzados por la sutil combinación de ajo y aceite de oliva sobre una cama de ensalada fresca.'
-        },
-        {
           name: 'Vitello Tonnato',
           price: 160,
           description: 'Finas lonchas de entrecot asado, napadas con una salsa cremosa de atún y espolvoreadas con alcaparras, tomates cherry y virutas de parmesano.',
