@@ -215,6 +215,12 @@ const CocktailMenu: React.FC = () => {
       price: 180,
       ingredients: 'Mezcal / Yuzu / Citron / Jus de Pamplemousse / Sel Piquant',
       description: 'Une Paloma exotique avec du yuzu japonais qui ajoute de la complexité au pamplemousse traditionnel, avec une bordure de sel épicé.'
+    },
+    {
+      name: 'St-Germain Spritz',
+      price: 180,
+      ingredients: 'Liqueur St-Germain / Prosecco / Eau pétillante',
+      description: 'Un cocktail léger et floral, équilibré par les bulles du Prosecco et de l\'eau pétillante.'
     }
   ]
     },
