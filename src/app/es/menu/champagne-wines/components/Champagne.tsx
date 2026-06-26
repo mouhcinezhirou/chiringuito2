@@ -111,7 +111,6 @@ const ChampagneMenu: React.FC = () => {
         { name: 'Martini Prosecco', bottlePrice: 1200, glassPrice: 100 },
         { name: 'Laurent Perrier Brut', bottlePrice: 2000 },
         { name: 'Laurent Perrier Rosé', bottlePrice: 2900 },
-        { name: 'Laurent Perrier Blanc de Blanc', bottlePrice: 2900 },
         { name: 'Laurent Perrier Brut Magnum', bottlePrice: 3600 },
         { name: 'Ruinart Blanc de Blanc', bottlePrice: 3900 },
         { name: 'Dom Perignon', bottlePrice: 7000 },
@@ -176,6 +175,18 @@ const ChampagneMenu: React.FC = () => {
       ]
     },
     {
+      title: 'VINOS BLANCOS ITALIA',
+      items: [
+        { name: 'Pinot Grigio Delle Venezie Ponte Villoni', bottlePrice: 320 }
+      ]
+    },
+    {
+      title: 'VINOS BLANCOS CHILE',
+      items: [
+        { name: 'Tarapaca Reserva Sauvignon Blanc', bottlePrice: 390 }
+      ]
+    },
+    {
       title: 'VINOS BLANCOS PORTUGAL',
       items: [
         { name: 'Mateus Blanc 75cl', bottlePrice: 260 }
@@ -201,7 +212,8 @@ const ChampagneMenu: React.FC = () => {
         { name: 'Brouilly les Jarrons Thorin', bottlePrice: 520 },
         { name: 'Château Lafitte', bottlePrice: 640 },
         { name: 'Chamirey Mercurey Bourgogne', bottlePrice: 900 },
-        { name: 'Châteauneuf Du-Pape Les Sinards Perrin', bottlePrice: 1200 }
+        { name: 'Châteauneuf Du-Pape Les Sinards Perrin', bottlePrice: 1200 },
+        { name: 'Pommard 1er Cru Jarollières Boillot', bottlePrice: 2900 }
       ]
     },
     {

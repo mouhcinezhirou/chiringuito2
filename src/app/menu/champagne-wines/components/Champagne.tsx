@@ -38,7 +38,7 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
   return (
     <motion.div 
       ref={itemRef}
-      className="border-b border-amber-100 py-1.5 cursor-pointer group" // Reduced from pb-4 mb-4 to py-1.5
+      className="border-b border-amber-100 py-1.5 cursor-pointer group"
       whileHover={{ x: 4 }}
       onClick={onExpand}
       initial={{ opacity: 0 }}
@@ -46,18 +46,17 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      {/* Single line layout for all screen sizes */}
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-6 pr-2">
           <h3 
-            className="font-serif text-sm md:text-base transition-all duration-300 group-hover:text-amber-800" // Reduced font size
+            className="font-serif text-sm md:text-base transition-all duration-300 group-hover:text-amber-800"
             style={{ 
               color: '#81715E',
               display: 'block',
               whiteSpace: 'normal',
               overflow: 'visible',
-              lineHeight: '1.2', // Reduced from 1.4
-              minHeight: '1.2em'  // Reduced from 2.8em
+              lineHeight: '1.2',
+              minHeight: '1.2em'
             }}
           >
             {name}
@@ -81,7 +80,7 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
         {isExpanded && description && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto', marginTop: 8 }} // Reduced from 12
+            animate={{ opacity: 1, height: 'auto', marginTop: 8 }}
             exit={{ opacity: 0, height: 0, marginTop: 0 }}
             transition={{ duration: 0.3 }}
             className="overflow-hidden pl-4"
@@ -92,7 +91,7 @@ const WineMenuItem: React.FC<MenuItem & { onExpand: () => void, isExpanded: bool
       </AnimatePresence>
       
       {description && (
-        <div className="mt-1 text-xs text-amber-700 opacity-70 flex items-center pl-4"> {/* Reduced from mt-2 */}
+        <div className="mt-1 text-xs text-amber-700 opacity-70 flex items-center pl-4">
           <span className="mr-1">{isExpanded ? 'Less' : 'Details'}</span>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -127,10 +126,10 @@ const WineMenuSection: React.FC<MenuSection> = ({ title, items }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-white bg-opacity-60 backdrop-blur-sm p-3 md:p-6 rounded-lg shadow-sm" // Reduced padding
+      className="bg-white bg-opacity-60 backdrop-blur-sm p-3 md:p-6 rounded-lg shadow-sm"
     >
       <h2 
-        className="text-lg md:text-xl font-serif tracking-wide mb-4 pb-2 border-b relative" // Reduced font size and margins
+        className="text-lg md:text-xl font-serif tracking-wide mb-4 pb-2 border-b relative"
         style={{ color: '#81715E', borderColor: 'rgba(129, 113, 94, 0.2)' }}
       >
         <span className="relative z-10">{title}</span>
@@ -142,8 +141,7 @@ const WineMenuSection: React.FC<MenuSection> = ({ title, items }) => {
         />
       </h2>
       
-      {/* Header labels - same layout for all screen sizes */}
-      <div className="grid grid-cols-12 mb-2 pb-1 border-b border-amber-200 relative"> {/* Reduced margins */}
+      <div className="grid grid-cols-12 mb-2 pb-1 border-b border-amber-200 relative">
         <div className="col-span-6"></div>
         <div className="col-span-2 text-right pr-1 sm:pr-2">
           <span className="text-xs font-medium text-amber-800">75cl</span>
@@ -175,326 +173,147 @@ const WineMenu: React.FC = () => {
     {
       title: 'CHAMPAGNE & PROSECCO',
       items: [
-        {
-          name: 'Martini Prosecco',
-          glassPrice: 100,
-          bottlePrice: 1200
-        },
-        {
-          name: 'Laurent Perrier Brut',
-          bottlePrice: 2000
-        },
-        {
-          name: 'Laurent Perrier Rosé',
-          bottlePrice: 2900
-        },
-        {
-          name: 'Laurent Perrier Blanc de Blanc',
-          bottlePrice: 2900
-        },
-        {
-          name: 'Laurent Perrier Brut Magnum',
-          bottlePrice: 3600
-        },
-        {
-          name: 'Ruinart Blanc de Blanc',
-          bottlePrice: 3900
-        },
-        {
-          name: 'Dom Perignon',
-          bottlePrice: 7000
-        },
-        {
-          name: 'Dom Perignon Rosé',
-          bottlePrice: 15000
-        }
+        { name: 'Martini Prosecco', glassPrice: 100, bottlePrice: 1200 },
+        { name: 'Laurent Perrier Brut', bottlePrice: 2000 },
+        { name: 'Laurent Perrier Rosé', bottlePrice: 2900 },
+        { name: 'Laurent Perrier Brut Magnum', bottlePrice: 3600 },
+        { name: 'Ruinart Blanc de Blanc', bottlePrice: 3900 },
+        { name: 'Dom Perignon', bottlePrice: 7000 },
+        { name: 'Dom Perignon Rosé', bottlePrice: 15000 }
       ]
     },
     {
       title: 'VINS BLANCS MAROCAINS',
       items: [
-        {
-          name: 'Beauvallon',
-          bottlePrice: 290,
-          glassPrice: 80
-        },
-        {
-          name: 'Médaillon',
-          bottlePrice: 340,
-          halfBottlePrice: 180,
-          glassPrice: 100
-        },
-        {
-          name: 'S de Siroua',
-          bottlePrice: 390
-        },
-        {
-          name: 'CB Signature',
-          bottlePrice: 450
-        },
-        {
-          name: 'Château Roslane AOC',
-          bottlePrice: 600
-        }
+        { name: 'Beauvallon', bottlePrice: 290, glassPrice: 80 },
+        { name: 'Médaillon', bottlePrice: 340, halfBottlePrice: 180, glassPrice: 100 },
+        { name: 'S de Siroua', bottlePrice: 390 },
+        { name: 'CB Signature', bottlePrice: 450 },
+        { name: 'Château Roslane AOC', bottlePrice: 600 }
       ]
     },
     {
       title: 'VINS ROUGES MAROCAINS',
       items: [
-        {
-          name: 'Beauvallon',
-          bottlePrice: 290,
-          glassPrice: 80
-        },
-        {
-          name: 'Médaillon',
-          bottlePrice: 340,
-          halfBottlePrice: 180,
-          glassPrice: 100
-        },
-        {
-          name: 'S de Siroua',
-          bottlePrice: 390
-        },
-        {
-          name: 'CB Signature',
-          bottlePrice: 480
-        },
-        {
-          name: 'Azayi',
-          bottlePrice: 590
-        },
-        {
-          name: 'Château Roslane AOC',
-          bottlePrice: 600
-        },
-        {
-          name: 'Tandem',
-          bottlePrice: 600
-        }
+        { name: 'Beauvallon', bottlePrice: 290, glassPrice: 80 },
+        { name: 'Médaillon', bottlePrice: 340, halfBottlePrice: 180, glassPrice: 100 },
+        { name: 'S de Siroua', bottlePrice: 390 },
+        { name: 'CB Signature', bottlePrice: 480 },
+        { name: 'Azayi', bottlePrice: 590 },
+        { name: 'Château Roslane AOC', bottlePrice: 600 },
+        { name: 'Tandem', bottlePrice: 600 }
       ]
     },
     {
       title: 'VINS ROSÉS MAROCAINS',
       items: [
-        {
-          name: 'Médaillon',
-          bottlePrice: 340,
-          glassPrice: 100
-        },
-        {
-          name: 'S de Siroua',
-          bottlePrice: 390
-        },
-        {
-          name: 'CB Signature',
-          bottlePrice: 420
-        },
-        {
-          name: 'Tandem',
-          bottlePrice: 450
-        }
+        { name: 'Médaillon', bottlePrice: 340, glassPrice: 100 },
+        { name: 'S de Siroua', bottlePrice: 390 },
+        { name: 'CB Signature', bottlePrice: 420 },
+        { name: 'Tandem', bottlePrice: 450 }
       ]
     },
     {
       title: 'VINS GRIS MAROCAINS',
       items: [
-        {
-          name: 'Boulaouane',
-          bottlePrice: 290,
-          glassPrice: 80
-        },
-        {
-          name: 'Medaillon',
-          bottlePrice: 340,
-          glassPrice: 100
-        },
-        {
-          name: 'Ait Souala',
-          bottlePrice: 420
-        }
+        { name: 'Boulaouane', bottlePrice: 290, glassPrice: 80 },
+        { name: 'Medaillon', bottlePrice: 340, glassPrice: 100 },
+        { name: 'Ait Souala', bottlePrice: 420 }
       ]
     },
     {
       title: 'VINS BLANCS ESPAÑA',
       items: [
-        {
-          name: 'Marques de Caceres',
-          bottlePrice: 320,
-          glassPrice: 110
-        },
-        {
-          name: 'Vina Esmeralda',
-          bottlePrice: 360
-        },
-        {
-          name: 'Albarino Pazo San Mauro',
-          bottlePrice: 540
-        }
+        { name: 'Marques de Caceres', bottlePrice: 320, glassPrice: 110 },
+        { name: 'Vina Esmeralda', bottlePrice: 360 },
+        { name: 'Albarino Pazo San Mauro', bottlePrice: 540 }
       ]
     },
     {
       title: 'VINS BLANCS FRANCE',
       items: [
-        {
-          name: 'Domaine Chiroulet',
-          bottlePrice: 360,
-          glassPrice: 110
-        },
-        {
-          name: 'Bourgogne Chardonnay Rodet',
-          bottlePrice: 540
-        },
-        {
-          name: 'Chablis Tremblay',
-          bottlePrice: 560
-        },
-        {
-          name: 'Sancerre J de Villebois',
-          bottlePrice: 590
-        },
-        {
-          name: 'Pouilly Fumé J de Villebois',
-          bottlePrice: 640
-        }
+        { name: 'Domaine Chiroulet', bottlePrice: 360, glassPrice: 110 },
+        { name: 'Bourgogne Chardonnay Rodet', bottlePrice: 540 },
+        { name: 'Chablis Tremblay', bottlePrice: 560 },
+        { name: 'Sancerre J de Villebois', bottlePrice: 590 },
+        { name: 'Pouilly Fumé J de Villebois', bottlePrice: 640 }
+      ]
+    },
+    {
+      title: 'VINS BLANCS ITALIA',
+      items: [
+        { name: 'Pinot Grigio Delle Venezie Ponte Villoni', bottlePrice: 320 }
+      ]
+    },
+    {
+      title: 'VINS BLANCS CHILE',
+      items: [
+        { name: 'Tarapaca Reserva Sauvignon Blanc', bottlePrice: 390 }
       ]
     },
     {
       title: 'VINS BLANCS PORTUGAL',
       items: [
-        {
-          name: 'Mateus Blanc 75cl',
-          bottlePrice: 260
-        }
+        { name: 'Mateus Blanc 75cl', bottlePrice: 260 }
       ]
     },
     {
       title: 'VINS ROUGES ESPAÑA',
       items: [
-        {
-          name: 'Marques de Caceres',
-          bottlePrice: 420,
-          glassPrice: 110
-        },
-        {
-          name: 'Altos Ibericos',
-          bottlePrice: 360
-        },
-        {
-          name: 'Celeste Crianza Torres',
-          bottlePrice: 560
-        },
-        {
-          name: 'Conde de San Cristobal',
-          bottlePrice: 620
-        },
-        {
-          name: 'Sela Bodega Roda',
-          bottlePrice: 690
-        },
-        {
-          name: 'Marques de Vargas Reserva',
-          bottlePrice: 690
-        },
-        {
-          name: 'Roda 1 Bodega Roda',
-          bottlePrice: 1800
-        }
+        { name: 'Marques de Caceres', bottlePrice: 420, glassPrice: 110 },
+        { name: 'Altos Ibericos', bottlePrice: 360 },
+        { name: 'Celeste Crianza Torres', bottlePrice: 560 },
+        { name: 'Conde de San Cristobal', bottlePrice: 620 },
+        { name: 'Sela Bodega Roda', bottlePrice: 690 },
+        { name: 'Marques de Vargas Reserva', bottlePrice: 690 },
+        { name: 'Roda 1 Bodega Roda', bottlePrice: 1800 }
       ]
     },
     {
       title: 'VINS ROUGES FRANCE',
       items: [
-        {
-          name: 'La Vieille Ferme Ventoux',
-          bottlePrice: 290
-        },
-        {
-          name: 'Fleur de Bazeau',
-          bottlePrice: 320,
-          glassPrice: 110
-        },
-        {
-          name: 'Brouilly Les Jarrons Thorins',
-          bottlePrice: 590
-        },
-        {
-          name: 'Château Lafitte',
-          bottlePrice: 640
-        },
-        {
-          name: 'Chamirey Mercurey Bourgogne',
-          bottlePrice: 900
-        },
-        {
-          name: 'Châteauneuf Du-Pape Les Sinards Perrin',
-          bottlePrice: 1200
-        }
+        { name: 'La Vieille Ferme Ventoux', bottlePrice: 290 },
+        { name: 'Fleur de Bazeau', bottlePrice: 320, glassPrice: 110 },
+        { name: 'Brouilly Les Jarrons Thorins', bottlePrice: 590 },
+        { name: 'Château Lafitte', bottlePrice: 640 },
+        { name: 'Chamirey Mercurey Bourgogne', bottlePrice: 900 },
+        { name: 'Châteauneuf Du-Pape Les Sinards Perrin', bottlePrice: 1200 },
+        { name: 'Pommard 1er Cru Jarollières Boillot', bottlePrice: 2900 }
       ]
     },
     {
       title: 'VINS ROUGES ARGENTINA',
       items: [
-        {
-          name: 'La Celia Reserva Malbec',
-          bottlePrice: 420
-        }
+        { name: 'La Celia Reserva Malbec', bottlePrice: 420 }
       ]
     },
     {
       title: 'VINS ROUGES CHILE',
       items: [
-        {
-          name: 'Tarapaca Reserva Carmenere',
-          bottlePrice: 390
-        }
+        { name: 'Tarapaca Reserva Carmenere', bottlePrice: 390 }
       ]
     },
     {
       title: 'VINS ROUGES ITALIA',
       items: [
-        {
-          name: 'Chianti Superiore Vigneti Trebbio',
-          bottlePrice: 480
-        }
+        { name: 'Chianti Superiore Vigneti Trebbio', bottlePrice: 480 }
       ]
     },
     {
       title: 'VINS ROUGES PORTUGAL',
       items: [
-        {
-          name: 'Silk & Spice',
-          bottlePrice: 320
-        }
+        { name: 'Silk & Spice', bottlePrice: 320 }
       ]
     },
     {
       title: 'VINS ROSÉS DU MONDE',
       items: [
-        {
-          name: 'Mateus rosé',
-          bottlePrice: 290
-        },
-        {
-          name: 'Manon Côte de Provence',
-          bottlePrice: 320
-        },
-        {
-          name: 'Studio By Miraval',
-          bottlePrice: 440
-        },
-        {
-          name: 'Pétales de Rose',
-          bottlePrice: 460
-        },
-        {
-          name: 'Miraval',
-          bottlePrice: 580
-        },
-        {
-          name: 'Minuty Prestige',
-          bottlePrice: 590
-        }
+        { name: 'Mateus rosé', bottlePrice: 290 },
+        { name: 'Manon Côte de Provence', bottlePrice: 320 },
+        { name: 'Studio By Miraval', bottlePrice: 440 },
+        { name: 'Pétales de Rose', bottlePrice: 460 },
+        { name: 'Miraval', bottlePrice: 580 },
+        { name: 'Minuty Prestige', bottlePrice: 590 }
       ]
     }
   ];
@@ -502,7 +321,7 @@ const WineMenu: React.FC = () => {
   return (
     <div 
       id="menu-section"
-      className="min-h-screen py-6 md:py-12 px-2 sm:px-4" // Reduced vertical padding
+      className="min-h-screen py-6 md:py-12 px-2 sm:px-4"
       style={{ 
         backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/api/placeholder/1000/1000)', 
         backgroundAttachment: 'fixed',
@@ -511,22 +330,22 @@ const WineMenu: React.FC = () => {
       }}
     >
       <div className="container mx-auto max-w-4xl">
-        <header className="mb-6 md:mb-12 text-center"> {/* Reduced margin */}
+        <header className="mb-6 md:mb-12 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-block mb-4" // Reduced from mb-6
+            className="inline-block mb-4"
           >
             <div className="w-20 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-60" />
-            <div className="w-16 h-1 mx-auto bg-amber-600 mb-4 rounded-full opacity-40" /> {/* Reduced from mb-6 */}
+            <div className="w-16 h-1 mx-auto bg-amber-600 mb-4 rounded-full opacity-40" />
           </motion.div>
           
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4" // Reduced font size and margin
+            className="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4"
             style={{ color: '#81715E' }}
           >
             Vins & Champagnes
@@ -546,7 +365,7 @@ const WineMenu: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-center text-xs text-neutral-600 mt-6 max-w-md mx-auto font-light italic" // Reduced from mt-8
+            className="text-center text-xs text-neutral-600 mt-6 max-w-md mx-auto font-light italic"
             style={{ color: 'rgba(129, 113, 94, 0.7)' }}
           >
             A 6% service charge will be added to your bill.
@@ -554,7 +373,7 @@ const WineMenu: React.FC = () => {
           </motion.p>
         </header>
 
-        <div className="space-y-4 md:space-y-8"> {/* Reduced spacing between sections */}
+        <div className="space-y-4 md:space-y-8">
           {menuSections.map((section, index) => (
             <WineMenuSection 
               key={index} 
@@ -564,7 +383,7 @@ const WineMenu: React.FC = () => {
           ))}
         </div>
         
-        <footer className="mt-8 md:mt-12 text-center"> {/* Reduced margin */}
+        <footer className="mt-8 md:mt-12 text-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -572,7 +391,7 @@ const WineMenu: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="w-16 h-1 mx-auto bg-amber-600 mb-1 rounded-full opacity-40" />
-            <div className="w-20 h-1 mx-auto bg-amber-600 mb-4 rounded-full opacity-60" /> {/* Reduced from mb-6 */}
+            <div className="w-20 h-1 mx-auto bg-amber-600 mb-4 rounded-full opacity-60" />
             <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(129, 113, 94, 0.6)' }}>
               Santé et bon appétit
             </p>

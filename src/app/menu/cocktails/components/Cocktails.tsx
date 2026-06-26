@@ -222,12 +222,6 @@ const CocktailMenu: React.FC = () => {
       title: 'MOCKTAILS',
       items: [
         {
-          name: 'Detox Chiringuito',
-          price: 60,
-          ingredients: 'Eau / Citron / Menthe / Concombre / Céleri',
-          description: 'Un mélange pur et revigorant qui nettoie et rafraîchit, apportant l\'essence du bien-être dans votre verre.'
-        },
-        {
           name: 'Amor Narcótico',
           price: 120,
           ingredients: 'Pêche / Pastèque / Herbes',
