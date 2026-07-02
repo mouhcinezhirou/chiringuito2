@@ -246,19 +246,19 @@ const CocktailMenu: React.FC = () => {
       items: [
         {
           name: 'Passion Vodka',
-          price: 550,
+          price: 800,
           ingredients: 'Vodka Ruso / Maracuyá / Limón',
           description: 'Un intenso chupito de pura pasión, combinando la audacia del vodka con la vibrante energía de la maracuyá fresca.'
         },
         {
           name: 'B52',
-          price: 550,
+          price: 800,
           ingredients: 'Baileys / licor de Café / Triple Sec',
           description: 'Un clásico de varias capas con cremoso Baileys, rico licor de café y Triple Sec cítrico - ¡enciéndelo para un efecto dramático!'
         },
         {
           name: 'Tequila',
-          price: 550,
+          price: 800,
           ingredients: 'Tequila Camino',
           description: 'Directo, sin adornos - solo el audaz y terroso golpe del Tequila Camino premium.'
         }
@@ -269,18 +269,18 @@ const CocktailMenu: React.FC = () => {
       items: [
         {
           name: 'Chaouen (x4)',
-          price: 160,
+          price: 300,
           ingredients: 'Sambuca / Blue Curaçao / Vodka Ruso / Sirope de Vainilla',
         },
         {
           name: 'Te a la Meister (x4)',
-          price: 160,
+          price: 300,
           ingredients: 'Jägermeister / Sirope de Jengibre / Licor de Chocolate / Menta / Ron Blanco',
           description: 'Una compleja mezcla de hierbas y especias del Jägermeister, complementada con chocolate y menta para un chupito sorprendentemente equilibrado.'
         },
         {
           name: 'Passion (x4)',
-          price: 160,
+          price: 300,
           ingredients: 'Vodka Ruso / Maracuyá / Limón',
           description: 'Puro hedonismo tropical en forma de chupito - vibrante maracuyá templada por brillantes cítricos y suave vodka.'
         }

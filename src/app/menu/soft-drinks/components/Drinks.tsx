@@ -141,25 +141,25 @@ const DrinkMenu: React.FC = () => {
       items: [
         {
           name: 'Sidi Ali 75cl',
-          price: 50,
+          price: 70,
           ingredients: 'Eau minérale naturelle',
           description: 'Eau minérale naturelle rafraîchissante du Maroc'
         },
         {
           name: 'Evian 75cl',
-          price: 90,
+          price: 120,
           ingredients: 'Eau minérale premium',
           description: 'Eau minérale pure des Alpes françaises'
         },
         {
           name: 'Oulmès 75cl',
-          price: 50,
+          price: 70,
           ingredients: 'Eau minérale gazeuse',
           description: 'Eau minérale gazeuse marocaine classique'
         },
         {
           name: 'Evian Pétillante 75cl',
-          price: 90,
+          price: 120,
           ingredients: 'Eau minérale gazeuse naturelle',
           description: 'Eau minérale naturellement pétillante d\'Evian'
         }
@@ -170,7 +170,7 @@ const DrinkMenu: React.FC = () => {
       items: [
         {
           name: 'Soda',
-          price: 50,
+          price: 60,
           ingredients: 'Différents parfums disponibles',
           description: 'coca cola, coca cola zero, shweppes citron, schweppes tonic, sprite, poms, hawai'
         },

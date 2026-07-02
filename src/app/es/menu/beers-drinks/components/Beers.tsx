@@ -109,17 +109,18 @@ const DrinksMenu: React.FC = () => {
     {
       title: 'CERVEZAS',
       items: [
-        { name: 'San Miguel', bottlePrice: 45 },
+        { name: 'San Miguel', bottlePrice: 65 },
         { name: 'San Miguel Sin Alcohol', bottlePrice: 50 },
-        { name: 'Mahou Original', bottlePrice: 60 },
-        { name: 'Smirnoff Ice', bottlePrice: 60 },
-        { name: 'Budweiser', bottlePrice: 60 },
+        { name: 'Mahou Original', bottlePrice: 80 },
+        { name: 'Smirnoff Ice', bottlePrice: 100 },
+        { name: 'Budweiser', bottlePrice: 90 },
         { name: 'Corona', bottlePrice: 80 }
       ]
     },
     {
       title: 'SANGRÍA',
       items: [
+         { name: 'Sangria Virgin', glassPrice: 90, bottlePrice: 300 },
         { name: 'Sangría Original (Roja)', glassPrice: 140, bottlePrice: 440 },
         { name: 'Sangría Original (Blanca)', glassPrice: 140, bottlePrice: 440 },
         { name: 'Sangría Original (Rosada)', glassPrice: 140, bottlePrice: 440 },
@@ -147,16 +148,16 @@ const DrinksMenu: React.FC = () => {
         { name: 'Calvados Boulard', glassPrice: 90 },
         { name: 'ABK6 VS', glassPrice: 90 },
         { name: 'ABK6 VSOP', glassPrice: 150 },
-        { name: 'HENNESSY V.S.', glassPrice: 190 },
-        { name: 'ABK6 XO', glassPrice: 300 },
-        { name: 'HENNESSY V.S.O.P.', glassPrice: 290 },
-        { name: 'HENNESSY X.O.', bottlePrice: 6500 }
+        { name: 'HENNESSY V.S.', glassPrice: 190, bottlePrice: 2500 },
+        { name: 'HENNESSY V.S.O.P.', glassPrice: 290, bottlePrice: 3500 },
+        { name: 'ABK6 XO', glassPrice: 300, bottlePrice: 4500 },
+        { name: 'HENNESSY X.O.', glassPrice: 690, bottlePrice: 6500 }
       ]
     },
     {
       title: 'DIGESTIVOS',
       items: [
-        { name: 'Sambuca Isolabella', glassPrice: 70 },
+        { name: 'Sambuca Isolabella', glassPrice: 80 },
         { name: 'Fernet Branca', glassPrice: 70 },
         { name: 'Armagnac', glassPrice: 70 },
         { name: 'Get 27', glassPrice: 70 },
@@ -177,8 +178,8 @@ const DrinksMenu: React.FC = () => {
         { name: 'Relicario Superior', glassPrice: 100 },
         { name: 'Bacardi 8 Años', glassPrice: 160 },
         { name: 'Relicario Supremo', glassPrice: 150 },
-        { name: 'Ron Zacapa 23', glassPrice: 350 },
-        { name: 'Ron Zacapa XO', bottlePrice: 6500 }
+        { name: 'Ron Zacapa 23', glassPrice: 350, bottlePrice: 4900 },
+        { name: 'Ron Zacapa XO', bottlePrice: 9000 }
       ]
     },
     {
@@ -199,7 +200,7 @@ const DrinksMenu: React.FC = () => {
         { name: 'Jack Daniel\'s', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Jack Daniel\'s Honey', glassPrice: 120, bottlePrice: 2000 },
         { name: 'Gentleman Jack', glassPrice: 140, bottlePrice: 2500 },
-        { name: 'Bourbon Bulleit', glassPrice: 150 },
+        { name: 'Bourbon Bulleit', glassPrice: 150, bottlePrice: 2500 },
         { name: 'Glenfiddich 12 Años', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Black Label', glassPrice: 150, bottlePrice: 2000 },
         { name: 'Glenfiddich 15 Años', glassPrice: 180, bottlePrice: 2500 },
@@ -225,11 +226,12 @@ const DrinksMenu: React.FC = () => {
       items: [
         { name: 'Camino Real', glassPrice: 100 },
         { name: 'Mezcal San Cosme', glassPrice: 200, bottlePrice: 2000 },
-        { name: 'Patron Silver', glassPrice: 200, bottlePrice: 2000 },
-        { name: 'Patron Reposado', glassPrice: 250, bottlePrice: 2500 },
-        { name: 'Patron Anejo', glassPrice: 300, bottlePrice: 3000 },
+        { name: 'Patron Silver', glassPrice: 200, bottlePrice: 2500 },
+        { name: 'Patron CAFE XO', glassPrice: 250, bottlePrice: 3000 },
+        { name: 'Patron Reposado', glassPrice: 250, bottlePrice: 3000 },
+        { name: 'Patron Anejo', glassPrice: 300, bottlePrice: 3500 },
         { name: 'Clase Azul Reposado', bottlePrice: 9000 },
-        { name: 'Don Julio 1942', bottlePrice: 12000 }
+        { name: 'Don Julio 1942', bottlePrice: 15000 }
       ]
     }
   ];

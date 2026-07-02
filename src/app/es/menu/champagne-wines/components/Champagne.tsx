@@ -7,6 +7,7 @@ interface DrinkItem {
   name: string;
   bottlePrice?: number;
   glassPrice?: number;
+  halfBottlePrice?: number;
 }
 
 interface MenuSection {
@@ -108,70 +109,70 @@ const ChampagneMenu: React.FC = () => {
     {
       title: 'CHAMPAGNE & PROSECCO',
       items: [
-        { name: 'Martini Prosecco', bottlePrice: 1200, glassPrice: 100 },
+        { name: 'Martini Prosecco', bottlePrice: 1200, glassPrice: 120 },
         { name: 'Laurent Perrier Brut', bottlePrice: 2000 },
         { name: 'Laurent Perrier Rosé', bottlePrice: 2900 },
         { name: 'Laurent Perrier Brut Magnum', bottlePrice: 3600 },
-        { name: 'Ruinart Blanc de Blanc', bottlePrice: 3900 },
-        { name: 'Dom Perignon', bottlePrice: 7000 },
-        { name: 'Dom Perignon Rosé', bottlePrice: 15000 },
+        { name: 'Ruinart Blanc de Blanc', bottlePrice: 5000 },
+        { name: 'Dom Perignon', bottlePrice: 9000 },
+        { name: 'Dom Perignon Rosé', bottlePrice: 20000 },
       ]
     },
     {
       title: 'VINOS BLANCOS MARROQUÍES',
       items: [
-        { name: 'Beauvallon', bottlePrice: 290, glassPrice: 80 },
-        { name: 'Médaillon', bottlePrice: 340, glassPrice: 100 },
-        { name: 'S de Siroua', bottlePrice: 390 },
-        { name: 'CB Signature', bottlePrice: 450 },
-        { name: 'Château Roslane AOC', bottlePrice: 600 }
+        { name: 'Beauvallon', bottlePrice: 320, glassPrice: 80 },
+        { name: 'Médaillon', bottlePrice: 370, halfBottlePrice: 210, glassPrice: 100 },
+        { name: 'S de Siroua', bottlePrice: 420 },
+        { name: 'CB Signature', bottlePrice: 520 },
+        { name: 'Château Roslane AOC', bottlePrice: 640 }
       ]
     },
     {
       title: 'VINOS TINTOS MARROQUÍES',
       items: [
-        { name: 'Beauvallon', bottlePrice: 290, glassPrice: 80 },
-        { name: 'Médaillon', bottlePrice: 340, glassPrice: 100 },
-        { name: 'S de Siroua', bottlePrice: 390 },
-        { name: 'CB Signature', bottlePrice: 480 },
-        { name: 'Azayi', bottlePrice: 590 },
-        { name: 'Château Roslane AOC', bottlePrice: 600 },
-        { name: 'Tandem', bottlePrice: 600 }
+        { name: 'Beauvallon', bottlePrice: 320, glassPrice: 80 },
+        { name: 'Médaillon', bottlePrice: 370, halfBottlePrice: 210, glassPrice: 100 },
+        { name: 'S de Siroua', bottlePrice: 420 },
+        { name: 'CB Signature', bottlePrice: 520 },
+        { name: 'Azayi', bottlePrice: 680 },
+        { name: 'Château Roslane AOC', bottlePrice: 640 },
+        { name: 'Tandem', bottlePrice: 660 }
       ]
     },
     {
       title: 'VINOS ROSADOS MARROQUÍES',
       items: [
-        { name: 'Médaillon', bottlePrice: 340, glassPrice: 100 },
-        { name: 'S de Siroua', bottlePrice: 390 },
+        { name: 'Médaillon', bottlePrice: 370, halfBottlePrice: 210, glassPrice: 100 },
+        { name: 'S de Siroua', bottlePrice: 420 },
         { name: 'CB Signature', bottlePrice: 420 },
-        { name: 'Tandem', bottlePrice: 450 }
+        { name: 'Tandem', bottlePrice: 480 }
       ]
     },
     {
       title: 'VINOS GRISES MARROQUÍES',
       items: [
         { name: 'Boulaouane', bottlePrice: 290, glassPrice: 80 },
-        { name: 'Medaillon', bottlePrice: 340, glassPrice: 100 },
-        { name: 'Ait Souala', bottlePrice: 420 }
+        { name: 'Medaillon', bottlePrice: 370, glassPrice: 100 },
+        { name: 'Ait Souala', bottlePrice: 440 }
       ]
     },
     {
       title: 'VINOS BLANCOS ESPAÑA',
       items: [
-        { name: 'Marques de Caceres', bottlePrice: 320, glassPrice: 110 },
-        { name: 'Vina Esmeralda', bottlePrice: 360 },
+        { name: 'Marques de Caceres', bottlePrice: 420, glassPrice: 110 },
+        { name: 'Vina Esmeralda', bottlePrice: 390 },
         { name: 'Albarino Pazo San Mauro', bottlePrice: 540 }
       ]
     },
     {
       title: 'VINOS BLANCOS FRANCIA',
       items: [
-        { name: 'Domaine Chiroulet', bottlePrice: 360, glassPrice: 110 },
-        { name: 'Bourgogne Chardonnay Rodet', bottlePrice: 540 },
-        { name: 'Chablis Tremblay', bottlePrice: 560 },
-        { name: 'Sancerre J de Villebois', bottlePrice: 590 },
-        { name: 'Pouilly Fumé J de Villebois', bottlePrice: 640 }
+        { name: 'Domaine Chiroulet', bottlePrice: 390, glassPrice: 110 },
+        { name: 'Bourgogne Chardonnay Rodet', bottlePrice: 590 },
+        { name: 'Chablis Tremblay', bottlePrice: 590 },
+        { name: 'Sancerre J de Villebois', bottlePrice: 680 },
+        { name: 'Pouilly Fumé J de Villebois', bottlePrice: 670 }
       ]
     },
     {
@@ -207,25 +208,25 @@ const ChampagneMenu: React.FC = () => {
     {
       title: 'VINOS TINTOS FRANCIA',
       items: [
-        { name: 'La Vieille Ferme Ventoux', bottlePrice: 290 },
-        { name: 'Fleur de Bazeau', bottlePrice: 320, glassPrice: 110 },
-        { name: 'Brouilly les Jarrons Thorin', bottlePrice: 520 },
-        { name: 'Château Lafitte', bottlePrice: 640 },
-        { name: 'Chamirey Mercurey Bourgogne', bottlePrice: 900 },
-        { name: 'Châteauneuf Du-Pape Les Sinards Perrin', bottlePrice: 1200 },
+        { name: 'La Vieille Ferme Ventoux', bottlePrice: 360 },
+        { name: 'Fleur de Bazeau', bottlePrice: 360, glassPrice: 110 },
+        { name: 'Brouilly les Jarrons Thorin', bottlePrice: 560 },
+        { name: 'Château Lafitte', bottlePrice: 690 },
+        { name: 'Chamirey Mercurey Bourgogne', bottlePrice: 990 },
+        { name: 'Châteauneuf Du-Pape Les Sinards Perrin', bottlePrice: 1350 },
         { name: 'Pommard 1er Cru Jarollières Boillot', bottlePrice: 2900 }
       ]
     },
     {
       title: 'VINOS TINTOS ARGENTINA',
       items: [
-        { name: 'La Celia Reserva Malbec', bottlePrice: 420 }
+        { name: 'La Celia Reserva Malbec', bottlePrice: 440 }
       ]
     },
     {
       title: 'VINOS TINTOS CHILE',
       items: [
-        { name: 'Tarapaca Reserva Carmenere', bottlePrice: 390 }
+        { name: 'Tarapaca Reserva Carmenere', bottlePrice: 440 }
       ]
     },
     {
@@ -244,11 +245,11 @@ const ChampagneMenu: React.FC = () => {
       title: 'VINOS ROSADOS DEL MUNDO',
       items: [
         { name: 'Mateus rosé', bottlePrice: 290 },
-        { name: 'Manon Côte de Provence', bottlePrice: 320 },
+        { name: 'Manon Côte de Provence', bottlePrice: 390 },
         { name: 'Studio By Miraval', bottlePrice: 440 },
-        { name: 'Pétales de Rose', bottlePrice: 460 },
+        { name: 'Pétales de Rose', bottlePrice: 540 },
         { name: 'Miraval', bottlePrice: 580 },
-        { name: 'Minuty Prestige', bottlePrice: 590 }
+        { name: 'Minuty Prestige', bottlePrice: 690 }
       ]
     }
   ];

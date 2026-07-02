@@ -141,25 +141,25 @@ const DrinkMenu: React.FC = () => {
       items: [
         {
           name: 'Sidi Ali 75cl',
-          price: 50,
+          price: 70,
           ingredients: 'Natural mineral water',
           description: 'Refreshing natural mineral water from Morocco'
         },
         {
           name: 'Evian 75cl',
-          price: 90,
+          price: 120,
           ingredients: 'Premium mineral water',
           description: 'Pure mineral water from the French Alps'
         },
         {
           name: 'Oulmès 75cl',
-          price: 50,
+          price: 70,
           ingredients: 'Sparkling mineral water',
           description: 'Classic Moroccan sparkling mineral water'
         },
         {
           name: 'Evian Sparkling 75cl',
-          price: 90,
+          price: 120,
           ingredients: 'Natural sparkling mineral water',
           description: 'Naturally sparkling mineral water from Evian'
         }
@@ -170,7 +170,7 @@ const DrinkMenu: React.FC = () => {
       items: [
         {
           name: 'Soda',
-          price: 50,
+          price: 60,
           ingredients: 'Various flavors available',
           description: 'coca cola, coca cola zero, shweppes citron, schweppes tonic, sprite, poms, hawai'
         },

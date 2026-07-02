@@ -246,19 +246,19 @@ const CocktailMenu: React.FC = () => {
       items: [
         {
           name: 'Passion Vodka',
-          price: 550,
+          price: 800,
           ingredients: 'Russian Vodka / Passion Fruit / Lemon',
           description: 'An intense shot of pure passion, combining the boldness of vodka with the vibrant energy of fresh passion fruit.'
         },
         {
           name: 'B52',
-          price: 550,
+          price: 800,
           ingredients: 'Baileys / Coffee Liqueur / Triple Sec',
           description: 'A layered classic with creamy Baileys, rich coffee liqueur and citrusy Triple Sec - light it on fire for dramatic effect!'
         },
         {
           name: 'Tequila',
-          price: 550,
+          price: 800,
           ingredients: 'Camino Tequila',
           description: 'Straightforward, no frills - just the bold, earthy kick of premium Camino Tequila.'
         }
@@ -269,18 +269,18 @@ const CocktailMenu: React.FC = () => {
       items: [
         {
           name: 'Chaouen (x4)',
-          price: 160,
+          price: 300,
           ingredients: 'Sambuca / Blue Curaçao / Russian Vodka / Vanilla Syrup',
         },
         {
           name: 'Te a la Meister (x4)',
-          price: 160,
+          price: 300,
           ingredients: 'Jägermeister / Ginger Syrup / Chocolate Liqueur / Mint / White Rum',
           description: 'A complex blend of herbs and spices from Jägermeister, complemented by chocolate and mint for a surprisingly balanced shot.'
         },
         {
           name: 'Passion (x4)',
-          price: 160,
+          price: 300,
           ingredients: 'Russian Vodka / Passion Fruit / Lemon',
           description: 'Pure tropical hedonism in shot form - vibrant passion fruit tempered by bright citrus and smooth vodka.'
         }
