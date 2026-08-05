@@ -194,12 +194,12 @@ const FishMeatMenu: React.FC = () => {
       items: [
         {
           name: 'Beef Tagliata',
-          price: 380,
+          price: 440,
           description: 'Tender beef tenderloin thinly sliced after perfect cooking, served slightly pink and garnished with parmesan shavings, fresh arugula, and a drizzle of truffle-scented extra virgin olive oil. An Italian-inspired dish that highlights the exceptional quality of our meat.'
         },
         {
           name: 'Beef Tenderloin Sautéed with Garlic',
-          price: 340,
+          price: 410,
           description: 'Tender pieces of beef tenderloin sautéed over high heat with crushed fresh garlic, creating a perfect contrast between the caramelized exterior and juicy, tender interior. A simple preparation that celebrates the quality of our carefully selected meat.'
         },
         {
@@ -236,11 +236,6 @@ const FishMeatMenu: React.FC = () => {
           name: 'Mashed Potatoes',
           price: 60,
           description: 'Creamy purée prepared from floury potatoes, mashed with churned butter and fresh cream. Its velvety texture and richness make it the perfect complement to our fish and meat dishes.'
-        },
-        {
-          name: 'Sautéed Potatoes',
-          price: 60,
-          description: 'New potatoes cut into quarters and slowly sautéed until golden and crispy on the outside with a tender interior. Flavored with fresh thyme and garlic, they are the ideal accompaniment to enhance our main dishes.'
         },
         {
           name: 'French Fries',

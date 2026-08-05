@@ -194,12 +194,12 @@ const FishMeatMenu: React.FC = () => {
       items: [
         {
           name: 'Tagliata de Ternera',
-          price: 380,
+          price: 440,
           description: 'Solomillo de ternera tierno finamente cortado después de una cocción perfecta, servido ligeramente rosado y guarnecido con virutas de parmesano, rúcula fresca y un chorrito de aceite de oliva virgen extra perfumado con trufa. Un plato de inspiración italiana que realza la calidad excepcional de nuestra carne.'
         },
         {
           name: 'Solomillo de Ternera Salteado Al Ajo',
-          price: 340,
+          price: 410,
           description: 'Trozos tiernos de solomillo de ternera salteados a fuego vivo con ajo fresco machacado, creando un contraste perfecto entre el exterior caramelizado y el interior jugoso y tierno. Una preparación sencilla que celebra la calidad de nuestra carne seleccionada cuidadosamente.'
         },
         {
@@ -236,11 +236,6 @@ const FishMeatMenu: React.FC = () => {
           name: 'Puré de Patatas',
           price: 60,
           description: 'Puré cremoso preparado con patatas de pulpa harinosa, aplastadas con mantequilla de barril y nata fresca. Su textura aterciopelada y su riqueza lo convierten en el complemento perfecto para nuestros pescados y carnes.'
-        },
-        {
-          name: 'Patatas Salteadas',
-          price: 60,
-          description: 'Patatas nuevas cortadas en cuartos y salteadas lentamente hasta conseguir un exterior dorado y crujiente con un interior tierno. Perfumadas con tomillo fresco y ajo, son el acompañamiento ideal para realzar nuestros platos principales.'
         },
         {
           name: 'Patatas Fritas',

@@ -140,12 +140,6 @@ const CocktailMenu: React.FC = () => {
       title: 'TIKI COCKTAILS',
       items: [
 {
-  name: 'De Tu Bikini',
-  price: 220,
-  ingredients: 'mango / grand marnier / Chili-infused tequila / cilantro',
-  description: 'A tropical escape that combines the exotic sweetness of mango with the sophistication of Grand Marnier and the spicy heat of chili-infused tequila, enhanced by the herbaceous freshness of cilantro.'
-},
-        {
           name: 'Mai Tai Chiringuito',
           price: 220,
           ingredients: 'Bacardi Gold / Mandarin Liqueur / Orgeat / Orange / Angostura Bitters',
@@ -169,22 +163,10 @@ const CocktailMenu: React.FC = () => {
       title: 'CHIRINGUITO COCKTAILS',
       items: [
         {
-      name: 'Mediterranean Collins',
+      name: 'Mediterranean',
       price: 160,
       ingredients: 'Gin / Fliou (Moroccan mint) / Lavender / Fever Tree Mediterranean tonic water',
       description: 'A refreshing sigh for the soul'
-    },
-    {
-      name: 'Tora Sensai',
-      price: 160,
-      ingredients: 'Sake and cachaça blend / Homemade wasabi syrup / Lemon / Caramelized ginger',
-      description: 'Delicate, with a fierce soul'
-    },
-    {
-      name: 'Chebakia',
-      price: 160,
-      ingredients: 'Homemade chebakia liqueur / Almond liqueur / Honey',
-      description: 'Sweet home, my refuge'
     },
     {
       name: 'Zahara',
@@ -193,22 +175,9 @@ const CocktailMenu: React.FC = () => {
       description: 'Sip of golden sunset'
     },
     {
-      name: 'Ambarina',
+      name: 'Basil Smash Frozen',
       price: 160,
-      ingredients: 'Rosé wine and rosemary reduction / Orange / Peach / Vermouth / Prosecco',
-      description: 'Sweet, spicy, herbaceous, warm glow'
-    },
-    {
-      name: 'Berber Fire',
-      price: 160,
-      ingredients: 'Bourbon infused with spices and red apples / Amaro / Splash of sparkling water / Citrus aroma / Olives',
-      description: 'Between tradition and desire'
-    },
-    {
-      name: 'Carmesí',
-      price: 160,
-      ingredients: 'Maraschino liqueur / Sparkling red berry shrub / Cava',
-      description: 'Vibrant freshness'
+      ingredients: 'Gin / Basil / Lemon',
     },
     {
       name: 'Paloma Ajena',

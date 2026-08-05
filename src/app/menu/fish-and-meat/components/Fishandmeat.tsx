@@ -194,12 +194,12 @@ const FishMeatMenu: React.FC = () => {
       items: [
         {
           name: 'Tagliata de Boeuf',
-          price: 380,
+          price: 440,
           description: 'Filet de bœuf tendre tranché finement après cuisson parfaite, servi légèrement rosé et garni de copeaux de parmesan, roquette fraîche et un filet d\'huile d\'olive extra vierge parfumée à la truffe. Un plat d\'inspiration italienne qui met en valeur la qualité exceptionnelle de notre viande.'
         },
         {
           name: 'Filet de Boeuf Sauté à L\'Ail',
-          price: 340,
+          price: 410,
           description: 'Morceaux tendres de filet de bœuf sautés à feu vif avec de l\'ail frais écrasé, créant un contraste parfait entre l\'extérieur caramélisé et l\'intérieur juteux et tendre. Une préparation simple qui célèbre la qualité de notre viande sélectionnée avec soin.'
         },
         {
@@ -237,11 +237,6 @@ const FishMeatMenu: React.FC = () => {
           name: 'Purée de Pommes de Terre',
           price: 60,
           description: 'Purée onctueuse préparée à partir de pommes de terre à chair farineuse, écrasées avec du beurre de baratte et de la crème fraîche. Sa texture veloutée et sa richesse en font le complément parfait pour nos poissons et viandes.'
-        },
-        {
-          name: 'Pommes de Terre Sautées',
-          price: 60,
-          description: 'Pommes de terre nouvelles coupées en quartiers et sautées lentement jusqu\'à obtenir un extérieur doré et croustillant avec un intérieur tendre. Parfumées au thym frais et à l\'ail, elles sont l\'accompagnement idéal pour rehausser nos plats principaux.'
         },
         {
           name: 'Pommes Frites',

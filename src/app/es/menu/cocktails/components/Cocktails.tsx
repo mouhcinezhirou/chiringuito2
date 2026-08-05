@@ -140,12 +140,6 @@ const CocktailMenu: React.FC = () => {
       title: 'CÓCTELES TIKI',
       items: [
 {
-  name: 'De Tu Bikini',
-  price: 220,
-  ingredients: 'mango / grand marnier / tequila infusionado chili / cilantro',
-  description: 'Una escapada tropical que combina la dulzura exótica del mango con la sofisticación del Grand Marnier y el calor picante del tequila al chile, realzada por la frescura herbácea del cilantro.'
-},
-        {
           name: 'Mai Tai Chiringuito',
           price: 220,
           ingredients: 'Bacardi oro / Licor de Mandarina / Orgeat / Naranja / Bitter Angostura',
@@ -169,22 +163,10 @@ const CocktailMenu: React.FC = () => {
       title: 'CÓCTELES CHIRINGUITO',
       items: [
     {
-      name: 'Mediterranean Collins',
+      name: 'Mediterranean',
       price: 160,
       ingredients: 'gin / fliou/ lavanda / tonica fever tree mediterranean',
       description: 'Un suspiro refrescante para el alma'
-    },
-    {
-      name: 'Tora Sensai',
-      price: 160,
-      ingredients: 'Mix sake&cachaca / sirop casero wasabi / citron / gemgibre caramelizado',
-      description: 'Delicado, con alma feroz'
-    },
-    {
-      name: 'Chebakia',
-      price: 160,
-      ingredients: 'Licor casero de chebakia / Licor de almendra / Miel',
-      description: 'hogar, dulce hogar'
     },
     {
       name: 'Zahara',
@@ -193,22 +175,9 @@ const CocktailMenu: React.FC = () => {
       description: 'Sorbo de atardecer dorado'
     },
     {
-      name: 'Ambarina',
+      name: 'Basil Smash Frozen',
       price: 160,
-      ingredients: 'Reducción de vino rosado y romero / Naranja / Melocotón / Vermut / Prosecco',
-      description: 'Suave, especiado, herbal, resplandor calido'
-    },
-    {
-      name: 'Berber Fire',
-      price: 160,
-      ingredients: 'whisky bourbon macerado con especias y manzanas rojas / amaro / dash agua con gas/perfume citrico/olivas',
-      description: 'Entre la tradición y el deseo'
-    },
-    {
-      name: 'Carmesí',
-      price: 160,
-      ingredients: 'licor maraschino / Co2 shrub frutos rojos / cava',
-      description: 'Frescura vibrante'
+      ingredients: 'Gin / Albahaca / Limón',
     },
     {
       name: 'Paloma Ajena',

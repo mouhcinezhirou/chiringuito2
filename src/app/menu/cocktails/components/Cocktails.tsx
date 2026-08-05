@@ -140,12 +140,6 @@ const CocktailMenu: React.FC = () => {
       title: 'COCKTAILS TIKI',
       items: [
 {
-  name: 'De Tu Bikini',
-  price: 220,
-  ingredients: 'mangue / grand marnier / tequila infusée au piment / coriandre',
-  description: 'Une évasion tropicale qui marie la douceur exotique de la mangue avec la sophistication du Grand Marnier et la chaleur épicée de la tequila au piment, rehaussée par la fraîcheur herbacée de la coriandre.'
-},
-        {
           name: 'Mai Tai Chiringuito',
           price: 220,
           ingredients: 'Bacardi Gold / Liqueur de Mandarine / Orgeat / Orange / Bitter Angostura',
@@ -169,22 +163,10 @@ const CocktailMenu: React.FC = () => {
       title: 'COCKTAILS CHIRINGUITO',
   items: [
     {
-      name: 'Mediterranean Collins',
+      name: 'Mediterranean',
       price: 160,
       ingredients: 'Gin / Fliou (menthe marocaine) / Lavande / Eau tonique fever tree mediterranean',
       description: 'Un soupir rafraîchissant pour l\'âme'
-    },
-    {
-      name: 'Tora Sensai',
-      price: 160,
-      ingredients: 'Mélange de saké et de cachaça / Sirop maison au wasabi / Citron / Gingembre caramélisé',
-      description: 'Délicat, avec une âme féroce'
-    },
-    {
-      name: 'Chebakia',
-      price: 160,
-      ingredients: 'Liqueur maison de chebakia / Liqueur d\'amande / Miel',
-      description: 'Douce maison, mon foyer'
     },
     {
       name: 'Zahara',
@@ -193,22 +175,9 @@ const CocktailMenu: React.FC = () => {
       description: 'Gorgée de coucher de soleil doré'
     },
     {
-      name: 'Ambarina',
+      name: 'Basil Smash Frozen',
       price: 160,
-      ingredients: 'Réduction de vin rosé et romarin / Orange / Pêche / Vermouth / Prosecco',
-      description: 'Doux, épicé, herbacé, éclat chaleureux'
-    },
-    {
-      name: 'Berber Fire',
-      price: 160,
-      ingredients: 'Bourbon infusé aux épices et aux pommes rouges / Amaro / Trait d\'eau gazeuse / Parfum d\'agrumes / Olives',
-      description: 'Entre la tradition et le désir'
-    },
-    {
-      name: 'Carmesi',
-      price: 160,
-      ingredients: 'Liqueur de marasquin / Shrub aux fruits rouges gazeux / Cava',
-      description: 'Fraîcheur vibrante'
+      ingredients: 'Gin / Basilic / Citron',
     },
     {
       name: 'Paloma Ajena',
