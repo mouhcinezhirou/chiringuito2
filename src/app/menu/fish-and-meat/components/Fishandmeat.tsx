@@ -215,12 +215,12 @@ const FishMeatMenu: React.FC = () => {
 },
         {
           name: 'Hamburger (100% Fait Maison)',
-          price: 140,
+          price: 180,
           description: 'Notre burger signature élaboré avec un steak de bœuf haché à la main, grillé à la perfection et garni de fromage cheddar fondu, d\'oignons lentement caramélisés et de notre sauce secrète légèrement fumée. Le tout servi dans un pain brioché artisanal doré au beurre.'
         },
         {
           name: 'Mini Hamburgers au Boeuf',
-          price: 140,
+          price: 180,
           description: 'Trio de délicieux mini burgers préparés avec le même soin que notre version classique. Chaque bouchée offre un équilibre parfait entre le bœuf juteux, le cheddar fondant et notre sauce maison crémeuse, le tout dans un petit pain brioché moelleux. Idéal pour partager ou comme entrée généreuse.'
         }
       ]

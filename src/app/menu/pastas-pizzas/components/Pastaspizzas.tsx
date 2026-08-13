@@ -200,19 +200,19 @@ const PizzaPastaMenu: React.FC = () => {
       items: [
         {
           name: 'Linguine au Saumon',
-          price: 180,
+          price: 240,
           ingredients: 'Duo de saumon avec une sauce rosé',
           description: 'Un duo de saumon frais et fumé enlace des linguine al dente dans une sauce rosée veloutée. Chaque bouchée transporte entre mer et montagne pour une expérience raffinée et réconfortante.'
         },
         {
           name: 'Linguine aux Gambas',
-          price: 180,
+          price: 240,
           ingredients: 'Avec une sauce tomate épicée',
           description: 'Des gambas sauvages saisies à la perfection sur un nid de linguine enrobées d\'une sauce tomate relevée. Les notes épicées dansent avec la douceur des crustacés pour un plat mémorable.'
         },
         {
           name: 'Penne Arrabbiata',
-          price: 120,
+          price: 160,
           ingredients: 'Pâtes avec une sauce tomate pimentée et du basilic',
           description: 'La passion italienne dans chaque bouchée - nos penne capturent parfaitement la sauce tomate ardente, ponctuée de piment et adoucie par des feuilles de basilic frais pour un équilibre harmonieux.'
         },
@@ -224,19 +224,19 @@ const PizzaPastaMenu: React.FC = () => {
         },
         {
           name: 'Spaghetti Alle Vongole',
-          price: 190,
+          price: 230,
           ingredients: 'Palourdes et tomates fraîches',
           description: 'L\'élégance marine à l\'état pur - des palourdes fraîches libèrent leur jus savoureux qui se mêle aux tomates et à l\'huile d\'olive pour une symphonie de saveurs maritimes.'
         },
         {
           name: 'Spaghetti Carbonara',
-          price: 140,
+          price: 190,
           ingredients: 'Bacon de dinde halal avec sauce blanche',
           description: 'Notre interprétation du classique romain - des spaghetti al dente enrobés d\'une sauce crémeuse aux œufs, parsemés de bacon de dinde halal croustillant et d\'une généreuse touche de poivre noir.'
         },
         {
           name: 'Taglatelles Poulet Champignon',
-          price: 160,
+          price: 220,
           ingredients: 'Poulet, champignons, sauce blanche parfumée au truffe',
           description: 'Des rubans de pâtes fraîches enlacent des morceaux de poulet juteux et des champignons, le tout enveloppé d\'une sauce délicatement infusée à la truffe. Un équilibre parfait entre rusticité et raffinement.'
         }

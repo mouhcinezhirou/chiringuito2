@@ -148,51 +148,51 @@ const DessertsMenu: React.FC = () => {
       items: [
         {
           name: 'Pain Perdu',
-          price: 80,
+          price: 120,
           description: 'Salted butter caramel and vanilla ice cream',
           preparationTime: '10 min',
           detailedDescription: 'A reinvented childhood memory with golden, crispy brioche bread, topped with a smooth caramel that dances with the delicate notes of Madagascar vanilla.'
         },
         {
           name: 'Pavlova with Red Fruits',
-          price: 80,
+          price: 120,
           description: 'Crispy meringue and seasonal red fruits',
           detailedDescription: 'A cloud of crispy lightness crowned with bright berries and a touch of whipped cream, like a ballet of textures revealed with every bite.'
         },
         {
           name: 'Chocolate Fondant',
-          price: 90,
+          price: 130,
           description: 'Served with vanilla ice cream',
           preparationTime: '10 min',
           detailedDescription: 'A mysterious heart of intense dark chocolate that reveals itself in a flow of voluptuous heat, contrasted by the freshness of artisanal vanilla ice cream.'
         },
         {
           name: 'Speculoos Tiramisu',
-          price: 80,
+          price: 120,
           description: 'Reinterpretation of the classic Italian dessert',
           detailedDescription: 'A Franco-Italian romance where the richness of mascarpone meets the warm spices of speculoos, creating a perfect harmony between sweetness and character.'
         },
         {
           name: 'Crème Brûlée',
-          price: 80,
+          price: 120,
           description: 'Creamy custard with a crunchy caramel crust',
           detailedDescription: 'A timeless classic with two faces: the exquisite crunch of burnt caramel that protects a silky, delicate vanilla treasure. A waltz of perfect contradictions.'
         },
         {
           name: 'Seasonal Fruits',
-          price: 80,
+          price: 120,
           description: 'Fresh fruit selection',
           detailedDescription: 'A colorful harvest of the best market fruits, presented in its natural simplicity to celebrate the authentic flavors nature offers us every season.'
         },
         {
           name: 'Gourmet Coffee',
-          price: 80,
+          price: 120,
           description: 'Chocolate fondant, crème brûlée, and vanilla ice cream',
           detailedDescription: 'A trilogy of miniature pleasures accompanying our signature coffee, offering a full taste journey to satisfy all your sweet cravings in one plate.'
         },
         {
   name: 'Pineapple Carpaccio',
-  price: 90,
+  price: 130,
   description: 'Thinly sliced fresh pineapple, lightly caramelized, with silky crème brûlée and vanilla ice cream.',
   detailedDescription: 'A dessert that\'s both refreshing and indulgent: thinly sliced pineapple carpaccio, delicately caramelized, resting on a silky crème brûlée. Topped with a scoop of vanilla ice cream and a drizzle of caramel for an irresistible finishing touch.'
 },

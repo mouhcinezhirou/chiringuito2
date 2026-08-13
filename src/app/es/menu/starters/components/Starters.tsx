@@ -203,7 +203,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Batata Harra',
-          price: 60,
+          price: 90,
           description: 'Patatas fritas con chile, cilantro, limón y ajo',
           detailedDescription: 'Un viaje al Líbano en un bocado, donde las patatas crujientes bailan con el calor del chile, la frescura del limón y las notas aromáticas del cilantro fresco.'
         },

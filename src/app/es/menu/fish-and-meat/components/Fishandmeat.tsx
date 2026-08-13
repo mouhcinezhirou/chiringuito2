@@ -214,12 +214,12 @@ const FishMeatMenu: React.FC = () => {
 },
         {
           name: 'Hamburguesa (100% Casera)',
-          price: 140,
+          price: 180,
           description: 'Nuestra hamburguesa estrella elaborada con carne de ternera picada a mano, asada a la perfección y guarnecida con queso cheddar fundido, cebollas lentamente caramelizadas y nuestra salsa secreta ligeramente ahumada. Todo ello servido en un pan brioche artesanal dorado en mantequilla.'
         },
         {
           name: 'Mini Hamburguesas de Ternera',
-          price: 140,
+          price: 180,
           description: 'Trío de deliciosas mini hamburguesas preparadas con el mismo cuidado que nuestra versión clásica. Cada bocado ofrece un equilibrio perfecto entre la ternera jugosa, el cheddar fundido y nuestra salsa casera cremosa, todo ello en un pequeño pan brioche esponjoso. Ideal para compartir o como entrada generosa.'
         }
       ]

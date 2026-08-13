@@ -148,51 +148,51 @@ const DessertsMenu: React.FC = () => {
       items: [
         {
           name: 'Pain Perdu',
-          price: 80,
+          price: 120,
           description: 'Caramel au beurre salé et glace à la vanille',
           preparationTime: '10 min',
           detailedDescription: 'Un souvenir d\'enfance réinventé avec du pain brioché doré et croustillant, nappé d\'un caramel onctueux qui danse avec les notes délicates de la vanille de Madagascar.'
         },
         {
           name: 'Pavlova aux Fruits Rouges',
-          price: 80,
+          price: 120,
           description: 'Meringue craquante et fruits rouges de saison',
           detailedDescription: 'Un nuage de légèreté croustillante couronné de baies éclatantes et d\'une touche de crème fouettée, comme un ballet de textures qui se révèle à chaque bouchée.'
         },
         {
           name: 'Fondant au Chocolat',
-          price: 90,
+          price: 130,
           description: 'Servi avec une Glace à la Vanille',
           preparationTime: '10 min',
           detailedDescription: 'Un cœur mystérieux de chocolat noir intense qui se dévoile dans un flot de chaleur voluptueuse, contrasté par la fraîcheur d\'une glace vanille artisanale.'
         },
         {
           name: 'Tiramisú Spéculoos',
-          price: 80,
+          price: 120,
           description: 'Réinterprétation du classique italien',
           detailedDescription: 'Une romance franco-italienne où la richesse du mascarpone rencontre les épices chaleureuses des spéculoos, créant une harmonie parfaite entre douceur et caractère.'
         },
         {
           name: 'Crème Brûlée',
-          price: 80,
+          price: 120,
           description: 'Crème onctueuse avec une croûte au caramel croquante',
           detailedDescription: 'Un classique intemporel aux deux visages : le craquant exquis du caramel brûlé qui protège un trésor de vanille soyeux et délicat. Une valse de contradictions parfaites.'
         },
         {
           name: 'Fruits de Saison',
-          price: 80,
+          price: 120,
           description: 'Sélection de fruits frais',
           detailedDescription: 'Une cueillette colorée des meilleurs fruits du marché, présentée dans sa simplicité naturelle pour célébrer les saveurs authentiques que la nature nous offre à chaque saison.'
         },
         {
           name: 'Café Gourmand',
-          price: 80,
+          price: 120,
           description: 'Fondant au chocolat, crème brûlée et glace à la vanille',
           detailedDescription: 'Une trilogie de plaisirs en miniature accompagnant notre café signature, offrant un voyage gustatif complet pour satisfaire toutes vos envies sucrées en une seule assiette.'
         },
         {
           name: 'Carpaccio d’Ananas',
-          price: 90,
+          price: 130,
           description: 'Fines tranches d’ananas frais, légèrement caramélisées, crème brûlée onctueuse et glace vanille.',
           detailedDescription: 'Un dessert tout en fraîcheur et en gourmandise : un carpaccio d’ananas finement tranché, délicatement caramélisé, reposant sur une crème brûlée onctueuse. L’ensemble est sublimé par une boule de glace vanille et un filet de caramel pour une touche finale irrésistible.'
         },

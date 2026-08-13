@@ -203,7 +203,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Batata Harra',
-          price: 60,
+          price: 90,
           description: 'Pommes de terre frites avec du piment, de la coriandre, du citron et de l\'ail',
           detailedDescription: 'Un voyage au Liban en une bouchée, où les pommes de terre croustillantes dansent avec la chaleur des piments, la fraîcheur du citron et les notes aromatiques de la coriandre.'
         },

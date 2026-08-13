@@ -200,19 +200,19 @@ const PizzaPastaMenu: React.FC = () => {
       items: [
         {
           name: 'Salmon Linguine',
-          price: 180,
+          price: 240,
           ingredients: 'Duo of salmon with a rosé sauce',
           description: 'A duo of fresh and smoked salmon embraces al dente linguine in a velvety rosé sauce. Each bite transports between sea and mountain for a refined and comforting experience.'
         },
         {
           name: 'Prawn Linguine',
-          price: 180,
+          price: 240,
           ingredients: 'With a spicy tomato sauce',
           description: 'Wild prawns perfectly seared on a bed of linguine coated in a zesty tomato sauce. The spicy notes dance with the sweetness of the shellfish for a memorable dish.'
         },
         {
           name: 'Penne Arrabbiata',
-          price: 120,
+          price: 160,
           ingredients: 'Pasta with a spicy tomato sauce and basil',
           description: 'Italian passion in every bite - our penne perfectly capture the fiery tomato sauce, punctuated with chili and softened by fresh basil leaves for a harmonious balance.'
         },
@@ -224,19 +224,19 @@ const PizzaPastaMenu: React.FC = () => {
         },
         {
           name: 'Spaghetti Alle Vongole',
-          price: 190,
+          price: 230,
           ingredients: 'Clams and fresh tomatoes',
           description: 'Marine elegance in its purest form - fresh clams release their savory juice that blends with tomatoes and olive oil for a symphony of maritime flavors.'
         },
         {
           name: 'Spaghetti Carbonara',
-          price: 140,
+          price: 190,
           ingredients: 'Halal turkey bacon with white sauce',
           description: 'Our interpretation of the Roman classic - al dente spaghetti coated in a creamy egg sauce, sprinkled with crispy halal turkey bacon and a generous touch of black pepper.'
         },
         {
           name: 'Chicken and Mushroom Taglatelle',
-          price: 160,
+          price: 220,
           ingredients: 'Chicken, Mushrooms, White sauce flavored with truffle',
           description: 'Ribbons of fresh pasta embrace juicy pieces of chicken and mushrooms, all wrapped in a sauce delicately infused with truffle. A perfect balance between rusticity and refinement.'
         }

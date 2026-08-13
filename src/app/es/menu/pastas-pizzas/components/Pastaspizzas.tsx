@@ -200,19 +200,19 @@ const PizzaPastaMenu: React.FC = () => {
       items: [
         {
           name: 'Linguine Con Salmón',
-          price: 180,
+          price: 240,
           ingredients: 'Dúo de salmón con una salsa rosada',
           description: 'Un dúo de salmón fresco y ahumado abraza unos linguine al dente en una aterciopelada salsa rosada. Cada bocado transporta entre mar y montaña para una experiencia refinada y reconfortante.'
         },
         {
           name: 'Linguine Con Gambas',
-          price: 180,
+          price: 240,
           ingredients: 'Con una salsa de tomate picante',
           description: 'Gambas salvajes selladas a la perfección sobre un nido de linguine envueltos en una salsa de tomate especiada. Las notas picantes bailan con la dulzura de los crustáceos para un plato memorable.'
         },
         {
           name: 'Penne Arrabbiata',
-          price: 120,
+          price: 160,
           ingredients: 'Pasta con una salsa de tomate picante y albahaca',
           description: 'La pasión italiana en cada bocado - nuestros penne capturan perfectamente la ardiente salsa de tomate, puntuada de picante y suavizada por hojas de albahaca fresca para un equilibrio armonioso.'
         },
@@ -224,19 +224,19 @@ const PizzaPastaMenu: React.FC = () => {
         },
         {
           name: 'Espaguetis Alle Vongole',
-          price: 190,
+          price: 230,
           ingredients: 'Almejas y tomates frescos',
           description: 'La elegancia marina en estado puro - almejas frescas liberan su jugo sabroso que se mezcla con los tomates y el aceite de oliva para una sinfonía de sabores marítimos.'
         },
         {
           name: 'Espaguetis Carbonara',
-          price: 140,
+          price: 190,
           ingredients: 'Bacon de pavo halal con salsa blanca',
           description: 'Nuestra interpretación del clásico romano - espaguetis al dente envueltos en una salsa cremosa de huevos, espolvoreados con crujiente bacon de pavo halal y un generoso toque de pimienta negra.'
         },
         {
           name: 'Tagliatelle con Pollo y Champiñones',
-          price: 160,
+          price: 220,
           ingredients: 'Pollo, champiñones, salsa blanca perfumada con trufa',
           description: 'Cintas de pasta fresca entrelazan jugosos trozos de pollo y champiñones, todo envuelto en una salsa delicadamente infusionada con trufa. Un equilibrio perfecto entre rusticidad y refinamiento.'
         }

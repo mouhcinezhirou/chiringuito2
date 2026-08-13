@@ -203,7 +203,7 @@ const StartersMenu: React.FC = () => {
         },
         {
           name: 'Batata Harra',
-          price: 60,
+          price: 90,
           description: 'Fried potatoes with chili, coriander, lemon and garlic',
           detailedDescription: 'A journey to Lebanon in one bite, where crispy potatoes dance with the warmth of chili, the brightness of lemon and the aromatic notes of fresh coriander.'
         },

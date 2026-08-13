@@ -214,12 +214,12 @@ const FishMeatMenu: React.FC = () => {
 },
         {
           name: 'Hamburger (100% homemade)',
-          price: 140,
+          price: 180,
           description: 'Our signature burger made with hand-ground beef steak, grilled to perfection and topped with melted cheddar cheese, slowly caramelized onions, and our slightly smoked secret sauce. All served in a butter-toasted artisanal brioche bun.'
         },
         {
           name: 'Mini Beef Hamburgers',
-          price: 140,
+          price: 180,
           description: 'Trio of delicious mini burgers prepared with the same care as our classic version. Each bite offers a perfect balance between juicy beef, melting cheddar, and our creamy homemade sauce, all in a soft mini brioche bun. Ideal for sharing or as a generous appetizer.'
         }
       ]
