@@ -110,6 +110,7 @@ const DrinksMenu: React.FC = () => {
       title: 'CERVEZAS',
       items: [
         { name: 'San Miguel', bottlePrice: 65 },
+        { name: 'Casablanca 33cl', bottlePrice: 80 },
         { name: 'San Miguel Sin Alcohol', bottlePrice: 50 },
         { name: 'Mahou Original', bottlePrice: 80 },
         { name: 'Smirnoff Ice', bottlePrice: 100 },
