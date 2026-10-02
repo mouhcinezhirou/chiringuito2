@@ -142,8 +142,8 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "Primavera",
           "price": 140,
-          "ingredients": "Verduras de temporada, Salsa de tomate y queso",
-          "description": "Una sinfonía colorida de verduras frescas sobre una base de salsa de tomate casera. Cada bocado evoca un jardín mediterráneo en pleno verano con sabores frescos y equilibrados."
+          "ingredients": "Verduras de temporada, rúcula, queso feta, salsa pesto, mozzarella, salsa de tomate",
+          "description": "Una sinfonía colorida de verduras frescas, realzada por rúcula, feta y una perfumada salsa pesto, sobre una base de salsa de tomate casera. Cada bocado evoca un jardín mediterráneo en pleno verano."
         },
         {
           "name": "La Margherita",
@@ -158,40 +158,34 @@ const PizzaPastaMenu: React.FC = () => {
           "description": "Un contraste perfecto entre la cremosidad del queso de cabra, la frescura picante de la rúcula y la dulzura de los tomates confitados. Una creación que celebra la simplicidad refinada de la cocina mediterránea."
         },
         {
-          "name": "La Siciliana",
+          "name": "Pizza Tonno & Stracciatella",
           "price": 150,
-          "ingredients": "Atún, champiñones, alcaparras y queso fundido.",
-          "description": "Una invitación a los sabores de Sicilia, donde el suculento atún se combina con la dulzura de las setas y el delicado toque salado de las alcaparras. Todo ello realzado por un queso fundido, para una composición equilibrada y llena de carácter."
+          "ingredients": "Salsa de tomate, atún, cebolla frita, mozzarella, stracciatella, cebollino",
+          "description": "El atún se encuentra con la cremosa stracciatella, realzado por la dulzura de la cebolla frita crujiente y la frescura del cebollino, sobre una base de salsa de tomate y mozzarella fundente."
         },
         {
-          "name": "La Mediterránea",
-          "price": 180,
-          "ingredients": "Mariscos, Salsa de tomate y queso",
-          "description": "El Mediterráneo en cada bocado con una mezcla generosa de tesoros marinos sobre nuestra salsa de tomate perfumada. Una ligera capa de queso complementa sin dominar los sabores oceánicos."
+          "name": "Pizza Mare Mediterraneo",
+          "price": 195,
+          "ingredients": "Salsa de tomate, pulpo, calamares, gambas, calabacín, mozzarella, gremolata",
+          "description": "El Mediterráneo en cada bocado: pulpo, calamares y gambas generosos, calabacín tierno y mozzarella, culminados con una fresca gremolata de limón y perejil."
         },
         {
-          "name": "La Boloñesa",
+          "name": "Pizza de Aguja de Ternera",
           "price": 160,
-          "ingredients": "Carne picada con salsa boloñesa",
-          "description": "Nuestro homenaje a la Emilia-Romaña con una salsa boloñesa cocinada a fuego lento según la receta tradicional. Rica en carne y hierbas aromáticas para una experiencia reconfortante."
+          "ingredients": "Salsa de tomate, champiñones, aguja de ternera, parmesano",
+          "description": "Aguja de ternera tierna y cocinada lentamente, junto con champiñones y parmesano sobre nuestra salsa de tomate casera. Una pizza rica y reconfortante."
         },
         {
-          "name": "La Carbonara",
-          "price": 140,
-          "ingredients": "Bacon de pavo 'halal', Salsa blanca y queso",
-          "description": "Una reinterpretación del clásico romano sobre una base crujiente. Nuestra cremosa salsa blanca envuelve trozos dorados de bacon de pavo halal, sublimada por nuestra mezcla de quesos italianos."
-        },
-        {
-  "name": "Pizza de alcachofas, aceitunas y jamón",
-  "price": 140,
-  "ingredients": "Alcachofas, aceitunas y jamón",
-  "description": "Una pizza generosa que combina la ternura de los corazones de alcachofa, el carácter de las aceitunas y la suavidad del jamón. Un sabroso trío mediterráneo sobre nuestra salsa de tomate casera y un velo de queso fundido."
-},
-        {
-          "name": "Calzone Piccante",
+          "name": "Pizza Capricciosa",
           "price": 160,
-          "ingredients": "Pepperoni italiano halal, Champiñones, Mozzarella, Aceitunas negras",
-          "description": "Nuestro dorado croissant de masa encierra un tesoro de sabores donde el pepperoni italiano halal se encuentra con los champiñones terrosos y la mozzarella fundente, realzados por aromáticas aceitunas negras."
+          "ingredients": "Salsa de tomate, champiñones, jamón, alcachofas confitadas, mozzarella, aceitunas negras",
+          "description": "El gran clásico italiano: jamón, champiñones, alcachofas confitadas y aceitunas negras sobre salsa de tomate y mozzarella fundente."
+        },
+        {
+          "name": "Pizza Pepperoni",
+          "price": 160,
+          "ingredients": "Salsa de tomate, pepperoni, mozzarella, tomates secos",
+          "description": "El pepperoni ligeramente picante se encuentra con la dulzura concentrada de los tomates secos y la mozzarella fundente, sobre nuestra salsa de tomate casera."
         }
       ]
     },

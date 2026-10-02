@@ -142,8 +142,8 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "Primavera",
           "price": 140,
-          "ingredients": "Légumes de saison, Sauce tomate et fromage",
-          "description": "Une symphonie colorée de légumes frais sur une base de sauce tomate maison. Chaque bouchée évoque un jardin méditerranéen en plein été avec des saveurs fraîches et équilibrées."
+          "ingredients": "Légumes de saison, roquette, fromage fêta, sauce pistou, mozzarella, sauce tomate",
+          "description": "Une symphonie colorée de légumes frais, relevée par la roquette, la fêta et une sauce pistou parfumée, sur une base de sauce tomate maison. Chaque bouchée évoque un jardin méditerranéen en plein été."
         },
         {
           "name": "La Margherita",
@@ -158,40 +158,34 @@ const PizzaPastaMenu: React.FC = () => {
           "description": "Un contraste parfait entre le crémeux du chèvre, la fraîcheur poivrée de la roquette et la douceur des tomates confites. Une création qui célèbre la simplicité raffinée de la cuisine méditerranéenne."
         },
         {
-          "name": "La Sicilienne",
+          "name": "Pizza Tonno & Stracciatella",
           "price": 150,
-          "ingredients": "Thon, champignons, câpres et fromage fondant",
-          "description": "A generous and delicately melting tortilla, where the slow-cooked potatoes and onions reveal their full sweetness. Its slightly runny center provides a deliciously creamy texture, enhancing this classic Spanish dish with finesse and authenticity."
+          "ingredients": "Sauce tomate, thon, oignons frits, mozzarella, stracciatella, ciboulette",
+          "description": "Le thon rencontre la crémeuse stracciatella, relevé par la douceur des oignons frits croustillants et la fraîcheur de la ciboulette, sur une base de sauce tomate et mozzarella fondante."
         },
         {
-          "name": "La Méditerranéenne",
-          "price": 180,
-          "ingredients": "Fruits de mer, Sauce tomate et fromage",
-          "description": "La Méditerranée dans chaque bouchée avec un mélange généreux de trésors marins sur notre sauce tomate parfumée. Une légère couche de fromage complète sans dominer les saveurs océaniques."
+          "name": "Pizza Mare Mediterraneo",
+          "price": 195,
+          "ingredients": "Sauce tomate, poulpe, calamars, gambas, courgettes, mozzarella, gremolata",
+          "description": "La Méditerranée dans chaque bouchée : poulpe, calamars et gambas généreux, courgettes tendres et mozzarella, sublimés par une gremolata fraîche au citron et au persil."
         },
         {
-          "name": "La Bolognese",
+          "name": "Pizza au Paleron de Bœuf",
           "price": 160,
-          "ingredients": "Viande hachée avec sauce bolognaise",
-          "description": "Notre hommage à l'Émilie-Romagne avec une sauce bolognaise mijotée lentement selon la recette traditionnelle. Riche en viande et en herbes aromatiques pour une expérience réconfortante."
+          "ingredients": "Sauce tomate, champignons de Paris, paleron de bœuf, parmesan",
+          "description": "Un paleron de bœuf fondant, mijoté lentement, associé aux champignons de Paris et au parmesan sur notre sauce tomate maison. Une pizza riche et réconfortante."
         },
         {
-          "name": "La Carbonara",
-          "price": 140,
-          "ingredients": "Bacon de dinde \"halal\", Sauce blanche et fromage",
-          "description": "Une réinterprétation du classique romain sur une base croustillante. Notre sauce blanche onctueuse enrobe des morceaux dorés de bacon de dinde halal, sublimée par notre mélange de fromages italiens."
-        },
-        {
-  "name": "Pizza aux artichauts, olives et jambon",
-  "price": 140,
-  "ingredients": "Artichauts, olives et jambon",
-  "description": "Une pizza généreuse qui marie la tendresse des cœurs d'artichaut, le caractère des olives et la douceur du jambon. Un trio méditerranéen savoureux sur notre sauce tomate maison et un voile de fromage fondant."
-},
-        {
-          "name": "Calzone Piccante",
+          "name": "Pizza Capricciosa",
           "price": 160,
-          "ingredients": "Pepperoni italien halal, champignons, mozzarelle, olives noirs",
-          "description": "Notre croissant de pâte doré renferme un trésor de saveurs où le pepperoni italien halal rencontre les champignons terreux et la mozzarella fondante, relevés par des olives noires parfumées."
+          "ingredients": "Sauce tomate, champignons de Paris, jambon, artichauts confits, mozzarella, olives noires",
+          "description": "La grande classique italienne : jambon, champignons de Paris, artichauts confits et olives noires sur une sauce tomate et une mozzarella fondante."
+        },
+        {
+          "name": "Pizza Pepperoni",
+          "price": 160,
+          "ingredients": "Sauce tomate, pepperoni, mozzarella, tomates séchées",
+          "description": "Le pepperoni légèrement piquant rencontre la douceur concentrée des tomates séchées et la mozzarella fondante, sur notre sauce tomate maison."
         }
       ]
     },

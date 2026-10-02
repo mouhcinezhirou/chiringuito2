@@ -142,8 +142,8 @@ const PizzaPastaMenu: React.FC = () => {
         {
           "name": "Primavera",
           "price": 140,
-          "ingredients": "Seasonal vegetables, Tomato sauce and cheese",
-          "description": "A colorful symphony of fresh vegetables on a homemade tomato sauce base. Each bite evokes a Mediterranean garden in midsummer with fresh and balanced flavors."
+          "ingredients": "Seasonal vegetables, arugula, feta cheese, pesto sauce, mozzarella, tomato sauce",
+          "description": "A colorful symphony of fresh vegetables, enhanced by arugula, feta and a fragrant pesto sauce, on a homemade tomato sauce base. Each bite evokes a Mediterranean garden in midsummer."
         },
         {
           "name": "La Margherita",
@@ -158,40 +158,34 @@ const PizzaPastaMenu: React.FC = () => {
           "description": "A perfect contrast between the creaminess of goat cheese, the peppery freshness of arugula and the sweetness of candied tomatoes. A creation that celebrates the refined simplicity of Mediterranean cuisine."
         },
         {
-          "name": "La Sicilienne",
+          "name": "Tonno & Stracciatella Pizza",
           "price": 150,
-          "ingredients": "Tuna, mushrooms, capers and melted cheese",
-          "description": "An invitation to the flavors of Sicily, where succulent tuna is combined with the sweetness of mushrooms and the delicately salty notes of capers. All enhanced by a melting cheese, for a balanced and characterful composition."
+          "ingredients": "Tomato sauce, tuna, fried onions, mozzarella, stracciatella, chives",
+          "description": "Tuna meets creamy stracciatella, enhanced by the sweetness of crispy fried onions and the freshness of chives, on a base of tomato sauce and melting mozzarella."
         },
         {
-          "name": "La Méditerranéenne",
-          "price": 180,
-          "ingredients": "Seafood, Tomato sauce and Cheese",
-          "description": "The Mediterranean in every bite with a generous mix of ocean treasures on our flavorful tomato sauce. A light layer of cheese complements without overpowering the oceanic flavors."
+          "name": "Mare Mediterraneo Pizza",
+          "price": 195,
+          "ingredients": "Tomato sauce, octopus, squid, prawns, zucchini, mozzarella, gremolata",
+          "description": "The Mediterranean in every bite: generous octopus, squid and prawns, tender zucchini and mozzarella, finished with a fresh lemon and parsley gremolata."
         },
         {
-          "name": "La Bolognese",
+          "name": "Braised Beef Chuck Pizza",
           "price": 160,
-          "ingredients": "Ground meat with bolognese sauce",
-          "description": "Our tribute to Emilia-Romagna with a slowly simmered bolognese sauce according to the traditional recipe. Rich in meat and aromatic herbs for a comforting experience."
+          "ingredients": "Tomato sauce, button mushrooms, beef chuck, parmesan",
+          "description": "Tender, slowly simmered beef chuck paired with button mushrooms and parmesan on our homemade tomato sauce. A rich and comforting pizza."
         },
         {
-          "name": "La Carbonara",
-          "price": 140,
-          "ingredients": "Halal turkey bacon, White sauce and Cheese",
-          "description": "A reinterpretation of the Roman classic on a crispy base. Our creamy white sauce coats golden pieces of halal turkey bacon, enhanced by our blend of Italian cheeses."
-        },
-        {
-  "name": "Pizza with artichokes, olives and ham",
-  "price": 140,
-  "ingredients": "Artichokes, olives and ham",
-  "description": "A generous pizza that brings together the tenderness of artichoke hearts, the bold character of olives and the delicate sweetness of ham. A flavorful Mediterranean trio on our homemade tomato sauce and a veil of melting cheese."
-},
-        {
-          "name": "Calzone Piccante",
+          "name": "Capricciosa Pizza",
           "price": 160,
-          "ingredients": "Halal Italian Pepperoni, Mushrooms, Mozzarella, Black olives",
-          "description": "Our golden pastry crescent holds a treasure of flavors where halal Italian pepperoni meets earthy mushrooms and melting mozzarella, enhanced by fragrant black olives."
+          "ingredients": "Tomato sauce, button mushrooms, ham, candied artichokes, mozzarella, black olives",
+          "description": "The great Italian classic: ham, button mushrooms, candied artichokes and black olives on tomato sauce and melting mozzarella."
+        },
+        {
+          "name": "Pepperoni Pizza",
+          "price": 160,
+          "ingredients": "Tomato sauce, pepperoni, mozzarella, sun-dried tomatoes",
+          "description": "Lightly spicy pepperoni meets the concentrated sweetness of sun-dried tomatoes and melting mozzarella, on our homemade tomato sauce."
         }
       ]
     },
